@@ -1,0 +1,47 @@
+/* This is some default styling for the exercise */
+
+.container .block {
+  height: 200px;
+}
+
+.container .block:nth-of-type(even) {
+  background-color:#6200EE;
+}
+
+.container .block:nth-of-type(odd) {
+  background-color: #03DAC6;
+}
+
+/* 1. Set every element to use the border-box model. */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/* 2. Set up classes for the grid wrapper and the columns. */
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box-item {
+  flex: 1 1 auto;
+}
+
+/* Set up your columns so that when the window is below 30ems in width, they are the full width of the browser window.  */
+
+@media (max-width: 30em) {
+  .box-item {
+    flex: 1 1 100%;
+  }
+}
+
+/* When the window is above 30ems in width, the columns should each be 1/5th of the width of the browser window. */
+
+@media(min-width: 30em) {
+  .box-item {
+    flex: 1 1 20%;
+  }
+}
