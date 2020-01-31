@@ -14,8 +14,11 @@
 
 /* 1. Set every element to use the border-box model. */
 
-*, *::after, *::before {
+*, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 /* 2. Set up classes for the grid wrapper and the columns. */
@@ -28,6 +31,20 @@
 
 .box-item {
   flex: 1 1 auto;
+}
+
+.grid-col-1of5 {
+  flex: 1 1 20%;
+  height: 100%;
+  background-color: blue;
+  overflow: scroll;
+}
+
+.grid-col-4of5 {
+  flex: 1 4 80%;
+  height: 100%;
+  background-color: green;
+  overflow: scroll;
 }
 
 /* Set up your columns so that when the window is below 30ems in width, they are the full width of the browser window.  */
