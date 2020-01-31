@@ -14,15 +14,15 @@
 
 <body>
 
-    <!-- nav for external navigation -->
-    <nav class="main-nav">
-        <a href="styleGuide.html">Styleguide Page</a>
-        <a href="citation.html">Citation Page</a>
-    </nav>
+    <header class="grid">
+        <!-- nav for external navigation -->
+        <nav class="main-nav">
+            <a href="styleGuide.html">Styleguide Page</a>
+            <a href="citation.html">Citation Page</a>
+        </nav>
+    </header>
 
-    <h1 >Style Guide</h1>
-
-    <div class="box">
+    <div class="grid">
         <!-- side navigation bar -->
         <div class="side-nav grid-col-1of5">
 
@@ -304,20 +304,20 @@
                     <h2>Grid Structure</h2>
 
                     <h3>CSS selector:</h3>
-                    <p>.box-item</p>
+                    <p>.grid-item</p>
 
                     <h3>Sample code:</h3>
-                    <code>&lt;div class="container box"&gt;
-                &lt;div class="block box-item"&gt;&lt;/div&gt;
+                    <code>&lt;div class="container grid"&gt;
+                &lt;div class="block grid-item"&gt;&lt;/div&gt;
                 &lt;/div&gt;</code>
 
                     <h3>Rendered element:</h3>
-                    <div class="container box">
-                        <div class="block box-item"></div>
-                        <div class="block box-item"></div>
-                        <div class="block box-item"></div>
-                        <div class="block box-item"></div>
-                        <div class="block box-item"></div>
+                    <div class="container grid">
+                        <div class="block grid-item"></div>
+                        <div class="block grid-item"></div>
+                        <div class="block grid-item"></div>
+                        <div class="block grid-item"></div>
+                        <div class="block grid-item"></div>
                     </div>
 
                 </section>
@@ -352,6 +352,42 @@
         </div>
 
     </div>
+
+    <footer class="grid">
+
+        <!-- Contact Us -->
+        <section class="grid-col-1of3">
+            <h3>CONTACT US</h3>
+            <ul>
+                <li>++44 345 678 903</li>
+                <li><a href="mailto:someone@example.com">customService@.Laptophub.com</a></li>
+                <li>Find a store</li>
+            </ul>
+        </section>
+
+        <!-- Services -->
+        <section class="grid-col-1of3">
+            <h3>SERVICES</h3>
+            <ul>
+                <li>Returns</li>
+                <li>Odering & Payment</li>
+                <li>Shipping</li>
+                <li>FAQ</li>
+            </ul>
+        </section>
+
+        <!-- About Us -->
+        <section class="grid-col-1of3">
+            <h4>ABOUT US</h4>
+            <ul>
+                <li>Our Mission</li>
+                <li>Work With Us</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+            </ul>
+        </section>
+
+    </footer>
 
 </body>
 
