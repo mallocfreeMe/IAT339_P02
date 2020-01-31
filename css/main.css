@@ -144,6 +144,30 @@ section code {
   COMBINED ELEMENTS -------------------
 */
 
+/* Styling for side nav */
+
+.side-nav {
+  display: inline-block;
+  background-color: #6200EE;
+  padding: 1em;
+}
+
+.side-nav h3 {
+  color: white;
+  padding: 1em;
+}
+
+.side-nav ul {
+  list-style-type: none;
+}
+
+.side-nav a {
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+  padding: 2em;
+}
+
 /* Styling for main nav */
 
 .main-nav {
@@ -159,15 +183,17 @@ section code {
 }
 
 /* Styling for product list */
+
 .product-list {
-  height:10em;
+  height: 10em;
   margin: 1em;
   width: 10em;
 }
 
 /* Styling for color swatches */
+
 .swatch {
-  height:10em;
+  height: 10em;
   margin: 1em;
   width: 10em;
 }

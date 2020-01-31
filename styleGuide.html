@@ -15,329 +15,343 @@
 <body>
 
     <!-- nav for external navigation -->
-    <nav>
-        <ul>
-            <li><a href="styleGuide.html">Styleguide Page</a></li>
-            <li><a href="citation.html">Citation Page</a></li>
-        </ul>
+    <nav class="main-nav">
+        <a href="styleGuide.html">Styleguide Page</a>
+        <a href="citation.html">Citation Page</a>
     </nav>
 
-    <h1>Style Guide</h1>
+    <h1 >Style Guide</h1>
 
-    <!-- side navigation bar -->
-    Go to:
-    <div class="side-nav">
+    <div class="box">
+        <!-- side navigation bar -->
+        <div class="side-nav grid-col-1of5">
 
-        <h3 class="h3">Interactive Elements</h3>
-        <a href="#">In-text link</a>
-        <a href="#">The navigation button</a>
-        <a href="#">Sumbit button</a>
-        <a href="#">Reset button</a>
-        <a href="#">Text input field</a>
-        <a href="#">Label</a>
+            <h3>Interactive Elements</h3>
+            <ul>
+                <li><a href="#">In-text link</a></li>
+                <li><a href="#">The navigation button</a></li>
+                <li><a href="#">Sumbit button</a></li>
+                <li><a href="#">Reset button</a></li>
+                <li><a href="#">Text input field</a></li>
+                <li> <a href="#">Label</a></li>
+            </ul>
 
-        <h3 class="h3">Text Elements</h3>
-        <a href="#">Heading</a>
-        <a href="#">Paragraph</a>
-        <a href="#">Bulletted list</a>
-        <a href="#">Numbered list</a>
+            <h3>Text Elements</h3>
+            <ul>
+                <li><a href="#">Heading</a></li>
+                <li><a href="#">Paragraph</a></li>
+                <li><a href="#">Bulletted list</a></li>
+                <li><a href="#">Numbered list</a></li>
+            </ul>
 
-        <h3 class="h3">Combined Elements</h3>
-        <a href="#">Main Navigation</a>
-        <a href="#">Product listing</a>
-        <a href="#">Grid structure</a>
-        <a href="#">Color swtaches</a>
-    </div>
-
-
-
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-
-        <!-- an in-text link -->
-        <section>
-            <h2>In-text link</h2>
-            <h3>CSS selector:</h3>
-            <p>.in-text-link</p>
-
-            <h3>Sample code:</h3>
-            <code>&lt;a href="#" class="in-text-link"&gt;in-text link&lt;/a&gt;</code>
-
-            <h3>Rendered element:</h3>
-            <a class="in-text-link" href="#">This is an in-text link</a>
-        </section>
-
-        <!-- the navigation button style -->
-        <section>
-
-            <h2>Navigation Button</h2>
-
-            <h3>CSS selector:</h3>
-            <p>.button-nav</p>
-
-            <h3>Sample code:</h3>
-            <code>&lt;a href="#" class="button-nav"&gt;Navigation Button&lt;/a&gt;</code>
-
-            <h3>Rendered element:</h3>
-            <a class="button-nav" href="#">Navigation Button</a>
-
-        </section>
-
-        <!-- A submit and reset button for forms -->
-        <section>
-            <h2>Submit/Reset Buttons</h2>
-
-            <h3>CSS selector:</h3>
-            <p>.button-submit-reset</p>
-
-            <h3>Sample code:</h3>
-            <code>&lt;a href="#" class="button-submit-reset"&gt;Submit Button&lt;/a&gt;</code>
-
-            <h3>Rendered element:</h3>
-            <a class="button-submit-reset" href="#">Submit Button</a>
-        </section>
-
-        <!-- A text input field -->
-        <section>
-            <h2>Text Input Field</h2>
-
-            <h3>CSS selector:</h3>
-            <p>.text-input</p>
-
-            <h3>Sample code:</h3>
-            <code>&lt;input type="text" class="text-input"&gt;</code>
-
-            <h3>Rendered element:</h3>
-            <input type="text" class="text-input">
-        </section>
-
-        <!-- A label -->
-        <section>
-            <h2>A label</h2>
-
-            <h3>CSS selector:</h3>
-            <p>.label</p>
-
-            <h3>Sample code:</h3>
-            <code>&lt;label class="label"&gt;This is a label&lt;/label&gt;</code>
-
-            <h3>Rendered element:</h3>
-            <label class="label">This is a label</label>
-        </section>
-
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
+            <h3>Combined Elements</h3>
+            <ul>
+                <li><a href="#">Main Navigation</a></li>
+                <li><a href="#">Product listing</a></li>
+                <li><a href="#">Grid structure</a></li>
+                <li><a href="#">Color swtaches</a></li>
+            </ul>
+        </div>
 
 
 
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
+        <div class="grid-col-4of5">
+            <!-- INTERACTIVE ELEMENTS SECTION // -->
+            <section id="interactive_elements">
 
-        <section>
-            <h2>Headings</h2>
+                <!-- an in-text link -->
+                <section>
+                    <h2>In-text link</h2>
+                    <h3>CSS selector:</h3>
+                    <p>.in-text-link</p>
 
-            <h3>CSS selector:</h3>
-            <p>.h1</p>
+                    <h3>Sample code:</h3>
+                    <code>&lt;a href="#" class="in-text-link"&gt;in-text link&lt;/a&gt;</code>
 
-            <h3>Sample code:</h3>
-            <code>&lt;h1 class="h1"&gt;This a h1 heading&lt;/h1&gt;</code>
+                    <h3>Rendered element:</h3>
+                    <a class="in-text-link" href="#">This is an in-text link</a>
+                </section>
 
-            <h3>Rendered element:</h3>
-            <h1 class="h1">This a h1 heading</h1>
-        </section>
+                <!-- the navigation button style -->
+                <section>
 
-        <section>
-            <h2>Headings</h2>
+                    <h2>Navigation Button</h2>
 
-            <h3>CSS selector:</h3>
-            <p>.h2</p>
+                    <h3>CSS selector:</h3>
+                    <p>.button-nav</p>
 
-            <h3>Sample code:</h3>
-            <code>&lt;h2 class="h2"&gt;This a h2 heading&lt;/h2&gt;</code>
+                    <h3>Sample code:</h3>
+                    <code>&lt;a href="#" class="button-nav"&gt;Navigation Button&lt;/a&gt;</code>
 
-            <h3>Rendered element:</h3>
-            <h2 class="h2">This a h2 heading</h2>
-        </section>
+                    <h3>Rendered element:</h3>
+                    <a class="button-nav" href="#">Navigation Button</a>
 
-        <section>
-            <h2>Headings</h2>
+                </section>
 
-            <h3>CSS selector:</h3>
-            <p>.h3</p>
+                <!-- A submit and reset button for forms -->
+                <section>
+                    <h2>Submit/Reset Buttons</h2>
 
-            <h3>Sample code:</h3>
-            <code>&lt;h3 class="h3"&gt;This a h3 heading&lt;/h3&gt;</code>
+                    <h3>CSS selector:</h3>
+                    <p>.button-submit-reset</p>
 
-            <h3>Rendered element:</h3>
-            <h3 class="h3">This a h3 heading</h3>
-        </section>
+                    <h3>Sample code:</h3>
+                    <code>&lt;a href="#" class="button-submit-reset"&gt;Submit Button&lt;/a&gt;</code>
 
-        <section>
-            <h2>Paragraphs</h2>
+                    <h3>Rendered element:</h3>
+                    <a class="button-submit-reset" href="#">Submit Button</a>
+                </section>
 
-            <h3>CSS selector:</h3>
-            <p>.p</p>
+                <!-- A text input field -->
+                <section>
+                    <h2>Text Input Field</h2>
 
-            <h3>Sample code:</h3>
-            <code>&lt;p class="p"&gt;This a paragraph&lt;/p&gt;</code>
+                    <h3>CSS selector:</h3>
+                    <p>.text-input</p>
 
-            <h3>Rendered element:</h3>
-            <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </section>
+                    <h3>Sample code:</h3>
+                    <code>&lt;input type="text" class="text-input"&gt;</code>
 
-        <section>
-            <h2>Bulleted Lists</h2>
+                    <h3>Rendered element:</h3>
+                    <input type="text" class="text-input">
+                </section>
 
-            <h3>CSS selector:</h3>
-            <p>.bullet-list</p>
+                <!-- A label -->
+                <section>
+                    <h2>A label</h2>
 
-            <h3>Sample code:</h3>
-            <code>&lt;ul class="bullet-list"&gt;
+                    <h3>CSS selector:</h3>
+                    <p>.label</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;label class="label"&gt;This is a label&lt;/label&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <label class="label">This is a label</label>
+                </section>
+
+            </section>
+            <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+            <!-- TEXT ELEMENTS SECTION // -->
+            <section id="text_elements">
+
+                <section>
+                    <h2>Headings</h2>
+
+                    <h3>CSS selector:</h3>
+                    <p>.h1</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;h1 class="h1"&gt;This a h1 heading&lt;/h1&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <h1 class="h1">This a h1 heading</h1>
+                </section>
+
+                <section>
+                    <h2>Headings</h2>
+
+                    <h3>CSS selector:</h3>
+                    <p>.h2</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;h2 class="h2"&gt;This a h2 heading&lt;/h2&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <h2 class="h2">This a h2 heading</h2>
+                </section>
+
+                <section>
+                    <h2>Headings</h2>
+
+                    <h3>CSS selector:</h3>
+                    <p>.h3</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;h3 class="h3"&gt;This a h3 heading&lt;/h3&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <h3 class="h3">This a h3 heading</h3>
+                </section>
+
+                <section>
+                    <h2>Paragraphs</h2>
+
+                    <h3>CSS selector:</h3>
+                    <p>.p</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;p class="p"&gt;This a paragraph&lt;/p&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has
+                        been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the
+                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s
+                        with
+                        the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </section>
+
+                <section>
+                    <h2>Bulleted Lists</h2>
+
+                    <h3>CSS selector:</h3>
+                    <p>.bullet-list</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;ul class="bullet-list"&gt;
                 &lt;li&gt;This is a Bulleted List&lt;/li&gt;
                 &lt;/ul&gt;</code>
 
-            <h3>Rendered element:</h3>
-            <ul class="bullet-list">
-                <li>This is a Bulleted List</li>
-                <li>This is a Bulleted List</li>
-                <li>This is a Bulleted List</li>
-            </ul>
-        </section>
+                    <h3>Rendered element:</h3>
+                    <ul class="bullet-list">
+                        <li>This is a Bulleted List</li>
+                        <li>This is a Bulleted List</li>
+                        <li>This is a Bulleted List</li>
+                    </ul>
+                </section>
 
-        <section>
-            <h2>Numbered Lists</h2>
+                <section>
+                    <h2>Numbered Lists</h2>
 
-            <h3>CSS selector:</h3>
-            <p>.numbered-list</p>
+                    <h3>CSS selector:</h3>
+                    <p>.numbered-list</p>
 
-            <h3>Sample code:</h3>
-            <code>&lt;ol class="numbered-list"&gt;
+                    <h3>Sample code:</h3>
+                    <code>&lt;ol class="numbered-list"&gt;
                 &lt;li&gt;This is a Numbered List&lt;/li&gt;
                 &lt;/ol&gt;</code>
 
-            <h3>Rendered element:</h3>
-            <ol class="numbered-list">
-                <li>This is a Numbered List</li>
-                <li>This is a Numbered List</li>
-                <li>This is a Numbered List</li>
-            </ol>
-        </section>
+                    <h3>Rendered element:</h3>
+                    <ol class="numbered-list">
+                        <li>This is a Numbered List</li>
+                        <li>This is a Numbered List</li>
+                        <li>This is a Numbered List</li>
+                    </ol>
+                </section>
 
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
+            </section>
+            <!-- // TEXT ELEMENTS SECTION -->
 
 
 
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
+            <!-- COMBINED ELEMENTS SECTION // -->
+            <section id="combined_elements">
 
-        <section>
-            <h2>Main Navigation</h2>
+                <section>
+                    <h2>Main Navigation</h2>
 
-            <h3>CSS selector:</h3>
-            <p>.main-nav</p>
+                    <h3>CSS selector:</h3>
+                    <p>.main-nav</p>
 
-            <h3>Sample code:</h3>
-            <code>&lt;nav class="bullet-list"&gt;
+                    <h3>Sample code:</h3>
+                    <code>&lt;nav class="bullet-list"&gt;
                 &lt;a&gt;link 1&lt;/a&gt;
                 &lt;a&gt;link 2&lt;/a&gt;
                 &lt;a&gt;link 3&lt;/a&gt;
                 &lt;/nav&gt;</code>
 
-            <h3>Rendered element:</h3>
-            <nav class="main-nav">
-                <a href="#">link 1</a>
-                <a href="#">link 2</a>
-                <a href="#">link 3</a>
-            </nav>
-        </section>
+                    <h3>Rendered element:</h3>
+                    <nav class="main-nav">
+                        <a href="#">link 1</a>
+                        <a href="#">link 2</a>
+                        <a href="#">link 3</a>
+                    </nav>
+                </section>
 
-        <section>
-            <h2>Product Listing</h2>
+                <section>
+                    <h2>Product Listing</h2>
 
 
-            <h3>CSS selector:</h3>
-            <p>.product-list</p>
+                    <h3>CSS selector:</h3>
+                    <p>.product-list</p>
 
-            <h3>Sample code:</h3>
-            <code>&lt;ol&gt;
+                    <h3>Sample code:</h3>
+                    <code>&lt;ol&gt;
                 &lt;li&gt;&lt;input type="color" value="#D6D6D6" class="product-list"&gt;&lt;/li&gt;
                 &lt;/ol&gt;</code>
 
-            <h3>Rendered element:</h3>
-            <ol>
-                <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                        class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
-                        type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                        class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
-                <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                        class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
-                        type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                        class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
-                <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                        class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
-                        type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                        class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
-            </ol>
-        </section>
+                    <h3>Rendered element:</h3>
+                    <ol>
+                        <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
+                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
+                                type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
+                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
+                        <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
+                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
+                                type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
+                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
+                        <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
+                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
+                                type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
+                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
+                    </ol>
+                </section>
 
-        <!-- your website grid structure -->
-        <!-- did in lab3-->
-        <section>
-            <h2>Grid Structure</h2>
+                <!-- your website grid structure -->
+                <!-- did in lab3-->
+                <section>
+                    <h2>Grid Structure</h2>
 
-            <h3>CSS selector:</h3>
-            <p>.box-item</p>
+                    <h3>CSS selector:</h3>
+                    <p>.box-item</p>
 
-            <h3>Sample code:</h3>
-            <code>&lt;div class="container box"&gt;
+                    <h3>Sample code:</h3>
+                    <code>&lt;div class="container box"&gt;
                 &lt;div class="block box-item"&gt;&lt;/div&gt;
                 &lt;/div&gt;</code>
 
-            <h3>Rendered element:</h3>
-            <div class="container box">
-                <div class="block box-item"></div>
-                <div class="block box-item"></div>
-                <div class="block box-item"></div>
-                <div class="block box-item"></div>
-                <div class="block box-item"></div>
-            </div>
+                    <h3>Rendered element:</h3>
+                    <div class="container box">
+                        <div class="block box-item"></div>
+                        <div class="block box-item"></div>
+                        <div class="block box-item"></div>
+                        <div class="block box-item"></div>
+                        <div class="block box-item"></div>
+                    </div>
 
-        </section>
+                </section>
 
-        <section>
-            <h2>Website Colour Swatches</h2>
+                <section>
+                    <h2>Website Colour Swatches</h2>
 
-            <h3>CSS selector:</h3>
-            <p>.swatch</p>
+                    <h3>CSS selector:</h3>
+                    <p>.swatch</p>
 
-            <h3>Sample code:</h3>
-            <code>&lt;input type="color" value="#6200EE" class="swatch"&gt;</code>
+                    <h3>Sample code:</h3>
+                    <code>&lt;input type="color" value="#6200EE" class="swatch"&gt;</code>
 
-            <h3>Rendered element:</h3>
-            <input type="color" value="#6200EE" class="swatch">
-            <input type="color" value="#7E39FB" class="swatch">
-            <input type="color" value="#995DFF" class="swatch">
-            <input type="color" value="#BA89FF" class="swatch">
-            <input type="color" value="#DAB2FF" class="swatch">
-            <input type="color" value="#FBD5FF" class="swatch">
+                    <h3>Rendered element:</h3>
+                    <input type="color" value="#6200EE" class="swatch">
+                    <input type="color" value="#7E39FB" class="swatch">
+                    <input type="color" value="#995DFF" class="swatch">
+                    <input type="color" value="#BA89FF" class="swatch">
+                    <input type="color" value="#DAB2FF" class="swatch">
+                    <input type="color" value="#FBD5FF" class="swatch">
 
-            <input type="color" value="#03DAC6" class="swatch">
-            <input type="color" value="#00B398" class="swatch">
-            <input type="color" value="#00C4AB" class="swatch">
-            <input type="color" value="#03DAC6" class="swatch">
-            <input type="color" value="#71EFE0" class="swatch">
-            <input type="color" value="#A8FFFB" class="swatch">
+                    <input type="color" value="#03DAC6" class="swatch">
+                    <input type="color" value="#00B398" class="swatch">
+                    <input type="color" value="#00C4AB" class="swatch">
+                    <input type="color" value="#03DAC6" class="swatch">
+                    <input type="color" value="#71EFE0" class="swatch">
+                    <input type="color" value="#A8FFFB" class="swatch">
 
-        </section>
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
+                </section>
+            </section>
+            <!-- // COMBINED ELEMENTS SECTION -->
+        </div>
 
+    </div>
 
 </body>
 
