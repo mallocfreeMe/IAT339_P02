@@ -1,0 +1,25 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-col-1of5 {
+  flex: 1 1 20%;
+  height: 100%;
+  background-color: blue;
+  overflow: scroll;
+}
+
+.grid-col-4of5 {
+  flex: 1 4 80%;
+  height: 100%;
+  background-color: green;
+  overflow: scroll;
+}
