@@ -5,13 +5,18 @@
 
 body {
   font-family: sans-serif;
-  padding: 2rem;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+a {
+  text-decoration: none;
 }
 
 section:not([id]) {
   margin: 1em 0;
   padding: 0.5em 0;
-  border-top: 1px solid #333;
+  /* border-top: 1px solid #333; */
 }
 
 section h3 {
@@ -48,7 +53,6 @@ section code {
   color: #ffffff;
   background-color: #6200EE;
   border-radius: 0.25em;
-  text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
@@ -65,7 +69,6 @@ section code {
   color: black;
   background-color: #03DAC6;
   border-radius: 0.25em;
-  text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
@@ -163,7 +166,6 @@ section code {
 
 .side-nav a {
   font-size: 1em;
-  text-decoration: none;
   color: white;
   padding: 2em;
 }
@@ -171,13 +173,13 @@ section code {
 /* Styling for main nav */
 
 .main-nav {
-  width: 100%;
+  position: fixed;
   background-color: #6200EE;
-  display: inline-block;
   padding: 1em;
 }
 
 .main-nav a {
+  text-align: left;
   padding: 1em;
   color: white;
 }
@@ -196,4 +198,15 @@ section code {
   height: 10em;
   margin: 1em;
   width: 10em;
+}
+
+footer {
+  overflow: hidden;
+  padding: 5em;
+  background-color: #6200EE;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
 }
