@@ -1,6 +1,5 @@
 /*
   STYLE GUIDE STYLING 
-  Default styling for the style guide 
 */
 
 body {
@@ -150,13 +149,15 @@ section code {
 /* Styling for side nav */
 
 .side-nav {
+  top: 3em;
+  position: sticky;
   display: inline-block;
-  background-color: #6200EE;
   padding: 1em;
+  margin-top: 3em;
 }
 
 .side-nav h3 {
-  color: white;
+  color: black;
   padding: 1em;
 }
 
@@ -166,13 +167,14 @@ section code {
 
 .side-nav a {
   font-size: 1em;
-  color: white;
+  color: black;
   padding: 2em;
 }
 
 /* Styling for main nav */
 
 .main-nav {
+  width: 100%;
   position: fixed;
   background-color: #6200EE;
   padding: 1em;
@@ -201,10 +203,15 @@ section code {
 }
 
 footer {
-  overflow: hidden;
-  padding: 5em;
+  text-align: left;
+  padding: 2em;
   background-color: #6200EE;
   color: #fff;
+}
+
+footer li, h3 {
+  padding: 0.5em;
+  list-style: none;
 }
 
 footer a {
