@@ -21,7 +21,7 @@
 
 .grid-col-1of5 {
   flex: 1 1 20%;
-  height: 100%;
+  height: 100vh;
   overflow: scroll;
 }
 
@@ -40,13 +40,13 @@
 
 /* Grid items for sample structure  */
 .sample-grid-item-left {
-  height: 200px;
+  height: 13.33em;
   flex: 1 1 20%;
   background-color:#03DAC6;
 }
 
 .sample-grid-item-right {
-  height: 200px;
+  height: 13.33em;
   flex: 1 1 80%;
   background-color: #6200EE;
 }

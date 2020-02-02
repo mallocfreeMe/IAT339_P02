@@ -166,24 +166,9 @@ section code {
 
 .side-nav {
   top: 3em;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  position: sticky;
-<<<<<<< HEAD
   display: inline-block;
   padding: 1em;
-=======
-  position: fixed;
-  display: block;
->>>>>>> Stashed changes
-=======
-  display: block;
-=======
-  position: fixed;
-  display: inline-block;
->>>>>>> Stashed changes
-  
->>>>>>> parent of f48c143... Revert "Merge branch 'norris'"
+  position: sticky;
 }
 
 .side-nav h3 {
@@ -253,4 +238,5 @@ footer a {
   padding: 2em;
   background-color: #6200EE;
   color: #fff;
+  height: 10em;
 }
