@@ -166,9 +166,14 @@ section code {
 
 .side-nav {
   top: 3em;
+<<<<<<< Updated upstream
   position: sticky;
   display: inline-block;
   padding: 1em;
+=======
+  position: fixed;
+  display: block;
+>>>>>>> Stashed changes
 }
 
 .side-nav h3 {
