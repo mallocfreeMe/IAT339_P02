@@ -31,18 +31,16 @@
   overflow: scroll;
 }
 
-
-/* Grid items for sample structure  */
-.sample-grid-item-left {
+.container .block {
   height: 200px;
-  flex: 1 1 20%;
-  background-color:#03DAC6;
 }
 
-.sample-grid-item-right {
-  height: 200px;
-  flex: 1 1 80%;
-  background-color: #6200EE;
+.container .block:nth-of-type(even) {
+  background-color:#6200EE;
+}
+
+.container .block:nth-of-type(odd) {
+  background-color: #03DAC6;
 }
 
 /* Set up your columns so that when the window is below 30ems in width, they are the full width of the browser window.  */
