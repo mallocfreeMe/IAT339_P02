@@ -153,10 +153,10 @@ section code {
   position: fixed;
   background-color: #6200EE;
   padding: 1em;
+  text-align: right;
 }
 
 .main-nav a {
-  text-align: left;
   padding: 1em;
   color: white;
 }
@@ -172,7 +172,7 @@ section code {
 }
 
 .side-nav h3 {
-  color: black;
+  color: #24292e;
   padding: 1em;
   font-size: 0.9em;
   padding-top: 1em;
@@ -190,14 +190,30 @@ section code {
 
 .side-nav a {
   font-size: 1em;
-  color: black;
+  color: #995DFF;
   padding: 2em;
 }
+
 
 /* Styling for styleGuide content */
 .styleGuide {
   margin-top: 3em;
   padding: 1em;
+  color: 	#2f363d;
+}
+
+.styleGuide h2 {
+  padding-top: 2em;
+  font-size: 2em;
+  border-bottom: thin solid #d1d5da;
+}
+
+.styleGuide h3 {
+  padding: 2em 0 0 0;
+}
+
+.styleGuide p {
+  padding-left: 1em;
 }
 
 /* Styling for product list */

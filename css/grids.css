@@ -14,11 +14,6 @@
   flex: 1 1 auto;
 }
 
-/* .grid-col-1of3 {
-  flex: 1 1 33.33%;
-  height: 100%;
-} */
-
 .grid-col-1of5 {
   flex: 1 1 20%;
   height: 100vh;
@@ -31,7 +26,8 @@
   overflow: scroll;
 }
 
-/* Test */
+
+/* Grid column of Footer */
 .sample-grid-col-1of5 {
   flex: 1 1 20%;
   height: 100%;
@@ -52,7 +48,6 @@
 }
 
 /* Set up your columns so that when the window is below 30ems in width, they are the full width of the browser window.  */
-
 @media (max-width: 30em) {
   .grid-item {
     flex: 1 1 100%;
@@ -60,7 +55,6 @@
 }
 
 /* When the window is above 30ems in width, the columns should each be 1/5th of the width of the browser window. */
-
 @media(min-width: 30em) {
   .grid-item {
     flex: 1 1 20%;
