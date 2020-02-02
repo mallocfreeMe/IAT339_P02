@@ -161,7 +161,6 @@ section code {
   color: white;
 }
 
-
 /* Styling for side nav */
 
 .side-nav {
@@ -195,6 +194,7 @@ section code {
 }
 
 /* Styling for styleGuide content */
+
 .styleGuide {
   margin-top: 3em;
   padding: 1em;
@@ -233,10 +233,33 @@ footer a {
 }
 
 /* Use for the sample footerin style guide */
+
 .sample-footer {
   text-align: left;
   padding: 2em;
   background-color: #6200EE;
   color: #fff;
   height: 10em;
+}
+
+
+
+/* if the screen size is mobile size */
+
+@media (max-width: 30em) {
+  .main-nav a {
+    display: none;
+  }
+  .side-nav {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
+@media(min-width: 30em) {
+  .mobile-menu-icon {
+    display: none;
+  }
 }
