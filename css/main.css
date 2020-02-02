@@ -168,21 +168,34 @@ section code {
   top: 3em;
 <<<<<<< Updated upstream
   position: sticky;
+<<<<<<< HEAD
   display: inline-block;
   padding: 1em;
 =======
   position: fixed;
   display: block;
 >>>>>>> Stashed changes
+=======
+  display: block;
+  
+>>>>>>> parent of f48c143... Revert "Merge branch 'norris'"
 }
 
 .side-nav h3 {
   color: black;
   padding: 1em;
+  font-size: 0.9em;
+  padding-top: 1em;
 }
 
 .side-nav ul {
   list-style-type: none;
+}
+
+.side-nav li {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 0.9em;
 }
 
 .side-nav a {
@@ -194,6 +207,7 @@ section code {
 /* Styling for styleGuide content */
 .styleGuide {
   margin-top: 3em;
+  padding: 1em;
 }
 
 /* Styling for product list */
@@ -225,5 +239,13 @@ footer li, h3 {
 }
 
 footer a {
+  color: #fff;
+}
+
+/* Use for the sample footerin style guide */
+.sample-footer {
+  text-align: left;
+  padding: 2em;
+  background-color: #6200EE;
   color: #fff;
 }
