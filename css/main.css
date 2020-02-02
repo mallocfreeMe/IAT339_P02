@@ -167,6 +167,7 @@ section code {
 .side-nav {
   top: 3em;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   position: sticky;
 <<<<<<< HEAD
   display: inline-block;
@@ -177,6 +178,10 @@ section code {
 >>>>>>> Stashed changes
 =======
   display: block;
+=======
+  position: fixed;
+  display: inline-block;
+>>>>>>> Stashed changes
   
 >>>>>>> parent of f48c143... Revert "Merge branch 'norris'"
 }

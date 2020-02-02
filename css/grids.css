@@ -14,10 +14,10 @@
   flex: 1 1 auto;
 }
 
-.grid-col-1of3 {
+/* .grid-col-1of3 {
   flex: 1 1 33.33%;
   height: 100%;
-}
+} */
 
 .grid-col-1of5 {
   flex: 1 1 20%;
@@ -29,6 +29,12 @@
   flex: 1 1 80%;
   height: 100%;
   overflow: scroll;
+}
+
+/* Test */
+.sample-grid-col-1of5 {
+  flex: 1 1 20%;
+  height: 100%;
 }
 
 
