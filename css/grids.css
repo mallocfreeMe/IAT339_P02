@@ -17,18 +17,19 @@
 .grid-col-1of5 {
   flex: 1 1 20%;
   height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .grid-col-4of5 {
   flex: 1 1 80%;
   height: 100%;
-  overflow: scroll;
+  /* Delete the scroll bar to make the UI clear */
+  /* overflow: scroll; */
 }
 
 
 /* Grid column of Footer */
-.sample-grid-col-1of5 {
+.footer-grid-col-1of5 {
   flex: 1 1 20%;
   height: 100%;
 }

@@ -28,7 +28,7 @@ section p {
 
 section code {
   background-color: #EEE;
-  padding: 0.5em 0.75em;
+  padding: 0.5em 0;
 }
 
 /* 
@@ -103,6 +103,7 @@ section code {
 
 .h1 {
   font-size: 6.4em;
+  font-weight: bold;
   color: #6200EE;
 }
 
@@ -110,8 +111,10 @@ section code {
 
 .h2 {
   font-size: 4em;
+  font-weight: bold;
   color: #6200EE;
 }
+
 
 /* Styling for a h3 */
 
@@ -154,6 +157,7 @@ section code {
   background-color: #6200EE;
   padding: 1em;
   text-align: right;
+  z-index: 10;
 }
 
 .main-nav a {
@@ -161,10 +165,23 @@ section code {
   color: white;
 }
 
+.sample-main-nav {
+  width: 100%;
+  background-color: #6200EE;
+  padding: 1em;
+  text-align: right;
+}
+
+.sample-main-nav a {
+  padding: 1em;
+  color: white;
+}
+
+
 /* Styling for side nav */
 
 .side-nav {
-  top: 3em;
+  top: 4em;
   display: inline-block;
   padding: 1em;
   position: sticky;
@@ -190,30 +207,33 @@ section code {
 .side-nav a {
   font-size: 1em;
   color: #995DFF;
-  padding: 2em;
+  padding: 2em 1em;
+}
+
+.side-nav .dividing-area {
+  margin: 2em 0;
+  border-bottom: thin solid #d1d5da;
 }
 
 
 /* Styling for styleGuide content */
 
 .styleGuide {
-  margin-top: 3em;
-  padding: 1em;
+  margin-top: 2em;
+  padding: 1em 6em;
   color: 	#2f363d;
 }
 
 .styleGuide h2 {
-  padding-top: 2em;
+  padding-top: 1.5em;
   font-size: 2em;
   border-bottom: thin solid #d1d5da;
 }
 
 .styleGuide h3 {
   padding: 2em 0 0 0;
-}
+  font-size: 1.3em;
 
-.styleGuide p {
-  padding-left: 1em;
 }
 
 /* Styling for product list */
@@ -258,6 +278,14 @@ footer a {
   height: 10em;
 }
 
+
+/* when the size of browser becomes smaller */
+
+@media (max-width: 70em) {
+  .side-nav {
+    display: none;
+  }
+}
 
 
 /* if the screen size is mobile size */

@@ -52,6 +52,9 @@
                 <li><a href="#label-section">Label</a></li>
             </ul>
 
+            <!-- A div to divide the area between two parts of sort -->
+            <div class="dividing-area"></div>
+
             <h3>Text Elements</h3>
             <ul>
                 <li><a href="#heading-one-section">Heading</a></li>
@@ -59,6 +62,9 @@
                 <li><a href="#bulleted-list-section">Bulleted list</a></li>
                 <li><a href="#number-list-section">Numbered list</a></li>
             </ul>
+
+            <!-- A div to divide the area between two parts of sort -->
+            <div class="dividing-area"></div>
 
             <h3>Combined Elements</h3>
             <ul>
@@ -164,7 +170,7 @@
                     <code>&lt;h1 class="h1"&gt;This a h1 heading&lt;/h1&gt;</code>
 
                     <h3>Rendered element:</h3>
-                    <h1 class="h1">This a h1 heading</h1>
+                    <p class="h1">This a h1 heading</p>
                 </section>
 
                 <section id="heading-two-section">
@@ -177,7 +183,7 @@
                     <code>&lt;h2 class="h2"&gt;This a h2 heading&lt;/h2&gt;</code>
 
                     <h3>Rendered element:</h3>
-                    <h2 class="h2">This a h2 heading</h2>
+                    <p class="h2">This a h2 heading</p>
                 </section>
 
                 <section id="heading-three-section">
@@ -190,7 +196,7 @@
                     <code>&lt;h3 class="h3"&gt;This a h3 heading&lt;/h3&gt;</code>
 
                     <h3>Rendered element:</h3>
-                    <h3 class="h3">This a h3 heading</h3>
+                    <p class="h3">This a h3 heading</p>
                 </section>
 
                 <section id="paragraph-section">
@@ -269,16 +275,16 @@
 
                     <h3>CSS selector:</h3>
                     <p>.main-nav</p>
-
+                <!-- Modify the layout of sample code by <br> -->
                     <h3>Sample code:</h3>
-                    <code>&lt;nav class="bullet-list"&gt;
-                &lt;a&gt;link 1&lt;/a&gt;
-                &lt;a&gt;link 2&lt;/a&gt;
-                &lt;a&gt;link 3&lt;/a&gt;
+                    <code>&lt;nav class="bullet-list"&gt;<br><br>
+                &lt;a&gt;link 1&lt;/a&gt;<br><br>
+                &lt;a&gt;link 2&lt;/a&gt;<br><br>
+                &lt;a&gt;link 3&lt;/a&gt;<br><br>
                 &lt;/nav&gt;</code>
 
                     <h3>Rendered element:</h3>
-                    <nav class="main-nav">
+                    <nav class="sample-main-nav">
                         <a href="#">link 1</a>
                         <a href="#">link 2</a>
                         <a href="#">link 3</a>
@@ -291,14 +297,14 @@
 
                     <h3>CSS selector:</h3>
                     <p>.side-nav</p>
-
+                <!-- Modify the layout of sample code by <br> -->
                     <h3>Sample code:</h3>
-                    <code>&lt;nav class="bullet-list"&gt;
-                &lt;a&gt;link 1&lt;/a&gt;
-                &lt;a&gt;link 2&lt;/a&gt;
-                &lt;a&gt;link 3&lt;/a&gt;
-                &lt;a&gt;link 4&lt;/a&gt;
-                &lt;a&gt;link 5&lt;/a&gt;
+                    <code>&lt;nav class="bullet-list"&gt;<br><br>
+                &lt;a&gt;link 1&lt;/a&gt;<br><br>
+                &lt;a&gt;link 2&lt;/a&gt;<br><br>
+                &lt;a&gt;link 3&lt;/a&gt;<br><br>
+                &lt;a&gt;link 4&lt;/a&gt;<br><br>
+                &lt;a&gt;link 5&lt;/a&gt;<br><br>
                 &lt;/nav&gt;</code>
 
                     <h3>Rendered element:</h3>
@@ -317,10 +323,10 @@
 
                     <h3>CSS selector:</h3>
                     <p>.product-list</p>
-
+                <!-- Modify the layout of sample code by <br> -->
                     <h3>Sample code:</h3>
-                    <code>&lt;ol&gt;
-                &lt;li&gt;&lt;input type="color" value="#D6D6D6" class="product-list"&gt;&lt;/li&gt;
+                    <code>&lt;ol&gt;<br><br>
+                &lt;li&gt;&lt;input type="color" value="#D6D6D6" class="product-list"&gt;&lt;/li&gt;<br><br>
                 &lt;/ol&gt;</code>
 
                     <h3>Rendered element:</h3>
@@ -356,17 +362,17 @@
 
                     <h3>Rendered element:</h3>
                     <div class="grid sample-footer">
-                        <div class="grid-col-1of5"></div>
-                        <div class="grid-col-1of5">
+                        <div class="footer-grid-col-1of5"></div>
+                        <div class="footer-grid-col-1of5">
                             <h3>CONTACT US</h3>
                         </div>
-                        <div class="grid-col-1of5">
+                        <div class="footer-grid-col-1of5">
                             <h3>SERVICES</h3>
                         </div>
-                        <div class="grid-col-1of5">
+                        <div class="footer-grid-col-1of5">
                             <h3>ABOUT US</h3>
                         </div>
-                        <div class="grid-col-1of5"></div>
+                        <div class="footer-grid-col-1of5"></div>
                     </div>
                 </section>
 
@@ -432,10 +438,10 @@
 
     <footer class="grid">
 
-        <section class="sample-grid-col-1of5"></section>
+        <section class="footer-grid-col-1of5"></section>
 
         <!-- Contact Us -->
-        <section class="sample-grid-col-1of5">
+        <section class="footer-grid-col-1of5">
             <h3>CONTACT US</h3>
             <ul>
                 <li>++44 345 678 903</li>
@@ -445,7 +451,7 @@
         </section>
 
         <!-- Services -->
-        <section class="sample-grid-col-1of5">
+        <section class="footer-grid-col-1of5">
             <h3>SERVICES</h3>
             <ul>
                 <li>Returns</li>
@@ -456,7 +462,7 @@
         </section>
 
         <!-- About Us -->
-        <section class="sample-grid-col-1of5">
+        <section class="footer-grid-col-1of5">
             <h3>ABOUT US</h3>
             <ul>
                 <li>Our Mission</li>
@@ -466,7 +472,7 @@
             </ul>
         </section>
 
-        <section class="sample-grid-col-1of5"></section>
+        <section class="footer-grid-col-1of5"></section>
     </footer>
 
 </body>
