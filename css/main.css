@@ -115,7 +115,6 @@ section code {
   color: #6200EE;
 }
 
-
 /* Styling for a h3 */
 
 .h3 {
@@ -149,6 +148,30 @@ section code {
   COMBINED ELEMENTS -------------------
 */
 
+/* Styling for mobile main nav */
+
+.mobile-main-nav {
+  padding: 1em;
+  list-style: none;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+}
+
+.mobile-main-nav ul {
+  list-style: none;
+}
+
+.mobile-main-nav li {
+  padding: 1em;
+}
+
+
+.mobile-main-nav a {
+  color: black;
+}
+
 /* Styling for main nav */
 
 .main-nav {
@@ -157,7 +180,7 @@ section code {
   background-color: #6200EE;
   padding: 1em;
   text-align: right;
-  z-index: 10;
+  z-index: 1;
 }
 
 .main-nav a {
@@ -176,7 +199,6 @@ section code {
   padding: 1em;
   color: white;
 }
-
 
 /* Styling for side nav */
 
@@ -215,13 +237,12 @@ section code {
   border-bottom: thin solid #d1d5da;
 }
 
-
 /* Styling for styleGuide content */
 
 .styleGuide {
   margin-top: 2em;
   padding: 1em 6em;
-  color: 	#2f363d;
+  color: #2f363d;
 }
 
 .styleGuide h2 {
@@ -233,7 +254,6 @@ section code {
 .styleGuide h3 {
   padding: 2em 0 0 0;
   font-size: 1.3em;
-
 }
 
 /* Styling for product list */
@@ -278,7 +298,6 @@ footer a {
   height: 10em;
 }
 
-
 /* when the size of browser becomes smaller */
 
 @media (max-width: 70em) {
@@ -286,7 +305,6 @@ footer a {
     display: none;
   }
 }
-
 
 /* if the screen size is mobile size */
 
@@ -299,6 +317,9 @@ footer a {
   }
   .mobile-menu-icon {
     display: block;
+  }
+  .mobile-main-nav {
+    display: none;
   }
 }
 

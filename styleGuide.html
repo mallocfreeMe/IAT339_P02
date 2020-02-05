@@ -22,20 +22,41 @@
             <a href="citation.html">Citation Page</a>
 
             <!-- hambuger menu -->
-            <img class="mobile-menu-icon" src="img/icon/Icon - Menu - Filled.png">
+            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/Icon - Menu - Filled.png">
         </nav>
 
-        <nav class="mobile-main-nav">
-            <a href="#">Link 1</a>
-            <a href="#">Link 1</a>
-            <a href="#">Link 1</a>
-            <a href="#">Link 1</a>
+        <nav class="mobile-main-nav" id="mobile_menu">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+            </ul>
         </nav>
 
     </header>
 
     <script>
-        
+        $(document).ready(function () {
+            $("#mobile_menu_button").click(function () {
+                // show hide paragraph on button click
+                $("#mobile_menu").toggle("none", function (event) {
+                    // check paragraph once toggle effect is completed
+                    if ($("#mobile_menu").is(":visible")) {
+                        $("mobile_menu").hide();
+                    }
+                });
+            });
+        });
+
     </script>
 
     <div class="grid">
@@ -275,7 +296,7 @@
 
                     <h3>CSS selector:</h3>
                     <p>.main-nav</p>
-                <!-- Modify the layout of sample code by <br> -->
+                    <!-- Modify the layout of sample code by <br> -->
                     <h3>Sample code:</h3>
                     <code>&lt;nav class="bullet-list"&gt;<br><br>
                 &lt;a&gt;link 1&lt;/a&gt;<br><br>
@@ -297,7 +318,7 @@
 
                     <h3>CSS selector:</h3>
                     <p>.side-nav</p>
-                <!-- Modify the layout of sample code by <br> -->
+                    <!-- Modify the layout of sample code by <br> -->
                     <h3>Sample code:</h3>
                     <code>&lt;nav class="bullet-list"&gt;<br><br>
                 &lt;a&gt;link 1&lt;/a&gt;<br><br>
@@ -323,7 +344,7 @@
 
                     <h3>CSS selector:</h3>
                     <p>.product-list</p>
-                <!-- Modify the layout of sample code by <br> -->
+                    <!-- Modify the layout of sample code by <br> -->
                     <h3>Sample code:</h3>
                     <code>&lt;ol&gt;<br><br>
                 &lt;li&gt;&lt;input type="color" value="#D6D6D6" class="product-list"&gt;&lt;/li&gt;<br><br>
