@@ -20,6 +20,12 @@
   overflow-y: scroll;
 }
 
+/* Grid col 3 of 5 for sign-in page */
+.grid-col-3of5 {
+  flex: 1 1 60%;
+  height: 100%;
+}
+
 .grid-col-4of5 {
   flex: 1 1 80%;
   height: 100%;

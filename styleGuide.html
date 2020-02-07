@@ -40,7 +40,7 @@
     </header>
 
     <script>
-        
+
     </script>
 
     <div class="grid">
@@ -155,6 +155,118 @@
 
                     <h3>Rendered element:</h3>
                     <label class="label">This is a label</label>
+                </section>
+
+                <!-- A sign in form -->
+                <section id="sign-in-section">
+                    <h2>Sign-in form</h2>
+                    <h3>CSS selector:</h3>
+                    <p>.sign-in-form</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;input type="text" name="username" placeholder="Username"&gt;<br><br>
+                    &lt;input type="password" name="password" placeholder="Password"&gt;<br><br>
+                    &lt;input type="submit" value="Log in"&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <form>
+                        <img class="sign-in-username-icon" src="#">
+                        <input id="sign-in-username" type="text" name="sign-in-username" placeholder="Username"><br><br>
+                        <img class="sign-in-password-icon" src="#">
+                        <input id="sign-in-password" type="password" name="sign-in-password" placeholder="Password"><br><br>
+                        <input id="sign-in-button" type="submit" value="Log in">
+                    </form>
+                </section>
+
+                <!-- A register form -->
+                <section id="register-section">
+                    <h2>Register form</h2>
+                    <h3>CSS selector:</h3>
+                    <p>.register-form</p>
+
+                    <h3>Sample code:</h3>
+                    <code>
+                        &lt;input type="text" name="register-username"&gt;<br><br>
+                        &lt;label for="register-username"&gt;Full name&lt;label&gt;<br><br>
+                        &lt;input type="text" name="register-email"&gt;<br><br>
+                        &lt;label for="register-email"&gt;Email&lt;label&gt;<br><br>
+                        &lt;input type="number" name="register-birthday"&gt;<br><br>
+                        &lt;label for="register-birthday"&gt;Birthday&lt;label&gt;<br><br>
+                        &lt;input type="text" name="register-address"&gt;<br><br>
+                        &lt;label for="register-address"&gt;Address&lt;label&gt;<br><br>
+                        &lt;input type="password" name="register-password"&gt;<br><br>
+                        &lt;label for="register-password"&gt;Password&lt;label&gt;<br><br>
+                    </code>
+
+                    <h3>Rendered element:</h3>
+                    <form>
+                        <input id="register-username" type="text" name="register-username">
+                        <label for="register-username">Full Name</label><br><br>
+                        <input id="register-email" type="text" name="register-email">
+                        <label for="register-email">Email</label><br><br>
+                        <input id="register-birthday" type="number" name="register-birthday">
+                        <label for="register-birthday">Birthday</label><br><br>
+                        <input id="register-address" type="text" name="register-address">
+                        <label for="register-address">Address</label><br><br>
+                        <input id="register-password" type="password" name="register-password">
+                        <label for="register-password">Password</label><br><br>
+                    </form>
+                </section>
+
+                <!-- A payment form -->
+                <section id="payment-section">
+                    <h2>Payment form</h2>
+                    <h3>CSS selector:</h3>
+                    <p>.register-form</p>
+
+                    <h3>Sample code:</h3>
+                    <code>
+                        &lt;input type="text" name="register-username"&gt;<br><br>
+                        &lt;label for="register-username"&gt;Full name&lt;label&gt;<br><br>
+                        &lt;input type="text" name="register-email"&gt;<br><br>
+                        &lt;label for="register-email"&gt;Email&lt;label&gt;<br><br>
+                        &lt;input type="number" name="register-birthday"&gt;<br><br>
+                        &lt;label for="register-birthday"&gt;Birthday&lt;label&gt;<br><br>
+                        &lt;input type="text" name="register-address"&gt;<br><br>
+                        &lt;label for="register-address"&gt;Address&lt;label&gt;<br><br>
+                        &lt;input type="password" name="register-password"&gt;<br><br>
+                        &lt;label for="register-password"&gt;Password&lt;label&gt;<br><br>
+                    </code>
+
+                    <h3>Rendered element:</h3>
+                    <form class="billing-info">
+                        <label for="payment-username">Full Name</label><br><br>
+                        <input id="payment-username" type="text" name="payment-username"><br><br>
+                        <label for="payment-address">Address</label><br><br>
+                        <input id="payment-address" type="text" name="payment-address"><br><br>
+                        <div class="form-inline">
+                            <label for="payment-city">City</label><br><br>
+                            <input id="payment-city" type="text" name="payment-city"><br><br>
+                            <label for="payment-zip-code">Zip Code</label><br><br>
+                            <input id="payment-zip-code" type="number" name="payment-zip-code"><br><br>
+                        </div>
+
+                        <label for="payment-country-for-label">Country</label><br><br>
+                        <input id="payment-country-for-label" name="payment-country" list="payment-country">
+                        <datalist id="payment-country">
+                            <option>Canada</option>
+                            <option>Mexico</option>
+                            <option>United States</option>
+                        </datalist>
+                    </form>
+
+                    <form class="credit-card-info">
+                        <input id="payment-username" type="text" name="register-username">
+                        <label for="register-username">Full Name</label><br><br>
+                        <input id="register-email" type="text" name="register-email">
+                        <label for="register-email">Email</label><br><br>
+                        <input id="register-birthday" type="number" name="register-birthday">
+                        <label for="register-birthday">Birthday</label><br><br>
+                        <input id="register-address" type="text" name="register-address">
+                        <label for="register-address">Address</label><br><br>
+                        <input id="register-password" type="password" name="register-password">
+                        <label for="register-password">Password</label><br><br>
+                    </form>
                 </section>
 
             </section>
@@ -280,7 +392,7 @@
 
                     <h3>CSS selector:</h3>
                     <p>.main-nav</p>
-                <!-- Modify the layout of sample code by <br> -->
+                    <!-- Modify the layout of sample code by <br> -->
                     <h3>Sample code:</h3>
                     <code>&lt;nav class="bullet-list"&gt;<br><br>
                 &lt;a&gt;link 1&lt;/a&gt;<br><br>
@@ -302,7 +414,7 @@
 
                     <h3>CSS selector:</h3>
                     <p>.side-nav</p>
-                <!-- Modify the layout of sample code by <br> -->
+                    <!-- Modify the layout of sample code by <br> -->
                     <h3>Sample code:</h3>
                     <code>&lt;nav class="bullet-list"&gt;<br><br>
                 &lt;a&gt;link 1&lt;/a&gt;<br><br>
@@ -328,7 +440,7 @@
 
                     <h3>CSS selector:</h3>
                     <p>.product-list</p>
-                <!-- Modify the layout of sample code by <br> -->
+                    <!-- Modify the layout of sample code by <br> -->
                     <h3>Sample code:</h3>
                     <code>&lt;ol&gt;<br><br>
                 &lt;li&gt;&lt;input type="color" value="#D6D6D6" class="product-list"&gt;&lt;/li&gt;<br><br>
