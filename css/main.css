@@ -182,6 +182,8 @@ section code {
   background-position: center; 
 }
 
+
+
 /* Styling for main nav */
 
 .main-nav {
@@ -211,7 +213,6 @@ section code {
   color: white;
 }
 
-<<<<<<< HEAD
 /* Styleing for search bar */
 .search-bar {
   position: absolute;
@@ -224,8 +225,6 @@ section code {
   padding: 0.8em 2.5em 0.8em 0.5em;
 }
 
-=======
->>>>>>> david
 /* Styling for side nav */
 
 .side-nav {
