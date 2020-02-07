@@ -15,7 +15,7 @@
 }
 
 .grid-col-1of5 {
-  flex: 1 1 20%;
+  flex: 1 1 15%;
   height: 100vh;
   overflow-y: scroll;
 }
@@ -27,7 +27,7 @@
 }
 
 .grid-col-4of5 {
-  flex: 1 1 80%;
+  flex: 1 1 85%;
   height: 100%;
   /* Delete the scroll bar to make the UI clear */
   /* overflow: scroll; */
