@@ -167,9 +167,19 @@ section code {
   padding: 1em;
 }
 
-
 .mobile-main-nav a {
   color: black;
+}
+
+#styleGuide_Image {
+  text-align: center;
+  color: white;
+  background-image: url(../img/styleGuide.jpeg);
+  padding-top: 20em;
+  padding-bottom: 25em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
 }
 
 /* Styling for main nav */
@@ -203,10 +213,11 @@ section code {
 /* Styling for side nav */
 
 .side-nav {
-  top: 4em;
+  top: 3em;
   display: inline-block;
   padding: 1em;
   position: sticky;
+  background-color: #F8F8FF;
 }
 
 .side-nav h3 {
@@ -214,6 +225,7 @@ section code {
   padding: 1em;
   font-size: 0.9em;
   padding-top: 1em;
+  font-size: 1em;
 }
 
 .side-nav ul {
@@ -221,15 +233,19 @@ section code {
 }
 
 .side-nav li {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   font-size: 0.9em;
 }
 
 .side-nav a {
   font-size: 1em;
-  color: #995DFF;
+  color: #0000C9;
   padding: 2em 1em;
+}
+
+.side-nav a:hover {
+  text-decoration: underline;
 }
 
 .side-nav .dividing-area {
@@ -240,7 +256,6 @@ section code {
 /* Styling for styleGuide content */
 
 .styleGuide {
-  margin-top: 2em;
   padding: 1em 6em;
   color: #2f363d;
 }
