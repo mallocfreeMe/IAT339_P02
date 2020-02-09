@@ -29,6 +29,10 @@
   flex: 1 1 20%;
 }
 
+.grid-col-2of5_noHeight {
+  flex: 1 1 40%
+}
+
 /* Grid col 3 of 5 for sign-in page */
 
 .grid-col-3of5 {
