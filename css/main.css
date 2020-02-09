@@ -230,7 +230,15 @@ section code {
 }
 
 .search-bar input {
-  padding: 0.8em 2.5em 0.8em 0.5em;
+  border-style: hidden;
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+  padding: 0.5em 3.5em 0.5em 0.5em;
+}
+
+.search-bar input::placeholder {
+  color: #6200EE;
+  font-size: 0.75em;
 }
 
 /* Styling for side nav */
