@@ -212,7 +212,7 @@ section code {
 }
 
 .main-nav img {
-  width: 3em;
+  width: 2.8em;
   height:3em;
   position: absolute;
   text-align: left;
@@ -226,7 +226,7 @@ section code {
   position: absolute;
   text-align: left;
   top: 0.5em;
-  left: 2em;
+  left: 6em;
 }
 
 .search-bar input {
