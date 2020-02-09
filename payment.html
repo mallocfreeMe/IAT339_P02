@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignIn</title>
-    <!-- <link href="css/main.css" rel="stylesheet"> -->
+    <title>Payment</title>
     <link href="css/payment.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
@@ -26,11 +25,11 @@
                 <input type="text" placeholder="Search laptop here...">
             </div>
 
-            <a href="styleGuide.html">Styleguide Page</a>
-            <a href="sitemap/Sitemap.html">Sitemap Page</a>
-            <a href="citation.html">Citation Page</a>
+            <a href="shop.html">Shop</a>
+            <a href="deals.html">Deals</a>
+            <a href="signIn.html">Sign in</a>
 
-            
+
         </nav>
 
         <nav class="mobile-main-nav">
@@ -43,7 +42,7 @@
     </header>
 
     <script>
-        
+
     </script>
 
     <div class="grid">
@@ -52,42 +51,49 @@
 
         <div class="grid-col-3of5 payment">
 
-                <section>
-                    <h2>Check out</h2>
-                </section>
+            <section>
+                <h2>Check out</h2>
+            </section>
 
-                <section class="payment-content">
+            <section class="payment-subtitle">
+                <h3>Choose payment method below</h3>
+            </section>
 
-                    <div class="payment-subtitle">
-                        <h3>Choose payment method below</h3>
-                    </div>
+            <section class="payment-method">
+                <img src="#">
+                <img src="#">
+                <img src="#">
+            </section>
 
-                    <div class="payment-method">
-                        <img src="#">
-                        <img src="#">
-                        <img src="#">
-                    </div>
-                    
-                    <div class="billing-info">
-                        <form class="payment-fullname-area">
-                            <label for="payment-fullname">FULL NAME</label>
-                            <input id="payment-fullname" type="text" name="payment-fullname" value="John Doe">                  
-                        </form>
-                    </div>
+            <section class="payment-content">
+                <div class="billing-info">
+                    <form class="payment-fullname-area">
+                        <label for="payment-fullname">FULL NAME</label>
+                        <input id="payment-fullname" type="text" name="payment-fullname" value="John Doe">
+                    </form>
 
-                    <div class="credit-card-info">
+                    <form class="payment-address-area">
+                        <label for="payment-address">ADDRESS</label>
+                        <input id="payment-address" type="text" name="payment-address" value="John Doe">
+                    </form>
+                </div>
+
+                <div class="credit-card-info">
+                    <div class="card-and-icon">
                         <form class="payment-card-number-area">
                             <label for="payment-card-number">CARD NUMBER</label>
-                            <input id="payment-card-number" type="text" name="payment-card-number" value="John Doe">                  
+                            <input id="payment-card-number" type="text" name="payment-card-number" value="John Doe">
                         </form>
-                        <div>
-                            <img src="#">
-                        </div>
+                        <img src="img/icon/Icon-sign-in.png">
                     </div>
 
-                </section>
-            
-            </div>
+                    <form class="payment-card-holder-area">
+                        <label for="payment-card-holder">CARD NUMBER</label>
+                        <input id="payment-card-holder" type="text" name="payment-card-holder" value="John Doe">
+                    </form>
+                </div>
+            </section>
+        </div>
 
         <div class="grid-col-1of5"></div>
     </div>
@@ -125,6 +131,9 @@
                 <li>Work With Us</li>
                 <li>Privacy Policy</li>
                 <li>Terms & Conditions</li>
+                <li><a href="styleGuide.html">Style Guide</a></li>
+                <li><a href="sitemap/Sitemap.html">Sitemap</a></li>
+                <li><a href="citation.html">Citation</a></li>
             </ul>
         </section>
 
