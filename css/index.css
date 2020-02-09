@@ -1,0 +1,67 @@
+.main-nav {
+    position: static;
+}
+
+.slideShow_image {
+    text-align: center;
+    color: white;
+    padding-top: 20em;
+    padding-bottom: 20em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#slideShow_image_1 {
+    background-image: url(../img/deals1.jpg);
+}
+
+#slideShow_image_2 {
+    background-image: url(../img/deals2.jpg);
+}
+
+#slideShow_image_3 {
+    background-image: url(../img/deals3.jpeg);
+}
+
+.slideshow h1 {
+    font-size: 4em;
+}
+
+.dot {
+    cursor: pointer;
+    height: 1em;
+    width: 1em;
+    margin: 0 1em 1em 1em;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#home_title {
+    margin-top: 2em;
+    color: #6200EE;
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+
+/* styling product item */
+
+.individual_product {
+    width: 80%;
+    color: white;
+    background-color: #6200EE;
+    /* box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin-bottom: 5em;
+}
+
+.individual_product img {
+    width: 100%;
+    height: 12em;
+}
+
+.container {
+    text-align: center;
+    padding: 1em 1em;
+}

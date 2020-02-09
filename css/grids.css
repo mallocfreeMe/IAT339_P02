@@ -14,38 +14,48 @@
   flex: 1 1 auto;
 }
 
+.grid-col-1of3 {
+  flex: 1 1 33.33%;
+  height: 100vh;
+}
+
 .grid-col-1of5 {
-  flex: 1 1 15%;
+  flex: 1 1 20%;
   height: 100vh;
   overflow-y: scroll;
 }
 
+.grid-col-1of5_noHeight {
+  flex: 1 1 20%;
+}
+
 /* Grid col 3 of 5 for sign-in page */
+
 .grid-col-3of5 {
   flex: 1 1 60%;
   height: 100%;
 }
 
 .grid-col-4of5 {
-  flex: 1 1 85%;
+  flex: 1 1 80%;
   height: 100%;
   /* Delete the scroll bar to make the UI clear */
   /* overflow: scroll; */
 }
 
-
 /* Grid column of Footer */
+
 .footer-grid-col-1of5 {
   flex: 1 1 20%;
   height: 100%;
 }
 
-
 /* Grid items for sample structure  */
+
 .sample-grid-item-left {
   height: 13.33em;
   flex: 1 1 20%;
-  background-color:#03DAC6;
+  background-color: #03DAC6;
 }
 
 .sample-grid-item-right {
@@ -55,6 +65,7 @@
 }
 
 /* Set up your columns so that when the window is below 30ems in width, they are the full width of the browser window.  */
+
 @media (max-width: 30em) {
   .grid-item {
     flex: 1 1 100%;
@@ -62,6 +73,7 @@
 }
 
 /* When the window is above 30ems in width, the columns should each be 1/5th of the width of the browser window. */
+
 @media(min-width: 30em) {
   .grid-item {
     flex: 1 1 20%;

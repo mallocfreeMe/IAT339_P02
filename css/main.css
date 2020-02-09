@@ -179,10 +179,8 @@ section code {
   padding-bottom: 25em;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
 }
-
-
 
 /* Styling for main nav */
 
@@ -213,7 +211,17 @@ section code {
   color: white;
 }
 
+.main-nav img {
+  width: 3em;
+  height:3em;
+  position: absolute;
+  text-align: left;
+  top: 0.5em;
+  left: 2em;
+}
+
 /* Styleing for search bar */
+
 .search-bar {
   position: absolute;
   text-align: left;

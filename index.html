@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- nav for external navigation -->
+        <nav class="main-nav">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <a href="styleGuide.html">Styleguide Page</a>
+            <a href="sitemap/Sitemap.html">Sitemap Page</a>
+            <a href="citation.html">Citation Page</a>
+        </nav>
+
+    </header>
+
+    <!-- Slideshow container -->
+    <div class="slideshow">
+
+        <!-- Full-width images with caption text -->
+        <div class="slideShow_image" id="slideShow_image_1">
+            <h1>Black Friday 2020</h1>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="slideShow_image" id="slideShow_image_2">
+            <h1>Black Friday 2020</h1>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="slideShow_image" id="slideShow_image_3">
+            <h1>Black Friday 2020</h1>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slideShow_image");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 10000); // Change image every 10 seconds
+        }
+    </script>
+
+    <!-- Home h1 -->
+    <div class="grid">
+        <div class="grid-col-1of5_noHeight">
+        </div>
+        <div class="grid-col-3of5_noHeight" style="text-align: center;">
+            <h1 id="home_title">Take a look at our most popular laptops</h1>
+        </div>
+        <div class="grid-col-1of5_noHeight">
+        </div>
+    </div>
+
+    <!-- Popular laptop list -->
+
+    <!-- Row 1-->
+    <div class="grid">
+
+        <div class="grid-col-1of5_noHeight"></div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+                <img src="img/deals1.jpg" alt="5 Terre">
+                <div class="container">
+                    <p>Cinque Terre</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+                <img src="img/deals2.jpg" alt="5 Terre">
+                <div class="container">
+                    <p>Cinque Terre</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+                <img src="img/deals3.jpeg" alt="5 Terre">
+                <div class="container">
+                    <p>Cinque Terre</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight"></div>
+
+    </div>
+
+    <!-- Row 2-->
+    <div class="grid">
+
+        <div class="grid-col-1of5_noHeight"></div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+                <img src="img/deals1.jpg" alt="5 Terre">
+                <div class="container">
+                    <p>Cinque Terre</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+                <img src="img/deals2.jpg" alt="5 Terre">
+                <div class="container">
+                    <p>Cinque Terre</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+                <img src="img/deals3.jpeg" alt="5 Terre">
+                <div class="container">
+                    <p>Cinque Terre</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight"></div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="grid">
+
+        <section class="footer-grid-col-1of5"></section>
+
+        <!-- Contact Us -->
+        <section class="footer-grid-col-1of5">
+            <h3>CONTACT US</h3>
+            <ul>
+                <li>++44 345 678 903</li>
+                <li><a href="mailto:someone@example.com">customService@.Laptophub.com</a></li>
+                <li>Find a store</li>
+            </ul>
+        </section>
+
+        <!-- Services -->
+        <section class="footer-grid-col-1of5">
+            <h3>SERVICES</h3>
+            <ul>
+                <li>Returns</li>
+                <li>Odering & Payment</li>
+                <li>Shipping</li>
+                <li>FAQ</li>
+            </ul>
+        </section>
+
+        <!-- About Us -->
+        <section class="footer-grid-col-1of5">
+            <h3>ABOUT US</h3>
+            <ul>
+                <li>Our Mission</li>
+                <li>Work With Us</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+            </ul>
+        </section>
+
+        <section class="footer-grid-col-1of5"></section>
+
+    </footer>
+
+</body>
+
+</html>
