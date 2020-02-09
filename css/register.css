@@ -1,0 +1,201 @@
+/*
+  SIGN IN STYLING 
+*/
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+a {
+  text-decoration: none;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  /* border-top: 1px solid #333; */
+}
+
+section h3 {
+  margin-bottom: 1em;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0;
+}
+
+
+/* Styling for main nav */
+
+.main-nav {
+  width: 100%;
+  position: fixed;
+  background-color: #6200EE;
+  padding: 1.5em 1em;
+  text-align: right;
+  z-index: 10;
+}
+
+.main-nav a {
+  padding: 1em;
+  color: white;
+  font-size: 0.9em;
+}
+
+.sample-main-nav {
+  width: 100%;
+  background-color: #6200EE;
+  padding: 1em;
+  text-align: right;
+}
+
+.sample-main-nav a {
+  padding: 1em;
+  color: white;
+}
+
+/* Styleing for search bar */
+.search-bar {
+  position: absolute;
+  text-align: left;
+  top: 0.5em;
+  left: 2em;
+}
+
+.search-bar input {
+  border-style: hidden;
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+  padding: 0.5em 3.5em 0.5em 0.5em;
+}
+
+.search-bar input::placeholder {
+  color: #6200EE;
+  font-size: 0.75em;
+}
+
+
+/* Styling for register form content */
+
+.register {
+  margin-top: 2em;
+  padding: 1em 6em;
+  color: 	#2f363d;
+}
+
+.register h2 {
+  color: #6200EE;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 2em;
+  border-bottom: thin solid #d1d5da;
+}
+
+.register h3 {
+  padding: 2em 0 0 0;
+  font-size: 1.3em;
+}
+
+.register-fullname-area {
+  text-align: center;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-top: 1.5em;
+  padding-bottom: 2.5em;
+  border: thin solid #6200EE;
+  border-radius: 0.5em;
+}
+
+.register-fullname-area input[type=text] {
+  float: left;
+  border-style: hidden;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  color: #6200EE;
+}
+
+.register-fullname-area label {
+  float: right;
+  font-size: 0.8em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  color: #6200EE;
+}
+
+.register-email-area, .register-birthday-area, .register-address-area, .register-password-area {
+  text-align: center;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-top: 1.5em;
+  padding-bottom: 2.5em;
+  border: thin solid #6200EE;
+  border-radius: 0.5em;
+  margin-top: 1em;
+}
+
+.register-email-area input[type=text], .register-birthday-area input[type=text], .register-address-area input[type=text], .register-password-area input[type=password] {
+  float: left;
+  border-style: hidden;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  color: #6200EE;
+}
+
+.register-email-area label, .register-birthday-area label, .register-address-area label, .register-password-area label {
+  float: right;
+  font-size: 0.8em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  color: #6200EE;
+}
+
+.register-button {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.register-button input[type=submit] {
+  font-size: 1.2em;
+  padding: 0.5em 1.5em;
+  border: thin solid #71EFE0;
+  background-color: #6200EE;
+  color: white;
+  border-radius: 0.25em;
+}
+
+/* when the size of browser becomes smaller */
+
+@media (max-width: 70em) {
+  .side-nav {
+    display: none;
+  }
+}
+
+
+/* if the screen size is mobile size */
+
+@media (max-width: 30em) {
+  .main-nav a {
+    display: none;
+  }
+  .side-nav {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
+@media(min-width: 30em) {
+  .mobile-menu-icon {
+    display: none;
+  }
+}
