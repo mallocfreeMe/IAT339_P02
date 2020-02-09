@@ -82,15 +82,15 @@ section code {
 }
 
 
-/* Styling for sign-in content */
+/* Styling for payment content */
 
-.sign-in {
+.payment {
   margin-top: 2em;
   padding: 1em 6em;
   color: 	#2f363d;
 }
 
-.sign-in h2 {
+.payment h2 {
   color: #6200EE;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -98,53 +98,36 @@ section code {
   border-bottom: thin solid #d1d5da;
 }
 
-.sign-in h3 {
+.payment h3 {
   padding: 2em 0 0 0;
   font-size: 1.3em;
 }
 
-.sign-in-content {
-  text-align: center;
+/* Learn from https://codepen.io/imohkay/pen/QwjwwY/ */
+.billing-info {
+  display: inline-block;
+  border: thin solid black;
 }
 
-.sign-in-username, .sign-in-password {
-  padding-top: 2em;
+.credit-card-info {
+  display: inline-block;
+  border: thin solid black;
 }
 
-.sign-in-username img, .sign-in-password img{
-  width: 10%;
-  height: 10%;
+.payment-content label {
+  display: block;
 }
 
-.sign-in-username input, .sign-in-password input {
-  padding: 1em 3em 0 0;
-  font-size: 2em;
-  border: thin solid #71EFE0;
+.credit-card-info .card-and-icon {
+  display: inline-flex;
+  flex-direction: row;
 }
 
-.sign-in-username ::placeholder, .sign-in-password ::placeholder {
-  color: #6200EE;
-}
-
-.register-link {
-  padding-top: 2em;
-}
-
-.register-link a {
-  color: #71EFE0;
-}
-
-.login-button {
-  padding-top: 2em;
-}
-
-.login-button input {
-  font-size: 1.2em;
-  padding: 0.5em 1.5em;
-  border: thin solid #71EFE0;
-  background-color: #6200EE;
-  color: white;
-  border-radius: 0.25em;
+.credit-card-info .card-and-icon img{
+  width: 2.5em;
+  height: 2.5em;
+  border: thin solid blueviolet;
+  float: right;
 }
 
 
