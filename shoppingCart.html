@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/shoppingCart.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- nav for external navigation -->
+        <nav class="main-nav">
+            <a href="index.html"><img src="img/icon/laptop.png" alt="icon"></a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <a href="shop.html">Shop</a>
+            <a href="deals.html">Deals</a>
+            <a href="signIn.html">Sign in</a>
+        </nav>
+    </header>
+
+
+    <section class="grid">
+        <div class="grid-col-1of5_noHeight"></div>
+
+        <div class="shopping_cart grid-col-3of5_noHeight">
+            <h1>Shopping Cart</h1>
+            <table>
+                <tr>
+                    <td>Product Description</td>
+                    <td>Status</td>
+                    <td>Quantity</td>
+                    <td>Item Price</td>
+                    <td>Discount</td>
+                    <td>Total</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Dell xps 15
+                    </td>
+                    <td>In Stock</td>
+                    <td>1</td>
+                    <td>$1500</td>
+                    <td>15%</td>
+                    <td>$1099.99</td>
+                </tr>
+                <td></td>
+            </table>
+
+            <button id="logIn_pay_button" onclick="myFunction()">Log in to pay</button>
+            <button id="guest_pay_button" onclick="myFunction()">As a guest to pay</button>
+
+            <script>
+                function myFunction() {
+                    window.location = "payment.html";
+                }
+            </script>
+        </div>
+
+        <div class="grid-col-1of5_noHeight"></div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="grid">
+
+        <section class="footer-grid-col-1of5"></section>
+
+        <!-- Contact Us -->
+        <section class="footer-grid-col-1of5">
+            <h3>CONTACT US</h3>
+            <ul>
+                <li>++44 345 678 903</li>
+                <li><a href="mailto:someone@example.com">customService@.Laptophub.com</a></li>
+                <li>Find a store</li>
+            </ul>
+        </section>
+
+        <!-- Services -->
+        <section class="footer-grid-col-1of5">
+            <h3>SERVICES</h3>
+            <ul>
+                <li>Returns</li>
+                <li>Odering & Payment</li>
+                <li>Shipping</li>
+                <li>FAQ</li>
+            </ul>
+        </section>
+
+        <!-- About Us -->
+        <section class="footer-grid-col-1of5">
+            <h3>ABOUT US</h3>
+            <ul>
+                <li>Our Mission</li>
+                <li>Work With Us</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+                <li><a href="styleGuide.html">Style Guide</a></li>
+                <li><a href="sitemap/Sitemap.html">Sitemap</a></li>
+                <li><a href="citation.html">Citation</a></li>
+            </ul>
+        </section>
+
+        <section class="footer-grid-col-1of5"></section>
+
+    </footer>
+</body>
+
+</html>
