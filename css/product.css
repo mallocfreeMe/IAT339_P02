@@ -1,0 +1,73 @@
+/* styling for main nav */
+
+.main-nav {
+    position: static;
+    margin-bottom: 3em;
+}
+
+/* styling product item */
+
+.individual_product {
+    width: 80%;
+    color: white;
+    background-color: #6200EE;
+    /* box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin-bottom: 5em;
+}
+
+.individual_product img {
+    width: 100%;
+    height: 30em;
+}
+
+.container {
+    text-align: center;
+    padding: 1em 1em;
+}
+
+/* styling tech spec */
+
+.tech_spec {
+    padding-left: 4em;
+}
+
+.tech_spec h1 {
+    margin: 0;
+    margin-bottom: 1em;
+    color: #6200EE;
+}
+
+.tech_spec p {
+    color: #6200EE;
+    margin-bottom: 2em;
+}
+
+.tech_spec button {
+    padding: 1em;
+    background-color: #6200EE;
+    color: white;
+}
+
+.comment_area h1 {
+    color: #6200EE;
+}
+
+.comment_area textarea {
+    border-color: #6200EE;
+    text-align: left;
+    margin: 1em;
+    color: #6200EE;
+    padding: 1em;
+    width: 100%;
+}
+
+.comment_area h2 {
+    color: #6200EE;
+}
+
+.comment_area button {
+    float: right;
+    padding: 1em;
+    background-color: #6200EE;
+    color: white;
+}
