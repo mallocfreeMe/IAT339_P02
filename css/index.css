@@ -4,24 +4,25 @@
 
 .slideShow_image {
     text-align: center;
-    color: white;
     padding-top: 20em;
     padding-bottom: 20em;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: white;
+    filter: contrast(70%);
 }
 
 #slideShow_image_1 {
-    background-image: url(../img/deals1.jpg);
+    background-image: url(../img/event1.jpg);
 }
 
 #slideShow_image_2 {
-    background-image: url(../img/deals2.jpg);
+    background-image: url(../img/event2.jpg);
 }
 
 #slideShow_image_3 {
-    background-image: url(../img/deals3.jpeg);
+    background-image: url(../img/event3.jpg);
 }
 
 .slideshow h1 {
@@ -33,7 +34,7 @@
     height: 1em;
     width: 1em;
     margin: 0 1em 1em 1em;
-    background-color: #bbb;
+    background-color: white;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;

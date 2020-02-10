@@ -1,4 +1,5 @@
 /* styling main nav */
+
 .main-nav {
     position: static;
     margin-bottom: 3em;
@@ -25,11 +26,12 @@
 }
 
 /* styling side filter */
+
 .side_filter li {
     list-style: none;
     text-align: left;
-    font-size:2em;
-    color:#6200EE;
+    font-size: 2em;
+    color: #6200EE;
     padding-left: 2.5em;
     margin-bottom: 1em;
 }
