@@ -1,0 +1,48 @@
+/* styling main nav */
+
+.main-nav {
+    position: static;
+}
+
+.shop_deals_intro {
+    text-align:center;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.slideShow_image {
+    text-align: center;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    filter: contrast(70%);
+    margin-bottom: 4em;
+}
+
+#slideShow_image_1 {
+    background-image: url(../img/event1.jpg);
+}
+
+
+/* styling product item */
+
+.individual_product {
+    width: 80%;
+    color: white;
+    background-color: #6200EE;
+    /* box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin-bottom: 5em;
+}
+
+.individual_product img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    text-align: center;
+    padding: 1em 1em;
+}

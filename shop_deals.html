@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Shop Deals</title>
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/shop_deals.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -21,90 +21,33 @@
             <a href="index.html"><img src="img/icon/laptop.png" alt="icon"></a>
 
             <div class="search-bar">
-                <input type="text" placeholder="Search laptops here...">
+                <input type="text" placeholder="Search Laptop here...">
             </div>
             <a href="shop.html">Shop</a>
             <a href="deals.html">Deals</a>
             <a href="signIn.html">Sign in</a>
         </nav>
-
     </header>
 
-    <!-- Slideshow container -->
-    <div class="slideshow">
-
-        <!-- Full-width images with caption text -->
-        <div class="slideShow_image" id="slideShow_image_1">
-            <h1>Laptops you'll love. Deals you'll adore</h1>
-            <button class="slideshow_button" onclick="myFunction()">Shop deals</button>
-            <!-- <div class="dot_group">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div> -->
-        </div>
-
-        <div class="slideShow_image" id="slideShow_image_2">
-            <h1>Laptops you'll love. Deals you'll adore</h1>
-            <button class="slideshow_button" onclick="myFunction()">Shop deals</button>
-            <!-- <div class="dot_group">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div> -->
-        </div>
-
-        <div class="slideShow_image" id="slideShow_image_3">
-            <h1>Laptops you'll love. Deals you'll adore</h1>
-            <button class="slideshow_button" onclick="myFunction()">Shop deals</button>
-            <!-- <div class="dot_group">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div> -->
-        </div>
-
-        <script>
-            function myFunction() {
-                window.location = "shop_deals.html";
-            }
-        </script>
-
+    <!-- Top deals iamge -->
+    <div class="slideShow_image" id="slideShow_image_1">
+        <h1>Laptops you'll love. Deals you'll adore</h1>
     </div>
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("slideShow_image");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-        }
-    </script>
-
-    <!-- Home h1 -->
     <div class="grid">
-        <div class="grid-col-1of5_noHeight">
+        <div class="grid-col-1of5_noHeight"></div>
+
+        <div class="grid-col-3of5_noHeight shop_deals_intro">
+            <p>Save up to $200 on select laptops from HP, Lenovo, Acer, Dell and other brands close to your heart.</p>
         </div>
-        <div class="grid-col-3of5_noHeight" style="text-align: center;">
-            <h1 id="home_title">Take a look at our most popular laptops</h1>
-        </div>
-        <div class="grid-col-1of5_noHeight">
-        </div>
+
+        <div class="grid-col-1of5_noHeight"></div>
     </div>
 
-    <!-- Popular laptop list -->
 
-    <!-- Row 1-->
+    <!-- deals product listing -->
+    <!-- row 1-->
     <div class="grid">
-
         <div class="grid-col-1of5_noHeight"></div>
 
         <div class="grid-col-1of5_noHeight">
@@ -118,7 +61,7 @@
 
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
-                <a href="product.html"><img src="img/deals2.jpg" alt="5 Terre"></a>
+                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
                 <div class="container">
                     <p>Cinque Terre</p>
                 </div>
@@ -127,7 +70,7 @@
 
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
-                <a href="product.html"><img src="img/deals3.jpeg" alt="5 Terre"></a>
+                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
                 <div class="container">
                     <p>Cinque Terre</p>
                 </div>
@@ -135,12 +78,11 @@
         </div>
 
         <div class="grid-col-1of5_noHeight"></div>
-
     </div>
 
-    <!-- Row 2-->
-    <div class="grid">
 
+    <!-- row 2-->
+    <div class="grid">
         <div class="grid-col-1of5_noHeight"></div>
 
         <div class="grid-col-1of5_noHeight">
@@ -154,7 +96,7 @@
 
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
-                <a href="product.html"><img src="img/deals2.jpg" alt="5 Terre"></a>
+                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
                 <div class="container">
                     <p>Cinque Terre</p>
                 </div>
@@ -163,7 +105,7 @@
 
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
-                <a href="product.html"><img src="img/deals3.jpeg" alt="5 Terre"></a>
+                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
                 <div class="container">
                     <p>Cinque Terre</p>
                 </div>
@@ -171,7 +113,40 @@
         </div>
 
         <div class="grid-col-1of5_noHeight"></div>
+    </div>
 
+    <!-- row 3 -->
+    <div class="grid">
+        <div class="grid-col-1of5_noHeight"></div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
+                <div class="container">
+                    <p>Cinque Terre</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
+                <div class="container">
+                    <p>Cinque Terre</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
+                <div class="container">
+                    <p>Cinque Terre</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight"></div>
     </div>
 
     <!-- Footer -->
@@ -217,7 +192,6 @@
         <section class="footer-grid-col-1of5"></section>
 
     </footer>
-
 </body>
 
 </html>

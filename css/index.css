@@ -29,6 +29,18 @@
     font-size: 4em;
 }
 
+.slideshow_button {
+    border: 1em;
+    padding:1em;
+    background-color: #6200EE;
+    color: white;
+}
+
+.dot_group {
+    position: relative;
+    margin-top: 1em;
+}
+
 .dot {
     cursor: pointer;
     height: 1em;
