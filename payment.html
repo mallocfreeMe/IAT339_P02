@@ -233,17 +233,25 @@
                         <div class="grid-col-1of4_noHeight"></div>
                         <div class="grid-col-1of4_noHeight"></div>
                         <div class="grid-col-1of4_noHeight">
-                            <form class="payment-submit">
-                                <input type="submit" value="Submit">
-                            </form>
+                            <button class="payment-submit" onclick="submitFunction()">Sumbit</button>
                         </div>
                         <div class="grid-col-1of4_noHeight">
-                            <form class="payment-cancel grid-col-1of4_noHeight">
-                                <input type="submit" value="Cancel">
-                            </form>
+                            <button class="payment-cancel" onclick="cancelFunction()">Cancel</button>
                         </div>
                     </div>
                 </section>
+
+                <script>
+
+                    function submitFunction() {
+                        window.location = "index.html";
+                    }
+
+                    function cancelFunction() {
+                        window.location = "shoppingCart.html";
+                    }
+
+                </script>
             </section>
         </div>
 
