@@ -272,7 +272,7 @@ section code {
 .side-nav a {
   font-size: 1em;
   color: #0000C9;
-  padding: 2em 1em;
+  margin: 2em 1em;
 }
 
 .side-nav a:hover {
