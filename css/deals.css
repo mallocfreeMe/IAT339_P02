@@ -1,0 +1,29 @@
+/* styling main nav */
+
+.main-nav {
+    position: static;
+    margin-bottom: 3em;
+}
+
+/* styling for event_content */
+
+.event_content img {
+    padding-right: 1em;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 4em;
+}
+
+.event_content h2 {
+    color:#6200EE;
+}
+
+.event_content p {
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+
+#event_introduction {
+    padding-left: 0em;
+    margin-bottom: 2em;
+}
