@@ -1,11 +1,16 @@
 /* Styling for sign-in content */
 
 body {
-  background-color: #6200EE;
+  background-color: #03dac6;
+}
+
+.main-nav {
+  position: static;
 }
 
 .sign-in {
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 10em;
   padding: 1em 6em;
   color: 	#2f363d;
 }
@@ -15,7 +20,7 @@ body {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   font-size: 2em;
-  border-bottom: thin solid #d1d5da;
+  border-bottom: medium solid white;
 }
 
 .sign-in h3 {
@@ -26,7 +31,7 @@ body {
 .sign-in-content {
   text-align: center;
   background-color: white;
-  box-shadow: 0 0 1em rgb(27, 25, 25);
+  box-shadow: 0 0 1em #995dff;
 }
 
 .sign-in-content input[type=text] {
@@ -47,13 +52,13 @@ body {
   border-style: hidden;
 }
 
-.sign-in-content input[type=submit] {
+.sign-in-content button {
   width: 25em;
   height: 4em;
   margin-top: 1em;
   margin-bottom: 1em;
   background-color: #6200EE;
-  color: rgb(182, 134, 250);
+  color: white;
 }
 
 .sign-in-content input::placeholder {

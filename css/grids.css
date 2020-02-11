@@ -41,6 +41,18 @@
   flex: 1 1 50%;
 }
 
+.grid-col-1of4_noHeight {
+  flex: 1 1 25%;
+}
+
+/* Grid col 15 of 100 for about us page */
+.grid-col-15of100_noHeight {
+  flex: 1 1 15%;
+}
+.grid-col-7of10_noHeight {
+  flex: 1 1 70%;
+}
+
 /* Grid col 3 of 5 for sign-in page */
 
 .grid-col-3of5 {

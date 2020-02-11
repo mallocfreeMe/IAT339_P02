@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignIn</title>
-    <link href="css/signIn.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/signIn.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -65,9 +65,16 @@
                         <input type="password" name="password" placeholder="Password">
                     </form>
 
-                    <form class="login-button">
+                    <!-- <form class="login-button">
                         <input type="submit" value="Log in">
-                    </form>
+                    </form> -->
+                    <button onclick="myFunction()">Log in</button>
+
+                    <script>
+                        function myFunction() {
+                            window.location = "index.html";
+                        }
+                    </script>
 
                     <form class="register-link">
                         <p>Not registered? <a href="register.html">Create an account</a></p>

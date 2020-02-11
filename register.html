@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link href="css/register.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
     </header>
 
     <script>
-        
+
     </script>
 
     <div class="grid">
@@ -51,40 +51,47 @@
 
         <div class="grid-col-3of5 sign-up">
 
-                <section>
-                    <h2>Sign Up</h2>
-                </section>
+            <section>
+                <h2>Sign Up</h2>
+            </section>
 
-                <section class="sign-up-content">
+            <section class="sign-up-content">
 
-                    <form class="sign-up-username">
-                        <input type="text" name="username" placeholder="Username">
-                    </form>
+                <form class="sign-up-username">
+                    <input type="text" name="username" placeholder="Username">
+                </form>
 
-                    <form class="sign-up-address">
-                        <input type="text" name="address" placeholder="Address">
-                    </form>
+                <form class="sign-up-address">
+                    <input type="text" name="address" placeholder="Address">
+                </form>
 
-                    <form class="sign-up-password">
-                        <input type="password" name="password" placeholder="Password">
-                    </form>
+                <form class="sign-up-password">
+                    <input type="password" name="password" placeholder="Password">
+                </form>
 
-                    <form class="sign-up-confirm">
-                        <input type="password" name="confirm" placeholder="Confirm password">
-                    </form>
+                <form class="sign-up-confirm">
+                    <input type="password" name="confirm" placeholder="Confirm password">
+                </form>
 
-                    <form class="sign-up-agree">
-                        <input type="checkbox" name="agree-contact" value="agree">
-                        <label for="agree-contact">I Agree To the Terms & Conditions</label>
-                    </form>
+                <form class="sign-up-agree grid-col-1of5_noHeight">
+                    <input type="checkbox" name="agree-contact" value="agree">
+                    <label for="agree-contact">I Agree To the Terms & Conditions</label>
+                </form>
 
-                    <form class="sign-up-button">
+                <!-- <form class="sign-up-button">
                         <input type="submit" value="Sign up">
-                    </form>
+                    </form> -->
+                <button onclick="myFunction()">Sign Up</button>
 
-                </section>
-            
-            </div>
+                <script>
+                    function myFunction() {
+                        window.location = "signIn.html";
+                    }
+                </script>
+
+            </section>
+
+        </div>
 
         <div class="grid-col-1of5"></div>
     </div>
@@ -124,7 +131,7 @@
                 <li>Terms & Conditions</li>
                 <li><a href="styleGuide.html">Style Guide</a></li>
                 <li><a href="sitemap/Sitemap.html">Sitemap</a></li>
-                <li><a href="citation.html">Citation</a></li> 
+                <li><a href="citation.html">Citation</a></li>
             </ul>
         </section>
 

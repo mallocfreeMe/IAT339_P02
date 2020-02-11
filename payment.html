@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
-    <link href="css/payment.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/payment.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -55,84 +55,202 @@
                 <h2>Check out</h2>
             </section>
 
-            <section class="payment-subtitle">
-                <p>Choose payment method below</p>
-            </section>
-
-            <section class="payment-method">
-                <img class="method-card" src="img/icon/laptop.png">
-                <img src="img/icon/laptop.png">
-                <img src="img/icon/laptop.png">
-            </section>
-
             <section class="payment-content">
-                <div class="billing-info">
-                    <form class="payment-fullname-area">
-                        <label for="payment-fullname">FULL NAME</label>
-                        <input id="payment-fullname" type="text" name="payment-fullname" value="John Doe">
-                    </form>
+                <section class="payment-subtitle">
+                    <p>Payment Method</p>
+                </section>
 
-                    <form class="payment-address-area">
-                        <label for="payment-address">ADDRESS</label>
-                        <input id="payment-address" type="text" name="payment-address" value="497 Evergreen Rd.">
-                    </form>
+                <section class="payment-img">
+                    <div class="grid">
 
-                    <form class="payment-city-zip-area">
-                        <div class="payment-city-area">
-                            <label for="payment-city">CITY</label>
-                            <input id="payment-city" type="text" name="payment-city" value="Roseville">
+                        <div class="payment-method-icon grid-col-1of4_noHeight">
+                            <img src="img/icon/visa.png">
                         </div>
-                        <div class="payment-zip-area">
-                            <label for="payment-zip">ZIP CODE</label>
-                            <input id="payment-zip" type="text" name="payment-zip" value="123456">
+
+                        <div class="payment-method-icon grid-col-1of4_noHeight">
+                            <img src="img/icon/master-card.png">
                         </div>
+
+                        <div class="payment-method-icon grid-col-1of4_noHeight">
+                            <img src="img/icon/american-express.png">
+                        </div>
+
+                        <div class="payment-method-icon grid-col-1of4_noHeight">
+                            <img src="img/icon/paypal.png">
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- <div class="grid"> -->
+
+                <section class="credit-card-area">
+                    <p>Credit Card</p>
+                    <div class="grid">
+                        <div class="credit-card-area-left grid-col-1of2_noHeight">
+                            <form class="payment-firstname-area">
+                                <label for="payment-firstname">First Name</label>
+                                <input id="payment-firstname" type="text" name="payment-firstname">
+                            </form>
+
+                            <form class="payment-card-number-area">
+                                <label for="payment-card-number">Card Number</label>
+                                <input id="payment-card-number" type="text" name="payment-card-number">
+                            </form>
+
+                            <form class="payment-month-area">
+                                <label for="payment-month">Expiration Month</label>
+                                <input id="payment-month" type="text" name="payment-month" list="payment-month-list">
+                                <datalist id="payment-month-list">
+                                    <option value="05"></option>
+                                    <option value="08"></option>
+                                    <option value="01"></option>
+                                </datalist>
+                            </form>
+                        </div>
+
+                        <div class="credit-card-area-right grid-col-1of2_noHeight">
+                            <form class="payment-lastname-area">
+                                <label for="payment-lastname">Last Name</label>
+                                <input id="payment-lastname" type="text" name="payment-lastname">
+                            </form>
+
+                            <form class="payment-secure-code-area">
+                                <label for="payment-secure-code">Secure Code</label>
+                                <input id="payment-secure-code" type="text" name="payment-secure-code">
+                            </form>
+
+                            <form class="payment-year-area">
+                                <label for="payment-year">Expiration Month</label>
+                                <input id="payment-year" type="text" name="payment-year" list="payment-year-list">
+                                <datalist id="payment-year-list">
+                                    <option value="21"></option>
+                                    <option value="27"></option>
+                                    <option value="11"></option>
+                                </datalist>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="billing-address-area">
+
+                    <p>Billing Addresses</p>
+
+                    <form class="payment-billing-address-area">
+                        <label for="payment-billing-address">Address</label>
+                        <input id="payment-billing-address" type="text" name="payment-billing-address">
                     </form>
 
-                    <form class="payment-country-area">
-                        <label for="payment-country">COUNTRY</label>
-                        <input id="payment-country" type="text" name="payment-country" list="payment-country-list" value="United States">
-                        <datalist id="payment-country-list">
-                            <option value="United States"></option>
-                            <option value="Canada"></option>
-                            <option value="Korea"></option>
-                        </datalist>
+                    <form class="payment-billing-address-line-2-area">
+                        <label for="payment-billing-address-line-2">Address Line 2</label>
+                        <input id="payment-billing-address-line-2" type="text" name="payment-billing-address-line-2">
                     </form>
-                </div>
 
-                <div class="credit-card-info">
-                    <div class="card-and-icon">
-                        <form class="payment-card-number-area">
-                            <label for="payment-card-number">CARD NUMBER</label>
-                            <input id="payment-card-number" type="text" name="payment-card-number" value="1234 1234 1234 1234">
-                        </form>
-                        <img src="img/icon/Icon-sign-in.png">
+                    <div class="grid">
+
+                        <div class="billing-address-area-left grid-col-1of2_noHeight">
+                            <form class="payment-city-area">
+                                <label for="payment-city">City</label>
+                                <input id="payment-city" type="text" name="payment-city">
+                            </form>
+                            <form class="payment-postal-area">
+                                <label for="payment-postal">Postal/ZIP Code</label>
+                                <input id="payment-postal" type="text" name="payment-postal">
+                            </form>
+                        </div>
+
+                        <div class="billing-address-area-right grid-col-1of2_noHeight">
+                            <form class="payment-state-area">
+                                <label for="payment-state">State/Province</label>
+                                <input id="payment-state" type="text" name="payment-state">
+                            </form>
+                            <form class="payment-country-area">
+                                <label for="payment-country">Country</label>
+                                <input id="payment-country" type="text" name="payment-country"
+                                    list="payment-country-list">
+                                <datalist id="payment-country-list">
+                                    <option value="United States"></option>
+                                    <option value="UK"></option>
+                                    <option value="Korea"></option>
+                                </datalist>
+                            </form>
+                        </div>
                     </div>
 
-                    <form class="payment-holdername-area">
-                        <label for="payment-holdername">HOLDER NAME</label>
-                        <input id="payment-holdername" type="text" name="payment-holdername" value="John Doe">
+                </section>
+
+                <section class="billing-address-area">
+
+                    <p>Shipping Addresses</p>
+
+                    <form class="payment-shipping-address-area">
+                        <label for="payment-shipping-address">Address</label>
+                        <input id="payment-shipping-address" type="text" name="payment-shipping-address">
                     </form>
 
-                    <form class="payment-date-area">
-                        <label for="payment-date">EXPIRE DATE</label>
-                        <input id="payment-date" type="text" name="payment-date" list="payment-date-list" value="05/21">
-                        <datalist id="payment-date-list">
-                            <option value="05/21"></option>
-                            <option value="08/27"></option>
-                            <option value="01/11"></option>
-                        </datalist>
+                    <form class="payment-shipping-address-line-2-area">
+                        <label for="payment-shipping-address-line-2">Address Line 2</label>
+                        <input id="payment-shipping-address-line-2" type="text" name="payment-shipping-address-line-2">
                     </form>
 
-                    <form class="payment-cvv-area">
-                        <label for="payment-cvv">CVV</label>
-                        <input id="payment-cvv" type="text" name="payment-cvv" value="123">
-                    </form>
-                </div>
+                    <div class="grid">
+
+                        <div class="shipping-address-area-left grid-col-1of2_noHeight">
+                            <form class="payment-shipping-city-area">
+                                <label for="payment-shipping-city">City</label>
+                                <input id="payment-shipping-city" type="text" name="payment-shipping-city">
+                            </form>
+                            <form class="payment-shipping-postal-area">
+                                <label for="payment-shipping-postal">Postal/ZIP Code</label>
+                                <input id="payment-shipping-postal" type="text" name="payment-shipping-postal">
+                            </form>
+                        </div>
+
+                        <div class="shipping-address-area-right grid-col-1of2_noHeight">
+                            <form class="payment-shipping-state-area">
+                                <label for="payment-shipping-state">State/Province</label>
+                                <input id="payment-shipping-state" type="text" name="payment-shipping-state">
+                            </form>
+                            <form class="payment-shipping-country-area">
+                                <label for="payment-shipping-country">Country</label>
+                                <input id="payment-shipping-country" type="text" name="payment-shipping-country"
+                                    list="payment-shipping-country-list">
+                                <datalist id="payment-shipping-country-list">
+                                    <option value="United States"></option>
+                                    <option value="UK"></option>
+                                    <option value="Korea"></option>
+                                </datalist>
+                            </form>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="payment-submit-area">
+                    <div class="grid">
+
+                        <div class="grid-col-1of4_noHeight"></div>
+                        <div class="grid-col-1of4_noHeight"></div>
+                        <div class="grid-col-1of4_noHeight">
+                            <form class="payment-submit">
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                        <div class="grid-col-1of4_noHeight">
+                            <form class="payment-cancel grid-col-1of4_noHeight">
+                                <input type="submit" value="Cancel">
+                            </form>
+                        </div>
+                    </div>
+                </section>
             </section>
         </div>
 
         <div class="grid-col-1of5"></div>
+
     </div>
+
 
     <footer class="grid">
 

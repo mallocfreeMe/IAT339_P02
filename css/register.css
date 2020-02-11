@@ -1,11 +1,16 @@
 /* Styling for sign-in content */
 
 body {
-  background-color: rgb(136, 67, 233);
+  background-color: #03dac6;
+}
+
+.main-nav {
+  position: static;
 }
 
 .sign-up {
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 10em;
   padding: 1em 6em;
   color: 	#2f363d;
 }
@@ -15,7 +20,7 @@ body {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   font-size: 2em;
-  border-bottom: thin solid #d1d5da;
+  border-bottom: medium solid white;
 }
 
 .sign-up h3 {
@@ -25,7 +30,7 @@ body {
 
 .sign-up-content {
   text-align: center;
-  background-color: #6200EE;
+  background-color: white;
   box-shadow: 0 0 1em rgb(27, 25, 25);
 }
 
@@ -34,7 +39,7 @@ body {
   height: 3em;
   margin-top: 1em;
   margin-bottom: 1em;
-  background-color: #6200EE;
+  background-color: rgb(228, 226, 226);
   /* border-style: hidden; */
   border-radius: 0.3em;
   border: thin solid white;
@@ -45,13 +50,13 @@ body {
   height: 3em;
   margin-top: 1em;
   margin-bottom: 1em;
-  background-color:#6200EE;
+  background-color:rgb(228, 226, 226);
   /* border-style: hidden; */
   border-radius: 0.3em;
   border: thin solid white;
 }
 
-.sign-up-content input[type=submit] {
+.sign-up-content button {
   width: 25em;
   height: 3em;
   margin-top: 1em;
@@ -62,12 +67,12 @@ body {
 }
 
 .sign-up-content input::placeholder {
-  color: white;
+  color: gray;
   padding-left: 1em;
 }
 
 .sign-up-agree {
-  text-align: left;
+  text-align: center;
   padding-left: 5em;
 }
 
@@ -79,6 +84,6 @@ body {
 .sign-up-content label {
   padding-left: 0.5em;
   font-size: 0.9em;
-  color: white;
+  color: #6200EE;
 }
 
