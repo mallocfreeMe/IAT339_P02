@@ -56,13 +56,13 @@
             </section>
 
             <section class="payment-subtitle">
-                <h3>Choose payment method below</h3>
+                <p>Choose payment method below</p>
             </section>
 
             <section class="payment-method">
-                <img src="#">
-                <img src="#">
-                <img src="#">
+                <img class="method-card" src="img/icon/laptop.png">
+                <img src="img/icon/laptop.png">
+                <img src="img/icon/laptop.png">
             </section>
 
             <section class="payment-content">
@@ -74,7 +74,28 @@
 
                     <form class="payment-address-area">
                         <label for="payment-address">ADDRESS</label>
-                        <input id="payment-address" type="text" name="payment-address" value="John Doe">
+                        <input id="payment-address" type="text" name="payment-address" value="497 Evergreen Rd.">
+                    </form>
+
+                    <form class="payment-city-zip-area">
+                        <div class="payment-city-area">
+                            <label for="payment-city">CITY</label>
+                            <input id="payment-city" type="text" name="payment-city" value="Roseville">
+                        </div>
+                        <div class="payment-zip-area">
+                            <label for="payment-zip">ZIP CODE</label>
+                            <input id="payment-zip" type="text" name="payment-zip" value="123456">
+                        </div>
+                    </form>
+
+                    <form class="payment-country-area">
+                        <label for="payment-country">COUNTRY</label>
+                        <input id="payment-country" type="text" name="payment-country" list="payment-country-list" value="United States">
+                        <datalist id="payment-country-list">
+                            <option value="United States"></option>
+                            <option value="Canada"></option>
+                            <option value="Korea"></option>
+                        </datalist>
                     </form>
                 </div>
 
@@ -82,14 +103,29 @@
                     <div class="card-and-icon">
                         <form class="payment-card-number-area">
                             <label for="payment-card-number">CARD NUMBER</label>
-                            <input id="payment-card-number" type="text" name="payment-card-number" value="John Doe">
+                            <input id="payment-card-number" type="text" name="payment-card-number" value="1234 1234 1234 1234">
                         </form>
                         <img src="img/icon/Icon-sign-in.png">
                     </div>
 
-                    <form class="payment-card-holder-area">
-                        <label for="payment-card-holder">CARD NUMBER</label>
-                        <input id="payment-card-holder" type="text" name="payment-card-holder" value="John Doe">
+                    <form class="payment-holdername-area">
+                        <label for="payment-holdername">HOLDER NAME</label>
+                        <input id="payment-holdername" type="text" name="payment-holdername" value="John Doe">
+                    </form>
+
+                    <form class="payment-date-area">
+                        <label for="payment-date">EXPIRE DATE</label>
+                        <input id="payment-date" type="text" name="payment-date" list="payment-date-list" value="05/21">
+                        <datalist id="payment-date-list">
+                            <option value="05/21"></option>
+                            <option value="08/27"></option>
+                            <option value="01/11"></option>
+                        </datalist>
+                    </form>
+
+                    <form class="payment-cvv-area">
+                        <label for="payment-cvv">CVV</label>
+                        <input id="payment-cvv" type="text" name="payment-cvv" value="123">
                     </form>
                 </div>
             </section>

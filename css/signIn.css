@@ -1,88 +1,8 @@
-/*
-  SIGN IN STYLING 
-*/
+/* Styling for sign-in content */
 
 body {
-  font-family: sans-serif;
-  height: 100%;
-  /* overflow: hidden; */
-}
-
-a {
-  text-decoration: none;
-}
-
-section:not([id]) {
-  margin: 1em 0;
-  padding: 0.5em 0;
-  /* border-top: 1px solid #333; */
-}
-
-section h3 {
-  margin-bottom: 1em;
-}
-
-section p {
-  margin-top: 0;
-}
-
-section code {
-  background-color: #EEE;
-  padding: 0.5em 0;
-}
-
-
-/* Styling for main nav */
-
-.main-nav {
-  width: 100%;
-  position: fixed;
   background-color: #6200EE;
-  padding: 1.5em 1em;
-  text-align: right;
-  z-index: 10;
 }
-
-.main-nav a {
-  padding: 1em;
-  color: white;
-  font-size: 0.9em;
-}
-
-.sample-main-nav {
-  width: 100%;
-  background-color: #6200EE;
-  padding: 1em;
-  text-align: right;
-}
-
-.sample-main-nav a {
-  padding: 1em;
-  color: white;
-}
-
-/* Styleing for search bar */
-.search-bar {
-  position: absolute;
-  text-align: left;
-  top: 0.5em;
-  left: 2em;
-}
-
-.search-bar input {
-  border-style: hidden;
-  border-radius: 0.5em;
-  margin-top: 0.5em;
-  padding: 0.5em 3.5em 0.5em 0.5em;
-}
-
-.search-bar input::placeholder {
-  color: #6200EE;
-  font-size: 0.75em;
-}
-
-
-/* Styling for sign-in content */
 
 .sign-in {
   margin-top: 2em;
@@ -91,7 +11,7 @@ section code {
 }
 
 .sign-in h2 {
-  color: #6200EE;
+  color: white;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   font-size: 2em;
@@ -105,74 +25,48 @@ section code {
 
 .sign-in-content {
   text-align: center;
+  background-color: white;
+  box-shadow: 0 0 1em rgb(27, 25, 25);
 }
 
-.sign-in-username, .sign-in-password {
-  padding-top: 2em;
+.sign-in-content input[type=text] {
+  width: 25em;
+  height: 4em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background-color: rgb(228, 226, 226);
+  border-style: hidden;
 }
 
-.sign-in-username img, .sign-in-password img{
-  width: 10%;
-  height: 10%;
+.sign-in-content input[type=password]{  
+  width: 25em;
+  height: 4em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: rgb(228, 226, 226);
+  border-style: hidden;
 }
 
-.sign-in-username input[type=text], .sign-in-password input[type=password] {
-  padding: 1em 3em 0 0;
-  font-size: 2em;
-  border: thin solid #71EFE0;
-}
-
-.sign-in-username ::placeholder, .sign-in-password ::placeholder {
-  color: #6200EE;
-}
-
-.register-link {
-  padding-top: 2em;
-}
-
-.register-link a {
-  color: #71EFE0;
-}
-
-.login-button {
-  padding-top: 2em;
-}
-
-.login-button input[type=submit] {
-  font-size: 1.2em;
-  padding: 0.5em 1.5em;
-  border: thin solid #71EFE0;
+.sign-in-content input[type=submit] {
+  width: 25em;
+  height: 4em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   background-color: #6200EE;
-  color: white;
-  border-radius: 0.25em;
+  color: rgb(182, 134, 250);
 }
 
-
-/* when the size of browser becomes smaller */
-
-@media (max-width: 70em) {
-  .side-nav {
-    display: none;
-  }
+.sign-in-content input::placeholder {
+  color: grey;
+  padding-left: 1em;
 }
 
-
-/* if the screen size is mobile size */
-
-@media (max-width: 30em) {
-  .main-nav a {
-    display: none;
-  }
-  .side-nav {
-    display: none;
-  }
-  .mobile-menu-icon {
-    display: block;
-  }
+.register-link p {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  font-size: 0.9em;
 }
 
-@media(min-width: 30em) {
-  .mobile-menu-icon {
-    display: none;
-  }
+.register-link p a {
+  color: #6200EE;
 }

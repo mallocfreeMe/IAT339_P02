@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Form</title>
+    <title>Register</title>
     <link href="css/register.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
@@ -20,7 +20,6 @@
         <nav class="main-nav">
 
             <a href="index.html"><img src="img/icon/laptop.png" alt="icon"></a>
-            
             <div class="search-bar">
                 <input type="text" placeholder="Search laptop here...">
             </div>
@@ -50,41 +49,41 @@
         <!-- side blank area -->
         <div class="grid-col-1of5"></div>
 
-        <div class="grid-col-3of5 register">
+        <div class="grid-col-3of5 sign-up">
 
                 <section>
-                    <h2>Register Form</h2>
+                    <h2>Sign Up</h2>
                 </section>
 
-                <form class="register-fullname-area">
-                    <input id="register-fullname" type="text" name="register-fullname" value="John Doe">
-                    <label for="register-fullname">Full name</label>                   
-                </form>
+                <section class="sign-up-content">
 
-                <form class="register-email-area">
-                    <input id="register-email" type="text" name="register-email" value="johndoe@mail.com">
-                    <label for="register-email">Email</label>
-                </form>
+                    <form class="sign-up-username">
+                        <input type="text" name="username" placeholder="Username">
+                    </form>
 
-                <form class="register-birthday-area">
-                    <input id="register-birthday" type="text" name="register-birthday" value="09/09/1987">
-                    <label for="register-birthday">Birth</label>
-                </form>
+                    <form class="sign-up-address">
+                        <input type="text" name="address" placeholder="Address">
+                    </form>
+
+                    <form class="sign-up-password">
+                        <input type="password" name="password" placeholder="Password">
+                    </form>
+
+                    <form class="sign-up-confirm">
+                        <input type="password" name="confirm" placeholder="Confirm password">
+                    </form>
+
+                    <form class="sign-up-agree">
+                        <input type="checkbox" name="agree-contact" value="agree">
+                        <label for="agree-contact">I Agree To the Terms & Conditions</label>
+                    </form>
+
+                    <form class="sign-up-button">
+                        <input type="submit" value="Sign up">
+                    </form>
+
+                </section>
             
-                <form class="register-address-area">
-                    <input id="register-address" type="text" name="register-address" value="497 Evergreen Rd. Roseville...">
-                    <label for="register-address">Address</label>
-                </form>
-
-                <form class="register-password-area">
-                    <input id="register-password" type="password" name="register-password" value="12345678">
-                    <label for="register-password">Password</label>
-                </form>
-
-                <form class="register-button">
-                    <input type="submit" value="Submit">
-                </form>
-
             </div>
 
         <div class="grid-col-1of5"></div>
