@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link href="css/register.css" rel="stylesheet">
+    <title>ShoppingCart</title>
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/shoppingCart.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -18,77 +18,61 @@
     <header>
         <!-- nav for external navigation -->
         <nav class="main-nav">
-
             <a href="index.html"><img src="img/icon/laptop.png" alt="icon"></a>
-            <div class="search-bar">
-                <input type="text" placeholder="Search laptop here...">
-            </div>
 
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
             <a href="shop.html">Shop</a>
             <a href="deals.html">Deals</a>
             <a href="signIn.html">Sign in</a>
-
-            <!-- hambuger menu -->
-            <img class="mobile-menu-icon" src="img/icon/Icon - Menu - Filled.png">
         </nav>
-
-        <nav class="mobile-main-nav">
-            <a href="#">Link 1</a>
-            <a href="#">Link 1</a>
-            <a href="#">Link 1</a>
-            <a href="#">Link 1</a>
-        </nav>
-
     </header>
 
-    <script>
-        
-    </script>
 
-    <div class="grid">
-        <!-- side blank area -->
-        <div class="grid-col-1of5"></div>
+    <section class="grid">
+        <div class="grid-col-1of5_noHeight"></div>
 
-        <div class="grid-col-3of5 sign-up">
+        <div class="shopping_cart grid-col-3of5_noHeight">
+            <h1>Shopping Cart</h1>
+            <table>
+                <tr>
+                    <td>Product Description</td>
+                    <td>Status</td>
+                    <td>Quantity</td>
+                    <td>Item Price</td>
+                    <td>Discount</td>
+                    <td>Total</td>
+                </tr>
 
-                <section>
-                    <h2>Sign Up</h2>
-                </section>
+                <tr>
+                    <td>
+                        Dell xps 15
+                    </td>
+                    <td>In Stock</td>
+                    <td>1</td>
+                    <td>$1500</td>
+                    <td>15%</td>
+                    <td>$1099.99</td>
+                </tr>
+                <td></td>
+            </table>
 
-                <section class="sign-up-content">
+            <button id="logIn_pay_button" onclick="myFunction()">Log in to pay</button>
+            <button id="guest_pay_button" onclick="myFunction()">As a guest to pay</button>
 
-                    <form class="sign-up-username">
-                        <input type="text" name="username" placeholder="Username">
-                    </form>
+            <script>
+                function myFunction() {
+                    window.location = "payment.html";
+                }
+            </script>
+        </div>
 
-                    <form class="sign-up-address">
-                        <input type="text" name="address" placeholder="Address">
-                    </form>
+        <div class="grid-col-1of5_noHeight"></div>
 
-                    <form class="sign-up-password">
-                        <input type="password" name="password" placeholder="Password">
-                    </form>
+    </section>
 
-                    <form class="sign-up-confirm">
-                        <input type="password" name="confirm" placeholder="Confirm password">
-                    </form>
-
-                    <form class="sign-up-agree">
-                        <input type="checkbox" name="agree-contact" value="agree">
-                        <label for="agree-contact">I Agree To the Terms & Conditions</label>
-                    </form>
-
-                    <form class="sign-up-button">
-                        <input type="submit" value="Sign up">
-                    </form>
-
-                </section>
-            
-            </div>
-
-        <div class="grid-col-1of5"></div>
-    </div>
-
+    <!-- Footer -->
     <footer class="grid">
 
         <section class="footer-grid-col-1of5"></section>
@@ -124,13 +108,13 @@
                 <li>Terms & Conditions</li>
                 <li><a href="styleGuide.html">Style Guide</a></li>
                 <li><a href="sitemap/Sitemap.html">Sitemap</a></li>
-                <li><a href="citation.html">Citation</a></li> 
+                <li><a href="citation.html">Citation</a></li>
             </ul>
         </section>
 
         <section class="footer-grid-col-1of5"></section>
-    </footer>
 
+    </footer>
 </body>
 
 </html>

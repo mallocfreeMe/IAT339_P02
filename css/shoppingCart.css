@@ -1,0 +1,66 @@
+/* styling main nav */
+
+.main-nav {
+    position: static;
+    margin-bottom: 3em;
+}
+
+/* styling product item */
+
+.individual_product {
+    width: 20%;
+    color: white;
+    background-color: #6200EE;
+    margin-bottom: 5em;
+}
+
+.individual_product img {
+    width: 100%;
+    height: 4em;
+}
+
+.container {
+    text-align: center;
+    /* padding: 1em 1em; */
+}
+
+/* styling for cart */
+
+.shopping_cart h1 {
+    padding-bottom: 1em;
+    color: #6200EE;
+    border-bottom: solid;
+    border-width: thin;
+    border-radius: 0.5px;
+    border-color: grey;
+}
+
+.shopping_cart table {
+    width: 65%;
+}
+
+.shopping_cart td {
+    color: #6200EE;
+    padding: 2em;
+}
+
+.shopping_cart button {
+    float: right;
+}
+
+#guest_pay_button {
+    padding: 1em;
+    color: white;
+    background-color: #6200EE;
+    margin-right: 4em;
+}
+
+#logIn_pay_button {
+    padding: 1em;
+    color: black;
+    background-color: #03DAC6;
+}
+
+footer {
+    margin-top: 15em;
+}
