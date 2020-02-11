@@ -5,6 +5,7 @@ body {
 
 .main-nav {
   position: static;
+  margin-bottom: 3em;
 }
 
 /* Styling for payment content */
@@ -179,4 +180,8 @@ body {
   border-radius: 0.3em;
   background-color: #03dac6;
   color: black;
+}
+
+footer {
+  margin-top: 5em;
 }
