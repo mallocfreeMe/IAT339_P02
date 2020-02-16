@@ -34,7 +34,7 @@ section code {
 section .codearea {
   background-color: #F7F8FA;
   font-family: monospace;
-  font-size: 1.3em;
+  font-size: 1em;
   border: solid #E2E4E8;
   padding: 1em;
   border-width: thin;
