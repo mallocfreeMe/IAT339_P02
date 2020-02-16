@@ -445,9 +445,9 @@
                         <div class="grid color-sample">
                             <div class="black-0 grid-col-1of5_noHeight"><a href="#">Black</a></div>
                             <div class="white-0 grid-col-1of5_noHeight"><a href="#">White</a></div>
-                            <div class="grey-0 grid-col-1of5_noHeight"><a href="#">Grey</a></div>
-                            <div class="purple-0 grid-col-1of5_noHeight"><a href="#">Purple</a></div>
-                            <div class="green-0 grid-col-1of5_noHeight"><a href="#">Green</a></div>
+                            <div class="grey-0 grid-col-1of5_noHeight"><a href="#table-grey">Grey</a></div>
+                            <div class="purple-0 grid-col-1of5_noHeight"><a href="#table-purple">Purple</a></div>
+                            <div class="green-0 grid-col-1of5_noHeight"><a href="#table-green">Green</a></div>
                         </div>
                     </section>
 
@@ -463,8 +463,8 @@
 
                         <h3>Rendered element:</h3>
                         <div class="grid">
-                            <div class="grid-col-1of2-noHeight">
-                                <table class="table-greys">
+                            <div class="grid-col-1of3-noHeight">
+                                <table id="table-grey">
                                     <tr class="grey-title-color font-white">
                                         <th>Grey</th>
                                     </tr>
@@ -538,57 +538,154 @@
                                 </table>
                             </div>
 
-                            <div class="grid-col-1of2-noHeight">
-                                <table class="table-purple" border="1">
+                            <div class="grid-col-1of3-noHeight">
+                                <table id="table-purple">
+                                    <tr class="purple-title-color font-white">
+                                        <th>Purple</th>
+                                    </tr>  
                                     <tr>
-                                        <th colspan="2">Purple</th>
+                                        <td class="purple-title-color grid">
+                                                <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple</p></div>
+                                                <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#6f42c1</p></div>
+                                        </td>      
                                     </tr>
                                     <tr>
-                                        <td>$purple</td>
-                                        <td>#6f42c1</td>
-                                    </tr>
-                                    <tr class="purple-000">
-                                        <td>$purple-000</td>
-                                        <td>#f5f0ff</td>
+                                        <td class="purple-000 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$purple000</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#f5f0ff</p></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>$purple-100</td>
-                                        <td>#e6dcfd</td>
+                                        <td class="purple-100 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$purple100</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#e6dcfd</p></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>$purplr-200</td>
-                                        <td>#d1bcf9</td>
+                                        <td class="purple-200 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$purple200</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#d1bcf9</p></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>$purple-300</td>
-                                        <td>#b392f0</td>
+                                        <td class="purple-300 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple300</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#b392f0</p></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>$purple-400</td>
-                                        <td>#8a63d2</td>
+                                        <td class="purple-400 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple400</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#8a63d2</p></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>$purple-500</td>
-                                        <td>#6f42c1</td>
+                                        <td class="purple-500 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple500</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#6f42c1</p></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>$purple-600</td>
-                                        <td>#5a32a3</td>
+                                        <td class="purple-600 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple600</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#5a32a3</p></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>$purple-700</td>
-                                        <td>#4c2889</td>
+                                        <td class="purple-700 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple700</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#4c2889</p></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>$purple-800</td>
-                                        <td>#3a1d6e</td>
+                                        <td class="purple-800 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple800</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#3a1d6e</p></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>$purple-900</td>
-                                        <td>#29134e</td>
+                                        <td class="purple-900 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple900</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#29134e</p></div>
+                                        </td>
                                     </tr>
                                 </table>
                             </div>
+
+                            <div class="grid-col-1of3-noHeight">
+                                <table id="table-green">
+                                    <tr class="green-title-color font-white">
+                                        <th>Green</th>
+                                    </tr>  
+                                    <tr>
+                                        <td class="green-title-color grid">
+                                                <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green</p></div>
+                                                <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#28a745</p></div>
+                                        </td>      
+                                    </tr>
+                                    <tr>
+                                        <td class="green-000 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$green000</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#f0fff4</p></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green-100 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$green100</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#dcffe4</p></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green-200 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$green200</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#bef5cb</p></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green-300 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green300</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#85e89d</p></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green-400 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green400</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#34d058</p></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green-500 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green500</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#28a745</p></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green-600 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green600</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#22863a</p></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green-700 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green700</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#176f2c</p></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green-800 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green800</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#165c26</p></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green-900 grid">
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green900</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#144620</p></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
                         </div>
 
                     </section>

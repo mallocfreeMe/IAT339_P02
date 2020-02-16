@@ -205,9 +205,10 @@ section .tagValue {
 
 
 /* Styling for Color Variables */
-.table-grey, .table-purple {
+
+/* #table-grey, #table-purple, #table-green {
   width: 100%;
-}
+} */
 
 th {
   padding: 2em 4em;
@@ -223,6 +224,15 @@ td {
 }
 
 /* The color vaiable for grey */
+
+.font-black {
+  color: black;
+}
+
+.font-white {
+  color: white;
+}
+
 .grey-title-color {
   background-color: #6a737d;
 }
@@ -267,14 +277,96 @@ td {
   background-color: #24292e;
 }
 
-.font-black {
-  color: black;
+/* The color vaiable for purple */
+.purple-title-color {
+  background-color: #6f42c1;
 }
 
-.font-white {
-  color: white;
+.purple-000 {
+  background-color: 	#f5f0ff;
 }
 
+.purple-100 {
+  background-color: #e6dcfd;
+}
+
+.purple-200 {
+  background-color: #d1bcf9;
+}
+
+.purple-300 {
+  background-color: #b392f0;
+}
+
+.purple-400 {
+  background-color: #8a63d2;
+}
+
+.purple-500 {
+  background-color: #6f42c1;
+}
+
+.purple-600 {
+  background-color: #5a32a3;
+}
+
+.purple-700 {
+  background-color: 	#4c2889;
+}
+
+.purple-800 {
+  background-color: #3a1d6e;
+}
+
+.purple-900 {
+  background-color: #29134e;
+}
+
+
+/* The color vaiable for green */
+.green-title-color {
+  background-color: #28a745;
+}
+
+.green-000 {
+  background-color:	#f0fff4;
+}
+
+.green-100 {
+  background-color: #dcffe4;
+}
+
+.green-200 {
+  background-color:	#bef5cb;
+}
+
+.green-300 {
+  background-color:	#85e89d;
+}
+
+.green-400 {
+  background-color:	#34d058;
+}
+
+.green-500 {
+  background-color: #28a745;
+}
+
+.green-600 {
+  background-color: #22863a;
+}
+
+.green-700 {
+  background-color: #176f2c;
+}
+
+.green-800 {
+  background-color:	#165c26;
+}
+
+.green-900 {
+  background-color: #144620;
+}
 
 
 
