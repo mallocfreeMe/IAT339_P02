@@ -144,6 +144,118 @@ section code {
   color: #6200EE;
 }
 
+/* Styling for color parette */
+.black-0, .white-0, .grey-0, .purple-0, .green-0 {
+  display: inline-block;
+  padding: 1em;
+  text-align: center;
+}
+
+.black-0 a, .grey-0 a, .purple-0 a, .green-0 a {
+  color: white;
+}
+
+.white-0 a {
+  color: black;
+}
+
+
+.black-0 {
+  background-color: black;
+}
+
+.white-0 {
+  border: thin solid #f6f8fa;
+  background-color: white;
+}
+
+.grey-0 {
+  background-color: #6a737d;
+}
+
+.purple-0 {
+  background-color: #6f42c1;
+}
+
+.green-0 {
+  background-color: #28a745;
+}
+
+
+/* Styling for Color Variables */
+.table-grey, .table-purple {
+  width: 100%;
+}
+
+th {
+  padding: 2em 4em;
+}
+
+td {
+  padding: 0 4em;
+}
+
+.table-data-left, .table-data-right {
+  width: 50%;
+  padding: 0.5em 1.5em;
+}
+
+/* The color vaiable for grey */
+.grey-title-color {
+  background-color: #6a737d;
+}
+
+.grey-000 {
+  background-color: #fafbfc;
+}
+
+.grey-100 {
+  background-color: #f6f8fa;
+}
+
+.grey-200 {
+  background-color: #e1e4e8;
+}
+
+.grey-300 {
+  background-color: #d1d5da;
+}
+
+.grey-400 {
+  background-color: #959da5;
+}
+
+.grey-500 {
+  background-color: #6a737d;
+}
+
+.grey-600 {
+  background-color: #586069;
+}
+
+.grey-700 {
+  background-color: #444d56;
+}
+
+.grey-800 {
+  background-color: #2f363d;
+}
+
+.grey-900 {
+  background-color: #24292e;
+}
+
+.font-black {
+  color: black;
+}
+
+.font-white {
+  color: white;
+}
+
+
+
+
 /* 
   COMBINED ELEMENTS -------------------
 */
