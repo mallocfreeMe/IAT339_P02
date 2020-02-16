@@ -121,7 +121,10 @@
                         <p>.in-text-link</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;a href="#" class="in-text-link"&gt;in-text link&lt;/a&gt;</code>
+                        <div class="codearea">&lt;<span class="tagName">a</span> <span
+                                class="tagClass">href</span>="<span class="tagValue">#</span>" <span
+                                class="tagClass">class</span>="<span class="tagValue">in-text-link</span>"&gt;in-text
+                            link&lt;/<span class="tagName">a</span>&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <a class="in-text-link" href="#">This is an in-text link</a>
@@ -136,7 +139,10 @@
                         <p>.button-nav</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;a href="#" class="button-nav"&gt;Navigation Button&lt;/a&gt;</code>
+                        <div class="codearea">&lt;<span class="tagName">a</span> <span
+                                class="tagClass">href</span>="<span class="tagValue">#</span>"
+                            <span class="tagClass">class</span>="<span class="tagValue">button-nav</span>"&gt;Navigation
+                            Button&lt;/<span class="tagName">a</span>&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <a class="button-nav" href="#">Navigation Button</a>
@@ -151,7 +157,10 @@
                         <p>.button-submit-reset</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;a href="#" class="button-submit-reset"&gt;Submit Button&lt;/a&gt;</code>
+                        <div class="codearea">&lt;<span class="tagName">a</span> <span
+                                class="tagClass">href</span>="<span class="tagValue">#</span>" <span
+                                class="tagClass">class</span>="<span
+                                class="tagValue">button-submit-reset</span>"&gt;Submit Button&lt;/<span class="tagName">a</span>&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <a class="button-submit-reset" href="#">Submit Button</a>
@@ -165,7 +174,9 @@
                         <p>.text-input</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;input type="text" class="text-input"&gt;</code>
+                        <div class="codearea">&lt;<span class="tagName">input</span> <span
+                                class="tagClass">type</span>="<span class="tagClass">text</span>" <span
+                                class="tagClass">class</span>="<span class="tagValue">text-input</span>"&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <input type="text" class="text-input">
@@ -179,7 +190,7 @@
                         <p>.label</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;label class="label"&gt;This is a label&lt;/label&gt;</code>
+                        <div class="codearea">&lt;<span class="tagName">label</span> <span class="tagClass">class</span>="<span class="tagValue">label</span>"&gt;This is a label&lt;/<span class="tagName">label</span>&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <label class="label">This is a label</label>
@@ -195,9 +206,13 @@
                     <p>.sign-in-form</p>
 
                     <h3>Sample code:</h3>
-                    <code>&lt;input type="text" name="username" placeholder="Username"&gt;<br><br>
-                    &lt;input type="password" name="password" placeholder="Password"&gt;<br><br>
-                    &lt;input type="submit" value="Log in"&gt;</code>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">form</span>&gt;
+&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text"</span> <span class="tagClass">name</span>="<span class="tagValue">username</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Username</span>"&gt;
+&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">password</span>" <span class="tagClass">name</span>="<span class="tagValue">password</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Password</span>"&gt;
+&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">submit</span>" <span class="tagClass">value</span>="<span class="tagValue">Log in</span>"&gt;
+&lt;/<span class="tagName">form</span>&gt;</pre>
+                    </div>
 
                     <h3>Rendered element:</h3>
                     <form>
@@ -217,18 +232,20 @@
                     <p>.register-form</p>
 
                     <h3>Sample code:</h3>
-                    <code>
-                        &lt;input type="text" name="register-username"&gt;<br><br>
-                        &lt;label for="register-username"&gt;Full name&lt;label&gt;<br><br>
-                        &lt;input type="text" name="register-email"&gt;<br><br>
-                        &lt;label for="register-email"&gt;Email&lt;label&gt;<br><br>
-                        &lt;input type="number" name="register-birthday"&gt;<br><br>
-                        &lt;label for="register-birthday"&gt;Birthday&lt;label&gt;<br><br>
-                        &lt;input type="text" name="register-address"&gt;<br><br>
-                        &lt;label for="register-address"&gt;Address&lt;label&gt;<br><br>
-                        &lt;input type="password" name="register-password"&gt;<br><br>
-                        &lt;label for="register-password"&gt;Password&lt;label&gt;<br><br>
-                    </code>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">form</span>&gt;
+&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span>" <span class="tagClass">name</span>="<span class="tagValue">register-username</span>"&gt;
+&lt;<span class="tagName">label</span> <span class="tagClass">for</span>="<span class="tagValue">register-username</span>"&gt;Full name&lt;<span class="tagName">label&gt</span>;
+&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span>" <span class="tagClass">name</span>="<span class="tagValue">register-email</span>"&gt;
+&lt;<span class="tagName">label</span> <span class="tagClass">for</span>="<span class="tagValue">register-email</span>"&gt;Email&lt;<span class="tagName">label</span>&gt;
+&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">number</span>" <span class="tagClass">name</span>="<span class="tagValue">register-birthday</span>"&gt;
+&lt;<span class="tagName">label</span> <span class="tagClass">for</span>="<span class="tagValue">register-birthday</span>"&gt;Birthday&lt;<span class="tagName">label</span>&gt;
+&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span> <span class="tagClass">name</span>="register-address"&gt;
+&lt;<span class="tagName">label</span> <span class="tagClass">for</span>="<span class="tagValue">register-address</span>"&gt;Address&lt;<span class="tagName">label</span>&gt;
+&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">password</span>" <span class="tagClass">name</span>="<span class="tagValue">register-password</span>"&gt;
+&lt;<span class="tagName">label</span> <span class="tagClass">for</span>="<span class="tagValue">register-password</span>"&gt;Password&lt;<span class="tagName">label</span>&gt;
+&lt;<span class="tagName">/form</span>&gt;</pre>
+                    </div>
 
                     <h3>Rendered element:</h3>
                     <form>
@@ -252,7 +269,7 @@
                     <p>.register-form</p>
 
                     <h3>Sample code:</h3>
-                    <code>
+                    <div class="codearea">
                         &lt;input type="text" name="register-username"&gt;<br><br>
                         &lt;label for="register-username"&gt;Full name&lt;label&gt;<br><br>
                         &lt;input type="text" name="register-email"&gt;<br><br>
@@ -263,7 +280,7 @@
                         &lt;label for="register-address"&gt;Address&lt;label&gt;<br><br>
                         &lt;input type="password" name="register-password"&gt;<br><br>
                         &lt;label for="register-password"&gt;Password&lt;label&gt;<br><br>
-                    </code>
+                    </div>
 
                     <h3>Rendered element:</h3>
                     <form class="billing-info">
@@ -315,7 +332,7 @@
                         <p>.h1</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;h1 class="h1"&gt;This a h1 heading&lt;/h1&gt;</code>
+                        <div class="codearea">&lt;<span class="tagName">h1</span> <span class="tagClass">class</span>="<span class="tagValue">h1</span>"&gt;This a h1 heading&lt;/<span class="tagName">h1</span>&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <p class="h1">This a h1 heading</p>
@@ -328,7 +345,7 @@
                         <p>.h2</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;h2 class="h2"&gt;This a h2 heading&lt;/h2&gt;</code>
+                        <div class="codearea">&lt;h2 class="h2"&gt;This a h2 heading&lt;/h2&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <p class="h2">This a h2 heading</p>
@@ -341,7 +358,7 @@
                         <p>.h3</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;h3 class="h3"&gt;This a h3 heading&lt;/h3&gt;</code>
+                        <div class="codearea">&lt;h3 class="h3"&gt;This a h3 heading&lt;/h3&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <p class="h3">This a h3 heading</p>
@@ -354,7 +371,7 @@
                         <p>.p</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;p class="p"&gt;This a paragraph&lt;/p&gt;</code>
+                        <div class="codearea">&lt;p class="p"&gt;This a paragraph&lt;/p&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -383,9 +400,9 @@
                         <p>.bullet-list</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;ul class="bullet-list"&gt;
+                        <div class="codearea">&lt;ul class="bullet-list"&gt;
                 &lt;li&gt;This is a Bulleted List&lt;/li&gt;
-                &lt;/ul&gt;</code>
+                &lt;/ul&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <ul class="bullet-list">
@@ -402,9 +419,9 @@
                         <p>.numbered-list</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;ol class="numbered-list"&gt;
+                        <div>&lt;ol class="numbered-list"&gt;
                 &lt;li&gt;This is a Numbered List&lt;/li&gt;
-                &lt;/ol&gt;</code>
+                &lt;/ol&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <ol class="numbered-list">
@@ -429,11 +446,11 @@
                         <p>.main-nav</p>
                         <!-- Modify the layout of sample code by <br> -->
                         <h3>Sample code:</h3>
-                        <code>&lt;nav class="bullet-list"&gt;<br><br>
+                        <div class="codearea">&lt;nav class="bullet-list"&gt;<br><br>
                 &lt;a&gt;link 1&lt;/a&gt;<br><br>
                 &lt;a&gt;link 2&lt;/a&gt;<br><br>
                 &lt;a&gt;link 3&lt;/a&gt;<br><br>
-                &lt;/nav&gt;</code>
+                &lt;/nav&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <nav class="sample-main-nav">
@@ -451,13 +468,13 @@
                         <p>.side-nav</p>
                         <!-- Modify the layout of sample code by <br> -->
                         <h3>Sample code:</h3>
-                        <code>&lt;nav class="bullet-list"&gt;<br><br>
+                        <div class="codearea">&lt;nav class="bullet-list"&gt;<br><br>
                 &lt;a&gt;link 1&lt;/a&gt;<br><br>
                 &lt;a&gt;link 2&lt;/a&gt;<br><br>
                 &lt;a&gt;link 3&lt;/a&gt;<br><br>
                 &lt;a&gt;link 4&lt;/a&gt;<br><br>
                 &lt;a&gt;link 5&lt;/a&gt;<br><br>
-                &lt;/nav&gt;</code>
+                &lt;/nav&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <nav class="side-nav">
@@ -476,9 +493,9 @@
                         <p>.product-list</p>
                         <!-- Modify the layout of sample code by <br> -->
                         <h3>Sample code:</h3>
-                        <code>&lt;ol&gt;<br><br>
+                        <div class="codearea">&lt;ol&gt;<br><br>
                 &lt;li&gt;&lt;input type="color" value="#D6D6D6" class="product-list"&gt;&lt;/li&gt;<br><br>
-                &lt;/ol&gt;</code>
+                &lt;/ol&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <ol>
@@ -508,11 +525,11 @@
                         <p>.footer-side-nav</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;nav class="bullet-list"&gt;
+                        <div class="codearea">&lt;nav class="bullet-list"&gt;
                 &lt;a&gt;link 1&lt;/a&gt;
                 &lt;a&gt;link 2&lt;/a&gt;
                 &lt;a&gt;link 3&lt;/a&gt;
-                &lt;/nav&gt;</code>
+                &lt;/nav&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <div class="grid sample-footer">
@@ -539,9 +556,9 @@
                         <p>.grid-item</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;div class="container grid"&gt;
+                        <div class="codearea">&lt;div class="container grid"&gt;
                 &lt;div class="block grid-item"&gt;&lt;/div&gt;
-                &lt;/div&gt;</code>
+                &lt;/div&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <!-- <div class="container grid">
@@ -566,7 +583,7 @@
                         <p>.swatch</p>
 
                         <h3>Sample code:</h3>
-                        <code>&lt;input type="color" value="#6200EE" class="swatch"&gt;</code>
+                        <div class="codearea">&lt;input type="color" value="#6200EE" class="swatch"&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <input type="color" value="#6200EE" class="swatch">

@@ -28,7 +28,29 @@ section p {
 
 section code {
   background-color: #EEE;
-  padding: 0.5em 0;
+  padding: 0.5em 0em;
+}
+
+section .codearea {
+  background-color: #F7F8FA;
+  font-family: monospace;
+  font-size: 1.3em;
+  border: solid #E2E4E8;
+  padding: 1em;
+  border-width: thin;
+  line-height: 1.5em;
+}
+
+section .tagName {
+  color: #6200EE;
+}
+
+section .tagClass {
+  color: #BA89FF;
+}
+
+section .tagValue {
+  color: #009577;
 }
 
 /* 
@@ -213,7 +235,7 @@ section code {
 
 .main-nav img {
   width: 2.8em;
-  height:3em;
+  height: 3em;
   position: absolute;
   text-align: left;
   top: 0.5em;
