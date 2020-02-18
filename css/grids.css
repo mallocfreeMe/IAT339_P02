@@ -54,6 +54,10 @@
 }
 
 /* Grid col 3 of 5 for sign-in page */
+.grid-col-2of5 {
+  flex: 1 1 40%;
+  height: 100%;
+}
 
 .grid-col-3of5 {
   flex: 1 1 60%;
