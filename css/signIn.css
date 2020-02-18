@@ -1,9 +1,5 @@
 /* Styling for sign-in content */
 
-body {
-  background-color: #03dac6;
-}
-
 .main-nav {
   position: static;
 }
@@ -16,54 +12,58 @@ body {
 }
 
 .sign-in h2 {
-  color: white;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  font-size: 2em;
-  border-bottom: medium solid white;
+  padding-top: 2em;
+  font-size: 1.8em;
+  font-weight: 500;
 }
 
 .sign-in h3 {
-  padding: 2em 0 0 0;
-  font-size: 1.3em;
-}
-
-.sign-in-content {
-  text-align: center;
-  background-color: white;
-  box-shadow: 0 0 1em #995dff;
+  padding-top: 0;
+  font-size: 1.2em;
+  font-weight: lighter;
 }
 
 .sign-in-content input[type=text] {
-  width: 25em;
+  width: 100%;
   height: 4em;
-  margin-top: 2em;
   margin-bottom: 1em;
-  background-color: rgb(228, 226, 226);
-  border-style: hidden;
+  border: thin solid #959da5;
+  border-radius: 0.25em;
+  font-size: 0.9em;
 }
 
 .sign-in-content input[type=password]{  
-  width: 25em;
+  width: 100%;
   height: 4em;
   margin-top: 1em;
   margin-bottom: 1em;
-  background-color: rgb(228, 226, 226);
-  border-style: hidden;
+  border: thin solid #959da5;
+  border-radius: 0.25em;
+  font-size: 0.9em;
+}
+
+.sign-in-content .sign-in-button {
+  text-align: center;
 }
 
 .sign-in-content button {
-  width: 25em;
-  height: 4em;
+  width: 35%;
+  height: 3.5em;
   margin-top: 1em;
   margin-bottom: 1em;
-  background-color: #6200EE;
+  background-color: #8a63d2;
   color: white;
+  font-weight: lighter;
+  border-radius: 2em;
 }
 
 .sign-in-content input::placeholder {
-  color: grey;
+  color: #959da5;
   padding-left: 1em;
+}
+
+.register-link {
+  text-align: right;
 }
 
 .register-link p {
@@ -73,5 +73,13 @@ body {
 }
 
 .register-link p a {
-  color: #6200EE;
+  padding: 0.25em 0.5em;
+  border: thin solid #959da5;
+  border-radius: 2em;
+  color: #28a745;
+}
+
+.img-area img{
+  width: 100%;
+  height: 100vh;
 }
