@@ -184,3 +184,8 @@ body {
 footer {
   margin-top: 5em;
 }
+
+
+.payment-detail, .payment-detail div {
+  display: block;
+}
