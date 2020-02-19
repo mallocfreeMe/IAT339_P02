@@ -25,6 +25,10 @@
   overflow-y: scroll;
 }
 
+.grid-col-1of6_noHeight {
+  flex: 1 1 16.6%;
+}
+
 .grid-col-1of5_noHeight {
   flex: 1 1 20%;
 }
@@ -80,6 +84,13 @@
 .footer-grid-col-1of5 {
   flex: 1 1 20%;
   height: 100%;
+}
+
+
+/* vertical grid  */
+.grid-row-1of3 {
+  flex: 1 1 33.33%;
+  flex-direction: column;
 }
 
 /* Grid items for sample structure  */

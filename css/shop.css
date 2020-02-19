@@ -5,14 +5,60 @@
     margin-bottom: 3em;
 }
 
+/* add background color to background */
+
+body {
+    background-color: #F8F8FF;
+}
+
+/* styling for side filter  */
+
+.side_filter {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.side_filter section {
+    margin: 0;
+    background-color: #E6E6E6;
+    margin-bottom: 2em;
+}
+
+.side_filter button {
+    text-align: left;
+    width: 100%;
+    font-size: 1em;
+    background-color: #6200EE;
+    color: white;
+    padding: 1em;
+    border: none;
+}
+
+.side_filter_category ul {
+    list-style: none;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.side_filter_category li {
+    padding-bottom: 2em;
+}
+
+.side_filter_factory div, .side_filter_price div {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
 /* styling product item */
 
 .individual_product {
-    width: 80%;
-    color: white;
-    background-color: #6200EE;
+    width: 90%;
+    color: black;
+    background-color: #E6E6E6;
     /* box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 .individual_product img {
@@ -21,17 +67,40 @@
 }
 
 .container {
-    text-align: center;
-    padding: 1em 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-/* styling side filter */
-
-.side_filter li {
-    list-style: none;
-    text-align: left;
-    font-size: 2em;
-    color: #6200EE;
-    padding-left: 2.5em;
+.container p {
     margin-bottom: 1em;
+}
+
+.container img {
+    display: inline-block;
+    margin-right: 0.5em;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+.price_section h2 {
+    font-weight: bolder;
+    color: #6200EE;
+    margin-bottom: 1em;
+}
+
+.inStock_section {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.container button {
+    margin-top: 1em;
+    width: 100%;
+    display: block;
+    background-color: #6200EE;
+    color: white;
+    padding: 1em;
 }
