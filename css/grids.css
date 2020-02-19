@@ -79,6 +79,14 @@
   flex: 1 1 33.33%;
 }
 
+.grid-col-5of12_noHeight {
+  flex: 1 1 41.67%;
+}
+
+.grid-col-1of12_noHeight {
+  flex: 1 1 8.33%;
+}
+
 /* Grid column of Footer */
 
 .footer-grid-col-1of5 {

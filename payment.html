@@ -61,7 +61,7 @@
         <!-- side blank area -->
         <div class="grid-col-1of2_noHeight"></div>
 
-        <div class="grid-col-1of2_noHeight">
+        <div class="grid-col-5of12_noHeight payment-block">
             <!-- Receipt summary -->
             <section class="receipt-area">
                 <h3>Receipt Summary</h3>
@@ -92,39 +92,133 @@
                         <p>Tax</p>
                     </div>
                     <div class="receipt-detail-right grid-col-1of2_noHeight">
-                        <p>25.5</p>
+                        <p>25.5 CAD</p>
                     </div>
 
-                    <div class="receipt-detail-left grid-col-1of2_noHeight">
+                    <div class="receipt-detail-left grid-col-1of2_noHeight receipt-total">
                         <p>Total</p>
                     </div>
-                    <div class="receipt-detail-right grid-col-1of2_noHeight">
+                    <div class="receipt-detail-right grid-col-1of2_noHeight receipt-total-money">
                         <p>1300.50 CAD</p>
                     </div>
                 </div>
             </section>
 
-            <section class="payment">
-                <h3>Payment information</h3>
+            <section class="information-area grid">
 
-                <form class="payment-detail">
-                    <div>
-                    <label>Name on credit card</label>
-                    <input type="text" placeholder="Jason Zapata">
-                    </div>
+                <section class="payment grid-col-1of2_noHeight">
+                    <h3>Payment information</h3>
 
-                    <div>
-                    <label>Credit card number</label>
-                    <div>
-                        <input type="text" placeholder="Jason Zapata">
-                        <img src="#">
-                    </div>
-                    </div>
-                </form>
+                    <form class="payment-detail">
+                        <label>Name on credit card</label>
+                        <div>
+                            <input type="text" placeholder="Jason Zapata">
+                        </div>
+
+                        <div class="card-line">
+                            <label>Credit card number</label>
+                            <div class="card-line-border">
+                                <input type="text" placeholder="4545 4545 4545 454">
+                                <img src="img/icon/visa.png">
+                            </div>
+                        </div>
+
+                        <div class="expire-data">
+                        <label>Expires on</label>
+                        <div>
+                            <div class="expire-left">
+                                <input type="text" list="expire-month">
+                                <datalist id="expire-month">
+                                    <option value="01"></option>
+                                    <option value="02"></option>
+                                    <option value="03"></option>
+                                    <option value="04"></option>
+                                    <option value="05"></option>
+                                    <option value="06"></option>
+                                    <option value="07"></option>
+                                    <option value="08"></option>
+                                    <option value="09"></option>
+                                    <option value="10"></option>
+                                    <option value="11"></option>
+                                    <option value="12"></option>
+                                </datalist>
+                            </div>
+                            <div class="expire-right">
+                                <input type="text" list="expire-year">
+                                <datalist id="expire-year">
+                                    <option value="05"></option>
+                                    <option value="06"></option>
+                                    <option value="07"></option>
+                                    <option value="08"></option>
+                                    <option value="09"></option>
+                                    <option value="10"></option>
+                                    <option value="11"></option>
+                                    <option value="12"></option>
+                                    <option value="13"></option>
+                                    <option value="14"></option>
+                                    <option value="15"></option>
+                                    <option value="16"></option>
+                                    <option value="17"></option>
+                                    <option value="18"></option>
+                                    <option value="19"></option>
+                                    <option value="20"></option>
+                                    <option value="21"></option>
+                                    <option value="22"></option>
+                                </datalist>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="cvc-area">
+                            <label>CVC</label>
+                            <input type="text" placeholder="454">
+                        </div>
+                    </form>
+                </section>
+
+                <section class="address grid-col-1of2_noHeight">
+                    <h3>Billing Address</h3>
+
+                    <form class="address-detail">
+                        <label>Address</label>
+                        <div>
+                            <input type="text" placeholder="123 Holycrab Road">
+                        </div>
+                        
+                        
+                        <label>City</label>
+                        <div>
+                            <input type="text" placeholder="Surrey">
+                        </div>
+                            
+                        <label>Province</label>
+                        <div>
+                            <input type="text" placeholder="BC">
+                        </div>
+
+                        <label>Postal Code</label>
+                        <div>
+                            <input type="text" placeholder="V5B 3S1">
+                        </div>
+
+                    </form>
+                </section>
+
             </section>
+
+            <section class="pay-button">
+                <button onclick="payButtonFunction()">Pay now</button>
+            </section>
+            <script>
+                function payButtonFunction() {
+                    window.location = "index.html";
+                }
+            </script>
         </div>
+
+        <div class="grid-col-1of12_noHeight"></div>
     </div>
-                <!-- <div class="payment-content">
+    <!-- <div class="payment-content">
 
                     <section class="credit-card-area">
                         <p>Credit Card</p>

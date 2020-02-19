@@ -1,5 +1,6 @@
 body {
-  background-color: #03dac6;
+  background-image: url(../img/payment-wallpaper.jpg);
+  background-size: contain;
 }
 
 .main-nav {
@@ -9,7 +10,7 @@ body {
 
 /* Styling for payment content */
 
-.payment {
+/* .payment {
   margin-top: 2em;
   padding: 1em 6em;
   color: 	#2f363d;
@@ -30,31 +31,31 @@ body {
 }
 
 /* Subtitle */
-.payment-subtitle p{
+/* .payment-subtitle p{
   text-align: center;
   color: #6200EE;
-}
+} */
 
 /* Image */
-.payment-method img {
+/* .payment-method img {
   width: 5em;
   height: 3em;
-}
+} */
 
 /* -------------------- Credit card part -------------------- */
-.payment-method-icon {
+/* .payment-method-icon {
   display: inline-block;
 }
 
 .payment-method-icon img {
   width: 5em;
   height: 4em;
-}
+} */
 
 
 /* -------------------- Credit card part -------------------- */
 
-.credit-card-area-left, .credit-card-area-right {
+/* .credit-card-area-left, .credit-card-area-right {
   display: inline-block;
 }
 
@@ -78,11 +79,11 @@ body {
   display: block;
   padding-top: 0.5em;
   color: #6200EE;
-}
+}  */
 
 
 /* -------------------- Billing address part -------------------- */
-.billing-address-area-left, .billing-address-area-right {
+/* .billing-address-area-left, .billing-address-area-right {
   display: inline-block;
 }
 
@@ -114,11 +115,11 @@ body {
   display: block;
   padding-top: 0.5em;
   color: #6200EE;
-}
+} */
 
 
 /* -------------------- Shipping address part -------------------- */
-.shipping-address-area-left, .shipping-address-area-right {
+/* .shipping-address-area-left, .shipping-address-area-right {
   display: inline-block;
 }
 
@@ -150,14 +151,14 @@ body {
   display: block;
   padding-top: 0.5em;
   color: #6200EE;
-}
+} */
 
 /* -------------------- Submit part -------------------- */
 /* .payment-submit-area {
   display: inline-block;
 } */
 
-.payment-submit {
+/* .payment-submit {
   display: inline-block;
 }
 
@@ -183,9 +184,167 @@ body {
 
 footer {
   margin-top: 5em;
+} */
+
+
+/* For the payment web page */
+.payment-block {
+  background-color: white;
+}
+
+/* --------- Receipt Information Area --------- */
+.receipt-area {
+  text-align: left;
+  background-color: #FAFBFC;
+  border-bottom: thin solid #E1E4E8;
+}
+
+.receipt-detail-left {
+  text-align: left;
+  padding-left: 4em;
+  font-weight: lighter;
+  font-style: italic;
+  color: #444D56;
+}
+
+.receipt-detail-right {
+  text-align: right;
+  padding-right: 4em;
+}
+
+.receipt-area h3 {
+  font-weight: lighter;
+  font-size: 1.3em;
+  color: #444D56;
+}
+
+.receipt-total {
+  padding-top: 1.5em;
+  font-weight: bold;
+  padding-bottom: 2em;
+}
+
+.receipt-total-money {
+  padding-top: 1.5em;
+  font-weight: bold;
 }
 
 
-.payment-detail, .payment-detail div {
+/* ------------------ Payment Area -------------------- */
+.payment{
+  text-align: left;
+}
+
+.payment h3 {
+  padding-left: 1em;
+  font-weight: lighter;
+  font-size: 1.3em;
+}
+
+.payment-detail {
   display: block;
+  padding-left: 1em;
+}
+
+.payment-detail img {
+  width: 15%;
+  height: 15%;
+  vertical-align: middle;
+}
+
+.payment-detail label{
+  font-size: 0.8em;
+  color: #444D56;
+  margin-top: 3em;
+}
+
+.payment-detail input[type=text] {
+  border: thin solid #444D56;
+  border-radius: 0.25em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  width: 80%;
+}
+
+.card-line input[type=text] {
+  margin-bottom: 0;
+  border: none;
+}
+
+.card-line-border {
+  border: thin solid #444D56;
+  border-radius: 0.25em;
+  width: 80%;
+}
+
+.card-line {
+  border-radius: 0.25em;
+  margin-bottom: 1em;
+}
+
+.expire-left input[type=text]{
+  /* display: inline-block; */
+  width: 40%;
+  float: left;
+}
+.expire-right input[type=text]{
+  /* display: inline-block; */
+  width: 40%;
+  float: left;
+}
+
+.cvc-area label, .cvc-area input[type=text] {
+  display: block;
+}
+
+.expire-data {
+  margin-bottom: 3.5em;
+}
+
+/* ------------------ Billing Address Area -------------------- */
+.address{
+  text-align: right;
+}
+
+.address h3 {
+  padding-right: 1em;
+  font-weight: lighter;
+  font-size: 1.3em;
+}
+
+.address-detail {
+  display: block;
+  padding-right: 1em;
+}
+
+.address-detail label{
+  font-size: 0.8em;
+  color: #444D56;
+}
+
+.address-detail input[type=text] {
+  border: thin solid #444D56;
+  border-radius: 0.25em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  width: 80%;
+}
+
+/* ------------- Pay Button ------------- */
+.pay-button {
+  text-align: center;
+}
+
+button {
+  padding: 0.5em 2em;
+  border-style: none;
+  background-color: #BA89FF;
+  border-radius: 2em;
+  color: white;
+}
+
+footer {
+  margin-top: 4em;
 }
