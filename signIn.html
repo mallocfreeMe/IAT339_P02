@@ -11,14 +11,6 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script>
-        let isFirstTime = true;
-        let signUpForm = document.getElementById("sign-up-form");
-        if(signUpForm.style.display == "block" && isFirstTime == true) {
-            signUpForm.style.display = none;
-            isFirstTime = false;
-        }
-    </script> -->
 </head>
 
 <body>
@@ -73,129 +65,74 @@
             <!-- https://www.4mejores.com/los-4-mejores-portatiles-calidad-precio-2015-2016/ -->
             <img src="img/sign-in.png">
         </div>
+
         <div class="grid-col-3of5_noHeight">
 
-            <form class="register-link">
-                <p>Not registered? <button onclick="openSignUpFunction()">Create an account</button></p>
-            </form>
+            <div class="register-link">
+                Not Registered?
+                <button onclick="showSignUp()">Create an account</button>
+            </div>
 
             <script>
-                function openSignUpFunction() {
-                    document.getElementById("sign-up-form").style.display = "block";
-                    document.getElementById("sign-in-form").style.display = "none";
+                function showSignUp() {
+                    document.getElementById("signInForm").style.display = "none";
+                    document.getElementById("signUpForm").style.display = "block";
                 }
             </script>
 
+            <!-- Sign Up form-->
+            <div id="signUpForm" class="sign-up">
+                <h2>Sign up</h2>
 
-<div class="sign-up" id="sign-up-form">
-    <section>
-        <h2>Sign up</h2>
-    </section>
-
-    <section>
-        <h3>Subtitle...</h3>
-    </section>
-
-    <section class="sign-up-content">
-
-        <form class="sign-up-username">
-            <input type="text" name="username" placeholder="Username">
-        </form>
-
-        <form class="sign-up-password">
-            <input type="password" name="password" placeholder="Password">
-        </form>
-
-        <div class="sign-up-button">
-            <button onclick="signupFunction()">Sign up</button>
-            <button onclick="closeFunction()">Close</button>
-        </div>
-        <script>
-            function signupFunction() {
-                document.getElementById("sign-up-form").style.display = "none";
-            }
-            function closeFunction() {
-                document.getElementById("sign-up-form").style.display = "none";
-            }
-        </script>
-
-    </section>
-</div>
-
-
-            <div id="signInForm" class="sign-in">
-                <section>
-                    <h2>Sign in to Laptophub</h2>
-                </section>
-
-            <section>
-                <h3>Enter your details below</h3>
-            </section>
-
-            <section class="sign-in-content">
-
-                <form class="sign-in-username">
-                    <input type="text" name="username" placeholder="Username">
-                </form>
-
-                <form class="sign-in-password">
-                    <input type="password" name="password" placeholder="Password">
-                </form>
-
-                <!-- <form class="login-button">
-                        <input type="submit" value="Log in">
-                    </form> -->
-                <div class="sign-in-button">
-                    <button onclick="myFunction()">Log in</button>
-                </div>
-                <script>
-                    function myFunction() {
-                        window.location = "index.html";
-                    }
-                </script>
-
-            </section>
-
-        </div>
-
-            <!-- Start of sign up -->
-            <!-- <div class="sign-up" id="sign-up-form">
-                <section>
-                    <h2>Sign up</h2>
-                </section>
-
-                <section>
-                    <h3>Subtitle...</h3>
-                </section>
+                <h3>Subtitle...</h3>
 
                 <section class="sign-up-content">
 
-                    <form class="sign-up-username">
+                    <form class="sign-up-username" id="sign-up-form">
                         <input type="text" name="username" placeholder="Username">
-                    </form>
-
-                    <form class="sign-up-password">
                         <input type="password" name="password" placeholder="Password">
                     </form>
 
-                    <div class="sign-up-button">
-                        <button onclick="signupFunction()">Sign up</button>
-                        <button onclick="closeFunction()">Close</button>
-                    </div>
+                    <button onclick="goBack()">Sign up</button>
+                    <button onclick="goBack()">Close</button>
+
+
                     <script>
-                        function signupFunction() {
-                            document.getElementById("sign-up-form").style.display = "none";
-                        }
-                        function closeFunction() {
-                            document.getElementById("sign-up-form").style.display = "none";
+                        function goBack() {
+                            window.location = "signIn.html";
                         }
                     </script>
-
                 </section>
-            </div> -->
-            <!-- Finish the sign up -->
+            </div>
+            <!-- end of sign up form -->
+
+            <!-- Sign In form -->
+            <div id="signInForm" class="sign-in">
+                <h2>Sign in to Laptophub</h2>
+
+                <h3>Enter your details below</h3>
+
+                <section class="sign-in-content">
+
+                    <form class="sign-in-username">
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="password" name="password" placeholder="Password">
+                    </form>
+
+                    <div class="sign-in-button">
+                        <button onclick="myFunction()">Log in</button>
+                    </div>
+
+                    <script>
+                        function myFunction() {
+                            window.location = "index.html";
+                        }
+                    </script>
+                </section>
+            </div>
+            <!-- end of Sign In form -->
+
         </div>
-        <!-- <div class="grid-col-2of5" sign-in part></div> -->
 
     </div>
 
