@@ -11,6 +11,14 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script>
+        let isFirstTime = true;
+        let signUpForm = document.getElementById("sign-up-form");
+        if(signUpForm.style.display == "block" && isFirstTime == true) {
+            signUpForm.style.display = none;
+            isFirstTime = false;
+        }
+    </script> -->
 </head>
 
 <body>
@@ -61,12 +69,60 @@
         <!-- side blank area -->
         <!-- <div class="grid-col-1of5"></div> -->
 
-        <div class="grid-col-2of5 img-area">
-            <!-- https://www.thepowergroup.com/3-ways-to-improve-company-culture/ -->
-            <img src="img/sign-in-register.jpeg">
+        <div class="grid-col-2of5_noHeight img-area">
+            <!-- https://www.4mejores.com/los-4-mejores-portatiles-calidad-precio-2015-2016/ -->
+            <img src="img/sign-in.png">
         </div>
-        <div class="grid-col-3of5 sign-in">
+        <div class="grid-col-3of5_noHeight">
 
+            <form class="register-link">
+                <p>Not registered? <button onclick="openSignUpFunction()">Create an account</button></p>
+            </form>
+
+            <script>
+                function openSignUpFunction() {
+                    document.getElementById("sign-up-form").style.display = "block";
+                    document.getElementById("sign-in-form").style.display = "none";
+                }
+            </script>
+
+
+<div class="sign-up" id="sign-up-form">
+    <section>
+        <h2>Sign up</h2>
+    </section>
+
+    <section>
+        <h3>Subtitle...</h3>
+    </section>
+
+    <section class="sign-up-content">
+
+        <form class="sign-up-username">
+            <input type="text" name="username" placeholder="Username">
+        </form>
+
+        <form class="sign-up-password">
+            <input type="password" name="password" placeholder="Password">
+        </form>
+
+        <div class="sign-up-button">
+            <button onclick="signupFunction()">Sign up</button>
+            <button onclick="closeFunction()">Close</button>
+        </div>
+        <script>
+            function signupFunction() {
+                document.getElementById("sign-up-form").style.display = "none";
+            }
+            function closeFunction() {
+                document.getElementById("sign-up-form").style.display = "none";
+            }
+        </script>
+
+    </section>
+</div>
+
+<<<<<<< Updated upstream
             <form class="register-link">
                 <p>Not registered? <a href="register.html">Create an account</a></p>
             </form>
@@ -74,6 +130,13 @@
             <section>
                 <h2>Sign in to Laptophub</h2>
             </section>
+=======
+
+            <div id="signInForm" class="sign-in">
+                <section>
+                    <h2>Sign in to Laptophub</h2>
+                </section>
+>>>>>>> Stashed changes
 
             <section>
                 <h3>Enter your details below</h3>
@@ -92,6 +155,7 @@
                 <!-- <form class="login-button">
                         <input type="submit" value="Log in">
                     </form> -->
+<<<<<<< Updated upstream
                 <div class="sign-in-button">
                     <button onclick="myFunction()">Log in</button>
                 </div>
@@ -104,8 +168,59 @@
             </section>
 
         </div>
+=======
+                    <div class="sign-in-button">
+                        <button onclick="signInFunction()">Log in</button>
+                    </div>
+                    <script>
+                        function signInFunction() {
+                            window.location = "index.html";
+                        }
+                    </script>
 
-        <!-- <div class="grid-col-1of5"></div> -->
+                </section>
+            </div>
+>>>>>>> Stashed changes
+
+            <!-- Start of sign up -->
+            <!-- <div class="sign-up" id="sign-up-form">
+                <section>
+                    <h2>Sign up</h2>
+                </section>
+
+                <section>
+                    <h3>Subtitle...</h3>
+                </section>
+
+                <section class="sign-up-content">
+
+                    <form class="sign-up-username">
+                        <input type="text" name="username" placeholder="Username">
+                    </form>
+
+                    <form class="sign-up-password">
+                        <input type="password" name="password" placeholder="Password">
+                    </form>
+
+                    <div class="sign-up-button">
+                        <button onclick="signupFunction()">Sign up</button>
+                        <button onclick="closeFunction()">Close</button>
+                    </div>
+                    <script>
+                        function signupFunction() {
+                            document.getElementById("sign-up-form").style.display = "none";
+                        }
+                        function closeFunction() {
+                            document.getElementById("sign-up-form").style.display = "none";
+                        }
+                    </script>
+
+                </section>
+            </div> -->
+            <!-- Finish the sign up -->
+        </div>
+        <!-- <div class="grid-col-2of5" sign-in part></div> -->
+
     </div>
 
     <footer class="grid">

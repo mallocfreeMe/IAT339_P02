@@ -293,60 +293,73 @@ td {
 }
 
 .purple-000 {
+<<<<<<< Updated upstream
   background-color: #f5f0ff;
+=======
+  background-color: 	#fbd5ff;
+>>>>>>> Stashed changes
 }
 
 .purple-100 {
-  background-color: #e6dcfd;
+  background-color: #dab2ff;
 }
 
 .purple-200 {
-  background-color: #d1bcf9;
+  background-color: #ba89ff;
 }
 
 .purple-300 {
-  background-color: #b392f0;
+  background-color: #995dff;
 }
 
 .purple-400 {
-  background-color: #8a63d2;
+  background-color: #7e39fb;
 }
 
 .purple-500 {
-  background-color: #6f42c1;
+  background-color: #6200ee;
 }
 
 .purple-600 {
-  background-color: #5a32a3;
+  background-color: #5400e8;
 }
 
 .purple-700 {
+<<<<<<< Updated upstream
   background-color: #4c2889;
+=======
+  background-color: 	#3f00df;
+>>>>>>> Stashed changes
 }
 
 .purple-800 {
-  background-color: #3a1d6e;
+  background-color: #2500d7;
 }
 
 .purple-900 {
-  background-color: #29134e;
+  background-color: #0000c9;
 }
 
 /* The color vaiable for green */
 
 .green-title-color {
-  background-color: #28a745;
+  background-color: #71efe0;
 }
 
 .green-000 {
+<<<<<<< Updated upstream
   background-color: #f0fff4;
+=======
+  background-color:	#a8fffb;
+>>>>>>> Stashed changes
 }
 
 .green-100 {
-  background-color: #dcffe4;
+  background-color: #71efe0;
 }
 
 .green-200 {
+<<<<<<< Updated upstream
   background-color: #bef5cb;
 }
 
@@ -356,26 +369,41 @@ td {
 
 .green-400 {
   background-color: #34d058;
+=======
+  background-color:	#03dac6;
+}
+
+.green-300 {
+  background-color:	#00c4ab;
+}
+
+.green-400 {
+  background-color:	#00b398;
+>>>>>>> Stashed changes
 }
 
 .green-500 {
-  background-color: #28a745;
+  background-color: #00a284;
 }
 
 .green-600 {
-  background-color: #22863a;
+  background-color: #009577;
 }
 
 .green-700 {
-  background-color: #176f2c;
+  background-color: #008466;
 }
 
 .green-800 {
+<<<<<<< Updated upstream
   background-color: #165c26;
+=======
+  background-color:	#007457;
+>>>>>>> Stashed changes
 }
 
 .green-900 {
-  background-color: #144620;
+  background-color: #005739;
 }
 
 /* 

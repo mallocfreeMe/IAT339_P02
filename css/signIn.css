@@ -6,9 +6,12 @@
 
 .sign-in {
   margin-top: 1em;
-  margin-bottom: 10em;
+  /* margin-bottom: 10em; */
+  /*   padding: 1em 6em; */
   padding: 1em 6em;
   color: 	#2f363d;
+  position: relative;
+  background-color: white;
 }
 
 .sign-in h2 {
@@ -50,7 +53,7 @@
   width: 35%;
   height: 3.5em;
   margin-top: 1em;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
   background-color: #8a63d2;
   color: white;
   font-weight: lighter;
@@ -64,6 +67,7 @@
 
 .register-link {
   text-align: right;
+  padding-right: 1em;
 }
 
 .register-link p {
@@ -72,14 +76,85 @@
   font-size: 0.9em;
 }
 
-.register-link p a {
+.register-link p button {
   padding: 0.25em 0.5em;
   border: thin solid #959da5;
   border-radius: 2em;
   color: #28a745;
 }
 
+/* .img-area {
+  background-color: #995dff;
+} */
+
 .img-area img{
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  object-fit: cover;
+  /*filter: opacity(50%); */
+}
+
+
+/* --------- The line below for sign up part ---------- */
+
+.sign-up {
+  position: absolute;
+  /* display: block; */
+  width: 60%;
+  top: 10em;
+  margin-top: 1em;
+  padding: 1em 6em 0 6em;
+  color: 	#2f363d;
+  background-color: white;
+}
+
+.sign-up h2 {
+  padding-top: 2em;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.sign-up h3 {
+  padding-top: 0;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+.sign-up-content input[type=text] {
+  width: 100%;
+  height: 4em;
+  margin-bottom: 1em;
+  border: thin solid #959da5;
+  border-radius: 0.25em;
+  font-size: 0.9em;
+}
+
+.sign-up-content input[type=password]{  
+  width: 100%;
+  height: 4em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: thin solid #959da5;
+  border-radius: 0.25em;
+  font-size: 0.9em;
+}
+
+.sign-up-content .sign-in-button {
+  text-align: center;
+}
+
+.sign-up-content button {
+  width: 35%;
+  height: 3.5em;
+  margin-top: 1em;
+  /* margin-bottom: 1em; */
+  background-color: #8a63d2;
+  color: white;
+  font-weight: lighter;
+  border-radius: 2em;
+}
+
+.sign-up-content input::placeholder {
+  color: #959da5;
+  padding-left: 1em;
 }
