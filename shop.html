@@ -18,14 +18,37 @@
     <header>
         <!-- nav for external navigation -->
         <nav class="main-nav">
-            <a href="index.html"><img src="img/icon/laptop.png" alt="icon"></a>
+
+            <a href="index.html"><img id="website_icon" src="img/icon/laptop.png" alt="icon"></a>
 
             <div class="search-bar">
                 <input type="text" placeholder="Search laptops here...">
             </div>
             <a href="shop.html">Shop</a>
             <a href="deals.html">Deals</a>
-            <a href="signIn.html">Sign in</a>
+
+            <a href="signIn.html">
+                <img src="img/icon/account.png" id="signIn_icon">
+                Sign In
+            </a>
+
+            <a href="shoppingCart.html">
+                <!-- <img src="img/icon/Icon - Account - Filled.png" id="signIn_icon"> -->
+                <img src="img/icon/cart.png" id="cart_icon">
+                Cart
+            </a>
+
+            <!-- hamburger menu -->
+            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
+        </nav>
+
+        <nav class="mobile-main-nav" id="mobile_menu">
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
         </nav>
     </header>
 

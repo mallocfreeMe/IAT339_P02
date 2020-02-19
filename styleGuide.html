@@ -17,33 +17,35 @@
         <!-- nav for external navigation -->
         <nav class="main-nav">
 
-            <a href="index.html"><img src="img/icon/laptop.png" alt="icon"></a>
+            <a href="index.html"><img id="website_icon" src="img/icon/laptop.png" alt="icon"></a>
 
             <div class="search-bar">
                 <input type="text" placeholder="Search laptops here...">
             </div>
             <a href="shop.html">Shop</a>
             <a href="deals.html">Deals</a>
-            <a href="signIn.html">Sign in</a>
+            
+            <a href="signIn.html">
+                <img src="img/icon/account.png" id="signIn_icon">
+                Sign In
+            </a>
 
-            <!-- hambuger menu -->
-            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/Icon - Menu - Filled.png">
+            <a href="shoppingCart.html">
+                <!-- <img src="img/icon/Icon - Account - Filled.png" id="signIn_icon"> -->
+                <img src="img/icon/cart.png" id="cart_icon">
+                Cart
+            </a>
+
+            <!-- hamburger menu -->
+            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
         </nav>
 
         <nav class="mobile-main-nav" id="mobile_menu">
             <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Cart</a></li>
             </ul>
         </nav>
 
@@ -52,13 +54,13 @@
     <script>
         $(document).ready(function () {
             $("#mobile_menu_button").click(function () {
-                // show hide paragraph on button click
-                $("#mobile_menu").toggle("none", function (event) {
-                    // check paragraph once toggle effect is completed
-                    if ($("#mobile_menu").is(":visible")) {
-                        $("mobile_menu").hide();
-                    }
-                });
+                $("#mobile_menu").show();
+            });
+
+            $("body").click(function (event) {
+                if(event.target.id != "mobile_menu_button") {
+                    $("#mobile_menu").hide();
+                }
             });
         });
 
@@ -160,7 +162,8 @@
                         <div class="codearea">&lt;<span class="tagName">a</span> <span
                                 class="tagClass">href</span>="<span class="tagValue">#</span>" <span
                                 class="tagClass">class</span>="<span
-                                class="tagValue">button-submit-reset</span>"&gt;Submit Button&lt;/<span class="tagName">a</span>&gt;</div>
+                                class="tagValue">button-submit-reset</span>"&gt;Submit Button&lt;/<span
+                                class="tagName">a</span>&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <a class="button-submit-reset" href="#">Submit Button</a>
@@ -190,7 +193,9 @@
                         <p>.label</p>
 
                         <h3>Sample code:</h3>
-                        <div class="codearea">&lt;<span class="tagName">label</span> <span class="tagClass">class</span>="<span class="tagValue">label</span>"&gt;This is a label&lt;/<span class="tagName">label</span>&gt;</div>
+                        <div class="codearea">&lt;<span class="tagName">label</span> <span
+                                class="tagClass">class</span>="<span class="tagValue">label</span>"&gt;This is a
+                            label&lt;/<span class="tagName">label</span>&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <label class="label">This is a label</label>
@@ -332,7 +337,9 @@
                         <p>.h1</p>
 
                         <h3>Sample code:</h3>
-                        <div class="codearea">&lt;<span class="tagName">h1</span> <span class="tagClass">class</span>="<span class="tagValue">h1</span>"&gt;This a h1 heading&lt;/<span class="tagName">h1</span>&gt;</div>
+                        <div class="codearea">&lt;<span class="tagName">h1</span> <span
+                                class="tagClass">class</span>="<span class="tagValue">h1</span>"&gt;This a h1
+                            heading&lt;/<span class="tagName">h1</span>&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <p class="h1">This a h1 heading</p>
@@ -401,8 +408,8 @@
 
                         <h3>Sample code:</h3>
                         <div class="codearea">&lt;ul class="bullet-list"&gt;
-                &lt;li&gt;This is a Bulleted List&lt;/li&gt;
-                &lt;/ul&gt;</div>
+                            &lt;li&gt;This is a Bulleted List&lt;/li&gt;
+                            &lt;/ul&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <ul class="bullet-list">
@@ -420,8 +427,8 @@
 
                         <h3>Sample code:</h3>
                         <div>&lt;ol class="numbered-list"&gt;
-                &lt;li&gt;This is a Numbered List&lt;/li&gt;
-                &lt;/ol&gt;</div>
+                            &lt;li&gt;This is a Numbered List&lt;/li&gt;
+                            &lt;/ol&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <ol class="numbered-list">
@@ -487,71 +494,115 @@
                                     </tr>
                                     <tr>
                                         <td class="grey-title-color grid">
-                                                <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey</p></div>
-                                                <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#6a737d</p></div>
-                                        </td>      
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#6a737d</p>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-000 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$grey000</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#fafbfc</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$grey000</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#fafbfc</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-100 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$grey100</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#f6f8fa</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$grey100</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#f6f8fa</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-200 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$grey200</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#e1e4e8</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$grey200</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#e1e4e8</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-300 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$grey300</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#d1d5da</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$grey300</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#d1d5da</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-400 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey400</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#959da5</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey400</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#959da5</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-500 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey500</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#6a737d</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey500</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#6a737d</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-600 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey600</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#586069</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey600</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#586069</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-700 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey700</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#444d56</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey700</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#444d56</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-800 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey800</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#2f363d</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey800</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#2f363d</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-900 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey900</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#24292e</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey900</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#24292e</p>
+                                            </div>
                                         </td>
                                     </tr>
-                                    
+
                                 </table>
                             </div>
 
@@ -559,71 +610,115 @@
                                 <table id="table-purple">
                                     <tr class="purple-title-color font-white">
                                         <th>Purple</th>
-                                    </tr>  
+                                    </tr>
                                     <tr>
                                         <td class="purple-title-color grid">
-                                                <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple</p></div>
-                                                <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#6f42c1</p></div>
-                                        </td>      
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#6f42c1</p>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-000 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$purple000</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#f5f0ff</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$purple000</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#f5f0ff</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-100 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$purple100</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#e6dcfd</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$purple100</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#e6dcfd</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-200 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$purple200</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#d1bcf9</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$purple200</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#d1bcf9</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-300 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple300</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#b392f0</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple300</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#b392f0</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-400 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple400</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#8a63d2</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple400</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#8a63d2</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-500 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple500</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#6f42c1</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple500</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#6f42c1</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-600 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple600</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#5a32a3</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple600</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#5a32a3</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-700 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple700</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#4c2889</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple700</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#4c2889</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-800 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple800</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#3a1d6e</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple800</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#3a1d6e</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-900 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple900</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#29134e</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple900</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#29134e</p>
+                                            </div>
                                         </td>
                                     </tr>
                                 </table>
@@ -633,71 +728,115 @@
                                 <table id="table-green">
                                     <tr class="green-title-color font-white">
                                         <th>Green</th>
-                                    </tr>  
+                                    </tr>
                                     <tr>
                                         <td class="green-title-color grid">
-                                                <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green</p></div>
-                                                <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#28a745</p></div>
-                                        </td>      
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#28a745</p>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="green-000 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$green000</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#f0fff4</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$green000</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#f0fff4</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-100 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$green100</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#dcffe4</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$green100</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#dcffe4</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-200 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$green200</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#bef5cb</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$green200</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#bef5cb</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-300 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green300</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#85e89d</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green300</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#85e89d</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-400 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green400</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#34d058</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green400</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#34d058</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-500 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green500</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#28a745</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green500</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#28a745</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-600 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green600</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#22863a</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green600</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#22863a</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-700 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green700</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#176f2c</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green700</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#176f2c</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-800 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green800</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#165c26</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green800</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#165c26</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-900 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green900</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#144620</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green900</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#144620</p>
+                                            </div>
                                         </td>
                                     </tr>
                                 </table>
@@ -723,10 +862,10 @@
                         <!-- Modify the layout of sample code by <br> -->
                         <h3>Sample code:</h3>
                         <div class="codearea">&lt;nav class="bullet-list"&gt;<br><br>
-                &lt;a&gt;link 1&lt;/a&gt;<br><br>
-                &lt;a&gt;link 2&lt;/a&gt;<br><br>
-                &lt;a&gt;link 3&lt;/a&gt;<br><br>
-                &lt;/nav&gt;</div>
+                            &lt;a&gt;link 1&lt;/a&gt;<br><br>
+                            &lt;a&gt;link 2&lt;/a&gt;<br><br>
+                            &lt;a&gt;link 3&lt;/a&gt;<br><br>
+                            &lt;/nav&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <nav class="sample-main-nav">
@@ -745,12 +884,12 @@
                         <!-- Modify the layout of sample code by <br> -->
                         <h3>Sample code:</h3>
                         <div class="codearea">&lt;nav class="bullet-list"&gt;<br><br>
-                &lt;a&gt;link 1&lt;/a&gt;<br><br>
-                &lt;a&gt;link 2&lt;/a&gt;<br><br>
-                &lt;a&gt;link 3&lt;/a&gt;<br><br>
-                &lt;a&gt;link 4&lt;/a&gt;<br><br>
-                &lt;a&gt;link 5&lt;/a&gt;<br><br>
-                &lt;/nav&gt;</div>
+                            &lt;a&gt;link 1&lt;/a&gt;<br><br>
+                            &lt;a&gt;link 2&lt;/a&gt;<br><br>
+                            &lt;a&gt;link 3&lt;/a&gt;<br><br>
+                            &lt;a&gt;link 4&lt;/a&gt;<br><br>
+                            &lt;a&gt;link 5&lt;/a&gt;<br><br>
+                            &lt;/nav&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <nav class="side-nav">
@@ -770,8 +909,8 @@
                         <!-- Modify the layout of sample code by <br> -->
                         <h3>Sample code:</h3>
                         <div class="codearea">&lt;ol&gt;<br><br>
-                &lt;li&gt;&lt;input type="color" value="#D6D6D6" class="product-list"&gt;&lt;/li&gt;<br><br>
-                &lt;/ol&gt;</div>
+                            &lt;li&gt;&lt;input type="color" value="#D6D6D6" class="product-list"&gt;&lt;/li&gt;<br><br>
+                            &lt;/ol&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <ol>
@@ -802,10 +941,10 @@
 
                         <h3>Sample code:</h3>
                         <div class="codearea">&lt;nav class="bullet-list"&gt;
-                &lt;a&gt;link 1&lt;/a&gt;
-                &lt;a&gt;link 2&lt;/a&gt;
-                &lt;a&gt;link 3&lt;/a&gt;
-                &lt;/nav&gt;</div>
+                            &lt;a&gt;link 1&lt;/a&gt;
+                            &lt;a&gt;link 2&lt;/a&gt;
+                            &lt;a&gt;link 3&lt;/a&gt;
+                            &lt;/nav&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <div class="grid sample-footer">
@@ -833,8 +972,8 @@
 
                         <h3>Sample code:</h3>
                         <div class="codearea">&lt;div class="container grid"&gt;
-                &lt;div class="block grid-item"&gt;&lt;/div&gt;
-                &lt;/div&gt;</div>
+                            &lt;div class="block grid-item"&gt;&lt;/div&gt;
+                            &lt;/div&gt;</div>
 
                         <h3>Rendered element:</h3>
                         <!-- <div class="container grid">
