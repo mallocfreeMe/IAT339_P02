@@ -104,103 +104,78 @@
                 </div>
             </section>
 
-            <section class="information-area grid">
+            <section class="information-area">
 
-                <section class="payment grid-col-1of2_noHeight">
+                <section class="payment">
                     <h3>Payment information</h3>
 
                     <form class="payment-detail">
-                        <label>Name on credit card</label>
-                        <div>
+
+                        <div class="credit-name">
+                            <label>Name on credit card</label>
                             <input type="text" placeholder="Jason Zapata">
                         </div>
 
                         <div class="card-line">
                             <label>Credit card number</label>
                             <div class="card-line-border">
-                                <input type="text" placeholder="4545 4545 4545 454">
-                                <img src="img/icon/visa.png">
+                                <input type="text" placeholder="4545 4545 4545 4545 4545">
+                                <div class="credit-card-image">
+                                    <img src="img/icon/visa.png">
+                                </div>
                             </div>
                         </div>
 
                         <div class="expire-data">
-                        <label>Expires on</label>
-                        <div>
-                            <div class="expire-left">
-                                <input type="text" list="expire-month">
-                                <datalist id="expire-month">
-                                    <option value="01"></option>
-                                    <option value="02"></option>
-                                    <option value="03"></option>
-                                    <option value="04"></option>
-                                    <option value="05"></option>
-                                    <option value="06"></option>
-                                    <option value="07"></option>
-                                    <option value="08"></option>
-                                    <option value="09"></option>
-                                    <option value="10"></option>
-                                    <option value="11"></option>
-                                    <option value="12"></option>
-                                </datalist>
+                            <label>Expires on</label>
+                            <div class="expire-line">
+                                <!-- <div class="expire-left"> -->
+                                    <input class="expire-left" type="text" list="expire-month" placeholder="February">
+                                    <datalist id="expire-month">
+                                        <option value="January"></option>
+                                        <option value="February"></option>
+                                        <option value="March"></option>
+                                        <option value="April"></option>
+                                        <option value="may"></option>
+                                        <option value="June"></option>
+                                        <option value="July"></option>
+                                        <option value="August"></option>
+                                        <option value="September"></option>
+                                        <option value="October"></option>
+                                        <option value="November"></option>
+                                        <option value="December"></option>
+                                    </datalist>
+                                <!-- </div> -->
+                                <!-- <div class="expire-right"> -->
+                                    <input class="expire-right" type="text" list="expire-year" placeholder="2020">
+                                    <datalist id="expire-year">
+                                        <option value="2005"></option>
+                                        <option value="2006"></option>
+                                        <option value="2007"></option>
+                                        <option value="2008"></option>
+                                        <option value="2009"></option>
+                                        <option value="2010"></option>
+                                        <option value="2011"></option>
+                                        <option value="2012"></option>
+                                        <option value="2013"></option>
+                                        <option value="2014"></option>
+                                        <option value="2015"></option>
+                                        <option value="2016"></option>
+                                        <option value="2017"></option>
+                                        <option value="2018"></option>
+                                        <option value="2019"></option>
+                                        <option value="2020"></option>
+                                        <option value="2021"></option>
+                                        <option value="2022"></option>
+                                    </datalist>
+                                <!-- </div> -->
                             </div>
-                            <div class="expire-right">
-                                <input type="text" list="expire-year">
-                                <datalist id="expire-year">
-                                    <option value="05"></option>
-                                    <option value="06"></option>
-                                    <option value="07"></option>
-                                    <option value="08"></option>
-                                    <option value="09"></option>
-                                    <option value="10"></option>
-                                    <option value="11"></option>
-                                    <option value="12"></option>
-                                    <option value="13"></option>
-                                    <option value="14"></option>
-                                    <option value="15"></option>
-                                    <option value="16"></option>
-                                    <option value="17"></option>
-                                    <option value="18"></option>
-                                    <option value="19"></option>
-                                    <option value="20"></option>
-                                    <option value="21"></option>
-                                    <option value="22"></option>
-                                </datalist>
-                            </div>
-                        </div>
                         </div>
 
                         <div class="cvc-area">
                             <label>CVC</label>
                             <input type="text" placeholder="454">
                         </div>
-                    </form>
-                </section>
-
-                <section class="address grid-col-1of2_noHeight">
-                    <h3>Billing Address</h3>
-
-                    <form class="address-detail">
-                        <label>Address</label>
-                        <div>
-                            <input type="text" placeholder="123 Holycrab Road">
-                        </div>
-                        
-                        
-                        <label>City</label>
-                        <div>
-                            <input type="text" placeholder="Surrey">
-                        </div>
-                            
-                        <label>Province</label>
-                        <div>
-                            <input type="text" placeholder="BC">
-                        </div>
-
-                        <label>Postal Code</label>
-                        <div>
-                            <input type="text" placeholder="V5B 3S1">
-                        </div>
-
                     </form>
                 </section>
 

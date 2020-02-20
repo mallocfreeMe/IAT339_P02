@@ -62,75 +62,84 @@
         <!-- <div class="grid-col-1of5"></div> -->
 
         <div class="grid-col-2of5_noHeight img-area">
-            <!-- https://www.4mejores.com/los-4-mejores-portatiles-calidad-precio-2015-2016/ -->
-            <img src="img/sign-in.png">
+            <!-- https://www.pexels.com/video/a-woman-discussing-something-on-a-laptop-3256573/ -->
+            <video id="signInVideo" loop="true" autoplay="true">
+                <source src="video/sign-in-video copy.mp4" type="video/mp4" />
+            </video>
+
+            <script>
+                $(document).ready(function () {
+                    $('#signInVideo').prop('muted', true).play()
+                });
+            </script>
+
         </div>
 
-        <div class="grid-col-3of5_noHeight">
-
-            <div class="register-link">
-                Not Registered?
-                <button onclick="showSignUp()">Create an account</button>
+        <div class="grid-col-3of5_noHeight grid-container">
+            <div class="grid-item-up">
+                <div class="register-link">
+                    Not Registered?
+                    <button id="buttonSignUp" onclick="showSignUp()">Create an account</button>
+                    <div id="signUpForm" class="sign-up-form">
+                        <div>
+                            <input type="text" name="username" placeholder="Enter your username"></div>
+                        <div>
+                            <input type="password" name="password" placeholder="Enter your password">
+                        </div>
+                        <div>
+                            <button onclick="clickSignUp()">Sign up</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <script>
-                function showSignUp() {
-                    document.getElementById("signInForm").style.display = "none";
-                    document.getElementById("signUpForm").style.display = "block";
-                }
+                let count = 0;
+                $(document).ready(function () {
+                    $("#buttonSignUp").click(function () {
+                        count += 1;
+                        if (count % 2) {
+                            $("#signUpForm").slideDown();
+                        } else {
+                            $("#signUpForm").slideUp();
+                        }
+                    });
+                });
+
+                function clickSignUp() {
+                                window.location = "signIn.html";
+                            }
             </script>
 
-            <!-- Sign Up form-->
-            <div id="signUpForm" class="sign-up">
-                <h2>Sign up</h2>
+            <div class="grid-item-middle">
 
-                <h3>Subtitle...</h3>
+                <!-- Sign In form -->
+                <div id="signInForm" class="sign-in">
+                    <h2>Sign in to Laptophub</h2>
 
-                <section class="sign-up-content">
+                    <h3>Enter your details below</h3>
 
-                    <form class="sign-up-username" id="sign-up-form">
-                        <input type="text" name="username" placeholder="Username">
-                        <input type="password" name="password" placeholder="Password">
-                    </form>
+                    <section class="sign-in-content">
 
-                    <button onclick="goBack()">Sign up</button>
-                    <button onclick="goBack()">Close</button>
+                        <form class="sign-in-username">
+                            <input type="text" name="username" placeholder="Username">
+                            <input type="password" name="password" placeholder="Password">
+                        </form>
 
+                        <div class="sign-in-button">
+                            <button onclick="myFunction()">Log in</button>
+                        </div>
 
-                    <script>
-                        function goBack() {
-                            window.location = "signIn.html";
-                        }
-                    </script>
-                </section>
-            </div>
-            <!-- end of sign up form -->
-
-            <!-- Sign In form -->
-            <div id="signInForm" class="sign-in">
-                <h2>Sign in to Laptophub</h2>
-
-                <h3>Enter your details below</h3>
-
-                <section class="sign-in-content">
-
-                    <form class="sign-in-username">
-                        <input type="text" name="username" placeholder="Username">
-                        <input type="password" name="password" placeholder="Password">
-                    </form>
-
-                    <div class="sign-in-button">
-                        <button onclick="myFunction()">Log in</button>
-                    </div>
-
-                    <script>
-                        function myFunction() {
-                            window.location = "index.html";
-                        }
-                    </script>
-                </section>
+                        <script>
+                            function myFunction() {
+                                window.location = "index.html";
+                            }
+                        </script>
+                    </section>
+                </div>
             </div>
             <!-- end of Sign In form -->
+            <div class="grid-item-bottom"></div>
 
         </div>
 
