@@ -11,6 +11,12 @@ body {
     background-color: #F8F8FF;
 }
 
+/* styling for all the buttons */
+
+button {
+    cursor: pointer;
+}
+
 /* styling for side filter  */
 
 .side_filter {
@@ -24,14 +30,8 @@ body {
     margin-bottom: 2em;
 }
 
-.side_filter button {
-    text-align: left;
-    width: 100%;
-    font-size: 1em;
-    background-color: #6200EE;
-    color: white;
-    padding: 1em;
-    border: none;
+#priceList, #factoryList {
+    padding-bottom: 1em;
 }
 
 .side_filter_category ul {
@@ -51,9 +51,35 @@ body {
     padding-left: 1em;
 }
 
+/* styling for show filter button */
+
+.showFilterButton {
+    background-image: url(../img/icon/up.png);
+    background-size: 0.8em 0.8em;
+    background-repeat: no-repeat;
+    background-position: 14em center;
+    text-align: left;
+    width: 100%;
+    font-size: 1em;
+    background-color: #6200EE;
+    color: white;
+    padding: 1em;
+    border: none;
+}
+
+/* styling for view all button */
+
+.viewAllButton {
+    margin-left: 1em;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
 /* styling product item */
 
 .individual_product {
+    position: relative;
     width: 90%;
     color: black;
     background-color: #E6E6E6;
@@ -103,4 +129,36 @@ body {
     background-color: #6200EE;
     color: white;
     padding: 1em;
+}
+
+.triangle-topRight {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5em solid white;
+    border-left: 5em solid transparent;
+    right: 0;
+}
+
+.productTag {
+    position: absolute;
+    font-size: 0.8em;
+    right: 1em;
+    top: 1em
+}
+
+.newTriangle {
+    border-top: 5em solid #005739;
+}
+
+.newTag {
+    color: white;
+}
+
+.saleTriangle {
+    border-top: 5em solid #0000C9;
+}
+
+.saleTag {
+    color: white;
 }

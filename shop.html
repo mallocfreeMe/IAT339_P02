@@ -11,6 +11,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script>
         function goToCart() {
             window.location = "shoppingCart.html";
@@ -67,9 +68,9 @@
 
                 <!-- Category -->
                 <section class="side_filter_category">
-                    <button>Shop By Category</button>
+                    <button id="showCategoryButton" class="showFilterButton">Shop By Category</button>
 
-                    <ul>
+                    <ul id="categoryList">
                         <li>Business Notebooks</li>
                         <li>Consumer Notebooks</li>
                         <li>Gaming Notebooks</li>
@@ -77,11 +78,29 @@
 
                 </section>
 
+                <script>
+                    let count = 0;
+                    let upIcon = "img/icon/up.png";
+                    let downIcon = "img/icon/down.png";
+                    $(document).ready(function () {
+                        $("#showCategoryButton").click(function () {
+                            count += 1;
+                            if (count % 2) {
+                                $("#categoryList").slideUp();
+                                $("#showCategoryButton").css("background-image", "url(" + downIcon + ")");
+                            } else {
+                                $("#categoryList").slideDown();
+                                $("#showCategoryButton").css("background-image", "url(" + upIcon + ")");
+                            }
+                        });
+                    });
+                </script>
+
                 <!-- Manufactruees -->
                 <section class="side_filter_factory">
-                    <button>Manufactures</button>
+                    <button id="showFactoryButton" class="showFilterButton">Manufactures</button>
 
-                    <form>
+                    <form id="factoryList">
 
                         <div>
                             <input type="checkbox">
@@ -143,15 +162,31 @@
                             <label for="vehicle3">RAZOR</label>
                         </div>
 
-                        View All
+                        <button class="viewAllButton">View All</button>
                     </form>
                 </section>
 
+                <script>
+                    let count2 = 0;
+                    $(document).ready(function () {
+                        $("#showFactoryButton").click(function () {
+                            count2 += 1;
+                            if (count2 % 2) {
+                                $("#factoryList").slideUp();
+                                $("#showFactoryButton").css("background-image", "url(" + downIcon + ")");
+                            } else {
+                                $("#factoryList").slideDown();
+                                $("#showFactoryButton").css("background-image", "url(" + upIcon + ")");
+                            }
+                        });
+                    });
+                </script>
+
                 <!-- Price -->
                 <section class="side_filter_price">
-                    <button>Price Range</button>
+                    <button class="showFilterButton" id="showPriceButton">Price Range</button>
 
-                    <form>
+                    <form id="priceList">
                         <div>
                             <input type="checkbox">
                             <label for="vehicle1"> $75.00 - $99.99 (4)</label>
@@ -182,10 +217,27 @@
                             <input type="checkbox">
                             <label for="vehicle3">$150.00 - $199.99 (9)</label>
                         </div>
-                        View All
+
+                        <button class="viewAllButton">View All</button>
                     </form>
 
                 </section>
+
+                <script>
+                    let count3 = 0;
+                    $(document).ready(function () {
+                        $("#showPriceButton").click(function () {
+                            count3 += 1;
+                            if (count3 % 2) {
+                                $("#priceList").slideUp();
+                                $("#showPriceButton").css("background-image", "url(" + downIcon + ")");
+                            } else {
+                                $("#priceList").slideDown();
+                                $("#showPriceButton").css("background-image", "url(" + upIcon + ")");
+                            }
+                        });
+                    });
+                </script>
 
             </div>
 
@@ -194,6 +246,10 @@
                 <div class="grid-row-1of3">
 
                     <div class="individual_product">
+                        
+                        <div class="triangle-topRight newTriangle"></div>
+                        <div class="productTag newTag">New</div>
+
                         <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
                         <div class="container">
                             <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
@@ -213,7 +269,7 @@
                                 <img src="img/icon/yes.png">In Stock
                             </div>
 
-                            <button onclick="goToCart()">Add to Cart</button>
+                            <button class="cart_button" onclick="goToCart()">Add to Cart</button>
                         </div>
                     </div>
 
@@ -222,7 +278,11 @@
                 <div class="grid-row-1of3">
 
                     <div class="individual_product">
+
+                        <div class="triangle-topRight saleTriangle"></div>
+                        <div class="productTag saleTag">Sale</div>
                         <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
+                        
                         <div class="container">
                             <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
 
@@ -453,7 +513,6 @@
         </div>
 
     </section>
-
 
     <!-- Footer -->
     <footer class="grid">
