@@ -10,7 +10,7 @@
   grid-template-rows: 30% 50% 20%;
 }
 
-.sign-in {
+.sign-up {
   margin-top: 1em;
   padding: 1em 6em;
   color: 	#2f363d;
@@ -18,20 +18,20 @@
   /* background-color: white; */
 }
 
-.sign-in h2 {
+.sign-up h2 {
   font-size: 1.8em;
   font-weight: 500;
   margin-bottom: 0.5em;
 }
 
-.sign-in h3 {
+.sign-up h3 {
   padding-left: 0;
   font-size: 1.2em;
   font-weight: lighter;
   margin-bottom: 0.5em;
 }
 
-.sign-in-content input[type=text] {
+.sign-up-content input[type=text] {
   width: 100%;
   height: 4em;
   margin-bottom: 1em;
@@ -40,7 +40,7 @@
   font-size: 0.9em;
 }
 
-.sign-in-content input[type=password]{  
+.sign-up-content input[type=password]{  
   width: 100%;
   height: 4em;
   margin-top: 1em;
@@ -50,11 +50,21 @@
   font-size: 0.9em;
 }
 
-.sign-in-content .sign-in-button {
+.email-input {
+  width: 100%;
+  height: 4em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: thin solid #959da5;
+  /* border-radius: 0.25em; */
+  font-size: 0.9em;
+}
+
+.sign-up-content .sign-up-button {
   text-align: center;
 }
 
-.sign-in-content button {
+.sign-up-content button {
   width: 35%;
   height: 3.5em;
   margin-top: 1em;
@@ -65,7 +75,7 @@
   /* border-radius: 2em; */
 }
 
-.sign-in-content input::placeholder {
+.sign-up-content input::placeholder {
   color: #959da5;
   padding-left: 1em;
 }

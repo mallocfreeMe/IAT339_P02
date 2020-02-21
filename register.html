@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignIn</title>
+    <title>Sign Up</title>
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/signIn.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -78,8 +78,8 @@
         <div class="grid-col-3of5_noHeight grid-container">
             <div class="grid-item-up">
                 <div class="register-link">
-                    Not Registered?
-                    <button id="buttonSignUp" onclick="clickSignUp()">Create an account</button>
+                    Already have an account?
+                    <button id="buttonSignIn" onclick="jumpToSignIn()">Sign in</button>
                     <!-- <div id="signUpForm" class="sign-up-form">
                         <div>
                             <input type="text" name="username" placeholder="Enter your username"></div>
@@ -106,33 +106,39 @@
                 //     });
                 // });
 
-                function clickSignUp() {
-                                window.location = "register.html";
-                            }
+                // function clickSignUp() {
+                //                 window.location = "signIn.html";
+                //             }
+
+                function jumpToSignIn() {
+                    window.location = "SignIn.html";
+                }
             </script>
 
             <div class="grid-item-middle">
 
                 <!-- Sign In form -->
-                <div id="signInForm" class="sign-in">
-                    <h2>Sign in to Laptophub</h2>
+                <div id="signUpForm" class="sign-up">
+                    <h2>Sign up for Laptophub</h2>
 
                     <h3>Enter your details below</h3>
 
-                    <section class="sign-in-content">
+                    <section class="sign-up-content">
 
-                        <form class="sign-in-username">
+                        <form class="sign-up-username">
                             <input type="text" name="username" placeholder="Username">
+                            <input class="email-input" type="text" name="e-mail" placeholder="E-mail">
                             <input type="password" name="password" placeholder="Password">
+                            <input type="password" name="comfirm-password" placeholder="Comform Password">
                         </form>
 
-                        <div class="sign-in-button">
-                            <button onclick="myFunction()">Log in</button>
+                        <div class="sign-up-button">
+                            <button onclick="myFunction()">Sign up</button>
                         </div>
 
                         <script>
                             function myFunction() {
-                                window.location = "index.html";
+                                window.location = "signIn.html";
                             }
                         </script>
                     </section>

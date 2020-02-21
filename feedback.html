@@ -11,6 +11,22 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHbw9Hbr0cHHUHYwAkBtIA3cddM_CuIfo&callback=initMap">
+    </script>
+    <script>
+        // Map tutorial from https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+
+        // Initialize and add the map
+        function initMap() {
+            // The location of Laptophub
+            var laptophub = { lat: 49.188, lng: -122.850 };
+            // The map, centered at Laptophub
+            var map = new google.maps.Map(
+                document.getElementById('google-map'), { zoom: 4, center: laptophub });
+            // The marker, positioned at Laptophub
+            var marker = new google.maps.Marker({ position: laptophub, map: map });
+        }
+    </script>
 </head>
 
 <body>
@@ -62,13 +78,15 @@
         <div class="grid-col-3of5_noHeight form-container">
             <div class="form-item-head contact-warn">
                 <h3>Feedback</h3>
-                <p>PLEASE NOTE THAT LAPTOPHUB HAS A LONG-STANDING COMPANY POLICY AGAINST ACCEPTING OR REVIEWING UNSOLICITED SUBMISSIONS OF CREATIVE MATERIALS. PLEASE DO NOT SEND US YOUR SCRIPTS, STORY IDEAS OR OTHER CREATIVE MATERIALS THROUGH THIS WEBSITE. WE WILL NOT BE ABLE TO CONSIDER THEM.</p>
+                <p>PLEASE NOTE THAT LAPTOPHUB HAS A LONG-STANDING COMPANY POLICY AGAINST ACCEPTING OR REVIEWING
+                    UNSOLICITED SUBMISSIONS OF CREATIVE MATERIALS. PLEASE DO NOT SEND US YOUR SCRIPTS, STORY IDEAS OR
+                    OTHER CREATIVE MATERIALS THROUGH THIS WEBSITE. WE WILL NOT BE ABLE TO CONSIDER THEM.</p>
 
                 <p class="warn-second-line">THANKS FOR YOUR UNDERSTANDING.</p>
             </div>
             <div class="form-item-body">
                 <form class="contact-form">
-                    
+
                     <div class="contact-name grid">
                         <div class="contact-first-name grid-col-1of2-noHeight">
                             <label>First Name</label>
@@ -118,10 +136,11 @@
 
 
             <div class="contact-map map-item-body">
-                
+                <!-- API: AIzaSyAHbw9Hbr0cHHUHYwAkBtIA3cddM_CuIfo -->
+                <div id="google-map"></div>
             </div>
 
-        </div>    
+        </div>
 
     </div>
 
