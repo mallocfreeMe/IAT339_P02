@@ -1,0 +1,163 @@
+/* Styling for contact content */
+
+.main-nav {
+  position: static;
+}
+
+
+/* Styling for grid display in form part */
+
+.form-container {
+  height: 100%;
+  display: grid;
+  grid-template: 'form-item-head' 'form-item-head' 'form-item-head' 'form-item-head'
+   'form-item-body' 'form-item-body' 'form-item-body' 'form-item-body' 'form-item-body' 'form-item-body';
+}
+
+/* ---------------- Form head ---------------- */
+.contact-warn {
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+.contact-warn h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 0;
+}
+
+.contact-warn p {
+  font-size: 1em;
+  font-weight: lighter;
+  line-height: 150%;
+}
+
+.warn-second-line {
+  margin-top: 2em;
+}
+
+
+
+/* ---------------- Form body ---------------- */
+.contact-form {
+  margin-left: 6em;
+  margin-right: 6em;
+  margin-top: 2em;
+}
+
+.contact-form .grid {
+  justify-content: space-between;
+}
+
+.contact-first-name label, .contact-last-name label {
+  font-size: 1.2em;
+  color: #444D56;
+  margin-bottom: 0.5em;
+}
+
+.contact-first-name input[type=text], .contact-last-name input[type=text] {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  width: 100%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+  border: thin solid #959DA5;
+  background-color: #F6F8FA;
+}
+
+.contact-email label {
+  display: block;
+  font-size: 1.2em;
+  color: #444D56;
+  margin-bottom: 0.5em;
+}
+
+.contact-email input[type=email] {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  margin-bottom: 2em;
+  width: 100%;
+  border: thin solid #959DA5;
+  background-color: #F6F8FA;
+}
+
+.contact-subject label {
+  display: block;
+  font-size: 1.2em;
+  color: #444D56;
+  margin-bottom: 0.5em;
+
+}
+
+.contact-subject input[type=text] {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  margin-bottom: 2em;
+  width: 100%;
+  border: thin solid #959DA5;
+  background-color: #F6F8FA;
+}
+
+.contact-message label {
+  display: block;
+  font-size: 1.2em;
+  color: #444D56;
+  margin-bottom: 0.5em;
+}
+
+.contact-message textarea {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  margin-bottom: 2em;
+  width: 100%;
+  height: 20vh;
+  border: thin solid #959DA5;
+  background-color: #F6F8FA;
+}
+
+.contact-submit-button {
+  margin-bottom: 4em;
+}
+
+.contact-submit-button button{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 30%;
+  background-color: #7E39FB;
+  color: white;
+}
+
+
+/* Styling for grid display in map part */
+.map-container {
+  /* height: 100vh; */
+  display: grid;
+  grid-template-rows: 30% 55%;
+}
+
+.map-container .contact-information {
+  margin-left: 4em;
+  margin-right: 6em;
+  margin-top: 6em;
+}
+
+.map-container .contact-map {
+  margin: 3em 6em 2em 4em;
+  border: thin solid black;
+}
+
+.contact-information p {
+  font-size: 1em;
+  font-weight: lighter;
+  line-height: 150%;
+  letter-spacing: 0.2em;
+}
+
+.address-info {
+  margin-bottom: 4em;
+}
