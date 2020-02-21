@@ -15,6 +15,10 @@
         function goToCart() {
             window.location = "shoppingCart.html";
         }
+
+        function goToShopDeals() {
+            window.location = "shop_deals.html";
+        }
     </script>
 </head>
 
@@ -59,54 +63,98 @@
     </header>
 
     <!-- Slideshow container -->
-    <div class="slideshow">
+    <div class="slideShow">
+        <img src="img/icon/previous_icon.png" id="previous_button">
+        <img src="img/icon/next_icon.png" id="next_button">
 
-        <!-- Full-width images with caption text -->
-        <div class="slideShow_image" id="slideShow_image_1">
-            <h1>Laptops you'll love. Deals you'll adore</h1>
-            <button class="slideshow_button" onclick="myFunction()">Shop deals</button>
-        </div>
+        <pre id="event1_heading"><h1>Live life on the go
+with our awesome 
+laptop deals.</h1></pre>
+        <pre id="event1_content"><p>Whether you design, game, or work, we have
+the right laptop for you. Explore our great
+offers on laptops, MacBooks and Chromebooks.</p></pre>
 
-        <div class="slideShow_image" id="slideShow_image_2">
-            <h1>Laptops you'll love. Deals you'll adore</h1>
-            <button class="slideshow_button" onclick="myFunction()">Shop deals</button>
-        </div>
+        <button onclick="goToShopDeals()">Shop Deals</button>
 
-        <div class="slideShow_image" id="slideShow_image_3">
-            <h1>Laptops you'll love. Deals you'll adore</h1>
-            <button class="slideshow_button" onclick="myFunction()">Shop deals</button>
+        <div class="dot_group">
+            <span class="dot" id="dot_one"></span>
+            <span class="dot" id="dot_two"></span>
+            <span class="dot" id="dot_three"></span>
         </div>
 
         <script>
-            function myFunction() {
-                window.location = "shop_deals.html";
-            }
+            let count = 1;
+
+            $("#dot_one").css("background-color", "#6200EE");
+            $("#dot_two").css("background-color", "white");
+            $("#dot_three").css("background-color", "white");
+
+            $(document).ready(function () {
+                $("#previous_button").click(function () {
+                    if (count > 1) {
+                        count--;
+                        let image_url = "img/event" + count + ".jpg";
+                        $(".slideShow").css("background-image", "url(" + image_url + ")");
+                    } else {
+                        count = 3;
+                        let image_url = "img/event" + count + ".jpg";
+                        $(".slideShow").css("background-image", "url(" + image_url + ")");
+                    }
+                });
+
+
+                $("#next_button").click(function () {
+                    if (count < 3) {
+                        count++;
+                        let image_url = "img/event" + count + ".jpg";
+                        $(".slideShow").css("background-image", "url(" + image_url + ")");
+                    } else {
+                        count = 1;
+                        let image_url = "img/event" + count + ".jpg";
+                        $(".slideShow").css("background-image", "url(" + image_url + ")");
+                    }
+                });
+
+                $("#dot_one").click(function () {
+                    count = 1;
+                    let image_url = "img/event" + count + ".jpg";
+                    $(".slideShow").css("background-image", "url(" + image_url + ")");
+                });
+
+
+                $("#dot_two").click(function () {
+                    count = 2;
+                    let image_url = "img/event" + count + ".jpg";
+                    $(".slideShow").css("background-image", "url(" + image_url + ")");
+                });
+
+
+                $("#dot_three").click(function () {
+                    count = 3;
+                    let image_url = "img/event" + count + ".jpg";
+                    $(".slideShow").css("background-image", "url(" + image_url + ")");
+                });
+
+                $("#previous_button,#next_button,#dot_one, #dot_two, #dot_three").on("click", function () {
+                    if (count == 1) {
+                        $("#dot_one").css("background-color", "#6200EE");
+                        $("#dot_two").css("background-color", "white");
+                        $("#dot_three").css("background-color", "white"); 
+                    } else if (count == 2) {
+                        $("#dot_one").css("background-color", "white");
+                        $("#dot_two").css("background-color", "#6200EE");
+                        $("#dot_three").css("background-color", "white");
+                    } else if (count == 3) {
+                        $("#dot_one").css("background-color", "white");
+                        $("#dot_two").css("background-color", "white");
+                        $("#dot_three").css("background-color", "#6200EE");
+                    }
+                });
+
+            });
+
         </script>
-
     </div>
-
-    <div class="dot_group">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("slideShow_image");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-        }
-    </script>
 
     <!-- Home h1 -->
     <div class="grid">
