@@ -5,62 +5,191 @@
     margin-bottom: 3em;
 }
 
+body {
+    background-color: rgb(245, 245, 245);
+}
+
 /* styling product item */
-
-.individual_product {
-    width: 20%;
-    color: white;
-    background-color: #6200EE;
-    margin-bottom: 5em;
-}
-
-.individual_product img {
-    width: 100%;
-    height: 4em;
-}
-
-.container {
-    text-align: center;
-    /* padding: 1em 1em; */
-}
-
-/* styling for cart */
-
-.shopping_cart h1 {
+.shopping-cart-area {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 3em;
+    background-color: white;
     padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.shopping-cart-area h3 {
+    font-size: 1.6em;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-bottom: thin solid #E1E4E8;
+}
+
+.item-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 2fr 5fr 1fr 1fr 1fr;
+}
+
+.item-image {
+    grid-row: 1 / span 4;
+    grid-template-columns: 1 / 2;
+    width: 15em;
+    height: 15em;
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.item-name {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-left: 1em;
+    border-bottom: thin solid #E1E4E8;
+}
+
+.item-name p {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 1em;
+    /* padding-left: 1em; */
+}
+
+.item-price-origin {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    border-bottom: thin solid #E1E4E8;
+}
+
+.item-price-origin p {
+    font-size: 1.2em;
+    padding-top: 1em;
+    font-weight: lighter;
+    color: #6A737D;
+}
+
+.item-amount {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    border-bottom: thin solid #E1E4E8;
+}
+
+.item-amount input[type=number]{
+    width: 50%;
+    margin-top: 1em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.25em;
+    border: thin solid #6A737D;
+}
+
+.item-price {
+    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+    border-bottom: thin solid #E1E4E8;
+    text-align: right;
+}
+
+.item-price p {
+        font-size: 1.2em;
+        padding-top: 1em;
+        font-weight: bold;
+}
+
+.item-detail {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    margin-left: 1em;
+}
+
+.item-detail p {
+    font-size: 0.9em;
+    font-weight: lighter;
+    padding-top: 1em;
+}
+
+.item-remove {
+    grid-row: 2 / 3;
+    grid-column: 5 / 6;
+    text-align: right;
+}
+
+.item-remove button {
+    padding-top: 1em;
+    color: #009577;
+    border-style: hidden;
+}
+
+/* -------------- Total Part --------------- */
+
+.item-total {
+    text-align: right;
+}
+
+.total-content, .total-number {
+    display: inline-block;
+    border-bottom: thin solid #E1E4E8;
+    padding-bottom: 1em;
+}
+
+.total-number {
+    padding-left: 4em;
+}
+
+.shipping {
     color: #6200EE;
-    border-bottom: solid;
-    border-width: thin;
-    border-radius: 0.5px;
-    border-color: grey;
 }
 
-.shopping_cart table {
-    width: 65%;
+.total-price {
+    text-align: right;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    border-bottom: thin solid #E1E4E8;
 }
 
-.shopping_cart td {
-    color: #6200EE;
-    padding: 2em;
+.total-price .total-content, .total-price .total-number {
+    border: none;
 }
 
-.shopping_cart button {
-    float: right;
+.total-price .total-content p, .total-price .total-number p{
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
-#guest_pay_button {
-    padding: 1em;
+.pay-button {
+    text-align: right;
+    margin-top: 2em;
+}
+
+.pay-button button {
+    border: none;
+    background-color: #009577;
+    padding: 0.5em 1em;
     color: white;
-    background-color: #6200EE;
-    margin-right: 4em;
 }
 
-#logIn_pay_button {
-    padding: 1em;
-    color: black;
-    background-color: #03DAC6;
+
+
+/* ---------------- Empty Warning --------------- */
+#empty-warning {
+    display: none;
+    height: 50vh;
+    text-align: center;
+    margin-top: 10rem;
 }
 
-footer {
-    margin-top: 15em;
+#empty-warning p {
+    font-size: 1.8em;
+    color: #6200ee;
 }
+
+#empty-warning a {
+    color: #03DAC6;
+    border-bottom: thin solid #03DAC6;
+}
+

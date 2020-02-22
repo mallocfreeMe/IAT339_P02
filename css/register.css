@@ -4,18 +4,19 @@
   position: static;
 }
 
-.grid-container {
+/* .grid-container {
   display: grid;
-  /* grid-template: 'grid-item-up' 'grid-item-middle' 'grid-item-middle' 'grid-item-bottom'; */
-  grid-template-rows: 30% 50% 20%;
-}
+  grid-template-rows: 30% 70%;
+} */
 
 .sign-up {
-  margin-top: 1em;
-  padding: 1em 6em;
   color: 	#2f363d;
-  position: relative;
-  /* background-color: white; */
+  width: 60%;
+  padding-left: 6em;
+  padding-right: 6em;
+  position: absolute;
+  top: 50%;
+  margin: -10em 0 0 0;
 }
 
 .sign-up h2 {
