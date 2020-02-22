@@ -105,6 +105,16 @@
   flex-direction: column;
 }
 
+.grid-row-1of5 {
+  flex: 1 1 20%;
+  flex-direction: column;
+}
+
+.grid-row-3of5 {
+  flex: 1 1 60%;
+  flex-direction: column;
+}
+
 
 /* Grid items for sample structure  */
 

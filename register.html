@@ -75,9 +75,9 @@
 
         </div>
 
-        <div class="grid-col-3of5_noHeight grid-container">
-            <div class="grid-item-up">
-                <div class="register-link">
+        <div class="grid-col-3of5_noHeight sign-up-block">
+            <!-- <div class="grid-item-up"> -->
+                <div class="register-link grid-row-1of5">
                     Already have an account?
                     <button id="buttonSignIn" onclick="jumpToSignIn()">Sign in</button>
                     <!-- <div id="signUpForm" class="sign-up-form">
@@ -91,63 +91,48 @@
                         </div>
                     </div> -->
                 </div>
-            </div>
+                <!-- </div> -->
 
-            <script>
-                // let count = 0;
-                // $(document).ready(function () {
-                //     $("#buttonSignUp").click(function () {
-                //         count += 1;
-                //         if (count % 2) {
-                //             $("#signUpForm").slideDown();
-                //         } else {
-                //             $("#signUpForm").slideUp();
-                //         }
-                //     });
-                // });
+                <script>
+                    function jumpToSignIn() {
+                        window.location = "SignIn.html";
+                    }
+                </script>
 
-                // function clickSignUp() {
-                //                 window.location = "signIn.html";
-                //             }
+                <!-- <div class="grid-item-middle"> -->
+                <div class="grid-row-3of5">
+                    <!-- Sign In form -->
+                    <div id="signUpForm" class="sign-up">
+                        <h2>Sign up for Laptophub</h2>
 
-                function jumpToSignIn() {
-                    window.location = "SignIn.html";
-                }
-            </script>
+                        <h3>Enter your details below</h3>
 
-            <div class="grid-item-middle">
+                        <section class="sign-up-content">
 
-                <!-- Sign In form -->
-                <div id="signUpForm" class="sign-up">
-                    <h2>Sign up for Laptophub</h2>
+                            <form class="sign-up-username">
+                                <input type="text" name="username" placeholder="Username">
+                                <input class="email-input" type="text" name="e-mail" placeholder="E-mail">
+                                <input type="password" name="password" placeholder="Password">
+                                <input type="password" name="comfirm-password" placeholder="Comform Password">
+                            </form>
 
-                    <h3>Enter your details below</h3>
+                            <div class="sign-up-button">
+                                <button onclick="myFunction()">Sign up</button>
+                            </div>
 
-                    <section class="sign-up-content">
-
-                        <form class="sign-up-username">
-                            <input type="text" name="username" placeholder="Username">
-                            <input class="email-input" type="text" name="e-mail" placeholder="E-mail">
-                            <input type="password" name="password" placeholder="Password">
-                            <input type="password" name="comfirm-password" placeholder="Comform Password">
-                        </form>
-
-                        <div class="sign-up-button">
-                            <button onclick="myFunction()">Sign up</button>
-                        </div>
-
-                        <script>
-                            function myFunction() {
-                                window.location = "signIn.html";
-                            }
-                        </script>
-                    </section>
+                            <script>
+                                function myFunction() {
+                                    window.location = "signIn.html";
+                                }
+                            </script>
+                        </section>
+                    </div>
                 </div>
+                <!-- end of Sign In form -->
+                <!-- <div class="grid-item-bottom"></div> -->
+                <div class="grid-row-1of5"></div>
             </div>
-            <!-- end of Sign In form -->
-            <div class="grid-item-bottom"></div>
-
-        </div>
+        
 
     </div>
 

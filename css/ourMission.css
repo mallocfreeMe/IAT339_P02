@@ -2,12 +2,209 @@
 
 .main-nav {
     position: static;
-    margin-bottom: 3em;
+    /* margin-bottom: 3em; */
 }
 
 body {
-    background-color: #F8F8FF;
+    background-color: rgb(245, 245, 250);
+    font-weight: lighter;
+}
+
+h2 {
+    color: #444D56;
+}
+
+h3, p {
+    color: #6A737D;
 }
 
 /* styling about-us item */
- 
+.our-mission-area {
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+
+/* ------------- Title & About area -------------- */
+.title-about-area {
+    background-color: white;
+}
+
+.title-about-area h2 {
+    font-size: 2.3em;
+    font-weight: lighter;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+}
+
+.title-about-area .mission-subtitle {
+    padding-top: 0.5em;
+    font-size: 1em;
+}
+
+.title-about-area h3 {
+    padding-top: 1.5em;
+    padding-bottom: 0;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.about-content {
+    padding-left: 6em;
+    padding-right: 6em;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-bottom: 5em;
+}
+
+.content-up {
+    padding-bottom: 1em;
+}
+
+
+
+/* ------------- Leader area -------------- */
+.leadership-area {
+    background-color: white;
+    margin-top: 2em;
+}
+
+.leadership-area h3 {
+    padding-top: 1.5em;
+    padding-bottom: 0;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.leadership-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.leadership-item {
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+
+.landscape-image {
+    display: inline-block;
+    position: relative;
+    width: 8em;
+    height: 8em;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 1.5em;
+}
+
+.leadership-item img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+}
+
+.leadership-item .margin-left-20 {
+    margin-left: -20px;
+}
+
+.leadership-item .margin-left-0 {
+    margin-left: 0;
+}
+
+.leader-name {
+    font-weight: 400;
+    font-size: 1.3em;
+    color:  #444D56;
+    margin-bottom: 0.25em;
+}
+
+.leader-position {
+    font-size: 0.8em;
+    margin-bottom: 2em;
+}
+
+.leader-detail {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+
+/* ------------- Team member area -------------- */
+.team-area {
+    background-color: white;
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+
+.team-area h3 {
+    padding-top: 1.5em;
+    padding-bottom: 0;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.team-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.team-item {
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+
+.team-item img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+}
+
+.team-item-name {
+    font-weight: 400;
+    font-size: 1.3em;
+    color:  #444D56;
+    margin-bottom: 0.25em;
+}
+
+.team-item-position {
+    font-size: 0.8em;
+    margin-bottom: 2em;
+}
+
+
+/* ------------- Activity area -------------- */
+.activity-area {
+    background-color: white;
+    margin-top: 2em;
+    margin-bottom: 6em;
+    padding-bottom: 4em;
+}
+
+.activity-area h3 {
+    font-size: 2em;
+    font-weight: lighter;
+    padding-top: 2em;
+}
+
+.activity-image {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.activity-image img {
+    width: 100%;
+    height: auto;
+}
+
+footer h3{
+    color: #ffffff;
+}

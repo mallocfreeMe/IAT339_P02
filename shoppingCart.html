@@ -11,6 +11,46 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        let showItemOne = true;
+        let showItemTwo = true;
+        let showItemThree = true;
+        function hiddenItemOne() {
+            document.getElementById("item-one").style.display = 'none';
+            showItemOne = false;
+            if (showItemOne == false && showItemTwo == false && showItemThree == false) {
+            document.getElementById("empty-warning").style.display = 'block';
+            document.getElementById("total-area").style.display = 'none';
+            document.getElementById("total-price-area").style.display = 'none';
+            document.getElementById("pay-button").style.display = 'none';            
+            }
+        }
+        function hiddenItemTwo() {
+            document.getElementById("item-two").style.display = 'none';
+            showItemTwo = false;
+            if (showItemOne == false && showItemTwo == false && showItemThree == false) {
+            document.getElementById("empty-warning").style.display = 'block';
+            document.getElementById("total-area").style.display = 'none';
+            document.getElementById("total-price-area").style.display = 'none';
+            document.getElementById("pay-button").style.display = 'none'; 
+            }
+        }
+        function hiddenItemThree() {
+            document.getElementById("item-three").style.display = 'none';
+            showItemThree = false;
+            if ((showItemOne==false) && (showItemTwo == false) && (showItemThree == false)) {
+            document.getElementById("empty-warning").style.display = 'block';
+            document.getElementById("total-area").style.display = 'none';
+            document.getElementById("total-price-area").style.display = 'none';
+            document.getElementById("pay-button").style.display = 'none'; 
+            }
+        }
+    </script>
+    <script>
+        function jumpToPayment() {
+            window.location = "payment.html"
+        }
+    </script>
 </head>
 
 <body>
@@ -53,47 +93,115 @@
     </header>
 
 
-    <section class="grid">
-        <div class="grid-col-1of5_noHeight"></div>
+    <section class="shopping-cart-area">
 
-        <div class="shopping_cart grid-col-3of5_noHeight">
-            <h1>Shopping Cart</h1>
-            <table>
-                <tr>
-                    <td>Product Description</td>
-                    <td>Status</td>
-                    <td>Quantity</td>
-                    <td>Item Price</td>
-                    <td>Discount</td>
-                    <td>Total</td>
-                </tr>
+        <h3>Items in Your Bag</h3>
 
-                <tr>
-                    <td>
-                        Dell xps 15
-                    </td>
-                    <td>In Stock</td>
-                    <td>1</td>
-                    <td>$1500</td>
-                    <td>15%</td>
-                    <td>$1099.99</td>
-                </tr>
-                <td></td>
-            </table>
-
-            <button id="logIn_pay_button" onclick="myFunction()">Log in to pay</button>
-            <button id="guest_pay_button" onclick="myFunction()">As a guest to pay</button>
-
-            <script>
-                function myFunction() {
-                    window.location = "payment.html";
-                }
-            </script>
+        <div id="item-one" class="item-container">
+            <div class="item-image">
+                <img src="img/laptop-factory.jpg">
+            </div>
+            <div class="item-name">
+                <p>Dell xps 15</p>
+            </div>
+            <div class="item-price-origin">
+                <p>$1499.00</p>
+            </div>
+            <div class="item-amount">
+                <input type="number" min="0" placeholder="1">
+            </div>
+            <div class="item-price">
+                <p>$1275.00</p>
+            </div>
+            <div class="item-detail">
+                <p>Laptop detail</p>
+            </div>
+            <div class="item-remove">
+                <button onclick="hiddenItemOne()">Remove</button>
+            </div>
         </div>
 
-        <div class="grid-col-1of5_noHeight"></div>
+        <div id="item-two" class="item-container">
+            <div class="item-image">
+                <img src="img/laptop-factory.jpg">
+            </div>
+            <div class="item-name">
+                <p>Dell xps 15</p>
+            </div>
+            <div class="item-price-origin">
+                <p>$1499.00</p>
+            </div>
+            <div class="item-amount">
+                <input type="number" min="0" placeholder="1">
+            </div>
+            <div class="item-price">
+                <p>$1275.00</p>
+            </div>
+            <div class="item-detail">
+                <p>Laptop detail</p>
+            </div>
+            <div class="item-remove">
+                <button onclick="hiddenItemTwo()">Remove</button>
+            </div>
+        </div>
+
+        <div id="item-three" class="item-container">
+            <div class="item-image">
+                <img src="img/laptop-factory.jpg">
+            </div>
+            <div class="item-name">
+                <p>Dell xps 15</p>
+            </div>
+            <div class="item-price-origin">
+                <p>$1499.00</p>
+            </div>
+            <div class="item-amount">
+                <input type="number" min="0" placeholder="1">
+            </div>
+            <div class="item-price">
+                <p>$1275.00</p>
+            </div>
+            <div class="item-detail">
+                <p>Laptop detail</p>
+            </div>
+            <div class="item-remove">
+                <button onclick="hiddenItemThree()">Remove</button>
+            </div>
+        </div>
+
+        <div id="total-area" class="item-total">
+            <div class="total-content">
+                <div class="subtotal">Subtotal</div>
+                <div class="shipping">Free Shipping</div>
+                <div class="tax">Tax</div>
+            </div>
+
+            <div class="total-number">
+                <div class="subtotal">$1275.00</div>
+                <div class="shipping">$0.00</div>
+                <div class="tax">$127.50</div>
+            </div>
+        </div>
+
+        <div id="total-price-area" class="total-price">
+            <div class="total-content"><p>Total</p></div>
+            <div class="total-number"><p>$1147.50</p></div>
+        </div>
+
+        <div id="pay-button" class="pay-button">
+            <button onclick="jumpToPayment()">As a guest to pay</button>
+            <button onclick="jumpToPayment()">Log in to pay</button>
+        </div>
+
+        <div id="empty-warning">
+            <p>Your cart is empty!</p>
+            <div>
+                <a href="shop.html">Click here back to shop page.</a>
+            </div>
+        </div>
 
     </section>
+
 
     <!-- Footer -->
     <footer class="grid">
