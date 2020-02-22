@@ -86,6 +86,7 @@ body {
     padding-bottom: 0.25em;
     border-radius: 0.25em;
     border: thin solid #6A737D;
+    text-align: center;
 }
 
 .item-price {
@@ -161,9 +162,17 @@ body {
     font-weight: bold;
 }
 
-.pay-button {
+#pay-button {
     text-align: right;
+}
+
+.pay-button {
     margin-top: 2em;
+    display: inline-block;
+}
+
+.button-left {
+    margin-right: 2em;
 }
 
 .pay-button button {
@@ -171,6 +180,7 @@ body {
     background-color: #009577;
     padding: 0.5em 1em;
     color: white;
+    cursor: pointer;
 }
 
 

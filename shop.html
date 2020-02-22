@@ -17,6 +17,36 @@
             alert("The product successfully added to your shopping cart");
         }
     </script>
+    <script>
+        let count = 0;
+        function clickCheckbox() {
+            count++;
+            if(count == 2) {
+                window.location = "compare.html";
+            }
+            count = count%2;
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            let isCheckboxClicked1 = false;
+            let isCheckboxClicked2 = false;
+            let isCheckboxClicked3 = false;
+            let isCheckboxClicked4 = false;
+            let isCheckboxClicked5 = false;
+            let isCheckboxClicked6 = false;
+            let isCheckboxClicked7 = false;
+            let isCheckboxClicked8 = false;
+            let isCheckboxClicked9 = false;
+            // $("#checkbox-1,#checkbox-2,#checkbox-3, #checkbox-4, #checkbox-5, checkbox-6, checkbox-7, checkbox-8, checkbox-9").on("click", function () {
+            $("#checkbox-1").on("click", function () {
+                if(isCheckboxClicked1 == false)
+                isCheckboxClicked1 = true;
+            });
+            
+                });
+    </script>
 </head>
 
 <body>
@@ -260,7 +290,7 @@
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne">
+                                <input type="checkbox" value="productOne" id="checkbox-1">
                                 <label> Compare Product</label><br>
                             </form>
 
@@ -290,7 +320,7 @@
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne">
+                                <input type="checkbox" value="productOne" id="checkbox-2">
                                 <label> Compare Product</label><br>
                             </form>
 
@@ -319,7 +349,7 @@
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne">
+                                <input type="checkbox" value="productOne" id="checkbox-3">
                                 <label> Compare Product</label><br>
                             </form>
 
@@ -350,7 +380,7 @@
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne">
+                                <input type="checkbox" value="productOne" id="checkbox-4">
                                 <label> Compare Product</label><br>
                             </form>
 
@@ -378,7 +408,7 @@
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne">
+                                <input type="checkbox" value="productOne" id="checkbox-5">
                                 <label> Compare Product</label><br>
                             </form>
 
@@ -406,7 +436,7 @@
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne">
+                                <input type="checkbox" value="productOne" id="checkbox-6">
                                 <label> Compare Product</label><br>
                             </form>
 
@@ -438,7 +468,7 @@
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne">
+                                <input type="checkbox" value="productOne" id="checkbox-7">
                                 <label> Compare Product</label><br>
                             </form>
 
@@ -466,7 +496,7 @@
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne">
+                                <input type="checkbox" value="productOne" id="checkbox-8">
                                 <label> Compare Product</label><br>
                             </form>
 
@@ -494,7 +524,7 @@
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne">
+                                <input type="checkbox" value="productOne" id="checkbox-9">
                                 <label> Compare Product</label><br>
                             </form>
 

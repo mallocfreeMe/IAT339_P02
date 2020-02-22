@@ -19,30 +19,30 @@
             document.getElementById("item-one").style.display = 'none';
             showItemOne = false;
             if (showItemOne == false && showItemTwo == false && showItemThree == false) {
-            document.getElementById("empty-warning").style.display = 'block';
-            document.getElementById("total-area").style.display = 'none';
-            document.getElementById("total-price-area").style.display = 'none';
-            document.getElementById("pay-button").style.display = 'none';            
+                document.getElementById("empty-warning").style.display = 'block';
+                document.getElementById("total-area").style.display = 'none';
+                document.getElementById("total-price-area").style.display = 'none';
+                document.getElementById("pay-button").style.display = 'none';
             }
         }
         function hiddenItemTwo() {
             document.getElementById("item-two").style.display = 'none';
             showItemTwo = false;
             if (showItemOne == false && showItemTwo == false && showItemThree == false) {
-            document.getElementById("empty-warning").style.display = 'block';
-            document.getElementById("total-area").style.display = 'none';
-            document.getElementById("total-price-area").style.display = 'none';
-            document.getElementById("pay-button").style.display = 'none'; 
+                document.getElementById("empty-warning").style.display = 'block';
+                document.getElementById("total-area").style.display = 'none';
+                document.getElementById("total-price-area").style.display = 'none';
+                document.getElementById("pay-button").style.display = 'none';
             }
         }
         function hiddenItemThree() {
             document.getElementById("item-three").style.display = 'none';
             showItemThree = false;
-            if ((showItemOne==false) && (showItemTwo == false) && (showItemThree == false)) {
-            document.getElementById("empty-warning").style.display = 'block';
-            document.getElementById("total-area").style.display = 'none';
-            document.getElementById("total-price-area").style.display = 'none';
-            document.getElementById("pay-button").style.display = 'none'; 
+            if ((showItemOne == false) && (showItemTwo == false) && (showItemThree == false)) {
+                document.getElementById("empty-warning").style.display = 'block';
+                document.getElementById("total-area").style.display = 'none';
+                document.getElementById("total-price-area").style.display = 'none';
+                document.getElementById("pay-button").style.display = 'none';
             }
         }
     </script>
@@ -184,13 +184,21 @@
         </div>
 
         <div id="total-price-area" class="total-price">
-            <div class="total-content"><p>Total</p></div>
-            <div class="total-number"><p>$1147.50</p></div>
+            <div class="total-content">
+                <p>Total</p>
+            </div>
+            <div class="total-number">
+                <p>$1147.50</p>
+            </div>
         </div>
 
-        <div id="pay-button" class="pay-button">
-            <button onclick="jumpToPayment()">As a guest to pay</button>
-            <button onclick="jumpToPayment()">Log in to pay</button>
+        <div id="pay-button">
+            <div class="pay-button button-left">
+                <button onclick="jumpToPayment()">As a guest to pay</button>
+            </div>
+            <div class="pay-button">
+                <button onclick="jumpToPayment()">Log in to pay</button>
+            </div>
         </div>
 
         <div id="empty-warning">

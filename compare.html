@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/compare.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_-2uT2tTQS2vSHFbK_Z1QnNoJeN1obOE&callback=initMap">
+        </script>
+</head>
+
+<body>
+
+    <header>
+        <!-- nav for external navigation -->
+        <nav class="main-nav">
+
+            <a href="index.html"><img id="website_icon" src="img/icon/laptop.png" alt="icon"></a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search laptops here...">
+            </div>
+            <a href="shop.html">Shop</a>
+            <a href="deals.html">Deals</a>
+
+            <a href="signIn.html">
+                <img src="img/icon/account.png" id="signIn_icon">
+                Sign In
+            </a>
+
+            <a href="shoppingCart.html">
+                <!-- <img src="img/icon/Icon - Account - Filled.png" id="signIn_icon"> -->
+                <img src="img/icon/cart.png" id="cart_icon">
+                Cart
+            </a>
+
+            <!-- hamburger menu -->
+            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
+        </nav>
+
+        <nav class="mobile-main-nav" id="mobile_menu">
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="compare-area">
+        <h2>Compare Products</h2>
+
+        <div class="compare-container compare-table">
+
+            <!-- ------- Compare Name ------- -->
+            <div class="compare-model column-1">
+                <p>Model</p>
+            </div>
+            <div class="compare-weight column-1">
+                <p>Weight</p>
+            </div>
+            <div class="compare-dimensions column-1">
+                <p>Dimensions</p>
+            </div>
+            <div class="compare-size column-1">
+                <p>Display Size</p>
+            </div>
+            <div class="compare-usb column-1">
+                <p>USB</p>
+            </div>
+            <div class="compare-system column-1">
+                <p>System</p>
+            </div>
+            <div class="compare-processor column-1">
+                <p>Processor</p>
+            </div>
+            <div class="compare-memory column-1">
+                <p>Memory</p>
+            </div>
+            <div class="compare-wireless column-1">
+                <p>Wireless</p>
+            </div>
+            <div class="compare-bluetooth column-1">
+                <p>Bluetooth</p>
+            </div>
+            <div class="compare-audio column-1">
+                <p>Audio</p>
+            </div>
+            <div class="compare-battery column-1">
+                <p>Battery</p>
+            </div>
+            <div class="compare-color column-1">
+                <p>Color</p>
+            </div>
+            <div class="compare-storage column-1">
+                <p>Storage</p>
+            </div>
+            <div class="compare-support column-1">
+                <p>Card Support</p>
+            </div>
+
+            <!-- ------- item 1 ------- -->
+            <div class="compare-image column-2 align-center">
+                <img src="#">
+            </div>
+            <div class="compare-subtitle column-2">
+                <p>iCAN MID1016-MK Tablet | 10.1" (800x1280) IPS Panel, MT8167B ARM Cortex-A35 1.3Ghz, 2GB RAM, 64GB ROM
+                    | IMG PowerVR GE8300, 0.3MP FF, 2.0MP FF, BT4.1, Android 9.0
+                </p>
+            </div>
+            <div class="compare-price column-2">
+                <p>$129.00</p>
+            </div>
+            <div class="compare-button column-2">
+                <button>ADD TO CART</button>
+            </div>
+            <div class="compare-model column-2">
+                <p>MID1016-MK</p>
+            </div>
+            <div class="compare-weight column-2">
+                <p>0.48KG</p>
+            </div>
+            <div class="compare-dimensions column-2">
+                <p>294*182*10.8mm</p>
+            </div>
+            <div class="compare-size column-2">
+                <p>10.1"</p>
+            </div>
+            <div class="compare-usb column-2">
+                <p>USB(5V/2A) Micro USB</p>
+            </div>
+            <div class="compare-system column-2">
+                <p>Android 9.0</p>
+            </div>
+            <div class="compare-processor column-2">
+                <p>MT8167B ARM Cortex-A35 @ 1.3GHz</p>
+            </div>
+            <div class="compare-memory column-2">
+                <p>2GB</p>
+            </div>
+            <div class="compare-wireless column-2">
+                <p>
+                    wifi b/g/n</p>
+            </div>
+            <div class="compare-bluetooth column-2">
+                <p>Yes</p>
+            </div>
+            <div class="compare-audio column-2">
+                <p>3.5mm standard headphone jack(CTIA)</p>
+            </div>
+            <div class="compare-battery column-2">
+                <p>Lithium-ion polymer battery 3.7V/5000mah</p>
+            </div>
+            <div class="compare-color column-2">
+                <p>Black</p>
+            </div>
+            <div class="compare-storage column-2">
+                <p>64GB</p>
+            </div>
+            <div class="compare-support column-2">
+                <p>Up to 128G</p>
+            </div>
+            <!-- ------- item 2 ------- -->
+            <div class="compare-image-2 align-center column-3">
+                <img src="#">
+            </div>
+            <div class="compare-subtitle column-3">
+                <p>ASUS Vivobook Pro Notebook | 15.6'' FHD Intel Core i5-8300H | GTX 1650, 8GB DDR4, 512GB SSD | Windows
+                    10, K571GT-DH51-CA
+                </p>
+            </div>
+            <div class="compare-price column-3">
+                <p>$999.00</p>
+            </div>
+            <div class="compare-button column-3">
+                <button>ADD TO CART</button>
+            </div>
+            <div class="compare-model column-3">
+                <p>K571GT-DH51-CA</p>
+            </div>
+            <div class="compare-weight column-3">
+                <p>N/A</p>
+            </div>
+            <div class="compare-dimensions column-3">
+                <p>N/A</p>
+            </div>
+            <div class="compare-size column-3">
+                <p>N/A</p>
+            </div>
+            <div class="compare-usb column-3">
+                <p>N/A</p>
+            </div>
+            <div class="compare-system column-3">
+                <p>Windows 10 Home</p>
+            </div>
+            <div class="compare-processor column-3">
+                <p>N/A</p>
+            </div>
+            <div class="compare-memory column-3">
+                <p>N/A</p>
+            </div>
+            <div class="compare-wireless column-3">
+                <p>N/A</p>
+            </div>
+            <div class="compare-bluetooth column-3">
+                <p>N/A</p>
+            </div>
+            <div class="compare-audio column-3">
+                <p>N/A</p>
+            </div>
+            <div class="compare-battery column-3">
+                <p>42WHrs, 3S1P, 3-cell Li-ion</p>
+            </div>
+            <div class="compare-color column-3">
+                <p>Star Black</p>
+            </div>
+            <div class="compare-storage column-3">
+                <p>N/A</p>
+            </div>
+            <div class="compare-support column-3">
+                <p>N/A</p>
+            </div>
+        </div>
+
+        <div>
+            
+        </div>
+
+    </div>
+
+    <footer class="grid">
+
+        <section class="footer-grid-col-1of5"></section>
+
+        <!-- Contact Us -->
+        <section class="footer-grid-col-1of5">
+            <h3>CONTACT US</h3>
+            <ul>
+                <li>++44 345 678 903</li>
+                <li><a href="mailto:someone@example.com">customService@.Laptophub.com</a></li>
+                <li>Find a store</li>
+            </ul>
+        </section>
+
+        <!-- Services -->
+        <section class="footer-grid-col-1of5">
+            <h3>SERVICES</h3>
+            <ul>
+                <li>Returns</li>
+                <li>Odering & Payment</li>
+                <li>Shipping</li>
+                <li>FAQ</li>
+            </ul>
+        </section>
+
+        <!-- About Us -->
+        <section class="footer-grid-col-1of5">
+            <h3>ABOUT US</h3>
+            <ul>
+                <li><a href="ourMission.html">Our Mission</a></li>
+                <li>Work With Us</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+                <li><a href="styleGuide.html">Style Guide</a></li>
+                <li><a href="sitemap/Sitemap.html">Sitemap</a></li>
+                <li><a href="citation.html">Citation</a></li>
+            </ul>
+        </section>
+
+        <section class="footer-grid-col-1of5"></section>
+    </footer>
+
+</body>
+
+</html>
