@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         function goToCart() {
-            window.location = "shoppingCart.html";
+            alert("The product successfully added to your shopping cart");
         }
 
         function goToShopDeals() {
@@ -67,14 +67,42 @@
         <img src="img/icon/previous_icon.png" id="previous_button">
         <img src="img/icon/next_icon.png" id="next_button">
 
-        <pre id="event1_heading"><h1>Live life on the go
-with our awesome 
+        <!-- event 1 content-->
+        <div id="event1">
+            <pre id="event1_heading"><h1>Live life on the go
+with our awesome
 laptop deals.</h1></pre>
-        <pre id="event1_content"><p>Whether you design, game, or work, we have
-the right laptop for you. Explore our great
-offers on laptops, MacBooks and Chromebooks.</p></pre>
 
-        <button onclick="goToShopDeals()">Shop Deals</button>
+            <pre id="event1_content"><p>Whether you design, game, or work, we have
+the right laptop for you. Explore our great offers on
+laptops, MacBooks and Chromebooks.</p></pre>
+
+            <button id="event1_button" onclick="goToShopDeals()">Shop Deals</button>
+        </div>
+
+        <!-- event 2 content-->
+        <div id="event2">
+            <pre id="event2_heading"><h1>GET UP TO
+$300 OFF</h1></pre>
+
+            <pre id="event2_content"><p>For a limited time, we are offering incredible deals on alienware.
+Puls, 6 months financing on purchases $299+
+with Laptophub Account. 
+Limited-time offer for
+qualified cutomers.</p></pre>
+            <button id="event2_button" onclick="goToShopDeals()">Shop Deals</button>
+        </div>
+
+        <!-- event 3 content-->
+        <div id="event3">
+            <pre id="event3_heading"><h1>Calling all pros
+For special deals</h1></pre>
+
+            <pre id="event3_content"><p>Our most powerful pro lineup ever - Macbook Pro. 
+Ready for you best work ever.</p></pre>
+
+            <button id="event3_button" onclick="goToShopDeals()">Shop Deals</button>
+        </div>
 
         <div class="dot_group">
             <span class="dot" id="dot_one"></span>
@@ -83,7 +111,12 @@ offers on laptops, MacBooks and Chromebooks.</p></pre>
         </div>
 
         <script>
+
             let count = 1;
+
+            $("#event1").css("display", "block");
+            $("#event2").css("display", "none");
+            $("#event3").css("display", "none");
 
             $("#dot_one").css("background-color", "#6200EE");
             $("#dot_two").css("background-color", "white");
@@ -93,11 +126,11 @@ offers on laptops, MacBooks and Chromebooks.</p></pre>
                 $("#previous_button").click(function () {
                     if (count > 1) {
                         count--;
-                        let image_url = "img/event" + count + ".jpg";
+                        let image_url = "img/event/event" + count + ".jpg";
                         $(".slideShow").css("background-image", "url(" + image_url + ")");
                     } else {
                         count = 3;
-                        let image_url = "img/event" + count + ".jpg";
+                        let image_url = "img/event/event" + count + ".jpg";
                         $(".slideShow").css("background-image", "url(" + image_url + ")");
                     }
                 });
@@ -106,45 +139,62 @@ offers on laptops, MacBooks and Chromebooks.</p></pre>
                 $("#next_button").click(function () {
                     if (count < 3) {
                         count++;
-                        let image_url = "img/event" + count + ".jpg";
+                        let image_url = "img/event/event" + count + ".jpg";
                         $(".slideShow").css("background-image", "url(" + image_url + ")");
                     } else {
                         count = 1;
-                        let image_url = "img/event" + count + ".jpg";
+                        let image_url = "img/event/event" + count + ".jpg";
                         $(".slideShow").css("background-image", "url(" + image_url + ")");
                     }
                 });
 
                 $("#dot_one").click(function () {
                     count = 1;
-                    let image_url = "img/event" + count + ".jpg";
+                    let image_url = "img/event/event" + count + ".jpg";
                     $(".slideShow").css("background-image", "url(" + image_url + ")");
                 });
 
 
                 $("#dot_two").click(function () {
                     count = 2;
-                    let image_url = "img/event" + count + ".jpg";
+                    let image_url = "img/event/event" + count + ".jpg";
                     $(".slideShow").css("background-image", "url(" + image_url + ")");
                 });
 
 
                 $("#dot_three").click(function () {
                     count = 3;
-                    let image_url = "img/event" + count + ".jpg";
+                    let image_url = "img/event/event" + count + ".jpg";
                     $(".slideShow").css("background-image", "url(" + image_url + ")");
                 });
 
                 $("#previous_button,#next_button,#dot_one, #dot_two, #dot_three").on("click", function () {
+
+                    // learned how to save varibles to local storage from 
+                    // https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
+                    localStorage.setItem("eventNumber", count);
+
                     if (count == 1) {
+                        $("#event1").css("display", "block");
+                        $("#event2").css("display", "none");
+                        $("#event3").css("display", "none");
+
                         $("#dot_one").css("background-color", "#6200EE");
                         $("#dot_two").css("background-color", "white");
-                        $("#dot_three").css("background-color", "white"); 
+                        $("#dot_three").css("background-color", "white");
                     } else if (count == 2) {
+                        $("#event1").css("display", "none");
+                        $("#event2").css("display", "block");
+                        $("#event3").css("display", "none");
+
                         $("#dot_one").css("background-color", "white");
                         $("#dot_two").css("background-color", "#6200EE");
                         $("#dot_three").css("background-color", "white");
                     } else if (count == 3) {
+                        $("#event1").css("display", "none");
+                        $("#event2").css("display", "none");
+                        $("#event3").css("display", "block");
+
                         $("#dot_one").css("background-color", "white");
                         $("#dot_two").css("background-color", "white");
                         $("#dot_three").css("background-color", "#6200EE");
@@ -157,15 +207,7 @@ offers on laptops, MacBooks and Chromebooks.</p></pre>
     </div>
 
     <!-- Home h1 -->
-    <div class="grid">
-        <div class="grid-col-1of5_noHeight">
-        </div>
-        <div class="grid-col-3of5_noHeight">
-            <h1 id="home_title">Take a look at our most popular laptops</h1>
-        </div>
-        <div class="grid-col-1of5_noHeight">
-        </div>
-    </div>
+    <h1 id="home_title">Take a look at our most popular laptops</h1>
 
     <!-- Popular laptop list -->
 
@@ -180,9 +222,39 @@ offers on laptops, MacBooks and Chromebooks.</p></pre>
                 <div class="triangle-topRight newTriangle"></div>
                 <div class="productTag newTag">New</div>
 
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
+                <a href="product.html"><img src="img/product/product1-1.jpg" alt="5 Terre"></a>
                 <div class="container">
                     <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+
+                    <div class="price_section">
+                        <del>$1999.99</del>
+                        <h2>#999.99</h2>
+                        <p>Save $250.00</p>
+                    </div>
+
+                    <form>
+                        <input type="checkbox" value="productOne">
+                        <label> Compare Product</label><br>
+                    </form>
+
+                    <div class="inStock_section">
+                        <img src="img/icon/no.png">Not In Stock
+                    </div>
+
+                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+
+                <div class="triangle-topRight saleTriangle"></div>
+                <div class="productTag saleTag">On Sale</div>
+
+                <a href="product.html"><img src="img/product/product2-1.jpg" alt="5 Terre"></a>
+                <div class="container">
+                    <p>MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti, 8GB DDR4</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -207,42 +279,12 @@ offers on laptops, MacBooks and Chromebooks.</p></pre>
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
 
-                <div class="triangle-topRight newTriangle"></div>
-                <div class="productTag newTag">New</div>
+                <div class="triangle-topRight saleTriangle"></div>
+                <div class="productTag saleTag">On Sale</div>
 
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
+                <a href="product.html"><img src="img/product/product3-1.jpg" alt="5 Terre"></a>
                 <div class="container">
-                    <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
-
-                    <div class="price_section">
-                        <del>$1999.99</del>
-                        <h2>#999.99</h2>
-                        <p>Save $250.00</p>
-                    </div>
-
-                    <form>
-                        <input type="checkbox" value="productOne">
-                        <label> Compare Product</label><br>
-                    </form>
-
-                    <div class="inStock_section">
-                        <img src="img/icon/yes.png">In Stock
-                    </div>
-
-                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-col-1of5_noHeight">
-            <div class="individual_product">
-
-                <div class="triangle-topRight newTriangle"></div>
-                <div class="productTag newTag">New</div>
-
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
-                <div class="container">
-                    <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+                    <p>Dell Inspiron I3567-5949BLK-PUS Notebook 15.6 120Hz</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -276,12 +318,42 @@ offers on laptops, MacBooks and Chromebooks.</p></pre>
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
 
-                <div class="triangle-topRight saleTriangle"></div>
-                <div class="productTag saleTag">New</div>
+                <div class="triangle-topRight newTriangle"></div>
+                <div class="productTag newTag">New</div>
 
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
+                <a href="product.html"><img src="img/product/product1-1.jpg" alt="5 Terre"></a>
                 <div class="container">
                     <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+
+                    <div class="price_section">
+                        <del>$1999.99</del>
+                        <h2>#999.99</h2>
+                        <p>Save $250.00</p>
+                    </div>
+
+                    <form>
+                        <input type="checkbox" value="productOne">
+                        <label> Compare Product</label><br>
+                    </form>
+
+                    <div class="inStock_section">
+                        <img src="img/icon/no.png">Not In Stock
+                    </div>
+
+                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+
+                <div class="triangle-topRight saleTriangle"></div>
+                <div class="productTag saleTag">On Sale</div>
+
+                <a href="product.html"><img src="img/product/product2-1.jpg" alt="5 Terre"></a>
+                <div class="container">
+                    <p>MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti, 8GB DDR4</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -307,41 +379,11 @@ offers on laptops, MacBooks and Chromebooks.</p></pre>
             <div class="individual_product">
 
                 <div class="triangle-topRight saleTriangle"></div>
-                <div class="productTag saleTag">New</div>
+                <div class="productTag saleTag">On Sale</div>
 
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
+                <a href="product.html"><img src="img/product/product3-1.jpg" alt="5 Terre"></a>
                 <div class="container">
-                    <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
-
-                    <div class="price_section">
-                        <del>$1999.99</del>
-                        <h2>#999.99</h2>
-                        <p>Save $250.00</p>
-                    </div>
-
-                    <form>
-                        <input type="checkbox" value="productOne">
-                        <label> Compare Product</label><br>
-                    </form>
-
-                    <div class="inStock_section">
-                        <img src="img/icon/yes.png">In Stock
-                    </div>
-
-                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-col-1of5_noHeight">
-            <div class="individual_product">
-
-                <div class="triangle-topRight saleTriangle"></div>
-                <div class="productTag saleTag">New</div>
-
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
-                <div class="container">
-                    <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+                    <p>Dell Inspiron I3567-5949BLK-PUS Notebook 15.6"</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -378,7 +420,7 @@ offers on laptops, MacBooks and Chromebooks.</p></pre>
             <ul>
                 <li>++44 345 678 903</li>
                 <li><a href="mailto:someone@example.com">customService@.Laptophub.com</a></li>
-                <li>Find a store</li>
+                <li><a href="feedback.html">Leave a feedback</a></li>
             </ul>
         </section>
 
@@ -398,9 +440,6 @@ offers on laptops, MacBooks and Chromebooks.</p></pre>
             <h3>ABOUT US</h3>
             <ul>
                 <li><a href="ourMission.html">Our Mission</a></li>
-                <li>Work With Us</li>
-                <li>Privacy Policy</li>
-                <li>Terms & Conditions</li>
                 <li><a href="styleGuide.html">Style Guide</a></li>
                 <li><a href="sitemap/Sitemap.html">Sitemap</a></li>
                 <li><a href="citation.html">Citation</a></li>

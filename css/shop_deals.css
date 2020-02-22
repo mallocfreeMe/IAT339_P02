@@ -4,45 +4,124 @@
     position: static;
 }
 
-.shop_deals_intro {
-    text-align:center;
-    font-size: 1.2em;
-    margin-bottom: 2em;
+body {
+    background-color: #F8F8FF;
 }
 
 .slideShow_image {
+    position: relative;
     text-align: center;
     padding-top: 10em;
-    padding-bottom: 10em;
+    padding-bottom: 25em;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
-    filter: contrast(70%);
     margin-bottom: 4em;
+    background-image: url(../img/event/event1-2.jpg);
 }
 
-#slideShow_image_1 {
-    background-image: url(../img/event1.jpg);
+.slideShow_image h1 {
+    text-align: left;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
 }
 
+.shop_deals_intro {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
 
 /* styling product item */
 
 .individual_product {
-    width: 80%;
-    color: white;
-    background-color: #6200EE;
+    position: relative;
+    width: 90%;
+    color: black;
+    background-color: #E6E6E6;
     /* box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 .individual_product img {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
 }
 
 .container {
-    text-align: center;
-    padding: 1em 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.container p {
+    margin-bottom: 1em;
+}
+
+.container img {
+    display: inline-block;
+    margin-right: 0.5em;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+.price_section h2 {
+    font-weight: bolder;
+    color: #6200EE;
+    margin-bottom: 1em;
+}
+
+.inStock_section {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.container button {
+    margin-top: 1em;
+    width: 100%;
+    display: block;
+    background-color: #6200EE;
+    color: white;
+    padding: 1em;
+}
+
+.container button:hover {
+    filter: brightness(1.4);
+}
+
+.triangle-topRight {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5em solid white;
+    border-left: 5em solid transparent;
+    right: 0;
+}
+
+.productTag {
+    position: absolute;
+    font-size: 0.8em;
+    right: 1em;
+    top: 1em
+}
+
+.newTriangle {
+    border-top: 5em solid #03DAC6;
+}
+
+.newTag {
+    color: white;
+}
+
+.saleTriangle {
+    border-top: 5em solid #6200EE;
+}
+
+.saleTag {
+    right: 2%;
+    color: white;
 }

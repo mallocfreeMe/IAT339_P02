@@ -11,6 +11,15 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        // https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
+        let eventNumber = 0;
+        window.onload = function () {
+            eventNumber = localStorage.getItem("eventNumber");
+        }
+
+    </script>
 </head>
 
 <body>
@@ -53,123 +62,225 @@
     </header>
 
     <!-- Top deals iamge -->
-    <div class="slideShow_image" id="slideShow_image_1">
-        <h1>Laptops you'll love. Deals you'll adore</h1>
+    <div class="slideShow_image">
+        <h1 id="event_heading">Live life on the go with our awesome laptop deals.</h1>
+
+        <script>
+            $(".main-nav").onload = function(){
+                $("#event-heading").innerHTML="test";
+            };
+        </script>
     </div>
 
     <div class="grid">
         <div class="grid-col-1of5_noHeight"></div>
 
-        <div class="grid-col-3of5_noHeight shop_deals_intro">
-            <p>Save up to $200 on select laptops from HP, Lenovo, Acer, Dell and other brands close to your heart.</p>
+        <div class="grid-col-3of5_noHeight">
+            <p class="shop_deals_intro">Whether you design, game, or work, we have
+                the right laptop for you. Explore our great offers on
+                laptops, MacBooks and Chromebooks.</p>
         </div>
 
         <div class="grid-col-1of5_noHeight"></div>
     </div>
 
-
-    <!-- deals product listing -->
-    <!-- row 1-->
+    <!-- on sale product list -->
+    <!-- Row 1-->
     <div class="grid">
-        <div class="grid-col-1of5_noHeight"></div>
-
-        <div class="grid-col-1of5_noHeight">
-            <div class="individual_product">
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
-                <div class="container">
-                    <p>Cinque Terre</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-col-1of5_noHeight">
-            <div class="individual_product">
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
-                <div class="container">
-                    <p>Cinque Terre</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-col-1of5_noHeight">
-            <div class="individual_product">
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
-                <div class="container">
-                    <p>Cinque Terre</p>
-                </div>
-            </div>
-        </div>
 
         <div class="grid-col-1of5_noHeight"></div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+
+                <div class="triangle-topRight saleTriangle"></div>
+                <div class="productTag saleTag">On Sale</div>
+
+                <a href="product.html"><img src="img/product/product1-1.jpg" alt="5 Terre"></a>
+                <div class="container">
+                    <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+
+                    <div class="price_section">
+                        <del>$1999.99</del>
+                        <h2>#999.99</h2>
+                        <p>Save $250.00</p>
+                    </div>
+
+                    <form>
+                        <input type="checkbox" value="productOne">
+                        <label> Compare Product</label><br>
+                    </form>
+
+                    <div class="inStock_section">
+                        <img src="img/icon/yes.png">In Stock
+                    </div>
+
+                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+
+                <div class="triangle-topRight saleTriangle"></div>
+                <div class="productTag saleTag">On Sale</div>
+
+                <a href="product.html"><img src="img/product/product2-1.jpg" alt="5 Terre"></a>
+                <div class="container">
+                    <p>MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti, 8GB DDR4</p>
+
+                    <div class="price_section">
+                        <del>$1999.99</del>
+                        <h2>#999.99</h2>
+                        <p>Save $250.00</p>
+                    </div>
+
+                    <form>
+                        <input type="checkbox" value="productOne">
+                        <label> Compare Product</label><br>
+                    </form>
+
+                    <div class="inStock_section">
+                        <img src="img/icon/yes.png">In Stock
+                    </div>
+
+                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+
+                <div class="triangle-topRight saleTriangle"></div>
+                <div class="productTag saleTag">On Sale</div>
+
+                <a href="product.html"><img src="img/product/product3-1.jpg" alt="5 Terre"></a>
+                <div class="container">
+                    <p>Dell Inspiron I3567-5949BLK-PUS Notebook 15.6 120Hz</p>
+
+                    <div class="price_section">
+                        <del>$1999.99</del>
+                        <h2>#999.99</h2>
+                        <p>Save $250.00</p>
+                    </div>
+
+                    <form>
+                        <input type="checkbox" value="productOne">
+                        <label> Compare Product</label><br>
+                    </form>
+
+                    <div class="inStock_section">
+                        <img src="img/icon/yes.png">In Stock
+                    </div>
+
+                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight"></div>
+
     </div>
 
-
-    <!-- row 2-->
+    <!-- Row 2-->
     <div class="grid">
-        <div class="grid-col-1of5_noHeight"></div>
-
-        <div class="grid-col-1of5_noHeight">
-            <div class="individual_product">
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
-                <div class="container">
-                    <p>Cinque Terre</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-col-1of5_noHeight">
-            <div class="individual_product">
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
-                <div class="container">
-                    <p>Cinque Terre</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-col-1of5_noHeight">
-            <div class="individual_product">
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
-                <div class="container">
-                    <p>Cinque Terre</p>
-                </div>
-            </div>
-        </div>
 
         <div class="grid-col-1of5_noHeight"></div>
-    </div>
 
-    <!-- row 3 -->
-    <div class="grid">
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+
+                <div class="triangle-topRight saleTriangle"></div>
+                <div class="productTag saleTag">On Sale</div>
+
+                <a href="product.html"><img src="img/product/product1-1.jpg" alt="5 Terre"></a>
+                <div class="container">
+                    <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+
+                    <div class="price_section">
+                        <del>$1999.99</del>
+                        <h2>#999.99</h2>
+                        <p>Save $250.00</p>
+                    </div>
+
+                    <form>
+                        <input type="checkbox" value="productOne">
+                        <label> Compare Product</label><br>
+                    </form>
+
+                    <div class="inStock_section">
+                        <img src="img/icon/yes.png">Not In Stock
+                    </div>
+
+                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+
+                <div class="triangle-topRight saleTriangle"></div>
+                <div class="productTag saleTag">On Sale</div>
+
+                <a href="product.html"><img src="img/product/product2-1.jpg" alt="5 Terre"></a>
+                <div class="container">
+                    <p>MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti, 8GB DDR4</p>
+
+                    <div class="price_section">
+                        <del>$1999.99</del>
+                        <h2>#999.99</h2>
+                        <p>Save $250.00</p>
+                    </div>
+
+                    <form>
+                        <input type="checkbox" value="productOne">
+                        <label> Compare Product</label><br>
+                    </form>
+
+                    <div class="inStock_section">
+                        <img src="img/icon/yes.png">In Stock
+                    </div>
+
+                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col-1of5_noHeight">
+            <div class="individual_product">
+
+                <div class="triangle-topRight saleTriangle"></div>
+                <div class="productTag saleTag">On Sale</div>
+
+                <a href="product.html"><img src="img/product/product3-1.jpg" alt="5 Terre"></a>
+                <div class="container">
+                    <p>Dell Inspiron I3567-5949BLK-PUS Notebook 15.6"</p>
+
+                    <div class="price_section">
+                        <del>$1999.99</del>
+                        <h2>#999.99</h2>
+                        <p>Save $250.00</p>
+                    </div>
+
+                    <form>
+                        <input type="checkbox" value="productOne">
+                        <label> Compare Product</label><br>
+                    </form>
+
+                    <div class="inStock_section">
+                        <img src="img/icon/yes.png">In Stock
+                    </div>
+
+                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
         <div class="grid-col-1of5_noHeight"></div>
 
-        <div class="grid-col-1of5_noHeight">
-            <div class="individual_product">
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
-                <div class="container">
-                    <p>Cinque Terre</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-col-1of5_noHeight">
-            <div class="individual_product">
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
-                <div class="container">
-                    <p>Cinque Terre</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-col-1of5_noHeight">
-            <div class="individual_product">
-                <a href="product.html"><img src="img/deals1.jpg" alt="5 Terre"></a>
-                <div class="container">
-                    <p>Cinque Terre</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-col-1of5_noHeight"></div>
     </div>
 
     <!-- Footer -->
