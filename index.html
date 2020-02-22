@@ -17,6 +17,18 @@
         }
 
         function goToShopDeals() {
+            // learned how to save varibles to local storage from 
+            // https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
+            let eventNumber = $(".slideShow").css("background-image");
+
+            if (eventNumber.includes("event1")) {
+                eventNumber = "first";
+            } else if (eventNumber.includes("event2")) {
+                eventNumber = "second";
+            } else {
+                eventNumber = "third";
+            }
+            localStorage.setItem("eventNumber", eventNumber);
             window.location = "shop_deals.html";
         }
     </script>
@@ -169,10 +181,6 @@ Ready for you best work ever.</p></pre>
                 });
 
                 $("#previous_button,#next_button,#dot_one, #dot_two, #dot_three").on("click", function () {
-
-                    // learned how to save varibles to local storage from 
-                    // https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
-                    localStorage.setItem("eventNumber", count);
 
                     if (count == 1) {
                         $("#event1").css("display", "block");

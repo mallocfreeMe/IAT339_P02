@@ -12,20 +12,16 @@ body {
     position: relative;
     text-align: center;
     padding-top: 10em;
-    padding-bottom: 25em;
+    padding-bottom: 20em;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
-    margin-bottom: 4em;
-    background-image: url(../img/event/event1-2.jpg);
+    /* background-image: url(../img/event/event1-2.jpg); */
 }
 
-.slideShow_image h1 {
-    text-align: left;
-    position: absolute;
-    left: 20%;
-    bottom: 0;
+#event_heading {
+    text-align: center;
 }
 
 .shop_deals_intro {

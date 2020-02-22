@@ -14,8 +14,16 @@
     margin-bottom: 4em;
 }
 
-.event_content h2 {
+.event_content a {
     color:#6200EE;
+}
+
+.event_content a:hover {
+    text-decoration: underline;
+   }
+
+.event_content h2 {
+    margin-bottom: 1em;
 }
 
 .event_content p {

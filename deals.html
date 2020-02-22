@@ -65,58 +65,55 @@
             </p>
 
             <!-- event 1 -->
-            <h2>Laptops you'll love. Deals you'll adore.</h2>
+            <h2><a id="event1_heading" href="shop_deals.html">Live life on the go with our awesome deals</a></h2>
             <div class="grid">
 
                 <!-- event images -->
                 <section class="grid-col-1of2_noHeight">
-                    <a href="shop_deals.html"><img src="img/event1.jpg" alt="event1"></a>
+                    <a id="event1_image" href="shop_deals.html"><img src="img/event/event1-2.jpg" alt="event1"></a>
                 </section>
 
                 <!-- event paragraphs -->
                 <section class="grid-col-1of2_noHeight">
-                    <p>Save up to $200 on select laptops from HP, Lenovo, Acer, Dell and other brands close to your
-                        heart.</p>
+                    <p>Whether you design, game, or work, we have the right laptop for you. Explore our great offers on
+                        laptops, MacBooks and Chromebooks.</p>
                 </section>
 
             </div>
 
             <!-- event 2 -->
-            <h2>Celebrate your love with Apple products this Valentine's Day.</h2>
+            <h2><a id="event2_heading" href="shop_deals.html">GET UP TO $300 OFF</a></h2>
             <div class="grid">
 
                 <!-- event images -->
                 <section class="grid-col-1of2_noHeight">
-                    <a href="shop_deals.html"><img src="img/event2.jpg" alt="event2"></a>
+                    <a id="event2_image" href="shop_deals.html"><img src="img/event/event2-2.jpg" alt="event2"></a>
                 </section>
 
                 <!-- event paragraphs -->
                 <section class="grid-col-1of2_noHeight">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae dignissim massa.
-                        Etiam vel metus rutrum, euismod orci a, tincidunt neque. Cras leo leo, ornare quis est et,
-                        tincidunt sagittis mi. Donec quis gravida turpis, vitae sodales odio. Cras luctus rhoncus risus,
-                        et consequat enim. Curabitur rhoncus, nibh in tincidunt.</p>
+                    <p> For a limited time, we are offering incredible deals on alienware.Puls, 6 months financing on
+                        purchases $299+with Laptophub Account. Limited-time offer forqualified cutomers.</p>
                 </section>
 
             </div>
 
             <!-- event 3 -->
-            <h2>Celebrate Black Friday.</h2>
+            <a>
+                <h2><a id="event3_heading" href="shop_deals.html">Calling all pros For special deals</a></h2>
+            </a>
             <div class="grid">
 
                 <!-- event images -->
                 <section class="grid-col-1of2_noHeight">
                     <!-- event 1 -->
-                    <a href="shop_deals.html"><img src="img/event3.jpg" alt="event3"></a>
+                    <a id="event3_image" href="shop_deals.html"><img src="img/event/event3-2.jpg" alt="event3"></a>
                 </section>
 
                 <!-- event paragraphs -->
                 <section class="grid-col-1of2_noHeight">
                     <!-- event 1 -->
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae dignissim massa.
-                        Etiam vel metus rutrum, euismod orci a, tincidunt neque. Cras leo leo, ornare quis est et,
-                        tincidunt sagittis mi. Donec quis gravida turpis, vitae sodales odio. Cras luctus rhoncus risus,
-                        et consequat enim. Curabitur rhoncus, nibh in tincidunt.</p>
+                    <p>Our most powerful pro lineup ever - Macbook Pro. Ready for you best work ever.</p>
                 </section>
 
             </div>
@@ -125,6 +122,24 @@
 
         <div class="grid-col-1of5_noHeight"></div>
     </div>
+
+    <script>
+        let eventNumber = "";
+        $(document).ready(function () {
+            $("#event1_heading, #event1_image").on("click", function () {
+                eventNumber = "first";
+                localStorage.setItem("eventNumber", eventNumber);
+            });
+            $("#event2_heading,#event2_image").on("click", function () {
+                eventNumber = "second";
+                localStorage.setItem("eventNumber", eventNumber);
+            });
+            $("#event3_heading, #event3_image").on("click", function () {
+                eventNumber = "third";
+                localStorage.setItem("eventNumber", eventNumber);
+            });
+        })
+    </script>
 
     <!-- Footer -->
     <footer class="grid">

@@ -11,15 +11,6 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-
-        // https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
-        let eventNumber = 0;
-        window.onload = function () {
-            eventNumber = localStorage.getItem("eventNumber");
-        }
-
-    </script>
 </head>
 
 <body>
@@ -62,27 +53,47 @@
     </header>
 
     <!-- Top deals iamge -->
-    <div class="slideShow_image">
-        <h1 id="event_heading">Live life on the go with our awesome laptop deals.</h1>
-
-        <script>
-            $(".main-nav").onload = function(){
-                $("#event-heading").innerHTML="test";
-            };
-        </script>
-    </div>
+    <div class="slideShow_image"></div>
 
     <div class="grid">
         <div class="grid-col-1of5_noHeight"></div>
 
         <div class="grid-col-3of5_noHeight">
-            <p class="shop_deals_intro">Whether you design, game, or work, we have
-                the right laptop for you. Explore our great offers on
-                laptops, MacBooks and Chromebooks.</p>
+            <h1 id="event_heading"></h1>
+            <p class="shop_deals_intro"></p>
         </div>
 
         <div class="grid-col-1of5_noHeight"></div>
     </div>
+
+
+    <script>
+
+        let h1 = "Live life on the go with our awesome deals";
+        let h2 = "GET UP TO $300 OFF";
+        let h3 = "Calling all pros For special deals"
+
+        let p1 = "Whether you design, game, or work, we have the right laptop for you. Explore our great offers on laptops, MacBooks and Chromebooks.";
+        let p2 = "For a limited time, we are offering incredible deals on alienware.Puls, 6 months financing on purchases $299+with Laptophub Account. Limited-time offer forqualified cutomers.";
+        let p3 = "Our most powerful pro lineup ever - Macbook Pro. Ready for you best work ever.";
+
+        // https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
+        let eventNumber = localStorage.getItem("eventNumber");
+
+        if (eventNumber == "first") {
+            $(".slideShow_image").css("background-image", "url(" + "img/event/event1-2.jpg" + ")");
+            $("#event_heading").html(h1);
+            $(".shop_deals_intro").html(p1);
+        } else if (eventNumber == "second") {
+            $(".slideShow_image").css("background-image", "url(" + "img/event/event2-2.jpg" + ")");
+            $("#event_heading").html(h2);
+            $(".shop_deals_intro").html(p2);
+        } else if (eventNumber == "third") {
+            $(".slideShow_image").css("background-image", "url(" + "img/event/event3-2.jpg" + ")");
+            $("#event_heading").html(h3);
+            $(".shop_deals_intro").html(p3);
+        }
+    </script>
 
     <!-- on sale product list -->
     <!-- Row 1-->
