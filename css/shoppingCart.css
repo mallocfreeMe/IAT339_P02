@@ -122,7 +122,7 @@ body {
 
 .item-remove button {
     padding-top: 1em;
-    color: #009577;
+    color: #6200EE;
     border-style: hidden;
 }
 
@@ -177,13 +177,18 @@ body {
 
 .pay-button button {
     border: none;
-    background-color: #009577;
     padding: 0.5em 1em;
     color: white;
     cursor: pointer;
 }
 
+#guest_pay {
+    background-color: #009577;
+}
 
+#user_pay {
+    background-color: #6200ee;
+}
 
 /* ---------------- Empty Warning --------------- */
 #empty-warning {

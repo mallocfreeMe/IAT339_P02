@@ -1,7 +1,7 @@
 body {
-  /* background-image: url(../img/payment-wallpaper.jpg); */
-  background-image: url(../img/payment-wallpaper.jpeg);
-  background-size: contain;
+  /* background-image: url(../img/payment-wallpaper.jpeg);
+  background-size: contain; */
+  background-color: #F8F8FF;
 }
 
 .main-nav {
@@ -9,17 +9,18 @@ body {
   margin-bottom: 3em;
 }
 
-
 /* For the payment web page */
+
 .payment-block {
   background-color: white;
 }
 
 /* --------- Receipt Information Area --------- */
+
 .receipt-area {
   text-align: left;
-  background-color: #FAFBFC;
-  border-bottom: thin solid #E1E4E8;
+  background-color: white;
+  /* border-bottom: thin solid #E1E4E8; */
 }
 
 .receipt-detail-left {
@@ -52,8 +53,8 @@ body {
   font-weight: bold;
 }
 
-
 /* ------------------ Payment Area -------------------- */
+
 /* .payment{
   text-align: center;
 } */
@@ -74,7 +75,7 @@ body {
   margin-right: 3em;
 }
 
-.credit-name label{
+.credit-name label {
   font-size: 0.8em;
   color: #444D56;
   margin-top: 3em;
@@ -122,7 +123,7 @@ body {
   text-align: right;
 }
 
-.card-line label{
+.card-line label {
   font-size: 0.8em;
   color: #444D56;
   margin-top: 3em;
@@ -133,13 +134,13 @@ body {
   margin-right: 3em;
 }
 
-.expire-data label{
+.expire-data label {
   font-size: 0.8em;
   color: #444D56;
   margin-top: 3em;
 }
 
-.expire-left{
+.expire-left {
   display: inline-block;
   border: thin solid #444D56;
   border-radius: 0.25em;
@@ -149,6 +150,7 @@ body {
   margin-bottom: 1em;
   width: 45%;
 }
+
 .expire-right {
   display: inline-block;
   border: thin solid #444D56;
@@ -166,7 +168,7 @@ body {
   margin-right: 3em;
 }
 
-.cvc-area label{
+.cvc-area label {
   font-size: 0.8em;
   color: #444D56;
   margin-top: 3em;
@@ -185,6 +187,7 @@ body {
 }
 
 /* ------------- Pay Button ------------- */
+
 .pay-button {
   margin: 2em 3em;
 }
@@ -198,6 +201,11 @@ button {
   padding-left: 1em;
   margin-bottom: 1em;
   width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(1.4);
 }
 
 footer {

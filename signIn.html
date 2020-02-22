@@ -53,10 +53,6 @@
 
     </header>
 
-    <script>
-
-    </script>
-
     <div class="grid">
         <!-- side blank area -->
         <!-- <div class="grid-col-1of5"></div> -->
@@ -79,60 +75,38 @@
             <div class="register-link">
                 Not Registered?
                 <button id="buttonSignUp" onclick="clickSignUp()">Create an account</button>
-                <!-- <div id="signUpForm" class="sign-up-form">
-                        <div>
-                            <input type="text" name="username" placeholder="Enter your username"></div>
-                        <div>
-                            <input type="password" name="password" placeholder="Enter your password">
-                        </div>
-                        <div>
-                            <button onclick="clickSignUp()">Sign up</button>
-                        </div>
-                    </div> -->
             </div>
 
             <script>
-                // let count = 0;
-                // $(document).ready(function () {
-                //     $("#buttonSignUp").click(function () {
-                //         count += 1;
-                //         if (count % 2) {
-                //             $("#signUpForm").slideDown();
-                //         } else {
-                //             $("#signUpForm").slideUp();
-                //         }
-                //     });
-                // });
-
                 function clickSignUp() {
                     window.location = "register.html";
                 }
             </script>
 
             <!-- Sign In form -->
-                <div id="signInForm" class="sign-in">
-                    <h2>Sign in to Laptophub</h2>
+            <div id="signInForm" class="sign-in">
+                <h2>Sign in to Laptophub</h2>
 
-                    <h3>Enter your details below</h3>
+                <h3>Enter your details below</h3>
 
-                    <section class="sign-in-content">
+                <section class="sign-in-content">
 
-                        <form class="sign-in-username">
-                            <input type="text" name="username" placeholder="Username">
-                            <input type="password" name="password" placeholder="Password">
-                        </form>
+                    <form class="sign-in-username">
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="password" name="password" placeholder="Password">
+                    </form>
 
-                        <div class="sign-in-button">
-                            <button onclick="myFunction()">Log in</button>
-                        </div>
+                    <div class="sign-in-button">
+                        <button onclick="myFunction()">Log in</button>
+                    </div>
 
-                        <script>
-                            function myFunction() {
-                                window.location = "index.html";
-                            }
-                        </script>
-                    </section>
-                </div>
+                    <script>
+                        function myFunction() {
+                            window.location = "index.html";
+                        }
+                    </script>
+                </section>
+            </div>
             <!-- end of Sign In form -->
         </div>
 

@@ -4,13 +4,12 @@
   position: static;
 }
 
-/* .grid-container {
-  display: grid;
-  grid-template-rows: 30% 70%;
-} */
+body {
+  background-color: #F8F8FF;
+}
 
 .sign-up {
-  color: 	#2f363d;
+  color: #2f363d;
   width: 60%;
   padding-left: 6em;
   padding-right: 6em;
@@ -41,7 +40,7 @@
   font-size: 0.9em;
 }
 
-.sign-up-content input[type=password]{  
+.sign-up-content input[type=password] {
   width: 100%;
   height: 4em;
   margin-top: 1em;
@@ -69,11 +68,13 @@
   width: 35%;
   height: 3.5em;
   margin-top: 1em;
-  /* margin-bottom: 1em; */
-  background-color: #995DFF;
+  background-color: #6200EE;
   color: white;
   font-weight: lighter;
-  /* border-radius: 2em; */
+}
+
+.sign-up-content button:hover {
+  filter: brightness(1.4);
 }
 
 .sign-up-content input::placeholder {
@@ -104,14 +105,14 @@ video {
   object-fit: cover;
 }
 
-
 /* --------- The line below for sign up part ---------- */
+
 .sign-up-form {
   margin-top: 1em;
   display: none;
 }
 
-.sign-up-form input[type=text], .sign-up-form input[type=password]{
+.sign-up-form input[type=text], .sign-up-form input[type=password] {
   text-align: left;
   width: 30%;
   padding: 0.5em 0 0.5em 1em;
