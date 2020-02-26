@@ -24,7 +24,7 @@
             </div>
             <a href="shop.html">Shop</a>
             <a href="deals.html">Deals</a>
-            
+
             <a href="signIn.html">
                 <img src="img/icon/account.png" id="signIn_icon">
                 Sign In
@@ -58,7 +58,7 @@
             });
 
             $("body").click(function (event) {
-                if(event.target.id != "mobile_menu_button") {
+                if (event.target.id != "mobile_menu_button") {
                     $("#mobile_menu").hide();
                 }
             });
@@ -201,127 +201,113 @@
                         <label class="label">This is a label</label>
                     </section>
 
-                </section>
-                <!-- // INTERACTIVE ELEMENTS SECTION -->
+                    <!-- A sign in form -->
+                    <section id="sign-in-section">
+                        <h2>Sign-in form</h2>
+                        <h3>CSS selector:</h3>
+                        <p>.sign-in-form</p>
 
-                <!-- A sign in form -->
-                <section id="sign-in-section">
-                    <h2>Sign-in form</h2>
-                    <h3>CSS selector:</h3>
-                    <p>.sign-in-form</p>
-
-                    <h3>Sample code:</h3>
-                    <div class="codearea">
-                        <pre>&lt;<span class="tagName">form</span>&gt;
-&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text"</span> <span class="tagClass">name</span>="<span class="tagValue">username</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Username</span>"&gt;
-&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">password</span>" <span class="tagClass">name</span>="<span class="tagValue">password</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Password</span>"&gt;
-&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">submit</span>" <span class="tagClass">value</span>="<span class="tagValue">Log in</span>"&gt;
+                        <h3>Sample code:</h3>
+                        <div class="codearea">
+                            <pre>&lt;<span class="tagName">form</span>&gt;
+    &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text"</span> <span class="tagClass">name</span>="<span class="tagValue">username</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Username</span>"&gt;
+    &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">password</span>" <span class="tagClass">name</span>="<span class="tagValue">password</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Password</span>"&gt;
+    &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">submit</span>" <span class="tagClass">value</span>="<span class="tagValue">Log in</span>"&gt;
 &lt;/<span class="tagName">form</span>&gt;</pre>
-                    </div>
-
-                    <h3>Rendered element:</h3>
-                    <form>
-                        <img class="sign-in-username-icon" src="#">
-                        <input id="sign-in-username" type="text" name="sign-in-username" placeholder="Username"><br><br>
-                        <img class="sign-in-password-icon" src="#">
-                        <input id="sign-in-password" type="password" name="sign-in-password"
-                            placeholder="Password"><br><br>
-                        <input id="sign-in-button" type="submit" value="Log in">
-                    </form>
-                </section>
-
-                <!-- A register form -->
-                <section id="register-section">
-                    <h2>Register form</h2>
-                    <h3>CSS selector:</h3>
-                    <p>.register-form</p>
-
-                    <h3>Sample code:</h3>
-                    <div class="codearea">
-                        <pre>&lt;<span class="tagName">form</span>&gt;
-&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span>" <span class="tagClass">name</span>="<span class="tagValue">register-username</span>"&gt;
-&lt;<span class="tagName">label</span> <span class="tagClass">for</span>="<span class="tagValue">register-username</span>"&gt;Full name&lt;<span class="tagName">label&gt</span>;
-&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span>" <span class="tagClass">name</span>="<span class="tagValue">register-email</span>"&gt;
-&lt;<span class="tagName">label</span> <span class="tagClass">for</span>="<span class="tagValue">register-email</span>"&gt;Email&lt;<span class="tagName">label</span>&gt;
-&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">number</span>" <span class="tagClass">name</span>="<span class="tagValue">register-birthday</span>"&gt;
-&lt;<span class="tagName">label</span> <span class="tagClass">for</span>="<span class="tagValue">register-birthday</span>"&gt;Birthday&lt;<span class="tagName">label</span>&gt;
-&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span> <span class="tagClass">name</span>="register-address"&gt;
-&lt;<span class="tagName">label</span> <span class="tagClass">for</span>="<span class="tagValue">register-address</span>"&gt;Address&lt;<span class="tagName">label</span>&gt;
-&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">password</span>" <span class="tagClass">name</span>="<span class="tagValue">register-password</span>"&gt;
-&lt;<span class="tagName">label</span> <span class="tagClass">for</span>="<span class="tagValue">register-password</span>"&gt;Password&lt;<span class="tagName">label</span>&gt;
-&lt;<span class="tagName">/form</span>&gt;</pre>
-                    </div>
-
-                    <h3>Rendered element:</h3>
-                    <form>
-                        <input id="register-username" type="text" name="register-username">
-                        <label for="register-username">Full Name</label><br><br>
-                        <input id="register-email" type="text" name="register-email">
-                        <label for="register-email">Email</label><br><br>
-                        <input id="register-birthday" type="number" name="register-birthday">
-                        <label for="register-birthday">Birthday</label><br><br>
-                        <input id="register-address" type="text" name="register-address">
-                        <label for="register-address">Address</label><br><br>
-                        <input id="register-password" type="password" name="register-password">
-                        <label for="register-password">Password</label><br><br>
-                    </form>
-                </section>
-
-                <!-- A payment form -->
-                <section id="payment-section">
-                    <h2>Payment form</h2>
-                    <h3>CSS selector:</h3>
-                    <p>.register-form</p>
-
-                    <h3>Sample code:</h3>
-                    <div class="codearea">
-                        &lt;input type="text" name="register-username"&gt;<br><br>
-                        &lt;label for="register-username"&gt;Full name&lt;label&gt;<br><br>
-                        &lt;input type="text" name="register-email"&gt;<br><br>
-                        &lt;label for="register-email"&gt;Email&lt;label&gt;<br><br>
-                        &lt;input type="number" name="register-birthday"&gt;<br><br>
-                        &lt;label for="register-birthday"&gt;Birthday&lt;label&gt;<br><br>
-                        &lt;input type="text" name="register-address"&gt;<br><br>
-                        &lt;label for="register-address"&gt;Address&lt;label&gt;<br><br>
-                        &lt;input type="password" name="register-password"&gt;<br><br>
-                        &lt;label for="register-password"&gt;Password&lt;label&gt;<br><br>
-                    </div>
-
-                    <h3>Rendered element:</h3>
-                    <form class="billing-info">
-                        <label for="payment-username">Full Name</label><br><br>
-                        <input id="payment-username" type="text" name="payment-username"><br><br>
-                        <label for="payment-address">Address</label><br><br>
-                        <input id="payment-address" type="text" name="payment-address"><br><br>
-                        <div class="form-inline">
-                            <label for="payment-city">City</label><br><br>
-                            <input id="payment-city" type="text" name="payment-city"><br><br>
-                            <label for="payment-zip-code">Zip Code</label><br><br>
-                            <input id="payment-zip-code" type="number" name="payment-zip-code"><br><br>
                         </div>
 
-                        <label for="payment-country-for-label">Country</label><br><br>
-                        <input id="payment-country-for-label" name="payment-country" list="payment-country">
-                        <datalist id="payment-country">
-                            <option>Canada</option>
-                            <option>Mexico</option>
-                            <option>United States</option>
-                        </datalist>
-                    </form>
+                        <h3>Rendered element:</h3>
+                        <form>
+                            <input id="sign-in-username" type="text" name="sign-in-username"
+                                placeholder="Username">
+                            <input id="sign-in-password" type="password" name="sign-in-password"
+                                placeholder="Password">
+                            <button class="sample-sign-in-button">Log in</button>
+                        </form>
+                    </section>
 
-                    <form class="credit-card-info">
-                        <input id="payment-username" type="text" name="register-username">
-                        <label for="register-username">Full Name</label><br><br>
-                        <input id="register-email" type="text" name="register-email">
-                        <label for="register-email">Email</label><br><br>
-                        <input id="register-birthday" type="number" name="register-birthday">
-                        <label for="register-birthday">Birthday</label><br><br>
-                        <input id="register-address" type="text" name="register-address">
-                        <label for="register-address">Address</label><br><br>
-                        <input id="register-password" type="password" name="register-password">
-                        <label for="register-password">Password</label><br><br>
-                    </form>
-                </section>
+                    <!-- A register form -->
+                    <section id="register-section">
+                        <h2>Register form</h2>
+                        <h3>CSS selector:</h3>
+                        <p>.register-form</p>
+
+                        <h3>Sample code:</h3>
+                        <div class="codearea">
+                            <pre>&lt;<span class="tagName">form</span>&gt;
+    &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span>" <span class="tagClass">name</span>="<span class="tagValue">register-username</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Username</span>"&gt;
+    &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">email</span>" <span class="tagClass">name</span>="<span class="tagValue">register-email</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">E-mail</span>"&gt;
+    &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">password</span>" <span class="tagClass">name</span>="<span class="tagValue">register-password</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Password</span>"&gt;
+    &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">password</span>" <span class="tagClass">name</span>="<span class="tagValue">register-confirm-password</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Password</span>"&gt;
+    &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">submit</span>" <span class="tagClass">value</span>="<span class="tagValue">Sign up</span>"&gt;
+&lt;<span class="tagName">/form</span>&gt;</pre>
+                        </div>
+
+                        <h3>Rendered element:</h3>
+                        <form>
+                            <input id="register-username" type="text" name="register-username" placeholder="Username">
+                            <input id="register-email" type="email" name="register-email" placeholder="E-mail">
+                            <input id="register-password" type="password" name="register-password" placeholder="Password">
+                            <input id="register-confirm-password" type="password" name="register-confirm-password" placeholder="Confirm password">
+                            <button class="sample-sign-up-button">Sign Up</button>
+                        </form>
+                    </section>
+
+                    <!-- A payment form -->
+                    <section id="payment-section">
+                        <h2>Payment form</h2>
+                        <h3>CSS selector:</h3>
+                        <p>.register-form</p>
+
+                        <h3>Sample code:</h3>
+                        <div class="codearea">
+                            &lt;input type="text" name="register-username"&gt;<br><br>
+                            &lt;label for="register-username"&gt;Full name&lt;label&gt;<br><br>
+                            &lt;input type="text" name="register-email"&gt;<br><br>
+                            &lt;label for="register-email"&gt;Email&lt;label&gt;<br><br>
+                            &lt;input type="number" name="register-birthday"&gt;<br><br>
+                            &lt;label for="register-birthday"&gt;Birthday&lt;label&gt;<br><br>
+                            &lt;input type="text" name="register-address"&gt;<br><br>
+                            &lt;label for="register-address"&gt;Address&lt;label&gt;<br><br>
+                            &lt;input type="password" name="register-password"&gt;<br><br>
+                            &lt;label for="register-password"&gt;Password&lt;label&gt;<br><br>
+                        </div>
+
+                        <h3>Rendered element:</h3>
+                        <form class="billing-info">
+                            <label for="payment-username">Full Name</label><br><br>
+                            <input id="payment-username" type="text" name="payment-username"><br><br>
+                            <label for="payment-address">Address</label><br><br>
+                            <input id="payment-address" type="text" name="payment-address"><br><br>
+                            <div class="form-inline">
+                                <label for="payment-city">City</label><br><br>
+                                <input id="payment-city" type="text" name="payment-city"><br><br>
+                                <label for="payment-zip-code">Zip Code</label><br><br>
+                                <input id="payment-zip-code" type="number" name="payment-zip-code"><br><br>
+                            </div>
+
+                            <label for="payment-country-for-label">Country</label><br><br>
+                            <input id="payment-country-for-label" name="payment-country" list="payment-country">
+                            <datalist id="payment-country">
+                                <option>Canada</option>
+                                <option>Mexico</option>
+                                <option>United States</option>
+                            </datalist>
+                        </form>
+
+                        <form class="credit-card-info">
+                            <input id="payment-username" type="text" name="register-username">
+                            <label for="register-username">Full Name</label><br><br>
+                            <input id="register-email" type="text" name="register-email">
+                            <label for="register-email">Email</label><br><br>
+                            <input id="register-birthday" type="number" name="register-birthday">
+                            <label for="register-birthday">Birthday</label><br><br>
+                            <input id="register-address" type="text" name="register-address">
+                            <label for="register-address">Address</label><br><br>
+                            <input id="register-password" type="password" name="register-password">
+                            <label for="register-password">Password</label><br><br>
+                        </form>
+                    </section>
 
                 </section>
                 <!-- // INTERACTIVE ELEMENTS SECTION -->
@@ -494,44 +480,72 @@
                                     </tr>
                                     <tr>
                                         <td class="grey-title-color grid">
-                                                <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey</p></div>
-                                                <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#6A737D</p></div>
-                                        </td>      
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#6A737D</p>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-000 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$grey000</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#FAFBFC</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$grey000</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#FAFBFC</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-100 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$grey100</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#F6F8FA</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$grey100</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#F6F8FA</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-200 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$grey200</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#E1E4E8</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$grey200</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#E1E4E8</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-300 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$grey300</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#D1D5DA</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$grey300</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#D1D5DA</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-400 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey400</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#959DA5</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey400</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#959DA5</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-500 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey500</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#6A737D</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey500</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#6A737D</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -546,20 +560,32 @@
                                     </tr>
                                     <tr>
                                         <td class="grey-700 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey700</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#444D56</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey700</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#444D56</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-800 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey800</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#2F363D</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey800</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#2F363D</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="grey-900 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$grey900</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#24292E</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$grey900</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#24292E</p>
+                                            </div>
                                         </td>
                                     </tr>
 
@@ -573,68 +599,112 @@
                                     </tr>
                                     <tr>
                                         <td class="purple-title-color grid">
-                                                <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple</p></div>
-                                                <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#6200EE</p></div>
-                                        </td>      
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#6200EE</p>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-000 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$purple000</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#FBD5FF</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$purple000</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#FBD5FF</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-100 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$purple100</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#DAB2FF</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$purple100</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#DAB2FF</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-200 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$purple200</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#BA89FF</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$purple200</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#BA89FF</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-300 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple300</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#995DFF</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple300</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#995DFF</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-400 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple400</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#7E39FB</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple400</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#7E39FB</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-500 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple500</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#6200EE</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple500</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#6200EE</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-600 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple600</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#5400E8</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple600</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#5400E8</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-700 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple700</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#3F00DF</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple700</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#3F00DF</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-800 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple800</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#2500D7</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple800</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#2500D7</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="purple-900 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$purple900</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#0000C9</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$purple900</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#0000C9</p>
+                                            </div>
                                         </td>
                                     </tr>
                                 </table>
@@ -647,68 +717,112 @@
                                     </tr>
                                     <tr>
                                         <td class="green-title-color grid">
-                                                <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$green</p></div>
-                                                <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#71EFE0</p></div>
-                                        </td>      
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$green</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#71EFE0</p>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="green-000 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$green000</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#A8FFFB</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$green000</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#A8FFFB</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-100 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$green100</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#71EFE0</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$green100</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#71EFE0</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-200 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black"><p>$green200</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black"><p>#03DAC6</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                                <p>$green200</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                                <p>#03DAC6</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-300 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green300</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#00C4AB</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green300</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#00C4AB</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-400 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green400</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#00B398</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green400</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#00B398</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-500 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green500</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#00A284</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green500</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#00A284</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-600 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green600</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#009577</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green600</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#009577</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-700 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green700</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#008466</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green700</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#008466</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-800 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green800</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#007457</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green800</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#007457</p>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="green-900 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white"><p>$green900</p></div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white"><p>#005739</p></div>
+                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                                <p>$green900</p>
+                                            </div>
+                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                                <p>#005739</p>
+                                            </div>
                                         </td>
                                     </tr>
                                 </table>

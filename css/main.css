@@ -127,6 +127,45 @@ section .tagValue {
   color: #6200EE;
 }
 
+/* Styling for a sign in form */
+#sign-in-username {
+  padding: 1em 0 1em 1em;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+#sign-in-password {
+  padding: 1em 0 1em 1em;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.sample-sign-in-button {
+  padding: 1em 1em 1em 1em;
+  background-color: #6200ee;
+  color: white;
+  border: none;
+}
+
+/* Styling for a sign up form */
+#register-username, #register-email, #register-password, #register-confirm-password {
+  padding: 1em 0 1em 1em;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.sample-sign-up-button {
+  padding: 1em 1em 1em 1em;
+  background-color: #6200ee;
+  color: white;
+  border: none;
+}
+
+
+
+
+
+
 /* 
   TEXT ELEMENTS -------------------
 */
