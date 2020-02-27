@@ -18,15 +18,16 @@ body {
   /* overflow: hidden; */
 }
 
+/* Cancel the default setting of grid class */
+.grid {
+  justify-content: flex-start;
+}
+
+
+
 a {
   text-decoration: none;
 }
-
-/* section:not([id]) {
-  margin: 1em 0;
-  padding: 0.5em 0;
-  border-top: 1px solid #333;
-} */
 
 section h3 {
   margin-bottom: 1em;
@@ -63,9 +64,7 @@ section .tagValue {
   color: #009577;
 }
 
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
+/* -----------------------------------------  INTERACTIVE ELEMENTS ------------------------------------------- */
 
 /* Styling for an in-text link */
 
@@ -161,14 +160,39 @@ section .tagValue {
   border: none;
 }
 
+/* Styling for a payment form */
+#payment-section form label {
+  display: block;
+  color: #444D56;
+  font-size: 0.8em;
+}
+
+.sample-expire input[type=text] {
+  display: inline-block;
+  width: 10%;
+}
+
+#payment-section form input[type=text] {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border: thin solid #444D56;
+  border-radius: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+#payment-section form input[type=submit] {
+  display: block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 20%;
+  background-color: #6200ee;
+  color: white;
+}
 
 
 
 
-
-/* 
-  TEXT ELEMENTS -------------------
-*/
+/* ----------------------------------------- TEXT ELEMENTS ----------------------------------------------- */
 
 /* Styling for a h1 */
 
@@ -216,6 +240,9 @@ section .tagValue {
 }
 
 /* Styling for color parette */
+.color-sample {
+  margin-top: 3em;
+}
 
 .black-0, .white-0, .grey-0, .purple-0, .green-0 {
   display: inline-block;
@@ -258,12 +285,20 @@ section .tagValue {
   width: 100%;
 } */
 
+#table-purple, #table-grey {
+  width: 100%;
+}
+
+#table-green {
+  width: 100%;
+}
+
 th {
-  padding: 2em 4em;
+  padding: 2em 5em;
 }
 
 td {
-  padding: 0 4em;
+  padding: 0 5em;
 }
 
 .table-data-left, .table-data-right {
@@ -328,11 +363,11 @@ td {
 /* The color vaiable for purple */
 
 .purple-title-color {
-  background-color: #6f42c1;
+  background-color: #6200ee;
 }
 
 .purple-000 {
-  background-color: 	#fbd5ff;
+  background-color: #fbd5ff;
 }
 
 .purple-100 {
@@ -417,9 +452,9 @@ td {
   background-color: #005739;
 }
 
-/* 
-  COMBINED ELEMENTS -------------------
-*/
+
+
+/* -------------------------------------------- COMBINED ELEMENTS --------------------------------------------- */
 
 /* Styling for mobile main nav */
 
