@@ -251,7 +251,7 @@ button {
 }
 
 .saleTag {
-    right:2%;
+    right: 2%;
     color: white;
 }
 
@@ -259,4 +259,10 @@ button {
 
 footer {
     margin-top: 2em;
+}
+
+@media (max-width: 70em) {
+    .grid-col-1of5_noHeight {
+        flex: 1 1 30%;
+    }
 }
