@@ -19,11 +19,10 @@ body {
 }
 
 /* Cancel the default setting of grid class */
+
 .grid {
   justify-content: flex-start;
 }
-
-
 
 a {
   text-decoration: none;
@@ -127,6 +126,7 @@ section .tagValue {
 }
 
 /* Styling for a sign in form */
+
 #sign-in-username {
   padding: 1em 0 1em 1em;
   display: block;
@@ -147,6 +147,7 @@ section .tagValue {
 }
 
 /* Styling for a sign up form */
+
 #register-username, #register-email, #register-password, #register-confirm-password {
   padding: 1em 0 1em 1em;
   display: block;
@@ -161,6 +162,7 @@ section .tagValue {
 }
 
 /* Styling for a payment form */
+
 #payment-section form label {
   display: block;
   color: #444D56;
@@ -188,9 +190,6 @@ section .tagValue {
   background-color: #6200ee;
   color: white;
 }
-
-
-
 
 /* ----------------------------------------- TEXT ELEMENTS ----------------------------------------------- */
 
@@ -240,6 +239,7 @@ section .tagValue {
 }
 
 /* Styling for color parette */
+
 .color-sample {
   margin-top: 3em;
 }
@@ -395,7 +395,7 @@ td {
 }
 
 .purple-700 {
-  background-color: 	#3f00df;
+  background-color: #3f00df;
 }
 
 .purple-800 {
@@ -413,7 +413,7 @@ td {
 }
 
 .green-000 {
-  background-color:	#a8fffb;
+  background-color: #a8fffb;
 }
 
 .green-100 {
@@ -421,15 +421,15 @@ td {
 }
 
 .green-200 {
-  background-color:	#03dac6;
+  background-color: #03dac6;
 }
 
 .green-300 {
-  background-color:	#00c4ab;
+  background-color: #00c4ab;
 }
 
 .green-400 {
-  background-color:	#00b398;
+  background-color: #00b398;
 }
 
 .green-500 {
@@ -445,14 +445,12 @@ td {
 }
 
 .green-800 {
-  background-color:	#007457;
+  background-color: #007457;
 }
 
 .green-900 {
   background-color: #005739;
 }
-
-
 
 /* -------------------------------------------- COMBINED ELEMENTS --------------------------------------------- */
 
@@ -480,11 +478,12 @@ td {
 }
 
 #styleGuide_Image {
-  text-align: center;
-  color: white;
-  background-image: url(../img/styleGuide.jpeg);
-  padding-top: 20em;
-  padding-bottom: 25em;
+  position: relative;
+  margin-top: 7em;
+  width: 70vw;
+  height:80vh;
+  color: black;
+  background-image: url(../img/styleGuide2.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -679,14 +678,12 @@ footer a {
   .main-nav a {
     display: none;
   }
-
   .search-bar input[type=text] {
     display: none;
   }
   .side-nav {
     display: none;
   }
-
   /* mobile menu  */
   .mobile-menu-icon {
     filter: brightness(0) invert(1);

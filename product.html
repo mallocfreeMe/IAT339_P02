@@ -11,6 +11,11 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        window.onload = function () {
+            alert(localStorage.getItem("productNumber"));
+        };
+    </script>
 </head>
 
 <body>
@@ -61,11 +66,31 @@
 
                 <!-- picture -->
                 <div class="individual_product grid-col-1of2_noHeight">
-                    <img src="img/deals1.jpg" alt="5 Terre">
+                    <img id="productImage" alt="product image" src="img/product/product1-1.jpg">
                     <div class="container">
                         <p>Cinque Terre</p>
                     </div>
                 </div>
+
+                <script>
+                    let productImage = $("#productImag");
+
+                    let productOne_image = "img/product/product1-1.jpg";
+                    let productTwo_image = "img/product/product2-1.jpg";
+                    let productThree_image = "img/product/product3-1.jpg";
+
+                    let productNumber = localStorage.getItem("productNumber");
+
+                    if (productNumber == "first") {
+                        productImage.attr("src", productOne_image);
+                    } else if (productNumber == "second") {
+                        productImage.attr("src", productTwo_image);
+                    } else if (productNumber == "third") {
+                        productImage.attr("src", productThree_image);
+                    } else {
+                        productImage.attr("src", productOne_image);
+                    }
+                </script>
 
                 <!-- text -->
                 <div class="tech_spec grid-col-1of2_noHeight">

@@ -108,13 +108,18 @@
         <!-- styleguide content -->
         <div class="grid-col-4of5">
 
-            <section id="styleGuide_Image">
-                <!-- <h1>Laptophub StyleGuide</h1> -->
+            <section>
+                <div class="grid-col-1of2-noHeight" id="styleGuide_Image"></div>
+
+                <div class="grid-col-1of2-noHeight" >
+                    <h1>Laptophub StyleGuide</h1>
+                    <p>The styleguide is a resource for designers, product managers, and developers, providing a common language around Yelp’s UI patterns. We use it to maintain modular front-end code and visual consistency across the web app. </p>
+                </div>
             </section>
 
             <div class="styleGuide">
-                
-<!---------------------------- INTERACTIVE ELEMENTS SECTION ------------------------------>
+
+                <!-- INTERACTIVE ELEMENTS SECTION -->
                 <section id="interactive_elements">
 
                     <!-- an in-text link -->
@@ -158,11 +163,13 @@
                         <p>.button-submit-reset</p>
 
                         <h3>Sample code:</h3>
-                        <div class="codearea"><pre>&lt;<span class="tagName">a</span> <span
+                        <div class="codearea">
+                            <pre>&lt;<span class="tagName">a</span> <span
                                 class="tagClass">href</span>="<span class="tagValue">#</span>" <span
                                 class="tagClass">class</span>="<span
                                 class="tagValue">button-submit-reset</span>"&gt;Submit Button&lt;/<span
-                                class="tagName">a</span>&gt;</pre></div>
+                                class="tagName">a</span>&gt;</pre>
+                        </div>
 
                         <h3>Rendered element:</h3>
                         <a class="button-submit-reset" href="#">Submit Button</a>
@@ -176,9 +183,11 @@
                         <p>.text-input</p>
 
                         <h3>Sample code:</h3>
-                        <div class="codearea"><pre>&lt;<span class="tagName">input</span> <span
+                        <div class="codearea">
+                            <pre>&lt;<span class="tagName">input</span> <span
                                 class="tagClass">type</span>="<span class="tagClass">text</span>" <span
-                                class="tagClass">class</span>="<span class="tagValue">text-input</span>"&gt;</pre></div>
+                                class="tagClass">class</span>="<span class="tagValue">text-input</span>"&gt;</pre>
+                        </div>
 
                         <h3>Rendered element:</h3>
                         <input type="text" class="text-input">
@@ -217,10 +226,8 @@
 
                         <h3>Rendered element:</h3>
                         <form>
-                            <input id="sign-in-username" type="text" name="sign-in-username"
-                                placeholder="Username">
-                            <input id="sign-in-password" type="password" name="sign-in-password"
-                                placeholder="Password">
+                            <input id="sign-in-username" type="text" name="sign-in-username" placeholder="Username">
+                            <input id="sign-in-password" type="password" name="sign-in-password" placeholder="Password">
                             <button class="sample-sign-in-button">Log in</button>
                         </form>
                     </section>
@@ -246,8 +253,10 @@
                         <form>
                             <input id="register-username" type="text" name="register-username" placeholder="Username">
                             <input id="register-email" type="email" name="register-email" placeholder="E-mail">
-                            <input id="register-password" type="password" name="register-password" placeholder="Password">
-                            <input id="register-confirm-password" type="password" name="register-confirm-password" placeholder="Confirm password">
+                            <input id="register-password" type="password" name="register-password"
+                                placeholder="Password">
+                            <input id="register-confirm-password" type="password" name="register-confirm-password"
+                                placeholder="Confirm password">
                             <button class="sample-sign-up-button">Sign Up</button>
                         </form>
                     </section>
@@ -281,13 +290,15 @@
                             <input type="text" name="credit-card-number">
                             <label>Expires on</label>
                             <div class="sample-expire">
-                                <input class="sample-expire-left" type="text" name="expire-on-left" list="sample-expire-month">
+                                <input class="sample-expire-left" type="text" name="expire-on-left"
+                                    list="sample-expire-month">
                                 <datalist id="sample-expire-month">
                                     <option value="January"></option>
                                     <option value="February"></option>
                                     <option value="March"></option>
                                 </datalist>
-                                <input class="sample-expire-right" type="text" name="expire-on-right" list="sample-expire-day">
+                                <input class="sample-expire-right" type="text" name="expire-on-right"
+                                    list="sample-expire-day">
                                 <datalist id="sample-expire-day">
                                     <option value="01"></option>
                                     <option value="02"></option>
@@ -303,11 +314,11 @@
                     </section>
 
                 </section>
-<!---------------------------- INTERACTIVE ELEMENTS SECTION END ------------------------------>
+                <!---------------------------- INTERACTIVE ELEMENTS SECTION END ------------------------------>
 
 
 
-<!-------------------------------- TEXT ELEMENTS SECTION --------------------------------->
+                <!-------------------------------- TEXT ELEMENTS SECTION --------------------------------->
                 <section id="text_elements">
 
                     <section id="heading-one-section">
@@ -317,7 +328,9 @@
                         <p>.h1</p>
 
                         <h3>Sample code:</h3>
-                        <div class="codearea"><pre>&lt;<span class="tagName">h1</span> <span class="tagClass">class</span>="<span class="tagValue">h1</span>"&gt;This is a h1 heading&lt;/<span class="tagName">h1</span>&gt;</pre></div>
+                        <div class="codearea">
+                            <pre>&lt;<span class="tagName">h1</span> <span class="tagClass">class</span>="<span class="tagValue">h1</span>"&gt;This is a h1 heading&lt;/<span class="tagName">h1</span>&gt;</pre>
+                        </div>
 
                         <h3>Rendered element:</h3>
                         <p class="h1">This a h1 heading</p>
@@ -330,7 +343,9 @@
                         <p>.h2</p>
 
                         <h3>Sample code:</h3>
-                        <div class="codearea"><pre>&lt;<span class="tagName">h2</span> <span class="tagClass">class</span>="<span class="tagValue">h2</span>"&gt;This is a h2 heading&lt;/<span class="tagName">h2</span>&gt;</pre></div>
+                        <div class="codearea">
+                            <pre>&lt;<span class="tagName">h2</span> <span class="tagClass">class</span>="<span class="tagValue">h2</span>"&gt;This is a h2 heading&lt;/<span class="tagName">h2</span>&gt;</pre>
+                        </div>
 
                         <h3>Rendered element:</h3>
                         <p class="h2">This a h2 heading</p>
@@ -343,7 +358,9 @@
                         <p>.h3</p>
 
                         <h3>Sample code:</h3>
-                        <div class="codearea"><pre>&lt;<span class="tagName">h3</span> <span class="tagClass">class</span>="<span class="tagValue">h3</span>"&gt;This is a h3 heading&lt;/<span class="tagName">h3</span>&gt;</pre></div>
+                        <div class="codearea">
+                            <pre>&lt;<span class="tagName">h3</span> <span class="tagClass">class</span>="<span class="tagValue">h3</span>"&gt;This is a h3 heading&lt;/<span class="tagName">h3</span>&gt;</pre>
+                        </div>
 
                         <h3>Rendered element:</h3>
                         <p class="h3">This a h3 heading</p>
@@ -356,7 +373,9 @@
                         <p>.pg</p>
 
                         <h3>Sample code:</h3>
-                        <div class="codearea"><pre>&lt;<span class="tagName">p</span> <span class="tagClass">class</span>="<span class="tagValue">pg</span>"&gt;This is a paragraph.&lt;/<span class="tagName">p</span>&gt;</pre></div>
+                        <div class="codearea">
+                            <pre>&lt;<span class="tagName">p</span> <span class="tagClass">class</span>="<span class="tagValue">pg</span>"&gt;This is a paragraph.&lt;/<span class="tagName">p</span>&gt;</pre>
+                        </div>
 
                         <h3>Rendered element:</h3>
                         <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -458,7 +477,7 @@
                         <h3>Rendered element:</h3>
                         <div class="grid">
                             <div class="grid-col-1of2-noHeight">
-                            <!------------------- Start of purple color table ---------------------->
+                                <!------------------- Start of purple color table ---------------------->
                                 <table id="table-purple">
                                     <tr class="purple-title-color font-white">
                                         <th>Purple (Primary color)</th>
@@ -574,10 +593,10 @@
                                         </td>
                                     </tr>
                                 </table>
-                            <!------------------- End of purple color table ---------------------->
+                                <!------------------- End of purple color table ---------------------->
 
 
-                            <!------------------- Start of grey color table ---------------------->
+                                <!------------------- Start of grey color table ---------------------->
                                 <table id="table-grey">
                                     <tr class="grey-title-color font-white">
                                         <th>Grey (Other color)</th>
@@ -698,7 +717,7 @@
                             <!------------------- End of grey color table ---------------------->
 
                             <div class="grid-col-1of2-noHeight">
-                            <!------------------- Start of green color table ---------------------->
+                                <!------------------- Start of green color table ---------------------->
                                 <table id="table-green">
                                     <tr class="green-title-color font-black">
                                         <th>Green (Secondary color)</th>
@@ -814,18 +833,18 @@
                                         </td>
                                     </tr>
                                 </table>
-                            <!------------------- Start of green color table ---------------------->
+                                <!------------------- Start of green color table ---------------------->
                             </div>
                         </div>
 
                     </section>
 
                 </section>
-<!-------------------------------- TEXT ELEMENTS SECTION END --------------------------------->
+                <!-------------------------------- TEXT ELEMENTS SECTION END --------------------------------->
 
 
 
-<!------------------------------ COMBINED ELEMENTS SECTION ------------------------------->
+                <!------------------------------ COMBINED ELEMENTS SECTION ------------------------------->
                 <section id="combined_elements">
 
                     <section id="main-nav-section">
@@ -997,7 +1016,7 @@
 
                     </section>
                 </section>
-<!------------------------------ COMBINED ELEMENTS SECTION END ------------------------------->
+                <!------------------------------ COMBINED ELEMENTS SECTION END ------------------------------->
             </div>
         </div>
     </div>
