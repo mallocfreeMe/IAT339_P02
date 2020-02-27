@@ -11,8 +11,8 @@ body {
 
 /* styling product item */
 .shopping-cart-area {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 10em;
+    margin-right: 10em;
     margin-bottom: 3em;
     background-color: white;
     padding-bottom: 1em;
@@ -30,7 +30,7 @@ body {
 .item-container {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 2fr 5fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 4fr 1fr 1fr 1fr;
 }
 
 .item-image {
@@ -43,7 +43,24 @@ body {
 .item-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: fill;
+    /* border: thin solid black; */
+
+}
+
+#item-one img {
+    width: 80%;
+    height: auto;
+    margin-left: 1.5em;
+    margin-top: -0.5em;
+}
+
+#item-two img {
+    margin-top: -2em;
+}
+
+#item-three img {
+    margin-top: -1em;
 }
 
 .item-name {
