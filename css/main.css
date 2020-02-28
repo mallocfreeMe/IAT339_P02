@@ -456,7 +456,12 @@ td {
 
 /* Styling for mobile main nav */
 
+.mobile-menu-icon {
+  display: none;
+}
+
 .mobile-main-nav {
+  cursor: pointer;
   padding: 1em;
   list-style: none;
   display: none;
@@ -480,8 +485,8 @@ td {
 #styleGuide_Image {
   position: relative;
   margin-top: 7em;
-  width: 70vw;
-  height:80vh;
+
+  height: 70vh;
   color: black;
   background-image: url(../img/styleGuide2.svg);
   background-repeat: no-repeat;
@@ -508,7 +513,7 @@ td {
 
 /* Styleing for website icon */
 
-#website_icon {
+#website_icon img {
   width: 2.8em;
   height: 3em;
   position: absolute;
@@ -666,38 +671,32 @@ footer a {
 
 /* when the size of browser becomes smaller */
 
-@media (max-width: 70em) {
-  .side-nav {
-    display: none;
-  }
-}
+@media (max-width: 60em) {
 
-/* if the screen size is mobile size */
-
-@media (max-width: 30em) {
   .main-nav a {
     display: none;
   }
-  .search-bar input[type=text] {
-    display: none;
+
+  #website_icon {
+    display: block;
   }
+
   .side-nav {
     display: none;
   }
   /* mobile menu  */
   .mobile-menu-icon {
+    position: absolute;
+    top: 0.5em;
+    right: 6em;
     filter: brightness(0) invert(1);
     display: block;
   }
-  .mobile-main-nav {
+  .side-nav {
     display: none;
   }
-}
-
-/* large than phone size */
-
-@media(min-width: 30em) {
-  .mobile-menu-icon {
-    display: none;
+  .footer-grid-col-1of5 {
+    text-align: center;
+    flex: 1 1 100%;
   }
 }

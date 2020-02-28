@@ -11,42 +11,6 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        function goToCart() {
-            alert("The product successfully added to your shopping cart");
-        }
-
-        function goToShopDeals() {
-            // learned how to save varibles to local storage from 
-            // https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
-            let eventNumber = $(".slideShow").css("background-image");
-
-            if (eventNumber.includes("event1")) {
-                eventNumber = "first";
-            } else if (eventNumber.includes("event2")) {
-                eventNumber = "second";
-            } else {
-                eventNumber = "third";
-            }
-            localStorage.setItem("eventNumber", eventNumber);
-            window.location = "shop_deals.html";
-        }
-
-        function goToProduct() {
-            let productNumber = $(".productImage").attr('src');
-            
-            if (productNumber.includes("product1-1")) {
-                productNumber = "first";
-            } else if (productNumber.includes("product2-1")) {
-                productNumber = "second";
-            } else {
-                productNumber = "third";
-            }
-
-            // localStorage.setItem("productNumber", productNumber);
-            // window.location = "product.html";
-        } 
-    </script>
 </head>
 
 <body>
@@ -55,7 +19,7 @@
         <!-- nav for external navigation -->
         <nav class="main-nav">
 
-            <a href="index.html"><img id="website_icon" src="img/icon/laptop.png" alt="icon"></a>
+            <a href="index.html" id="website_icon"><img src="img/icon/laptop.png" alt="icon"></a>
 
             <div class="search-bar">
                 <input type="text" placeholder="Search laptops here...">
@@ -78,12 +42,13 @@
             <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
         </nav>
 
+        <!-- mobile nav main -->
         <nav class="mobile-main-nav" id="mobile_menu">
             <ul>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#">Cart</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="signIn.html">Sign In</a></li>
+                <li><a href="shoppingCart.html">Cart</a></li>
             </ul>
         </nav>
 
@@ -136,116 +101,28 @@ Ready for you best work ever.</p></pre>
             <span class="dot" id="dot_two"></span>
             <span class="dot" id="dot_three"></span>
         </div>
-
-        <script>
-
-            let count = 1;
-
-            $("#event1").css("display", "block");
-            $("#event2").css("display", "none");
-            $("#event3").css("display", "none");
-
-            $("#dot_one").css("background-color", "#6200EE");
-            $("#dot_two").css("background-color", "white");
-            $("#dot_three").css("background-color", "white");
-
-            $(document).ready(function () {
-                $("#previous_button").click(function () {
-                    if (count > 1) {
-                        count--;
-                        let image_url = "img/event/event" + count + ".jpg";
-                        $(".slideShow").css("background-image", "url(" + image_url + ")");
-                    } else {
-                        count = 3;
-                        let image_url = "img/event/event" + count + ".jpg";
-                        $(".slideShow").css("background-image", "url(" + image_url + ")");
-                    }
-                });
-
-
-                $("#next_button").click(function () {
-                    if (count < 3) {
-                        count++;
-                        let image_url = "img/event/event" + count + ".jpg";
-                        $(".slideShow").css("background-image", "url(" + image_url + ")");
-                    } else {
-                        count = 1;
-                        let image_url = "img/event/event" + count + ".jpg";
-                        $(".slideShow").css("background-image", "url(" + image_url + ")");
-                    }
-                });
-
-                $("#dot_one").click(function () {
-                    count = 1;
-                    let image_url = "img/event/event" + count + ".jpg";
-                    $(".slideShow").css("background-image", "url(" + image_url + ")");
-                });
-
-
-                $("#dot_two").click(function () {
-                    count = 2;
-                    let image_url = "img/event/event" + count + ".jpg";
-                    $(".slideShow").css("background-image", "url(" + image_url + ")");
-                });
-
-
-                $("#dot_three").click(function () {
-                    count = 3;
-                    let image_url = "img/event/event" + count + ".jpg";
-                    $(".slideShow").css("background-image", "url(" + image_url + ")");
-                });
-
-                $("#previous_button,#next_button,#dot_one, #dot_two, #dot_three").on("click", function () {
-
-                    if (count == 1) {
-                        $("#event1").css("display", "block");
-                        $("#event2").css("display", "none");
-                        $("#event3").css("display", "none");
-
-                        $("#dot_one").css("background-color", "#6200EE");
-                        $("#dot_two").css("background-color", "white");
-                        $("#dot_three").css("background-color", "white");
-                    } else if (count == 2) {
-                        $("#event1").css("display", "none");
-                        $("#event2").css("display", "block");
-                        $("#event3").css("display", "none");
-
-                        $("#dot_one").css("background-color", "white");
-                        $("#dot_two").css("background-color", "#6200EE");
-                        $("#dot_three").css("background-color", "white");
-                    } else if (count == 3) {
-                        $("#event1").css("display", "none");
-                        $("#event2").css("display", "none");
-                        $("#event3").css("display", "block");
-
-                        $("#dot_one").css("background-color", "white");
-                        $("#dot_two").css("background-color", "white");
-                        $("#dot_three").css("background-color", "#6200EE");
-                    }
-                });
-
-            });
-
-        </script>
     </div>
 
     <!-- Home h1 -->
     <h1 id="home_title">Take a look at our most popular laptops</h1>
 
     <!-- Popular laptop list -->
-
-    <!-- Row 1-->
     <div class="grid">
 
         <div class="grid-col-1of5_noHeight"></div>
 
+        <!-- Row 1-->
+        <!-- First Product -->
         <div class="grid-col-1of5_noHeight">
+
             <div class="individual_product">
 
+                <!-- special tag -->
                 <div class="triangle-topRight newTriangle"></div>
                 <div class="productTag newTag">New</div>
 
-                <a onclick="goToProduct()" class=""><img src="img/product/product1-1.jpg" alt="product 1"></a>
+                <!-- Image link to the product page-->
+                <img src="img/product/product1-1.jpg" alt="product 1" onclick="goToProduct()" class="product1_link">
                 <div class="container">
                     <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
 
@@ -264,19 +141,21 @@ Ready for you best work ever.</p></pre>
                         <img src="img/icon/no.png">Not In Stock
                     </div>
 
-                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                    <button class="cart_button" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
         </div>
 
+        <!-- Row 1-->
+        <!-- second Product -->
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
 
                 <div class="triangle-topRight saleTriangle"></div>
                 <div class="productTag saleTag">On Sale</div>
 
-                <a onclick="goToProduct()"><img src="img/product/product2-1.jpg" alt="product 2"
-                        class="productImage"></a>
+                <img src="img/product/product2-1.jpg" alt="product 2" onclick="goToProduct()" class="product2_link">
+
                 <div class="container">
                     <p>MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti, 8GB DDR4</p>
 
@@ -295,19 +174,21 @@ Ready for you best work ever.</p></pre>
                         <img src="img/icon/yes.png">In Stock
                     </div>
 
-                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                    <button class="cart_button" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
         </div>
 
+        <!-- Row 1-->
+        <!-- third Product -->
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
 
                 <div class="triangle-topRight saleTriangle"></div>
                 <div class="productTag saleTag">On Sale</div>
 
-                <a href="product.html" onclick="goToProduct()"><img src="img/product/product3-1.jpg" alt="product 3"
-                        class="productImage"></a>
+                <img src="img/product/product3-1.jpg" alt="product 3" onclick="goToProduct()" class="product3_link">
+
                 <div class="container">
                     <p>Dell Inspiron I3567-5949BLK-PUS Notebook 15.6 120Hz</p>
 
@@ -326,7 +207,7 @@ Ready for you best work ever.</p></pre>
                         <img src="img/icon/yes.png">In Stock
                     </div>
 
-                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                    <button class="cart_button" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -335,18 +216,19 @@ Ready for you best work ever.</p></pre>
 
     </div>
 
-    <!-- Row 2-->
     <div class="grid">
 
         <div class="grid-col-1of5_noHeight"></div>
 
+        <!-- Row 2-->
+        <!-- first Product -->
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
 
                 <div class="triangle-topRight newTriangle"></div>
                 <div class="productTag newTag">New</div>
 
-                <a href="product.html"><img src="img/product/product1-1.jpg" alt="product 4" class="productImage"></a>
+                <img src="img/product/product1-1.jpg" alt="product 1" onclick="goToProduct()" class="product1_link">
                 <div class="container">
                     <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
 
@@ -365,18 +247,20 @@ Ready for you best work ever.</p></pre>
                         <img src="img/icon/no.png">Not In Stock
                     </div>
 
-                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                    <button class="cart_button" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
         </div>
 
+        <!-- Row 2-->
+        <!-- second Product -->
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
 
                 <div class="triangle-topRight saleTriangle"></div>
                 <div class="productTag saleTag">On Sale</div>
 
-                <a href="product.html"><img src="img/product/product2-1.jpg" alt="product 5" class="productImage"></a>
+                <img src="img/product/product2-1.jpg" alt="product 2" onclick="goToProduct()" class="product2_link">
                 <div class="container">
                     <p>MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti, 8GB DDR4</p>
 
@@ -395,18 +279,20 @@ Ready for you best work ever.</p></pre>
                         <img src="img/icon/yes.png">In Stock
                     </div>
 
-                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                    <button class="cart_button" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
         </div>
 
+        <!-- Row 2-->
+        <!-- third Product -->
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
 
                 <div class="triangle-topRight saleTriangle"></div>
                 <div class="productTag saleTag">On Sale</div>
 
-                <a href="product.html"><img src="img/product/product3-1.jpg" alt="product 6" class="productImage"></a>
+                <img src="img/product/product3-1.jpg" alt="product 3" onclick="goToProduct()" class="product3_link">
                 <div class="container">
                     <p>Dell Inspiron I3567-5949BLK-PUS Notebook 15.6"</p>
 
@@ -425,7 +311,7 @@ Ready for you best work ever.</p></pre>
                         <img src="img/icon/yes.png">In Stock
                     </div>
 
-                    <button class="cart_button" onclick="goToCart()">Add to Cart</button>
+                    <button class="cart_button" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -475,6 +361,144 @@ Ready for you best work ever.</p></pre>
 
     </footer>
 
+
+    <script>
+        // add to cart function, shows alert message
+        function addToCart() {
+            alert("The product successfully added to your shopping cart");
+        }
+
+        // go to shop deals page, save local varible eventNumber in order to pass between pages
+        // learned how to save varibles to local storage from 
+        // https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
+        function goToShopDeals() {
+            let eventNumber = $(".slideShow").css("background-image");
+
+            if (eventNumber.includes("event1")) {
+                eventNumber = "first";
+            } else if (eventNumber.includes("event2")) {
+                eventNumber = "second";
+            } else {
+                eventNumber = "third";
+            }
+            localStorage.setItem("eventNumber", eventNumber);
+            window.location = "shop_deals.html";
+        }
+
+        // go to product page, save local varible productNumber in order to pass between pages
+        function goToProduct() {
+            let productNumber = event.target.className;
+
+            if (productNumber == "product1_link") {
+                productNumber = "first";
+            } else if (productNumber == "product2_link") {
+                productNumber = "second";
+            } else if (productNumber == "product3_link") {
+                productNumber = "third";
+            }
+
+            localStorage.setItem("productNumber", productNumber);
+            window.location = "product.html";
+        }
+
+        let count = 1;
+
+        $("#event1").css("display", "block");
+        $("#event2").css("display", "none");
+        $("#event3").css("display", "none");
+
+        $("#dot_one").css("background-color", "#6200EE");
+        $("#dot_two").css("background-color", "white");
+        $("#dot_three").css("background-color", "white");
+
+        $(document).ready(function () {
+
+            $("#mobile_menu_button").click(function () {
+                $("#mobile_menu").show();
+            });
+
+            $("body").click(function (event) {
+                if (event.target.id != "mobile_menu_button") {
+                    $("#mobile_menu").hide();
+                }
+            });
+
+            $("#previous_button").click(function () {
+                if (count > 1) {
+                    count--;
+                    let image_url = "img/event/event" + count + ".jpg";
+                    $(".slideShow").css("background-image", "url(" + image_url + ")");
+                } else {
+                    count = 3;
+                    let image_url = "img/event/event" + count + ".jpg";
+                    $(".slideShow").css("background-image", "url(" + image_url + ")");
+                }
+            });
+
+
+            $("#next_button").click(function () {
+                if (count < 3) {
+                    count++;
+                    let image_url = "img/event/event" + count + ".jpg";
+                    $(".slideShow").css("background-image", "url(" + image_url + ")");
+                } else {
+                    count = 1;
+                    let image_url = "img/event/event" + count + ".jpg";
+                    $(".slideShow").css("background-image", "url(" + image_url + ")");
+                }
+            });
+
+            $("#dot_one").click(function () {
+                count = 1;
+                let image_url = "img/event/event" + count + ".jpg";
+                $(".slideShow").css("background-image", "url(" + image_url + ")");
+            });
+
+
+            $("#dot_two").click(function () {
+                count = 2;
+                let image_url = "img/event/event" + count + ".jpg";
+                $(".slideShow").css("background-image", "url(" + image_url + ")");
+            });
+
+
+            $("#dot_three").click(function () {
+                count = 3;
+                let image_url = "img/event/event" + count + ".jpg";
+                $(".slideShow").css("background-image", "url(" + image_url + ")");
+            });
+
+            $("#previous_button,#next_button,#dot_one, #dot_two, #dot_three").on("click", function () {
+
+                if (count == 1) {
+                    $("#event1").css("display", "block");
+                    $("#event2").css("display", "none");
+                    $("#event3").css("display", "none");
+
+                    $("#dot_one").css("background-color", "#6200EE");
+                    $("#dot_two").css("background-color", "white");
+                    $("#dot_three").css("background-color", "white");
+                } else if (count == 2) {
+                    $("#event1").css("display", "none");
+                    $("#event2").css("display", "block");
+                    $("#event3").css("display", "none");
+
+                    $("#dot_one").css("background-color", "white");
+                    $("#dot_two").css("background-color", "#6200EE");
+                    $("#dot_three").css("background-color", "white");
+                } else if (count == 3) {
+                    $("#event1").css("display", "none");
+                    $("#event2").css("display", "none");
+                    $("#event3").css("display", "block");
+
+                    $("#dot_one").css("background-color", "white");
+                    $("#dot_two").css("background-color", "white");
+                    $("#dot_three").css("background-color", "#6200EE");
+                }
+            });
+
+        });
+    </script>
 </body>
 
 </html>
