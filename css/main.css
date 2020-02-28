@@ -687,7 +687,9 @@ footer a {
   /* mobile menu  */
   .mobile-menu-icon {
     position: absolute;
-    top: 0.5em;
+    width: 3em;
+    height: 3em;
+    top: 0.8em;
     right: 6em;
     filter: brightness(0) invert(1);
     display: block;
