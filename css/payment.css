@@ -97,36 +97,17 @@ body {
   margin-bottom: 1em;
 }
 
-.card-line-border {
-  border: thin solid #444D56;
-  border-radius: 0.25em;
-  width: 100%;
-  text-align: left;
-}
-
-.card-line-border input[type=text] {
-  margin-bottom: 0;
-  border: none;
-  width: 80%;
-  padding-left: 1em;
-}
-
-.card-line-border .credit-card-image {
-  text-align: right;
-  vertical-align: middle;
-  display: inline;
-}
-
-.card-line-border img {
-  width: 10%;
-  height: 10%;
-  text-align: right;
-}
-
-.card-line label {
-  font-size: 0.8em;
-  color: #444D56;
-  margin-top: 3em;
+.card-line input[type=text] {
+    background-image: url(../img/icon/visa.png);
+    background-size: 3em 3em;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    text-align: left;
+    width: 100%;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: thin solid #444D56;
+    border-radius: 0.25em;
 }
 
 .expire-data {
