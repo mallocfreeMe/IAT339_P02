@@ -4,16 +4,14 @@
 
 /* For Responsive */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 html {
   font-size: 100%;
 }
 
-/* @media (min-width: 640px) { body {font-size:0.5rem;} } 
-@media (min-width:960px) { body {font-size:0.8rem;} } 
-@media (min-width:1100px) { body {font-size:1rem;} } */
-
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', ;
   height: 100%;
   /* overflow: hidden; */
 }
@@ -460,32 +458,9 @@ td {
   display: none;
 }
 
-.mobile-main-nav {
-  cursor: pointer;
-  padding: 1em;
-  list-style: none;
-  display: none;
-  position: fixed;
-  z-index: 2;
-  background-color: white;
-}
-
-.mobile-main-nav ul {
-  list-style: none;
-}
-
-.mobile-main-nav li {
-  padding: 1em;
-}
-
-.mobile-main-nav a {
-  color: black;
-}
-
 #styleGuide_Image {
   position: relative;
   margin-top: 7em;
-
   height: 70vh;
   color: black;
   background-image: url(../img/styleGuide2.svg);
@@ -671,28 +646,65 @@ footer a {
 
 /* when the size of browser becomes smaller */
 
-@media (max-width: 60em) {
+@media (min-width: 60em) {
+  .mobile-menu-icon {
+    display: none;
+  }
+  .mobile-main-nav {
+    display: none;
+  }
+}
 
+@media (max-width: 60em) {
   .main-nav a {
     display: none;
   }
-
   #website_icon {
     display: block;
   }
-
   .side-nav {
     display: none;
   }
-  /* mobile menu  */
+  /* mobile menu icon */
   .mobile-menu-icon {
+    cursor: pointer;
     position: absolute;
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
     top: 0.8em;
-    right: 6em;
+    right: 2em;
     filter: brightness(0) invert(1);
     display: block;
+  }
+
+  .mobile-menu-icon:hover {
+    background-color: black;
+  }
+
+  /* mobile menu  */
+  .mobile-main-nav {
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #995DFF;
+  }
+  .mobile-main-nav ul {
+    list-style: none;
+  }
+  .mobile-main-nav li {
+    padding: 1em;
+    border-bottom: white solid;
+    border-width: thin;
+  }
+  .mobile-main-nav a {
+    color: white;
+    cursor: pointer;
   }
   .side-nav {
     display: none;

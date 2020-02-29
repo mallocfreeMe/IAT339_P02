@@ -1,3 +1,11 @@
+button {
+    cursor: pointer;
+}
+
+html {
+    background-color: #F8F8FF;
+}
+
 /* styling for main nav */
 
 .main-nav {
@@ -7,46 +15,75 @@
 
 /* styling product item */
 
+.product_container {
+    position: relative;
+}
+
 .individual_product {
-    width: 80%;
+    position: relative;
+    background-color: white;
+}
+
+.triangle-topRight {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5em solid #03DAC6;
+    border-left: 5em solid transparent;
+    right: 0;
+}
+
+.productTag {
     color: white;
-    background-color: #6200EE;
-    /* box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    margin-bottom: 5em;
+    position: absolute;
+    font-size: 1em;
+    right: 0.8em;
+    top: 1em
 }
 
-.individual_product img {
-    width: 100%;
-    height: 30em;
+.inStock_section img {
+    width: 1em;
+    height: 1em;
 }
 
-.container {
-    text-align: center;
-    padding: 1em 1em;
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+#productImage {
+    width:100%;
+    height: 100%;
 }
 
 /* styling tech spec */
 
+#product_two_content, #product_three_content {
+    display: none;
+}
+
 .tech_spec {
+    background-color: #E6E6E6;
+    position: abosoulte;
     padding-left: 4em;
 }
 
-.tech_spec h1 {
-    margin: 0;
-    margin-bottom: 1em;
-    color: #6200EE;
-}
-
-.tech_spec p {
-    color: #6200EE;
-    margin-bottom: 2em;
-}
-
-.tech_spec button {
+.tech_spec button, .tech_spec a {
     padding: 1em;
     background-color: #6200EE;
     color: white;
 }
+
+.tech_spec button:hover, .tech_spec a:hover {
+    filter: brightness(1.4);
+    outline: none;
+}
+
+#product_price {
+    margin-top: 1em;
+    color: #6200EE;
+}
+
+/* styling comment section */
 
 .comment_area h1 {
     color: #6200EE;

@@ -52,82 +52,92 @@
         </nav>
     </header>
 
-    <!-- Tech Spec Section-->
+    <!-- grid structure 1/5, 3/5, 1/5-->
     <section class="grid">
+        <!-- empty column -->
         <div class="grid-col-1of5_noHeight"></div>
 
+        <!-- product content section -->
         <div class="grid-col-3of5_noHeight">
-            <div class="grid">
+            <div class="grid product_container">
 
                 <!-- picture -->
                 <div class="individual_product grid-col-1of2_noHeight">
-                    <img id="productImage" alt="product image" src="img/product/product1-1.jpg">
-                    <div class="container">
-                        <p>Cinque Terre</p>
-                    </div>
+                    <div class="triangle-topRight saleTriangle"></div>
+                    <div class="productTag saleTag">New</div>
+
+                    <img id="productImage" src="img/product/product1-1.jpg" alt="product image">
                 </div>
-
-                <script>
-                    let productImage = $("#productImage");
-
-                    let productOne_image = "img/product/product1-1.jpg";
-                    let productTwo_image = "img/product/product2-1.jpg";
-                    let productThree_image = "img/product/product3-1.jpg";
-
-                    let productNumber = localStorage.getItem("productNumber");
-
-                    if (productNumber == "first") {
-                        productImage.attr("src", productOne_image);
-                    } else if (productNumber == "second") {
-                        productImage.attr("src", productTwo_image);
-                    } else if (productNumber == "third") {
-                        productImage.attr("src", productThree_image);
-                    } else {
-                        productImage.attr("src", productOne_image);
-                    }
-                </script>
 
                 <!-- text -->
                 <div class="tech_spec grid-col-1of2_noHeight">
-                    <h1>Tech Spec</h1>
-                    <p>Culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-                        error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                        illo inventore veritatis et quasi ropeior architecto beatae vitae dicta sunt explicabo. Nemo
-                        eniem ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                        magni dolores eosep quiklop ratione voluptatem sequi nesciunt. Neque porro quisquam est, quepi
-                        dolorem ipsum quia dolor srit amet, consectetur adipisci velit, seid quia non numquam eiuris
-                        modi tempora incidunt ut labore et dolore magnam aliquam quaerat iope voluptatem.<br>
+                    <h2>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650, 8GB DDR4, 512GB SSD Windows
+                        10, K571GT-DH51-CA</h2>
+                    <del>$1999.99</del>
+                    <h2 id="product_price">$999</h2>
+                    Qty:<input type="number" min="1" max="20" value="1" />
 
-                        Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore roipi magna aliqua. Ut enim ad minim veeniam, quis nostruklad exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in tufpoy voluptate velit esse cillum dolore eu fugiat nulla parieratur. Excepteur sint occaecat
-                        cupidatat.</p>
+                    <div class="inStock_section">
+                        <img src="img/icon/no.png">Not In Stock
+                    </div>
 
-                    <button onclick="myFunction()">Add to Cart</button>
+                    <button id="product_one_button">Overview</button>
+                    <button id="product_two_button">Specifications</button>
+                    <button id="product_three_button">Warranty & Returns</button>
 
-                    <script>
-                        function myFunction() {
-                            window.location = "shoppingCart.html";
-                        }
-                    </script>
+                    <section id="product_one_content">
+                        <h2>THE WORLD'S SMALLEST COLORFUL 15" ULTRABOOK</h2>
+
+                        <p>ASUS VivoBook K571 is powered by a choice of Intel processors to give you smooth and
+                            responsive
+                            computing performance. With up to NVIDIA GeForce GTX 1650 discrete graphics, up to 16GB RAM,
+                            and
+                            Windows 10 Home, ASUS VivoBook K571 is an ideal daily computing platform.</p>
+                    </section>
+
+                    <section id="product_two_content">
+                        <ul>
+                            <li>Notebook Type Consumer</li>
+                            <li>Notebook Chassis Standard</li>
+                            <li>Screen Size 15.6"</li>
+                            <li>Maximum Resolution 1920 x 1080</li>
+                            <li>Refresh Rate 60Hz</li>
+                            <li>CPU i5-8300H</li>
+                            <li>GPU GeForce GTX 1650</li>
+                            <li>Memory 8GB</li>
+                            <li>Hard Drive Capacity None</li>
+                            <li>SSD Capacity 512GB</li>
+                            <li>Operating System Windows 10 Home</li>
+                            <li>Touch Screen No</li>
+                        </ul>
+                    </section>
+
+                    <section id="product_three_content">
+                        <ul>
+                            <li>Return & Exchange 15 days return or exchange</li>
+                            <li>Manufacturing Defect Exchange 30 Days</li>
+                            <li>Courtesy Warranty Repair Shipment Service 1 Year</li>
+                        </ul>
+                    </section>
+
+                    <a href="shoppingCart.html">Add to Cart</a>
+                    <a href="#comment_section">Write a Review</a>
                 </div>
 
             </div>
         </div>
 
-
-
+        <!-- empty column -->
         <div class="grid-col-1of5_noHeight"></div>
+
     </section>
 
     <!-- Comment Section-->
-    <!-- Tech Spec Section-->
     <section class="grid">
         <div class="grid-col-1of5_noHeight"></div>
 
         <div class="comment_area grid-col-3of5_noHeight">
-            <h1>Comments</h1>
+            <h1 id="comment_section">Comments</h1>
 
             <!-- fake comment no.1-->
             <textarea rows="4" cols="50">
@@ -194,6 +204,47 @@
         <section class="footer-grid-col-1of5"></section>
 
     </footer>
+
+    <script>
+        let productImage = $("#productImage");
+
+        let productOne_image = "img/product/product1-1.jpg";
+        let productTwo_image = "img/product/product2-1.jpg";
+        let productThree_image = "img/product/product3-1.jpg";
+
+        let productNumber = localStorage.getItem("productNumber");
+
+        if (productNumber == "first") {
+            productImage.attr("src", productOne_image);
+        } else if (productNumber == "second") {
+            productImage.attr("src", productTwo_image);
+        } else if (productNumber == "third") {
+            productImage.attr("src", productThree_image);
+        } else {
+            productImage.attr("src", productOne_image);
+        }
+
+        $(document).ready(function () {
+            $("#product_one_button").click(function () {
+                $("#product_one_content").show();
+                $("#product_two_content").hide();
+                $("#product_three_content").hide();
+            });
+
+            $("#product_two_button").click(function () {
+                $("#product_one_content").hide();
+                $("#product_two_content").show();
+                $("#product_three_content").hide();
+            });
+
+            $("#product_three_button").click(function () {
+                $("#product_one_content").hide();
+                $("#product_two_content").hide();
+                $("#product_three_content").show();
+            });
+        });
+
+    </script>
 </body>
 
 </html>
