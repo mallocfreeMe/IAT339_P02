@@ -11,7 +11,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
+    <!-- <script>
         let showItemOne = true;
         let showItemTwo = true;
         let showItemThree = true;
@@ -50,7 +50,7 @@
         function jumpToPayment() {
             window.location = "payment.html"
         }
-    </script>
+    </script> -->
 </head>
 
 <body>
@@ -102,19 +102,19 @@
                 <img src="img/product/product1-1.jpg" alt="product 1">
             </div>
             <div class="item-name">
-                <p>Dell xps 15</p>
+                <p>ASUS Vivobook Pro Notebook</p>
             </div>
             <div class="item-price-origin">
-                <p>$1499.00</p>
+                <p>$1899.00</p>
             </div>
             <div class="item-amount">
                 <input type="number" min="0" placeholder="1">
             </div>
             <div class="item-price">
-                <p>$1275.00</p>
+                <p>$1499.00</p>
             </div>
             <div class="item-detail">
-                <p>Laptop detail</p>
+                <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
             </div>
             <div class="item-remove">
                 <button onclick="hiddenItemOne()">Remove</button>
@@ -126,7 +126,7 @@
                 <img src="img/product/product2-1.jpg" alt="product 2">
             </div>
             <div class="item-name">
-                <p>Dell xps 15</p>
+                <p>MSI Gaming Notebook</p>
             </div>
             <div class="item-price-origin">
                 <p>$1499.00</p>
@@ -138,7 +138,7 @@
                 <p>$1275.00</p>
             </div>
             <div class="item-detail">
-                <p>Laptop detail</p>
+                <p>MSI Gaming Notebook 15.6 i5-9300H, GTX 1660Ti, 8GB DDR4</p>
             </div>
             <div class="item-remove">
                 <button onclick="hiddenItemTwo()">Remove</button>
@@ -150,19 +150,19 @@
                 <img src="img/product/product3-1.jpg" alt="product 3">
             </div>
             <div class="item-name">
-                <p>Dell xps 15</p>
+                <p>Dell Inspiron Notebook</p>
             </div>
             <div class="item-price-origin">
-                <p>$1499.00</p>
+                <p>$999.00</p>
             </div>
             <div class="item-amount">
                 <input type="number" min="0" placeholder="1">
             </div>
             <div class="item-price">
-                <p>$1275.00</p>
+                <p>$799.00</p>
             </div>
             <div class="item-detail">
-                <p>Laptop detail</p>
+                <p>Dell Inspiron I3567-5949BLK-PUS Notebook 15.6", 5GB DDR4</p>
             </div>
             <div class="item-remove">
                 <button onclick="hiddenItemThree()">Remove</button>
@@ -254,6 +254,48 @@
         <section class="footer-grid-col-1of5"></section>
 
     </footer>
+
+    <!------------------------------- Java Script -------------------------------->
+    <script>
+        let showItemOne = true;
+        let showItemTwo = true;
+        let showItemThree = true;
+        function hiddenItemOne() {
+            document.getElementById("item-one").style.display = 'none';
+            showItemOne = false;
+            if (showItemOne == false && showItemTwo == false && showItemThree == false) {
+                document.getElementById("empty-warning").style.display = 'block';
+                document.getElementById("total-area").style.display = 'none';
+                document.getElementById("total-price-area").style.display = 'none';
+                document.getElementById("pay-button").style.display = 'none';
+            }
+        }
+        function hiddenItemTwo() {
+            document.getElementById("item-two").style.display = 'none';
+            showItemTwo = false;
+            if (showItemOne == false && showItemTwo == false && showItemThree == false) {
+                document.getElementById("empty-warning").style.display = 'block';
+                document.getElementById("total-area").style.display = 'none';
+                document.getElementById("total-price-area").style.display = 'none';
+                document.getElementById("pay-button").style.display = 'none';
+            }
+        }
+        function hiddenItemThree() {
+            document.getElementById("item-three").style.display = 'none';
+            showItemThree = false;
+            if ((showItemOne == false) && (showItemTwo == false) && (showItemThree == false)) {
+                document.getElementById("empty-warning").style.display = 'block';
+                document.getElementById("total-area").style.display = 'none';
+                document.getElementById("total-price-area").style.display = 'none';
+                document.getElementById("pay-button").style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+        function jumpToPayment() {
+            window.location = "payment.html"
+        }
+    </script>
 </body>
 
 </html>

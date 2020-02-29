@@ -133,7 +133,7 @@ Ready for you best work ever.</p></pre>
                     </div>
 
                     <form>
-                        <input type="checkbox" value="productOne">
+                        <input type="checkbox" value="productOne" id="checkbox-1">
                         <label> Compare Product</label><br>
                     </form>
 
@@ -166,7 +166,7 @@ Ready for you best work ever.</p></pre>
                     </div>
 
                     <form>
-                        <input type="checkbox" value="productOne">
+                        <input type="checkbox" value="productOne" id="checkbox-2">
                         <label> Compare Product</label><br>
                     </form>
 
@@ -199,7 +199,7 @@ Ready for you best work ever.</p></pre>
                     </div>
 
                     <form>
-                        <input type="checkbox" value="productOne">
+                        <input type="checkbox" value="productOne" id="checkbox-3">
                         <label> Compare Product</label><br>
                     </form>
 
@@ -239,7 +239,7 @@ Ready for you best work ever.</p></pre>
                     </div>
 
                     <form>
-                        <input type="checkbox" value="productOne">
+                        <input type="checkbox" value="productOne" id="checkbox-4">
                         <label> Compare Product</label><br>
                     </form>
 
@@ -271,7 +271,7 @@ Ready for you best work ever.</p></pre>
                     </div>
 
                     <form>
-                        <input type="checkbox" value="productOne">
+                        <input type="checkbox" value="productOne" id="checkbox-5">
                         <label> Compare Product</label><br>
                     </form>
 
@@ -303,7 +303,7 @@ Ready for you best work ever.</p></pre>
                     </div>
 
                     <form>
-                        <input type="checkbox" value="productOne">
+                        <input type="checkbox" value="productOne" id="checkbox-6">
                         <label> Compare Product</label><br>
                     </form>
 
@@ -495,6 +495,175 @@ Ready for you best work ever.</p></pre>
                     $("#dot_two").css("background-color", "white");
                     $("#dot_three").css("background-color", "#6200EE");
                 }
+            });
+
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            let isCheckboxClicked1 = false;
+            let isCheckboxClicked2 = false;
+            let isCheckboxClicked3 = false;
+            let isCheckboxClicked4 = false;
+            let isCheckboxClicked5 = false;
+            let isCheckboxClicked6 = false;
+            let isCheckboxClicked7 = false;
+            let isCheckboxClicked8 = false;
+            let isCheckboxClicked9 = false;
+            let countCompareItems = 0;
+            // $("#checkbox-1,#checkbox-2,#checkbox-3, #checkbox-4, #checkbox-5, checkbox-6, checkbox-7, checkbox-8, checkbox-9").on("click", function () {
+            $("#checkbox-1").on("click", function () {
+                if (isCheckboxClicked1 == false) {
+                    isCheckboxClicked1 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked1 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    // document.querySelectorAll("#checkbox-1, #checkbox-2, #checkbox-3, #checkbox-4, #checkbox-5, #checkbox-6, #checkbox-7, #checkbox-8, #checkbox-9").checked = false;
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false);
+                    countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-2").on("click", function () {
+                if (isCheckboxClicked2 == false) {
+                    isCheckboxClicked2 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked2 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false); countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-3").on("click", function () {
+                if (isCheckboxClicked3 == false) {
+                    isCheckboxClicked3 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked3 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false);
+                    countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-4").on("click", function () {
+                if (isCheckboxClicked4 == false) {
+                    isCheckboxClicked4 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked4 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false); countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-5").on("click", function () {
+                if (isCheckboxClicked5 == false) {
+                    isCheckboxClicked5 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked5 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false); countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-6").on("click", function () {
+                if (isCheckboxClicked6 == false) {
+                    isCheckboxClicked6 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked6 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false); countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
             });
 
         });

@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script>
+    <!-- <script>
         function goToCart() {
             alert("The product successfully added to your shopping cart");
         }
@@ -259,7 +259,7 @@
             });
 
         });
-    </script>
+    </script> -->
 </head>
 
 <body>
@@ -800,6 +800,255 @@
         <section class="footer-grid-col-1of5"></section>
 
     </footer>
+
+    <script>
+        function goToCart() {
+            alert("The product successfully added to your shopping cart");
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            let isCheckboxClicked1 = false;
+            let isCheckboxClicked2 = false;
+            let isCheckboxClicked3 = false;
+            let isCheckboxClicked4 = false;
+            let isCheckboxClicked5 = false;
+            let isCheckboxClicked6 = false;
+            let isCheckboxClicked7 = false;
+            let isCheckboxClicked8 = false;
+            let isCheckboxClicked9 = false;
+            let countCompareItems = 0;
+            // $("#checkbox-1,#checkbox-2,#checkbox-3, #checkbox-4, #checkbox-5, checkbox-6, checkbox-7, checkbox-8, checkbox-9").on("click", function () {
+            $("#checkbox-1").on("click", function () {
+                if (isCheckboxClicked1 == false) {
+                    isCheckboxClicked1 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked1 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    // document.querySelectorAll("#checkbox-1, #checkbox-2, #checkbox-3, #checkbox-4, #checkbox-5, #checkbox-6, #checkbox-7, #checkbox-8, #checkbox-9").checked = false;
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false);
+                    countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-2").on("click", function () {
+                if (isCheckboxClicked2 == false) {
+                    isCheckboxClicked2 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked2 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-3").on("click", function () {
+                if (isCheckboxClicked3 == false) {
+                    isCheckboxClicked3 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked3 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-4").on("click", function () {
+                if (isCheckboxClicked4 == false) {
+                    isCheckboxClicked4 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked4 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-5").on("click", function () {
+                if (isCheckboxClicked5 == false) {
+                    isCheckboxClicked5 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked5 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-6").on("click", function () {
+                if (isCheckboxClicked6 == false) {
+                    isCheckboxClicked6 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked6 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-7").on("click", function () {
+                if (isCheckboxClicked7 == false) {
+                    isCheckboxClicked7 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked7 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-8").on("click", function () {
+                if (isCheckboxClicked8 == false) {
+                    isCheckboxClicked8 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked8 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+            $("#checkbox-9").on("click", function () {
+                if (isCheckboxClicked9 == false) {
+                    isCheckboxClicked9 = true;
+                    countCompareItems++;
+                } else {
+                    isCheckboxClicked9 = false;
+                    countCompareItems--;
+                }
+
+                if (countCompareItems == 2) {
+                    $("#checkbox-1").prop('checked', false);
+                    $("#checkbox-2").prop('checked', false);
+                    $("#checkbox-3").prop('checked', false);
+                    $("#checkbox-4").prop('checked', false);
+                    $("#checkbox-5").prop('checked', false);
+                    $("#checkbox-6").prop('checked', false);
+                    $("#checkbox-7").prop('checked', false);
+                    $("#checkbox-8").prop('checked', false);
+                    $("#checkbox-9").prop('checked', false);
+                    countCompareItems = 0;
+                    window.location = "compare.html";
+                }
+                countCompareItems = countCompareItems % 2;
+                console.log(countCompareItems);
+            });
+
+        });
+    </script>
 </body>
 
 </html>

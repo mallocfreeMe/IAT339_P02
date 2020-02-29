@@ -106,6 +106,10 @@ body {
     text-align: center;
 }
 
+.item-amount input[type=number]::-webkit-inner-spin-button,.item-amount input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
 .item-price {
     grid-row: 1 / 2;
     grid-column: 5 / 6;

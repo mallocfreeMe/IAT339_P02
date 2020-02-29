@@ -111,8 +111,20 @@ h3, p {
     margin-left: -50px;
 }
 
+.leadership-item .margin-left-40 {
+    margin-left: -40px;
+}
+
+.leadership-item .margin-left-30 {
+    margin-left: -30px;;
+}
+
 .leadership-item .margin-left-20 {
     margin-left: -20px;
+}
+
+.leadership-item .margin-left-10 {
+    margin-left: -10px;;
 }
 
 .leadership-item .margin-left-0 {
@@ -178,6 +190,30 @@ h3, p {
 .team-item-position {
     font-size: 0.8em;
     margin-bottom: 2em;
+}
+
+.team-item .margin-left-40 {
+    margin-left: -40px;
+}
+
+.team-item .margin-left-30 {
+    margin-left: -30px;;
+}
+
+.team-item .margin-left-20 {
+    margin-left: -20px;
+}
+
+.team-item .margin-left-10 {
+    margin-left: -10px;;
+}
+
+.team-item .margin-left-0 {
+    margin-left: 0;
+}
+
+.team-item .margin-left-80 {
+    margin-left: -80px;
 }
 
 
