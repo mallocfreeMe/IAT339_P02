@@ -97,7 +97,7 @@ p {
 
 .compare-image img{
     width: 80%;
-    height: auto;
+    height: 80%;
     object-fit: contain;
     margin-top: -3em;
 }
