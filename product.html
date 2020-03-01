@@ -9,7 +9,6 @@
     <link href="css/product.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
@@ -55,39 +54,50 @@
     <!-- grid structure 1/5, 3/5, 1/5-->
     <section class="grid">
         <!-- empty column -->
-        <div class="grid-col-1of5_noHeight"></div>
+        <div class="grid-col-1of5"></div>
 
         <!-- product content section -->
-        <div class="grid-col-3of5_noHeight">
+        <div class="grid-col-3of5">
             <div class="grid product_container">
 
-                <!-- picture -->
+                <!-- product image gallery -->
                 <div class="individual_product grid-col-1of2_noHeight">
-                    <div class="triangle-topRight saleTriangle"></div>
-                    <div class="productTag saleTag">New</div>
+                    <!-- product image -->
+                    <img id="productImage" src="img/product/product1-1.jpg" alt="current product image">
 
-                    <img id="productImage" src="img/product/product1-1.jpg" alt="product image">
+                    <img id="productImage_one" src="img/product/product1-1.jpg" alt="product image 1">
+                    <img id="productImage_two" src="img/product/product1-2.jpg" alt="product image 2">
+                    <img id="productImage_three" src="img/product/product1-3.jpg" alt="product image 3">
                 </div>
 
-                <!-- text -->
+                <!-- tech spec -->
                 <div class="tech_spec grid-col-1of2_noHeight">
-                    <h2>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650, 8GB DDR4, 512GB SSD Windows
+                    <!-- name of the product -->
+                    <h2 id="tech_spec_heading">ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650, 8GB
+                        DDR4, 512GB SSD Windows
                         10, K571GT-DH51-CA</h2>
-                    <del>$1999.99</del>
-                    <h2 id="product_price">$999</h2>
-                    Qty:<input type="number" min="1" max="20" value="1" />
 
+                    <!-- orginal price -->
+                    <del id="product_price">$1999.99</del>
+
+                    <!-- deal price -->
+                    <h2 id="deals_price">$999</h2>
+
+                    <!-- number picker -->
+                    <label for="product_qty" id="qty_label">Qty:</label>
+                    <input id="product_qty" type="number" min="1" max="20" value="1" />
+
+                    <!-- in stock icon -->
                     <div class="inStock_section">
-                        <img src="img/icon/no.png">Not In Stock
+                        <img src="img/icon/no.png">
+                        <label>Not In Stock</label>
                     </div>
 
                     <button id="product_one_button">Overview</button>
                     <button id="product_two_button">Specifications</button>
-                    <button id="product_three_button">Warranty & Returns</button>
+                    <button id="product_three_button">Returns</button>
 
                     <section id="product_one_content">
-                        <h2>THE WORLD'S SMALLEST COLORFUL 15" ULTRABOOK</h2>
-
                         <p>ASUS VivoBook K571 is powered by a choice of Intel processors to give you smooth and
                             responsive
                             computing performance. With up to NVIDIA GeForce GTX 1650 discrete graphics, up to 16GB RAM,
@@ -106,9 +116,6 @@
                             <li>GPU GeForce GTX 1650</li>
                             <li>Memory 8GB</li>
                             <li>Hard Drive Capacity None</li>
-                            <li>SSD Capacity 512GB</li>
-                            <li>Operating System Windows 10 Home</li>
-                            <li>Touch Screen No</li>
                         </ul>
                     </section>
 
@@ -120,44 +127,111 @@
                         </ul>
                     </section>
 
-                    <a href="shoppingCart.html">Add to Cart</a>
-                    <a href="#comment_section">Write a Review</a>
+                    <a href="shoppingCart.html" id="add_button">Add to Cart</a>
+                    <a href="#comment_heading" id="review_button">Reviews</a>
                 </div>
 
             </div>
         </div>
 
         <!-- empty column -->
-        <div class="grid-col-1of5_noHeight"></div>
+        <div class="grid-col-1of5"></div>
 
     </section>
 
     <!-- Comment Section-->
     <section class="grid">
-        <div class="grid-col-1of5_noHeight"></div>
+        <div class="grid-col-1of3"></div>
 
-        <div class="comment_area grid-col-3of5_noHeight">
-            <h1 id="comment_section">Comments</h1>
+        <div class="comment_area grid-col-1of3">
 
-            <!-- fake comment no.1-->
-            <textarea rows="4" cols="50">
-                I love everything about this laptop except the keyboard. I keep pressing the up arrow key by accident all the time when trying type question mark.m</textarea>
+            <!-- top part -->
+            <div class="reviews_total">
+                <h1 id="comment_heading">Customer reviews</h1>
+                <div class="star_group">
+                    <img src="img/icon/star.png">
+                    <img src="img/icon/star.png">
+                    <img src="img/icon/star.png">
+                    <img src="img/icon/star.png">
+                    <img src="img/icon/star_nofill.png">
+                    <p id="reviews_grades">4 out of 5</p>
+                </div>
+                <p id="reviews_numbers">2 customer ratings</p>
+            </div>
 
-            <!-- fake comment no.2-->
-            <textarea rows="4" cols="50">
-                weird rattle on the right side but otherwise good must be a screw loose</textarea>
+            <!-- bottom part -->
 
-            <!-- fake comment no.3-->
-            <textarea rows="4" cols="50">
-                Good quality</textarea>
+            <!-- first comment -->
+            <div class="comment">
+                <div class="comment_profile_section">
+                    <img src="img/icon/male.png" class="comment_profile">
+                    <p class="comment_name">Michael Charette</p>
+                </div>
 
-            <!--User comment area -->
-            <h2>Write your review</h2>
-            <textarea rows="4" cols="50">Enter text here...</textarea>
-            <button>Submit</button>
+                <div class="comment_star_groups">
+                    <img src="img/icon/star.png">
+                    <img src="img/icon/star.png">
+                    <img src="img/icon/star.png">
+                    <img src="img/icon/star.png">
+                    <img src="img/icon/star_nofill.png">
+                    <p class="star_caption">Wow !</p>
+                </div>
+                <p class="comment_time">Reviewed in Canada on December 25, 2019</p>
+                <p>Very fast computer. I am enjoying the performance of this thig. Plays all my games with no issues.
+                </p>
+            </div>
+
+            <!-- second comment -->
+            <div class="comment" id="second_comment">
+                <div class="comment_profile_section">
+                    <img src="img/icon/female.png" class="comment_profile">
+                    <p class="comment_name">Larry Lau</p>
+                </div>
+
+                <div class="comment_star_groups">
+                    <img src="img/icon/star.png">
+                    <img src="img/icon/star.png">
+                    <img src="img/icon/star.png">
+                    <img src="img/icon/star.png">
+                    <img src="img/icon/star_nofill.png">
+                    <p class="star_caption"> Premium machine for a premium price...</p>
+                </div>
+                <p class="comment_time">Reviewed in Canada on December 25, 2019</p>
+                <p>This laptop has a lot going for it. Brand new it was way to expensive for the 1660ti config, but I
+                    got a very affordable warehouse deal. Item had 5 hours on it and a scratch on the charger.
+                    I have owned the same configuration from dell in a g5 5590. This one is better.
+                </p>
+            </div>
+
+            <div class="write_comment">
+
+                <div class="comment_star_groups" id="write_comment_heading1">
+                    <h3>Overall Rating</h3>
+                    <img src="img/icon/star_nofill.png" id="star_1">
+                    <img src="img/icon/star_nofill.png" id="star_2">
+                    <img src="img/icon/star_nofill.png" id="star_3">
+                    <img src="img/icon/star_nofill.png" id="star_4">
+                    <img src="img/icon/star_nofill.png" id="star_5">
+                </div>
+
+                <div id="write_comment_heading2">
+                    <h3>Add a headline</h3>
+                    <input placeholder="What's most important to know?" size="50">
+                </div>
+
+                <div id="write_comment_heading3">
+                    <h3>Write your review</h3>
+                    <textarea rows="7" cols="50" class="write_comment_content"
+                        placeholder="What did you like or dislike?"></textarea>
+                </div>
+
+                <form action="#">
+                    <button id="write_comment_button">submit</button>
+                </form>
+            </div>
         </div>
 
-        <div class="grid-col-1of5_noHeight"></div>
+        <div class="grid-col-1of3"></div>
 
     </section>
 
@@ -216,27 +290,111 @@
 
         if (productNumber == "first") {
             productImage.attr("src", productOne_image);
+
+            // set up images gallery to the releated images
+            $("#productImage_one").attr("src", "img/product/product1-1.jpg");
+            $("#productImage_two").attr("src", "img/product/product1-2.jpg");
+            $("#productImage_three").attr("src", "img/product/product1-3.jpg");
         } else if (productNumber == "second") {
             productImage.attr("src", productTwo_image);
+
+            // set up images gallery to the releated images
+            $("#productImage_one").attr("src", "img/product/product2-1.jpg");
+            $("#productImage_two").attr("src", "img/product/product2-2.jpg");
+            $("#productImage_three").attr("src", "img/product/product2-3.jpg");
         } else if (productNumber == "third") {
             productImage.attr("src", productThree_image);
+
+            // set up images gallery to the releated images
+            $("#productImage_one").attr("src", "img/product/product3-1.jpg");
+            $("#productImage_two").attr("src", "img/product/product3-2.jpg");
+            $("#productImage_three").attr("src", "img/product/product3-3.jpg");
         } else {
             productImage.attr("src", productOne_image);
+
+            // set up images gallery to the releated images
+            $("#productImage_one").attr("src", "img/product/product1-1.jpg");
+            $("#productImage_two").attr("src", "img/product/product1-2.jpg");
+            $("#productImage_three").attr("src", "img/product/product1-3.jpg");
         }
 
+
         $(document).ready(function () {
+            // learn how to change image src in jquery from https://stackoverflow.com/questions/554273/changing-the-image-source-using-jquery
+            // click image gallery to show the selected image 
+            // add grayscale filter to the images which are not selected
+            // learn how to change css in jquery from https://www.w3schools.com/jquery/jquery_css.asp
+
+            // for image gallery one 
+            $("#productImage_one").click(function () {
+
+                if (productNumber == "first") {
+                    $("#productImage").attr("src", "img/product/product1-1.jpg");
+                } else if (productNumber == "second") {
+                    $("#productImage").attr("src", "img/product/product2-1.jpg");
+                } else if (productNumber == "third") {
+                    $("#productImage").attr("src", "img/product/product3-1.jpg");
+                } else {
+                    $("#productImage").attr("src", "img/product/product1-1.jpg");
+                }
+
+                $("#productImage_one").css("filter", "grayscale(0%)");
+                $("#productImage_two").css("filter", "grayscale(100%)");
+                $("#productImage_three").css("filter", "grayscale(100%)");
+            });
+
+            // for image gallery two
+            $("#productImage_two").click(function () {
+
+                if (productNumber == "first") {
+                    $("#productImage").attr("src", "img/product/product1-2.jpg");
+                } else if (productNumber == "second") {
+                    $("#productImage").attr("src", "img/product/product2-2.jpg");
+                } else if (productNumber == "third") {
+                    $("#productImage").attr("src", "img/product/product3-2.jpg");
+                } else {
+                    $("#productImage").attr("src", "img/product/product1-2.jpg");
+                }
+
+                $("#productImage_one").css("filter", "grayscale(100%)");
+                $("#productImage_two").css("filter", "grayscale(0%)");
+                $("#productImage_three").css("filter", "grayscale(100%)");
+            });
+
+            // for image gallery three
+            $("#productImage_three").click(function () {
+
+                if (productNumber == "first") {
+                    $("#productImage").attr("src", "img/product/product1-3.jpg");
+                } else if (productNumber == "second") {
+                    $("#productImage").attr("src", "img/product/product2-3.jpg");
+                } else if (productNumber == "third") {
+                    $("#productImage").attr("src", "img/product/product3-3.jpg");
+                } else {
+                    $("#productImage").attr("src", "img/product/product1-3.jpg");
+                }
+
+                $("#productImage_one").css("filter", "grayscale(100%)");
+                $("#productImage_two").css("filter", "grayscale(100%)");
+                $("#productImage_three").css("filter", "grayscale(0%)");
+            });
+
+            // click button to show specific tech content, hide other two contents
+            // for overview button
             $("#product_one_button").click(function () {
                 $("#product_one_content").show();
                 $("#product_two_content").hide();
                 $("#product_three_content").hide();
             });
 
+            // for specification button
             $("#product_two_button").click(function () {
                 $("#product_one_content").hide();
                 $("#product_two_content").show();
                 $("#product_three_content").hide();
             });
 
+            // for return button
             $("#product_three_button").click(function () {
                 $("#product_one_content").hide();
                 $("#product_two_content").hide();
@@ -244,6 +402,64 @@
             });
         });
 
+    </script>
+
+    <script>
+
+        let star_nofill = "img/icon/star_nofill.png";
+        let star_filled = "img/icon/star.png";
+
+        let count1 = 1;
+        let count2 = 1;
+        let count3 = 1;
+        let count4 = 1;
+        let count5 = 1;
+
+        $("#star_1").click(function () {
+            count1++;
+            console.log(count1);
+            if (count1 % 2 == 0) {
+                $("#star_1").attr("src", star_filled);
+            } else {
+                $("#star_1").attr("src", star_nofill);
+            }
+        });
+
+        $("#star_2").click(function () {
+            count2++;
+            if (count2 % 2 == 0) {
+                $("#star_2").attr("src", star_filled);
+            } else {
+                $("#star_2").attr("src", star_nofill);
+            }
+        });
+
+        $("#star_3").click(function () {
+            count3++;
+            if (count3 % 2 == 0) {
+                $("#star_3").attr("src", star_filled);
+            } else {
+                $("#star_3").attr("src", star_nofill);
+            }
+        });
+
+        $("#star_4").click(function () {
+            count4++;
+            if (count4 % 2 == 0) {
+                $("#star_4").attr("src", star_filled);
+            } else {
+                $("#star_4").attr("src", star_nofill);
+            }
+        });
+
+        $("#star_5").click(function () {
+            count5++;
+            if (count5 % 2 == 0) {
+                $("#star_5").attr("src", star_filled);
+            } else {
+                $("#star_5").attr("src", star_nofill);
+            }
+        });
     </script>
 </body>
 

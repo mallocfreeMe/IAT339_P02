@@ -1,3 +1,5 @@
+/* styling for the button and body background color */
+
 button {
     cursor: pointer;
 }
@@ -9,22 +11,24 @@ html {
 /* styling for main nav */
 
 .main-nav {
-    position: static;
-    margin-bottom: 3em;
+    position: absolute;
+    top: 0;
 }
 
-/* styling product item */
+/* styling left side of the container */
 
 .product_container {
-    position: relative;
+    margin-top: 10em;
 }
 
 .individual_product {
+    /* styling the image container position to releative */
     position: relative;
     background-color: white;
 }
 
 .triangle-topRight {
+    /* styling the triangle */
     position: absolute;
     width: 0;
     height: 0;
@@ -34,6 +38,7 @@ html {
 }
 
 .productTag {
+    /* styling the tag */
     color: white;
     position: absolute;
     font-size: 1em;
@@ -41,36 +46,63 @@ html {
     top: 1em
 }
 
-.inStock_section img {
-    width: 1em;
-    height: 1em;
-}
-
-input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
-    opacity: 1;
-}
-
 #productImage {
-    width:100%;
-    height: 100%;
+    /* styling the current product image */
+    width: 100%;
+    height: 70vh;
+    padding-bottom: 5em;
 }
 
-/* styling tech spec */
-
-#product_two_content, #product_three_content {
-    display: none;
+#productImage_one, #productImage_two, #productImage_three {
+    /* styling the image gallery */
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
 }
+
+#productImage_one:hover, #productImage_two:hover, #productImage_three:hover {
+    filter: grayscale(0%)!important;
+}
+
+#productImage_one {
+    bottom: 0;
+    left: 0;
+}
+
+#productImage_two {
+    bottom: 0;
+    left: 20%;
+    filter: grayscale(100%);
+}
+
+#productImage_three {
+    bottom: 0;
+    left: 40%;
+    filter: grayscale(100%);
+}
+
+/* styling right side of the container */
 
 .tech_spec {
+    position: relative;
     background-color: #E6E6E6;
-    position: abosoulte;
-    padding-left: 4em;
+    padding-left: 2em;
+}
+
+#tech_spec_heading {
+    font-family: sans-serif;
+    position: absolute;
+    top: 10%;
+    left: 10%;
 }
 
 .tech_spec button, .tech_spec a {
     padding: 1em;
     background-color: #6200EE;
     color: white;
+    outline: none;
+    border: none;
 }
 
 .tech_spec button:hover, .tech_spec a:hover {
@@ -78,33 +110,242 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     outline: none;
 }
 
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    /* enable number picker button always appear  */
+    opacity: 1;
+}
+
 #product_price {
-    margin-top: 1em;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 1em;
+    height: 1em;
+}
+
+#deals_price {
     color: #6200EE;
+    position: absolute;
+    top: 28%;
+    left: 10%;
+    width: 1em;
+    height: 1em;
+}
+
+#qty_label {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+#product_qty {
+    text-align: center;
+    font-size: 1.5em;
+    position: absolute;
+    top: 34%;
+    left: 16%;
+}
+
+.inStock_section label {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.inStock_section img {
+    /* styling the in stock icon */
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 1em;
+    height: 1em;
+}
+
+#product_one_button {
+    position: absolute;
+    font-family: sans-serif;
+    top: 45%;
+    left: 10%;
+}
+
+#product_two_button {
+    position: absolute;
+    font-family: sans-serif;
+    top: 45%;
+    left: 30%;
+}
+
+#product_three_button {
+    position: absolute;
+    font-family: sans-serif;
+    top: 45%;
+    left: 55%;
+}
+
+#product_one_content {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    padding-right: 1em;
+}
+
+#product_two_content {
+    display: none;
+    position: absolute;
+    top: 55%;
+    left: 13%;
+}
+
+#product_three_content {
+    display: none;
+    position: absolute;
+    top: 55%;
+    left: 13%;
+}
+
+#add_button, #review_button {
+    position: absolute;
+    font-family: sans-serif;
+}
+
+#add_button {
+    bottom: 5%;
+    left: 10%;
+}
+
+#review_button {
+    background-color: #03DAC6;
+    bottom: 5%;
+    left: 35%;
 }
 
 /* styling comment section */
 
-.comment_area h1 {
-    color: #6200EE;
+/* styling top of the comment */
+
+.reviews_total {
+    font-family: sans-serif;
+    padding-bottom: 1em;
+    border-bottom: grey solid thin;
 }
 
-.comment_area textarea {
-    border-color: #6200EE;
-    text-align: left;
-    margin: 1em;
-    color: #6200EE;
-    padding: 1em;
+.reviews_total h1 {
+    margin-bottom: 0.5em;
+}
+
+.star_group img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#reviews_grades {
+    display: inline;
+    padding-left: 1em;
+    font-size: 1.5em;
+}
+
+#reviews_numbers {
+    margin-top: 1em;
+    color: grey;
+}
+
+/* styling bottom of the comment */
+
+.comment {
+    margin-top: 2em;
+}
+
+.comment_profile_section {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.comment_profile {
+    width: 4em;
+    height: 4em;
+}
+
+.comment_name {
+    position: absolute;
+    display: inline;
+    left: 12%;
+    top: 30%;
+}
+
+.comment_star_groups {
+    margin-bottom: 1em;
+}
+
+.comment_star_groups img {
+    width: 1em;
+    height: 1em;
+}
+
+.star_caption {
+    display: inline;
+    font-weight: bold;
+    padding-left: 0.5em;
+}
+
+.comment_time {
+    color: grey;
+    margin-bottom: 0.5em;
+}
+
+#second_comment {
+    padding-bottom: 2em;
+    border-bottom: grey solid thin;
+}
+
+/* styling write comment section */
+
+.write_comment {
+    margin-top: 1em;
+}
+
+.write_comment h3 {
+    padding: 0;
+}
+
+.write_comment .comment_star_groups {
+    cursor: pointer;
+}
+
+#write_comment_heading1 h3 {
+    font-family: sans-serif;
+}
+
+#write_comment_heading2 h3 {
+    font-family: sans-serif;
+}
+
+#write_comment_heading3 h3 {
+    font-family: sans-serif;
+}
+
+#write_comment_heading3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#write_comment_heading3 textarea {
     width: 100%;
+    outline: none;
 }
 
-.comment_area h2 {
-    color: #6200EE;
-}
-
-.comment_area button {
-    float: right;
-    padding: 1em;
+#write_comment_button {
+    outline: none;
     background-color: #6200EE;
     color: white;
+    padding: 0.5em;
+}
+
+#write_comment_button:hover {
+    filter: brightness(1.4);
+}
+
+/* styling footer */
+
+footer {
+    margin-top: 10em;
 }

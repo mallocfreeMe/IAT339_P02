@@ -13,6 +13,10 @@ body {
     margin: 0
 }
 
+h1, h2, h3 {
+    font-family: sans-serif;
+}
+
 article, aside, footer, header, nav, section {
     display: block
 }

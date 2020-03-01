@@ -188,6 +188,11 @@ button {
 
 .container p {
     margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.container p:hover {
+    text-decoration: underline;
 }
 
 .container img {

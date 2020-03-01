@@ -91,6 +91,7 @@ button:hover {
 }
 
 .individual_product img {
+    cursor: pointer;
     width: 100%;
     height: 100%;
 }
@@ -104,6 +105,11 @@ button:hover {
 
 .container p {
     margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.container p:hover {
+    text-decoration: underline;
 }
 
 .container img {

@@ -101,15 +101,17 @@
 
         <div class="grid-col-1of5_noHeight"></div>
 
+        <!-- Row 1-->
+        <!-- product 1 -->
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
 
                 <div class="triangle-topRight saleTriangle"></div>
                 <div class="productTag saleTag">On Sale</div>
 
-                <a href="product.html"><img src="img/product/product1-1.jpg" alt="5 Terre"></a>
+                <img src="img/product/product1-1.jpg" alt="product 1" onclick="goToProduct()" class="product1_link">
                 <div class="container">
-                    <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+                    <p onclick="goToProduct()" class="product1_link">ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -131,15 +133,17 @@
             </div>
         </div>
 
+        <!-- Row 1-->
+        <!-- product 2 -->
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
 
                 <div class="triangle-topRight saleTriangle"></div>
                 <div class="productTag saleTag">On Sale</div>
 
-                <a href="product.html"><img src="img/product/product2-1.jpg" alt="5 Terre"></a>
+                <img src="img/product/product2-1.jpg" alt="product 2" onclick="goToProduct()" class="product2_link">
                 <div class="container">
-                    <p>MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti, 8GB DDR4</p>
+                    <p onclick="goToProduct()" class="product2_link">MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti, 8GB DDR4</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -161,15 +165,17 @@
             </div>
         </div>
 
+        <!-- Row 1-->
+        <!-- Product 3-->
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
 
                 <div class="triangle-topRight saleTriangle"></div>
                 <div class="productTag saleTag">On Sale</div>
 
-                <a href="product.html"><img src="img/product/product3-1.jpg" alt="5 Terre"></a>
+                <img src="img/product/product3-1.jpg" alt="product 3" onclick="goToProduct()" class="product3_link">
                 <div class="container">
-                    <p>Dell Inspiron I3567-5949BLK-PUS Notebook 15.6 120Hz</p>
+                    <p onclick="goToProduct()" class="product3_link">Dell Inspiron I3567-5949BLK-PUS Notebook 15.6", 5GB DDR4</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -200,15 +206,17 @@
 
         <div class="grid-col-1of5_noHeight"></div>
 
+        <!-- Row 2-->
+        <!-- Product 1-->
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
 
                 <div class="triangle-topRight saleTriangle"></div>
                 <div class="productTag saleTag">On Sale</div>
 
-                <a href="product.html"><img src="img/product/product1-1.jpg" alt="5 Terre"></a>
+                <img src="img/product/product1-1.jpg" alt="product 1" onclick="goToProduct()" class="product1_link">
                 <div class="container">
-                    <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+                    <p onclick="goToProduct()" class="product1_link">ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -222,7 +230,7 @@
                     </form>
 
                     <div class="inStock_section">
-                        <img src="img/icon/yes.png">Not In Stock
+                        <img src="img/icon/yes.png">In Stock
                     </div>
 
                     <button class="cart_button" onclick="goToCart()">Add to Cart</button>
@@ -230,15 +238,17 @@
             </div>
         </div>
 
+        <!-- Row 2-->
+        <!-- Product 2-->
         <div class="grid-col-1of5_noHeight">
             <div class="individual_product">
 
                 <div class="triangle-topRight saleTriangle"></div>
                 <div class="productTag saleTag">On Sale</div>
 
-                <a href="product.html"><img src="img/product/product2-1.jpg" alt="5 Terre"></a>
+                <img src="img/product/product2-1.jpg" alt="product 2" onclick="goToProduct()" class="product2_link">
                 <div class="container">
-                    <p>MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti, 8GB DDR4</p>
+                    <p onclick="goToProduct()" class="product2_link">MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti, 8GB DDR4</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -260,15 +270,18 @@
             </div>
         </div>
 
+        <!-- Row 2-->
+        <!-- Product 3-->
         <div class="grid-col-1of5_noHeight">
+
             <div class="individual_product">
 
                 <div class="triangle-topRight saleTriangle"></div>
                 <div class="productTag saleTag">On Sale</div>
 
-                <a href="product.html"><img src="img/product/product3-1.jpg" alt="5 Terre"></a>
+                <img src="img/product/product3-1.jpg" alt="product 3" onclick="goToProduct()" class="product3_link">
                 <div class="container">
-                    <p>Dell Inspiron I3567-5949BLK-PUS Notebook 15.6"</p>
+                    <p onclick="goToProduct()" class="product3_link">Dell Inspiron I3567-5949BLK-PUS Notebook 15.6", 5GB DDR4</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -339,6 +352,23 @@
     </footer>
 
     <script>
+
+        // go to product page, save local varible productNumber in order to pass between pages
+        function goToProduct() {
+            let productNumber = event.target.className;
+
+            if (productNumber == "product1_link") {
+                productNumber = "first";
+            } else if (productNumber == "product2_link") {
+                productNumber = "second";
+            } else if (productNumber == "product3_link") {
+                productNumber = "third";
+            }
+
+            localStorage.setItem("productNumber", productNumber);
+            window.location = "product.html";
+        }
+
         $(document).ready(function () {
             let isCheckboxClicked1 = false;
             let isCheckboxClicked2 = false;

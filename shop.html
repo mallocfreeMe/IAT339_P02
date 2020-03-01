@@ -9,257 +9,7 @@
     <link href="css/shop.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <!-- <script>
-        function goToCart() {
-            alert("The product successfully added to your shopping cart");
-        }
-    </script>
-    <script>
-        $(document).ready(function () {
-            let isCheckboxClicked1 = false;
-            let isCheckboxClicked2 = false;
-            let isCheckboxClicked3 = false;
-            let isCheckboxClicked4 = false;
-            let isCheckboxClicked5 = false;
-            let isCheckboxClicked6 = false;
-            let isCheckboxClicked7 = false;
-            let isCheckboxClicked8 = false;
-            let isCheckboxClicked9 = false;
-            let countCompareItems = 0;
-            // $("#checkbox-1,#checkbox-2,#checkbox-3, #checkbox-4, #checkbox-5, checkbox-6, checkbox-7, checkbox-8, checkbox-9").on("click", function () {
-            $("#checkbox-1").on("click", function () {
-                if (isCheckboxClicked1 == false) {
-                    isCheckboxClicked1 = true;
-                    countCompareItems++;
-                } else {
-                    isCheckboxClicked1 = false;
-                    countCompareItems--;
-                }
-
-                if (countCompareItems == 2) {
-                    // document.querySelectorAll("#checkbox-1, #checkbox-2, #checkbox-3, #checkbox-4, #checkbox-5, #checkbox-6, #checkbox-7, #checkbox-8, #checkbox-9").checked = false;
-                    $("#checkbox-1").prop('checked', false);
-                    $("#checkbox-2").prop('checked', false);
-                    $("#checkbox-3").prop('checked', false);
-                    $("#checkbox-4").prop('checked', false);
-                    $("#checkbox-5").prop('checked', false);
-                    $("#checkbox-6").prop('checked', false);
-                    $("#checkbox-7").prop('checked', false);
-                    $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);
-                    countCompareItems = 0;
-                    window.location = "compare.html";
-                }
-                countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
-            });
-
-            $("#checkbox-2").on("click", function () {
-                if (isCheckboxClicked2 == false) {
-                    isCheckboxClicked2 = true;
-                    countCompareItems++;
-                } else {
-                    isCheckboxClicked2 = false;
-                    countCompareItems--;
-                }
-
-                if (countCompareItems == 2) {
-                    $("#checkbox-1").prop('checked', false);
-                    $("#checkbox-2").prop('checked', false);
-                    $("#checkbox-3").prop('checked', false);
-                    $("#checkbox-4").prop('checked', false);
-                    $("#checkbox-5").prop('checked', false);
-                    $("#checkbox-6").prop('checked', false);
-                    $("#checkbox-7").prop('checked', false);
-                    $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
-                    window.location = "compare.html";
-                }
-                countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
-            });
-
-            $("#checkbox-3").on("click", function () {
-                if (isCheckboxClicked3 == false) {
-                    isCheckboxClicked3 = true;
-                    countCompareItems++;
-                } else {
-                    isCheckboxClicked3 = false;
-                    countCompareItems--;
-                }
-
-                if (countCompareItems == 2) {
-                    $("#checkbox-1").prop('checked', false);
-                    $("#checkbox-2").prop('checked', false);
-                    $("#checkbox-3").prop('checked', false);
-                    $("#checkbox-4").prop('checked', false);
-                    $("#checkbox-5").prop('checked', false);
-                    $("#checkbox-6").prop('checked', false);
-                    $("#checkbox-7").prop('checked', false);
-                    $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
-                    window.location = "compare.html";
-                }
-                countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
-            });
-
-            $("#checkbox-4").on("click", function () {
-                if (isCheckboxClicked4 == false) {
-                    isCheckboxClicked4 = true;
-                    countCompareItems++;
-                } else {
-                    isCheckboxClicked4 = false;
-                    countCompareItems--;
-                }
-
-                if (countCompareItems == 2) {
-                    $("#checkbox-1").prop('checked', false);
-                    $("#checkbox-2").prop('checked', false);
-                    $("#checkbox-3").prop('checked', false);
-                    $("#checkbox-4").prop('checked', false);
-                    $("#checkbox-5").prop('checked', false);
-                    $("#checkbox-6").prop('checked', false);
-                    $("#checkbox-7").prop('checked', false);
-                    $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
-                    window.location = "compare.html";
-                }
-                countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
-            });
-
-            $("#checkbox-5").on("click", function () {
-                if (isCheckboxClicked5 == false) {
-                    isCheckboxClicked5 = true;
-                    countCompareItems++;
-                } else {
-                    isCheckboxClicked5 = false;
-                    countCompareItems--;
-                }
-
-                if (countCompareItems == 2) {
-                    $("#checkbox-1").prop('checked', false);
-                    $("#checkbox-2").prop('checked', false);
-                    $("#checkbox-3").prop('checked', false);
-                    $("#checkbox-4").prop('checked', false);
-                    $("#checkbox-5").prop('checked', false);
-                    $("#checkbox-6").prop('checked', false);
-                    $("#checkbox-7").prop('checked', false);
-                    $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
-                    window.location = "compare.html";
-                }
-                countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
-            });
-
-            $("#checkbox-6").on("click", function () {
-                if (isCheckboxClicked6 == false) {
-                    isCheckboxClicked6 = true;
-                    countCompareItems++;
-                } else {
-                    isCheckboxClicked6 = false;
-                    countCompareItems--;
-                }
-
-                if (countCompareItems == 2) {
-                    $("#checkbox-1").prop('checked', false);
-                    $("#checkbox-2").prop('checked', false);
-                    $("#checkbox-3").prop('checked', false);
-                    $("#checkbox-4").prop('checked', false);
-                    $("#checkbox-5").prop('checked', false);
-                    $("#checkbox-6").prop('checked', false);
-                    $("#checkbox-7").prop('checked', false);
-                    $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
-                    window.location = "compare.html";
-                }
-                countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
-            });
-
-            $("#checkbox-7").on("click", function () {
-                if (isCheckboxClicked7 == false) {
-                    isCheckboxClicked7 = true;
-                    countCompareItems++;
-                } else {
-                    isCheckboxClicked7 = false;
-                    countCompareItems--;
-                }
-
-                if (countCompareItems == 2) {
-                    $("#checkbox-1").prop('checked', false);
-                    $("#checkbox-2").prop('checked', false);
-                    $("#checkbox-3").prop('checked', false);
-                    $("#checkbox-4").prop('checked', false);
-                    $("#checkbox-5").prop('checked', false);
-                    $("#checkbox-6").prop('checked', false);
-                    $("#checkbox-7").prop('checked', false);
-                    $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
-                    window.location = "compare.html";
-                }
-                countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
-            });
-
-            $("#checkbox-8").on("click", function () {
-                if (isCheckboxClicked8 == false) {
-                    isCheckboxClicked8 = true;
-                    countCompareItems++;
-                } else {
-                    isCheckboxClicked8 = false;
-                    countCompareItems--;
-                }
-
-                if (countCompareItems == 2) {
-                    $("#checkbox-1").prop('checked', false);
-                    $("#checkbox-2").prop('checked', false);
-                    $("#checkbox-3").prop('checked', false);
-                    $("#checkbox-4").prop('checked', false);
-                    $("#checkbox-5").prop('checked', false);
-                    $("#checkbox-6").prop('checked', false);
-                    $("#checkbox-7").prop('checked', false);
-                    $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
-                    window.location = "compare.html";
-                }
-                countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
-            });
-
-            $("#checkbox-9").on("click", function () {
-                if (isCheckboxClicked9 == false) {
-                    isCheckboxClicked9 = true;
-                    countCompareItems++;
-                } else {
-                    isCheckboxClicked9 = false;
-                    countCompareItems--;
-                }
-
-                if (countCompareItems == 2) {
-                    $("#checkbox-1").prop('checked', false);
-                    $("#checkbox-2").prop('checked', false);
-                    $("#checkbox-3").prop('checked', false);
-                    $("#checkbox-4").prop('checked', false);
-                    $("#checkbox-5").prop('checked', false);
-                    $("#checkbox-6").prop('checked', false);
-                    $("#checkbox-7").prop('checked', false);
-                    $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);
-                    countCompareItems = 0;
-                    window.location = "compare.html";
-                }
-                countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
-            });
-
-        });
-    </script> -->
 </head>
 
 <body>
@@ -320,24 +70,6 @@
                     </ul>
 
                 </section>
-
-                <script>
-                    let count = 0;
-                    let upIcon = "img/icon/up.png";
-                    let downIcon = "img/icon/down.png";
-                    $(document).ready(function () {
-                        $("#showCategoryButton").click(function () {
-                            count += 1;
-                            if (count % 2) {
-                                $("#categoryList").slideUp();
-                                $("#showCategoryButton").css("background-image", "url(" + downIcon + ")");
-                            } else {
-                                $("#categoryList").slideDown();
-                                $("#showCategoryButton").css("background-image", "url(" + upIcon + ")");
-                            }
-                        });
-                    });
-                </script>
 
                 <!-- Manufactruees -->
                 <section class="side_filter_factory">
@@ -409,22 +141,6 @@
                     </form>
                 </section>
 
-                <script>
-                    let count2 = 0;
-                    $(document).ready(function () {
-                        $("#showFactoryButton").click(function () {
-                            count2 += 1;
-                            if (count2 % 2) {
-                                $("#factoryList").slideUp();
-                                $("#showFactoryButton").css("background-image", "url(" + downIcon + ")");
-                            } else {
-                                $("#factoryList").slideDown();
-                                $("#showFactoryButton").css("background-image", "url(" + upIcon + ")");
-                            }
-                        });
-                    });
-                </script>
-
                 <!-- Price -->
                 <section class="side_filter_price">
                     <button class="showFilterButton" id="showPriceButton">Price Range</button>
@@ -466,22 +182,6 @@
 
                 </section>
 
-                <script>
-                    let count3 = 0;
-                    $(document).ready(function () {
-                        $("#showPriceButton").click(function () {
-                            count3 += 1;
-                            if (count3 % 2) {
-                                $("#priceList").slideUp();
-                                $("#showPriceButton").css("background-image", "url(" + downIcon + ")");
-                            } else {
-                                $("#priceList").slideDown();
-                                $("#showPriceButton").css("background-image", "url(" + upIcon + ")");
-                            }
-                        });
-                    });
-                </script>
-
             </div>
 
             <!-- first column of product list -->
@@ -492,9 +192,9 @@
 
                     <div class="individual_product">
 
-                        <a href="product.html"><img src="img/product/product1-1.jpg" alt="5 Terre"></a>
+                        <img src="img/product/product1-1.jpg" alt="product 1" onclick="goToProduct()" class="product1_link">
                         <div class="container">
-                            <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+                            <p onclick="goToProduct()" class="product1_link">ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
 
                             <div class="price_section">
                                 <del>$1999.99</del>
@@ -521,10 +221,10 @@
 
                     <div class="individual_product">
 
-                        <a href="product.html"><img src="img/product/product1-1.jpg" alt="5 Terre"></a>
+                        <img src="img/product/product1-1.jpg" alt="product 1" onclick="goToProduct()" class="product1_link">
 
                         <div class="container">
-                            <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+                            <p onclick="goToProduct()" class="product1_link">ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
 
                             <div class="price_section">
                                 <del>$1999.99</del>
@@ -551,9 +251,9 @@
 
                     <div class="individual_product">
 
-                        <a href="product.html"><img src="img/product/product1-1.jpg" alt="5 Terre"></a>
+                        <img src="img/product/product1-1.jpg" alt="product 1" onclick="goToProduct()" class="product1_link">
                         <div class="container">
-                            <p>ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+                            <p onclick="goToProduct()" class="product1_link">ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
 
                             <div class="price_section">
                                 <del>$1999.99</del>
@@ -582,9 +282,9 @@
                 <div class="grid-row-1of3">
 
                     <div class="individual_product">
-                        <a href="product.html"><img src="img/product/product2-1.jpg" alt="5 Terre"></a>
+                        <img src="img/product/product2-1.jpg" alt="product 2" onclick="goToProduct()" class="product2_link">
                         <div class="container">
-                            <p>MSI Gaming Notebook 15.6 i5-9300H, GTX 1660Ti, 8GB DDR4</p>
+                            <p onclick="goToProduct()" class="product2_link">MSI Gaming Notebook 15.6 i5-9300H, GTX 1660Ti, 8GB DDR4</p>
 
                             <div class="price_section">
                                 <del>$1999.99</del>
@@ -610,9 +310,9 @@
                 <div class="grid-row-1of3">
 
                     <div class="individual_product">
-                        <a href="product.html"><img src="img/product/product2-1.jpg" alt="5 Terre"></a>
+                        <img src="img/product/product2-1.jpg" alt="product 2" onclick="goToProduct()" class="product2_link">
                         <div class="container">
-                            <p>MSI Gaming Notebook 15.6 i5-9300H, GTX 1660Ti, 8GB DDR4</p>
+                            <p onclick="goToProduct()" class="product2_link">MSI Gaming Notebook 15.6 i5-9300H, GTX 1660Ti, 8GB DDR4</p>
 
                             <div class="price_section">
                                 <del>$1999.99</del>
@@ -638,9 +338,9 @@
                 <div class="grid-row-1of3">
 
                     <div class="individual_product">
-                        <a href="product.html"><img src="img/product/product2-1.jpg" alt="5 Terre"></a>
+                        <img src="img/product/product2-1.jpg" alt="product 2" onclick="goToProduct()" class="product2_link">
                         <div class="container">
-                            <p>MSI Gaming Notebook 15.6 i5-9300H, GTX 1660Ti, 8GB DDR4</p>
+                            <p onclick="goToProduct()" class="product2_link">MSI Gaming Notebook 15.6 i5-9300H, GTX 1660Ti, 8GB DDR4</p>
 
                             <div class="price_section">
                                 <del>$1999.99</del>
@@ -670,9 +370,9 @@
                 <div class="grid-row-1of3">
 
                     <div class="individual_product">
-                        <a href="product.html"><img src="img/product/product3-1.jpg" alt="5 Terre"></a>
+                        <img src="img/product/product3-1.jpg" alt="product 3" onclick="goToProduct()" class="product3_link">
                         <div class="container">
-                            <p>Dell Inspiron I3567-5949BLK-PUS Notebook 15.6", 5GB DDR4</p>
+                            <p onclick="goToProduct()" class="product3_link">Dell Inspiron I3567-5949BLK-PUS Notebook 15.6", 5GB DDR4</p>
 
                             <div class="price_section">
                                 <del>$1999.99</del>
@@ -698,9 +398,9 @@
                 <div class="grid-row-1of3">
 
                     <div class="individual_product">
-                        <a href="product.html"><img src="img/product/product3-1.jpg" alt="5 Terre"></a>
+                        <img src="img/product/product3-1.jpg" alt="product 3" onclick="goToProduct()" class="product3_link">
                         <div class="container">
-                            <p>Dell Inspiron I3567-5949BLK-PUS Notebook 15.6", 5GB DDR4</p>
+                            <p onclick="goToProduct()" class="product3_link">Dell Inspiron I3567-5949BLK-PUS Notebook 15.6", 5GB DDR4</p>
 
                             <div class="price_section">
                                 <del>$1999.99</del>
@@ -726,9 +426,9 @@
                 <div class="grid-row-1of3">
 
                     <div class="individual_product">
-                        <a href="product.html"><img src="img/product/product3-1.jpg" alt="5 Terre"></a>
+                        <img src="img/product/product3-1.jpg" alt="product 3" onclick="goToProduct()" class="product3_link">
                         <div class="container">
-                            <p>Dell Inspiron I3567-5949BLK-PUS Notebook 15.6, 5GB DDR4"</p>
+                            <p onclick="goToProduct()" class="product3_link">Dell Inspiron I3567-5949BLK-PUS Notebook 15.6, 5GB DDR4"</p>
 
                             <div class="price_section">
                                 <del>$1999.99</del>
@@ -802,10 +502,77 @@
     </footer>
 
     <script>
+        let count = 0;
+        let upIcon = "img/icon/up.png";
+        let downIcon = "img/icon/down.png";
+        $(document).ready(function () {
+            $("#showCategoryButton").click(function () {
+                count += 1;
+                if (count % 2) {
+                    $("#categoryList").slideUp();
+                    $("#showCategoryButton").css("background-image", "url(" + downIcon + ")");
+                } else {
+                    $("#categoryList").slideDown();
+                    $("#showCategoryButton").css("background-image", "url(" + upIcon + ")");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        let count2 = 0;
+        $(document).ready(function () {
+            $("#showFactoryButton").click(function () {
+                count2 += 1;
+                if (count2 % 2) {
+                    $("#factoryList").slideUp();
+                    $("#showFactoryButton").css("background-image", "url(" + downIcon + ")");
+                } else {
+                    $("#factoryList").slideDown();
+                    $("#showFactoryButton").css("background-image", "url(" + upIcon + ")");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        let count3 = 0;
+        $(document).ready(function () {
+            $("#showPriceButton").click(function () {
+                count3 += 1;
+                if (count3 % 2) {
+                    $("#priceList").slideUp();
+                    $("#showPriceButton").css("background-image", "url(" + downIcon + ")");
+                } else {
+                    $("#priceList").slideDown();
+                    $("#showPriceButton").css("background-image", "url(" + upIcon + ")");
+                }
+            });
+        });
+    </script>
+
+    <script>
         function goToCart() {
             alert("The product successfully added to your shopping cart");
         }
+
+        // go to product page, save local varible productNumber in order to pass between pages
+        function goToProduct() {
+            let productNumber = event.target.className;
+
+            if (productNumber == "product1_link") {
+                productNumber = "first";
+            } else if (productNumber == "product2_link") {
+                productNumber = "second";
+            } else if (productNumber == "product3_link") {
+                productNumber = "third";
+            }
+
+            localStorage.setItem("productNumber", productNumber);
+            window.location = "product.html";
+        }
     </script>
+
     <script>
         $(document).ready(function () {
             let isCheckboxClicked1 = false;
@@ -843,7 +610,6 @@
                     window.location = "compare.html";
                 }
                 countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
             });
 
             $("#checkbox-2").on("click", function () {
@@ -864,11 +630,10 @@
                     $("#checkbox-6").prop('checked', false);
                     $("#checkbox-7").prop('checked', false);
                     $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    $("#checkbox-9").prop('checked', false); countCompareItems = 0;
                     window.location = "compare.html";
                 }
                 countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
             });
 
             $("#checkbox-3").on("click", function () {
@@ -889,11 +654,10 @@
                     $("#checkbox-6").prop('checked', false);
                     $("#checkbox-7").prop('checked', false);
                     $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    $("#checkbox-9").prop('checked', false); countCompareItems = 0;
                     window.location = "compare.html";
                 }
                 countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
             });
 
             $("#checkbox-4").on("click", function () {
@@ -914,11 +678,10 @@
                     $("#checkbox-6").prop('checked', false);
                     $("#checkbox-7").prop('checked', false);
                     $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    $("#checkbox-9").prop('checked', false); countCompareItems = 0;
                     window.location = "compare.html";
                 }
                 countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
             });
 
             $("#checkbox-5").on("click", function () {
@@ -939,11 +702,10 @@
                     $("#checkbox-6").prop('checked', false);
                     $("#checkbox-7").prop('checked', false);
                     $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    $("#checkbox-9").prop('checked', false); countCompareItems = 0;
                     window.location = "compare.html";
                 }
                 countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
             });
 
             $("#checkbox-6").on("click", function () {
@@ -964,11 +726,10 @@
                     $("#checkbox-6").prop('checked', false);
                     $("#checkbox-7").prop('checked', false);
                     $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    $("#checkbox-9").prop('checked', false); countCompareItems = 0;
                     window.location = "compare.html";
                 }
                 countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
             });
 
             $("#checkbox-7").on("click", function () {
@@ -989,11 +750,10 @@
                     $("#checkbox-6").prop('checked', false);
                     $("#checkbox-7").prop('checked', false);
                     $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    $("#checkbox-9").prop('checked', false); countCompareItems = 0;
                     window.location = "compare.html";
                 }
                 countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
             });
 
             $("#checkbox-8").on("click", function () {
@@ -1014,11 +774,10 @@
                     $("#checkbox-6").prop('checked', false);
                     $("#checkbox-7").prop('checked', false);
                     $("#checkbox-8").prop('checked', false);
-                    $("#checkbox-9").prop('checked', false);                    countCompareItems = 0;
+                    $("#checkbox-9").prop('checked', false); countCompareItems = 0;
                     window.location = "compare.html";
                 }
                 countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
             });
 
             $("#checkbox-9").on("click", function () {
@@ -1044,7 +803,6 @@
                     window.location = "compare.html";
                 }
                 countCompareItems = countCompareItems % 2;
-                console.log(countCompareItems);
             });
 
         });
