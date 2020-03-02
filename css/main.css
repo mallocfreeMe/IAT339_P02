@@ -5,7 +5,6 @@
 /* For Responsive */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
 html {
   font-size: 100%;
 }
@@ -34,11 +33,6 @@ section p {
   margin-top: 0;
 }
 
-section code {
-  background-color: #EEE;
-  padding: 0.5em 0em;
-}
-
 section .codearea {
   background-color: #F7F8FA;
   font-family: monospace;
@@ -61,7 +55,33 @@ section .tagValue {
   color: #009577;
 }
 
-/* -----------------------------------------  INTERACTIVE ELEMENTS ------------------------------------------- */
+/* Styling for styleGuide content */
+
+.styleGuide {
+  padding: 1em 6em;
+  color: #2f363d;
+}
+
+.styleGuide h2 {
+  padding-top: 1.5em;
+  font-size: 2em;
+  border-bottom: thin solid #d1d5da;
+}
+
+.styleGuide h3 {
+  padding: 2em 0 0 0;
+  font-size: 1.3em;
+}
+
+/* Styling for product list */
+
+.product-list {
+  height: 10em;
+  margin: 1em;
+  width: 10em;
+}
+
+/* INTERACTIVE ELEMENTS */
 
 /* Styling for an in-text link */
 
@@ -189,7 +209,7 @@ section .tagValue {
   color: white;
 }
 
-/* ----------------------------------------- TEXT ELEMENTS ----------------------------------------------- */
+/* TEXT ELEMENTS */
 
 /* Styling for a h1 */
 
@@ -450,7 +470,7 @@ td {
   background-color: #005739;
 }
 
-/* -------------------------------------------- COMBINED ELEMENTS --------------------------------------------- */
+/* COMBINED ELEMENTS */
 
 /* Styling for mobile main nav */
 
@@ -458,18 +478,12 @@ td {
   display: none;
 }
 
-#styleGuide_Image {
-  position: relative;
-  margin-top: 7em;
-  height: 70vh;
-  color: black;
-  background-image: url(../img/styleGuide2.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 /* Styling for main nav */
+
+.styleGuide h1 {
+  padding-top: 2em;
+  font-size: 3em;
+}
 
 .main-nav {
   width: 100%;
@@ -532,7 +546,7 @@ td {
 /* Styling for side nav */
 
 .side-nav {
-  top: 3em;
+  top: 4.5em;
   display: inline-block;
   padding: 1em;
   position: sticky;
@@ -572,38 +586,18 @@ td {
   border-bottom: thin solid #d1d5da;
 }
 
-/* Styling for styleGuide content */
+/* Grid items for sample structure  */
 
-.styleGuide {
-  padding: 1em 6em;
-  color: #2f363d;
+.sample-grid-item-left {
+  height: 13.33em;
+  flex: 1 1 20%;
+  background-color: #6A737D;
 }
 
-.styleGuide h2 {
-  padding-top: 1.5em;
-  font-size: 2em;
-  border-bottom: thin solid #d1d5da;
-}
-
-.styleGuide h3 {
-  padding: 2em 0 0 0;
-  font-size: 1.3em;
-}
-
-/* Styling for product list */
-
-.product-list {
-  height: 10em;
-  margin: 1em;
-  width: 10em;
-}
-
-/* Styling for color swatches */
-
-.swatch {
-  height: 10em;
-  margin: 1em;
-  width: 10em;
+.sample-grid-item-right {
+  height: 13.33em;
+  flex: 1 1 80%;
+  background-color: #24292E;
 }
 
 footer {
@@ -669,18 +663,14 @@ footer a {
   .mobile-menu-icon {
     cursor: pointer;
     position: absolute;
-    width: 2em;
-    height: 2em;
-    top: 0.8em;
+    width: 1.8em;
+    height: 1.8em;
+    top: 1em;
     right: 2em;
     filter: brightness(0) invert(1);
     display: block;
   }
-
-  .mobile-menu-icon:hover {
-    background-color: black;
-  }
-
+  
   /* mobile menu  */
   .mobile-main-nav {
     height: 100%;
@@ -713,4 +703,22 @@ footer a {
     text-align: center;
     flex: 1 1 100%;
   }
+}
+
+@media (min-width:20em) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+
+@media (min-width:30em) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+}
+
+@media (min-width:60em) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:80em) {
+  /* hi-res laptops and desktops */
 }
