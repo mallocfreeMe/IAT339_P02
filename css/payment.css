@@ -10,6 +10,10 @@ body {
 }
 
 /* For the payment web page */
+.set-bg-margin {
+  margin-left: 20%;
+  margin-right: 20%;
+}
 
 .payment-block {
   background-color: white;
@@ -97,6 +101,12 @@ body {
   margin-bottom: 1em;
 }
 
+.card-line label {
+  font-size: 0.8em;
+  color: #444D56;
+  margin-top: 3em;
+}
+
 .card-line input[type=text] {
     background-image: url(../img/icon/visa.png);
     background-size: 3em 3em;
@@ -129,7 +139,7 @@ body {
   padding-bottom: 0.5em;
   padding-left: 1em;
   margin-bottom: 1em;
-  width: 45%;
+  width: 49%;
 }
 
 .expire-right {
@@ -140,9 +150,13 @@ body {
   padding-bottom: 0.5em;
   padding-left: 1em;
   margin-bottom: 1em;
-  width: 45%;
-  float: right;
+  width: 49%;
+  /* float: right; */
 }
+
+/* .expire-left input::-webkit-calendar-picker-indicator,.expire-right input[type=text]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+} */
 
 .cvc-area {
   margin-left: 3em;
@@ -191,4 +205,46 @@ button:hover {
 
 footer {
   margin-top: 4em;
+}
+
+
+/* For the responsive page */
+@media (max-width: 80em) {
+  body {
+    font-size: 80%;
+  }
+
+  .set-bg-margin {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 50em) {
+  .payment-page-area {
+    font-size: 60%;
+  }
+
+  .set-bg-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 50em) {
+  .payment-page-area {
+    font-size: 60%;
+  }
+
+  .set-bg-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card-line input[type=text] {
+    background-image: none;
+  }
+  .expire-left, .expire-right {
+    width: 48%;
+  }
 }
