@@ -63,7 +63,7 @@ section .tagValue {
 }
 
 .styleGuide h2 {
-  padding-top: 1.5em;
+  padding-top: 3em;
   font-size: 2em;
   border-bottom: thin solid #d1d5da;
 }

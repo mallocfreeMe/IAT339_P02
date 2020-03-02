@@ -46,41 +46,32 @@
                 <li class="mobile-top"><a href="deals.html">Deals</a></li>
                 <li class="mobile-top"><a href="signIn.html">Sign In</a></li>
                 <li class="mobile-top"><a href="shoppingCart.html">Cart</a></li>
+
+                <!-- Interactive Elements section -->
                 <h2 class="mobile-bottom-heading">Interactive Elements</h2>
-                <li class="mobile-bottom">In-text link</li>
-                <li class="mobile-bottom">The navigation button</li>
-                <li class="mobile-bottom">Sumbit button</li>
-                <li class="mobile-bottom">Reset button</li>
-                <li class="mobile-bottom">Text input field</li>
-                <li class="mobile-bottom">Label</li>
+                <li class="mobile-bottom"><a href="#in-text-section">In-text link</a></li>
+                <li class="mobile-bottom"><a href="#nav-button-section">The navigation button</a></li>
+                <li class="mobile-bottom"><a href="#submit-reset-button-section">Sumbit button</a></li>
+                <li class="mobile-bottom"><a href="#submit-reset-button-section">Reset button</a></li>
+                <li class="mobile-bottom"><a href="#text-input-section">Text input field</a></li>
+                <li class="mobile-bottom"><a href="#label-section">Label</a></li>
+
+                <!--Text Elements section -->
                 <h2 class="mobile-bottom-heading">Text Elements</h2>
-                <li class="mobile-bottom">Heading</li>
-                <li class="mobile-bottom">Paragraph</li>
-                <li class="mobile-bottom">Bulleted list</li>
-                <li class="mobile-bottom">Numbered list</li>
+                <li class="mobile-bottom"><a href="#heading-one-section">Heading</a></li>
+                <li class="mobile-bottom"><a href="#paragraph-section">Paragraph</a></li>
+                <li class="mobile-bottom"><a href="#bulleted-list-section">Bulleted list</a></li>
+                <li class="mobile-bottom"><a href="#number-list-section">Numbered list</a></li>
+
+                <!-- Combined Elements section -->
                 <h2 class="mobile-bottom-heading">Combined Elements</h2>
-                <li class="mobile-bottom">Main Navigation</li>
-                <li class="mobile-bottom">Product listing</li>
-                <li class="mobile-bottom">Grid structure</li>
+                <li class="mobile-bottom"><a href="#main-nav-section">Main Navigation</a></li>
+                <li class="mobile-bottom"><a href="#product-listing-section">Product listing</a></li>
+                <li class="mobile-bottom"><a href="#grid-structure-section">Grid structure</a></li>
             </ul>
         </nav>
 
     </header>
-
-    <script>
-        $(document).ready(function () {
-            $("#mobile_menu_button").click(function () {
-                $("#mobile_menu").show();
-            });
-
-            $("body").click(function (event) {
-                if (event.target.id != "mobile_menu_button") {
-                    $("#mobile_menu").hide();
-                }
-            });
-        });
-
-    </script>
 
     <div class="grid">
 
@@ -1045,28 +1036,56 @@
 
     <script>
 
-        $("#footer_top_heading").click(function () {
-            if($("#footer_top").css("display") == 'none') {
-                $("#footer_top").css("display", "inline")
-            } else {
-                $("#footer_top").css("display", "none")
-            }
-        });
+        $(document).ready(function () {
+            $("#mobile_menu_button").click(function () {
+                $("#mobile_menu").show();
+            });
 
-        $("#footer_center_heading").click(function () {
-            if($("#footer_center").css("display") == 'none') {
-                $("#footer_center").css("display", "inline")
-            } else {
-                $("#footer_center").css("display", "none")
-            }
-        });
+            $("body").click(function (event) {
+                if (event.target.id != "mobile_menu_button") {
+                    $("#mobile_menu").hide();
+                }
+            });
 
-        $("#footer_bottom_heading").click(function () {
-            if($("#footer_bottom").css("display") == 'none') {
-                $("#footer_bottom").css("display", "inline")
-            } else {
-                $("#footer_bottom").css("display", "none")
-            }
+            $("#footer_top_heading").click(function () {
+                if ($("#footer_top").css("display") == 'none') {
+                    $("#footer_top").css("display", "inline");
+                    $("#footer_center_heading").css("display", "none");
+                    $("#footer_bottom_heading").css("display", "none");
+                } else {
+                    $("#footer_top").css("display", "none");
+                    $("#footer_center_heading").css("display", "block");
+                    $("#footer_bottom_heading").css("display", "block");
+                }
+            });
+
+            $("#footer_center_heading").click(function () {
+                if ($("#footer_center").css("display") == 'none') {
+                    $("#footer_center").css("display", "inline");
+
+                    $("#footer_top_heading").css("display", "none");
+                    $("#footer_bottom_heading").css("display", "none");
+                } else {
+                    $("#footer_center").css("display", "none");
+
+                    $("#footer_top_heading").css("display", "block");
+                    $("#footer_bottom_heading").css("display", "block");
+                }
+            });
+
+            $("#footer_bottom_heading").click(function () {
+                if ($("#footer_bottom").css("display") == 'none') {
+                    $("#footer_bottom").css("display", "inline");
+
+                    $("#footer_top_heading").css("display", "none");
+                    $("#footer_center_heading").css("display", "none");
+                } else {
+                    $("#footer_bottom").css("display", "none");
+
+                    $("#footer_top_heading").css("display", "block");
+                    $("#footer_center_heading").css("display", "block");
+                }
+            });
         });
     </script>
 </body>
