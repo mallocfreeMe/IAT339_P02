@@ -299,16 +299,11 @@ section .tagValue {
 
 /* Styling for Color Variables */
 
-/* #table-grey, #table-purple, #table-green {
+#table-purple, #table-grey, #table-green {
   width: 100%;
-} */
-
-#table-purple, #table-grey {
-  width: 100%;
-}
-
-#table-green {
-  width: 100%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-top: 10%;
 }
 
 th {
@@ -661,6 +656,9 @@ footer a {
   .styleGuide {
     padding: 1em;
   }
+  #footer_top, #footer_center, #footer_bottom {
+    display: block;
+  }
 }
 
 @media (max-width: 78em) {
@@ -733,22 +731,31 @@ footer a {
   a:hover {
     text-decoration: underline;
   }
-}
+  #footer_top, #footer_center, #footer_bottom {
+    display: none;
+  }
+  #footer_top_heading:hover, #footer_center_heading:hover, #footer_bottom_heading:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  pre {
+    white-space: normal;
+  }
+  #table-purple, #table-grey, #table-green {
+    margin-left: 5%;
+    padding-bottom: 10%;
+  }
+  /* .styleGuide {
+    padding: 0;
+  }
 
-@media (min-width:20em) {
-  /* smartphones, iPhone, portrait 480x320 phones */
-}
+  .codearea {
+    margin-left: 10%;
+    width: 60%;
+  } */
 
-@media (min-width:30em) {
-  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-}
-
-}
-
-@media (min-width:60em) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-
-@media (min-width:80em) {
-  /* hi-res laptops and desktops */
+  .styleGuide h1 {
+    margin-top: 0;
+    padding-top:1.5em;
+  }
 }

@@ -121,167 +121,163 @@
 
 
         <!-- styleguide content -->
-        <div class="grid-col-4of5">
+        <div class="grid-col-4of5 styleGuide">
+            <!-- Introduction -->
+            <h1>Laptophub StyleGuide</h1>
+            <p>The styleguide is a resource for designers, product managers, and developers, providing a common
+                language around Laptophub’s UI patterns. We use it to maintain modular front-end code and visual
+                consistency across the web app. </p>
 
-            <div class="styleGuide">
+            <!-- INTERACTIVE ELEMENTS SECTION -->
+            <section id="interactive_elements">
 
-                <!-- Introduction -->
-                <h1>Laptophub StyleGuide</h1>
-                <p>The styleguide is a resource for designers, product managers, and developers, providing a common
-                    language around Laptophub’s UI patterns. We use it to maintain modular front-end code and visual
-                    consistency across the web app. </p>
+                <!-- an in-text link -->
+                <section id="in-text-section">
+                    <h2>In-text link</h2>
+                    <h3>CSS selector:</h3>
+                    <p>.in-text-link</p>
 
-                <!-- INTERACTIVE ELEMENTS SECTION -->
-                <section id="interactive_elements">
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">a</span> <span class="tagClass">href</span>="<span class="tagValue">#</span>" <span class="tagClass">class</span>="<span class="tagValue">in-text-link</span>"&gt;in-text link&lt;/<span class="tagName">a</span>&gt;</pre>
+                    </div>
 
-                    <!-- an in-text link -->
-                    <section id="in-text-section">
-                        <h2>In-text link</h2>
-                        <h3>CSS selector:</h3>
-                        <p>.in-text-link</p>
+                    <h3>Rendered element:</h3>
+                    <a class="in-text-link" href="#">This is an in-text link</a>
+                </section>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">a</span> <span class="tagClass">href</span>="<span class="tagValue">#</span>" <span class="tagClass">class</span>="<span class="tagValue">in-text-link</span>"&gt;in-text link&lt;/<span class="tagName">a</span>&gt;</pre>
-                        </div>
+                <!-- the navigation button style -->
+                <section id="nav-button-section">
 
-                        <h3>Rendered element:</h3>
-                        <a class="in-text-link" href="#">This is an in-text link</a>
-                    </section>
+                    <h2>Navigation Button</h2>
 
-                    <!-- the navigation button style -->
-                    <section id="nav-button-section">
+                    <h3>CSS selector:</h3>
+                    <p>.button-nav</p>
 
-                        <h2>Navigation Button</h2>
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">a</span> <span class="tagClass">href</span>="<span class="tagValue">#</span>" <span class="tagClass">class</span>="<span class="tagValue">button-nav</span>"&gt;Navigation Button&lt;/<span class="tagName">a</span>&gt;</pre>
+                    </div>
 
-                        <h3>CSS selector:</h3>
-                        <p>.button-nav</p>
+                    <h3>Rendered element:</h3>
+                    <a class="button-nav" href="#">Navigation Button</a>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">a</span> <span class="tagClass">href</span>="<span class="tagValue">#</span>" <span class="tagClass">class</span>="<span class="tagValue">button-nav</span>"&gt;Navigation Button&lt;/<span class="tagName">a</span>&gt;</pre>
-                        </div>
+                </section>
 
-                        <h3>Rendered element:</h3>
-                        <a class="button-nav" href="#">Navigation Button</a>
+                <!-- A submit and reset button for forms -->
+                <section id="submit-reset-button-section">
+                    <h2>Submit/Reset Buttons</h2>
 
-                    </section>
+                    <h3>CSS selector:</h3>
+                    <p>.button-submit-reset</p>
 
-                    <!-- A submit and reset button for forms -->
-                    <section id="submit-reset-button-section">
-                        <h2>Submit/Reset Buttons</h2>
-
-                        <h3>CSS selector:</h3>
-                        <p>.button-submit-reset</p>
-
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">a</span> <span
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">a</span> <span
                                 class="tagClass">href</span>="<span class="tagValue">#</span>" <span
                                 class="tagClass">class</span>="<span
                                 class="tagValue">button-submit-reset</span>"&gt;Submit Button&lt;/<span
                                 class="tagName">a</span>&gt;</pre>
-                        </div>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <a class="button-submit-reset" href="#">Submit Button</a>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <a class="button-submit-reset" href="#">Submit Button</a>
+                </section>
 
-                    <!-- A text input field -->
-                    <section id="text-input-section">
-                        <h2>Text Input Field</h2>
+                <!-- A text input field -->
+                <section id="text-input-section">
+                    <h2>Text Input Field</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.text-input</p>
+                    <h3>CSS selector:</h3>
+                    <p>.text-input</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">input</span> <span
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">input</span> <span
                                 class="tagClass">type</span>="<span class="tagClass">text</span>" <span
                                 class="tagClass">class</span>="<span class="tagValue">text-input</span>"&gt;</pre>
-                        </div>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <input type="text" class="text-input">
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <input type="text" class="text-input">
+                </section>
 
-                    <!-- A label -->
-                    <section id="label-section">
-                        <h2>A label</h2>
+                <!-- A label -->
+                <section id="label-section">
+                    <h2>A label</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.label</p>
+                    <h3>CSS selector:</h3>
+                    <p>.label</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">label</span> <span class="tagClass">class</span>="<span class="tagValue">label</span>"&gt;This is a label&lt;/<span class="tagName">label</span>&gt;</pre>
-                        </div>
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">label</span> <span class="tagClass">class</span>="<span class="tagValue">label</span>"&gt;This is a label&lt;/<span class="tagName">label</span>&gt;</pre>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <label class="label">This is a label</label>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <label class="label">This is a label</label>
+                </section>
 
-                    <!-- A sign in form -->
-                    <section id="sign-in-section">
-                        <h2>Sign-in form</h2>
-                        <h3>CSS selector:</h3>
-                        <p>.sign-in-form</p>
+                <!-- A sign in form -->
+                <section id="sign-in-section">
+                    <h2>Sign-in form</h2>
+                    <h3>CSS selector:</h3>
+                    <p>.sign-in-form</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">form</span>&gt;
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">form</span>&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text"</span> <span class="tagClass">name</span>="<span class="tagValue">username</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Username</span>"&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">password</span>" <span class="tagClass">name</span>="<span class="tagValue">password</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Password</span>"&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">submit</span>" <span class="tagClass">value</span>="<span class="tagValue">Log in</span>"&gt;
 &lt;/<span class="tagName">form</span>&gt;</pre>
-                        </div>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <form>
-                            <input id="sign-in-username" type="text" name="sign-in-username" placeholder="Username">
-                            <input id="sign-in-password" type="password" name="sign-in-password" placeholder="Password">
-                            <button class="sample-sign-in-button">Log in</button>
-                        </form>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <form>
+                        <input id="sign-in-username" type="text" name="sign-in-username" placeholder="Username">
+                        <input id="sign-in-password" type="password" name="sign-in-password" placeholder="Password">
+                        <button class="sample-sign-in-button">Log in</button>
+                    </form>
+                </section>
 
-                    <!-- A register form -->
-                    <section id="register-section">
-                        <h2>Register form</h2>
-                        <h3>CSS selector:</h3>
-                        <p>.register-form</p>
+                <!-- A register form -->
+                <section id="register-section">
+                    <h2>Register form</h2>
+                    <h3>CSS selector:</h3>
+                    <p>.register-form</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">form</span>&gt;
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">form</span>&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span>" <span class="tagClass">name</span>="<span class="tagValue">register-username</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Username</span>"&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">email</span>" <span class="tagClass">name</span>="<span class="tagValue">register-email</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">E-mail</span>"&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">password</span>" <span class="tagClass">name</span>="<span class="tagValue">register-password</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Password</span>"&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">password</span>" <span class="tagClass">name</span>="<span class="tagValue">register-confirm</span>" <span class="tagClass">placeholder</span>="<span class="tagValue">Confirm passage</span>"&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">submit</span>" <span class="tagClass">value</span>="<span class="tagValue">Sign up</span>"&gt;
 &lt;<span class="tagName">/form</span>&gt;</pre>
-                        </div>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <form>
-                            <input id="register-username" type="text" name="register-username" placeholder="Username">
-                            <input id="register-email" type="email" name="register-email" placeholder="E-mail">
-                            <input id="register-password" type="password" name="register-password"
-                                placeholder="Password">
-                            <input id="register-confirm-password" type="password" name="register-confirm-password"
-                                placeholder="Confirm password">
-                            <button class="sample-sign-up-button">Sign Up</button>
-                        </form>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <form>
+                        <input id="register-username" type="text" name="register-username" placeholder="Username">
+                        <input id="register-email" type="email" name="register-email" placeholder="E-mail">
+                        <input id="register-password" type="password" name="register-password" placeholder="Password">
+                        <input id="register-confirm-password" type="password" name="register-confirm-password"
+                            placeholder="Confirm password">
+                        <button class="sample-sign-up-button">Sign Up</button>
+                    </form>
+                </section>
 
-                    <!-- A payment form -->
-                    <section id="payment-section">
-                        <h2>Payment form</h2>
-                        <h3>CSS selector:</h3>
-                        <p>.register-form</p>
+                <!-- A payment form -->
+                <section id="payment-section">
+                    <h2>Payment form</h2>
+                    <h3>CSS selector:</h3>
+                    <p>.register-form</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">form</span>&gt;  
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">form</span>&gt;  
     &lt;<span class="tagName">label</span>&gt;Name on credit card</span>&lt;<span class="tagName">label</span>&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span>" <span class="tagClass">name</span>="<span class="tagValue">credit-name</span>&gt;
     &lt;<span class="tagName">label</span>&gt;Credit card number</span>&lt;<span class="tagName">label</span>&gt;
@@ -292,183 +288,183 @@
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span>" <span class="tagClass">name</span>="<span class="tagValue">cvc</span>&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">submit</span>" <span class="tagClass">name</span>="<span class="tagValue">pay-button</span>&gt;
 &lt;<span class="tagName">form</span>&gt;</pre>
+                    </div>
+
+                    <h3>Rendered element:</h3>
+                    <form>
+                        <label>Name on credit card</label>
+                        <input type="text" name="credit-name">
+                        <label>Credit card number</label>
+                        <input type="text" name="credit-card-number">
+                        <label>Expires on</label>
+                        <div class="sample-expire">
+                            <input class="sample-expire-left" type="text" name="expire-on-left"
+                                list="sample-expire-month">
+                            <datalist id="sample-expire-month">
+                                <option value="January"></option>
+                                <option value="February"></option>
+                                <option value="March"></option>
+                            </datalist>
+                            <input class="sample-expire-right" type="text" name="expire-on-right"
+                                list="sample-expire-day">
+                            <datalist id="sample-expire-day">
+                                <option value="01"></option>
+                                <option value="02"></option>
+                                <option value="03"></option>
+                            </datalist>
                         </div>
+                        <label>CVC</label>
+                        <input type="text" name="cvc">
+                        <input type="submit" placeholder="Pay Now">
+                    </form>
 
-                        <h3>Rendered element:</h3>
-                        <form>
-                            <label>Name on credit card</label>
-                            <input type="text" name="credit-name">
-                            <label>Credit card number</label>
-                            <input type="text" name="credit-card-number">
-                            <label>Expires on</label>
-                            <div class="sample-expire">
-                                <input class="sample-expire-left" type="text" name="expire-on-left"
-                                    list="sample-expire-month">
-                                <datalist id="sample-expire-month">
-                                    <option value="January"></option>
-                                    <option value="February"></option>
-                                    <option value="March"></option>
-                                </datalist>
-                                <input class="sample-expire-right" type="text" name="expire-on-right"
-                                    list="sample-expire-day">
-                                <datalist id="sample-expire-day">
-                                    <option value="01"></option>
-                                    <option value="02"></option>
-                                    <option value="03"></option>
-                                </datalist>
-                            </div>
-                            <label>CVC</label>
-                            <input type="text" name="cvc">
-                            <input type="submit" placeholder="Pay Now">
-                        </form>
-
-
-                    </section>
 
                 </section>
-                <!---------------------------- INTERACTIVE ELEMENTS SECTION END ------------------------------>
+
+            </section>
+            <!---------------------------- INTERACTIVE ELEMENTS SECTION END ------------------------------>
 
 
 
-                <!-------------------------------- TEXT ELEMENTS SECTION --------------------------------->
-                <section id="text_elements">
+            <!-------------------------------- TEXT ELEMENTS SECTION --------------------------------->
+            <section id="text_elements">
 
-                    <section id="heading-one-section">
-                        <h2>Headings</h2>
+                <section id="heading-one-section">
+                    <h2>Headings</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.h1</p>
+                    <h3>CSS selector:</h3>
+                    <p>.h1</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">h1</span> <span class="tagClass">class</span>="<span class="tagValue">h1</span>"&gt;This is a h1 heading&lt;/<span class="tagName">h1</span>&gt;</pre>
-                        </div>
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">h1</span> <span class="tagClass">class</span>="<span class="tagValue">h1</span>"&gt;This is a h1 heading&lt;/<span class="tagName">h1</span>&gt;</pre>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <p class="h1">This a h1 heading</p>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <p class="h1">This a h1 heading</p>
+                </section>
 
-                    <section id="heading-two-section">
-                        <h2>Headings</h2>
+                <section id="heading-two-section">
+                    <h2>Headings</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.h2</p>
+                    <h3>CSS selector:</h3>
+                    <p>.h2</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">h2</span> <span class="tagClass">class</span>="<span class="tagValue">h2</span>"&gt;This is a h2 heading&lt;/<span class="tagName">h2</span>&gt;</pre>
-                        </div>
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">h2</span> <span class="tagClass">class</span>="<span class="tagValue">h2</span>"&gt;This is a h2 heading&lt;/<span class="tagName">h2</span>&gt;</pre>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <p class="h2">This a h2 heading</p>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <p class="h2">This a h2 heading</p>
+                </section>
 
-                    <section id="heading-three-section">
-                        <h2>Headings</h2>
+                <section id="heading-three-section">
+                    <h2>Headings</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.h3</p>
+                    <h3>CSS selector:</h3>
+                    <p>.h3</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">h3</span> <span class="tagClass">class</span>="<span class="tagValue">h3</span>"&gt;This is a h3 heading&lt;/<span class="tagName">h3</span>&gt;</pre>
-                        </div>
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">h3</span> <span class="tagClass">class</span>="<span class="tagValue">h3</span>"&gt;This is a h3 heading&lt;/<span class="tagName">h3</span>&gt;</pre>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <p class="h3">This a h3 heading</p>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <p class="h3">This a h3 heading</p>
+                </section>
 
-                    <section id="paragraph-section">
-                        <h2>Paragraphs</h2>
+                <section id="paragraph-section">
+                    <h2>Paragraphs</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.pg</p>
+                    <h3>CSS selector:</h3>
+                    <p>.pg</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">p</span> <span class="tagClass">class</span>="<span class="tagValue">pg</span>"&gt;This is a paragraph.&lt;/<span class="tagName">p</span>&gt;</pre>
-                        </div>
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">p</span> <span class="tagClass">class</span>="<span class="tagValue">pg</span>"&gt;This is a paragraph.&lt;/<span class="tagName">p</span>&gt;</pre>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                            Ipsum
-                            has
-                            been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley
-                            of
-                            type
-                            and scrambled it to make a type specimen book. It has survived not only five centuries, but
-                            also
-                            the
-                            leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                            1960s
-                            with
-                            the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                            desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum
+                        has
+                        been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley
+                        of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                        also
+                        the
+                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s
+                        with
+                        the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                        desktop
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </section>
 
-                    <section id="bulleted-list-section">
-                        <h2>Bulleted Lists</h2>
+                <section id="bulleted-list-section">
+                    <h2>Bulleted Lists</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.bullet-list</p>
+                    <h3>CSS selector:</h3>
+                    <p>.bullet-list</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">ul</span> <span class="tagClass">class</span>="<span class="tagValue">bullet-list</span>&gt;
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">ul</span> <span class="tagClass">class</span>="<span class="tagValue">bullet-list</span>&gt;
     &lt;<span class="tagName">li</span>&gt;This is a Bulleted List&lt;<span class="tagName">/li</span>&gt;
 &lt;<span class="tagName">/ul</span>&gt;</pre>
-                        </div>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <ul class="bullet-list">
-                            <li>This is a Bulleted List</li>
-                            <li>This is a Bulleted List</li>
-                            <li>This is a Bulleted List</li>
-                        </ul>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <ul class="bullet-list">
+                        <li>This is a Bulleted List</li>
+                        <li>This is a Bulleted List</li>
+                        <li>This is a Bulleted List</li>
+                    </ul>
+                </section>
 
-                    <section id="numbered-list-section">
-                        <h2>Numbered Lists</h2>
+                <section id="numbered-list-section">
+                    <h2>Numbered Lists</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.numbered-list</p>
+                    <h3>CSS selector:</h3>
+                    <p>.numbered-list</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">ol</span> <span class="tagClass">class</span>="<span class="tagValue">numbered-list</span>&gt;
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">ol</span> <span class="tagClass">class</span>="<span class="tagValue">numbered-list</span>&gt;
     &lt;<span class="tagName">li</span>&gt;This is a Numbered List&lt;<span class="tagName">/li</span>&gt;
 &lt;<span class="tagName">/ol</span>&gt;</pre>
-                        </div>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <ol class="numbered-list">
-                            <li>This is a Numbered List</li>
-                            <li>This is a Numbered List</li>
-                            <li>This is a Numbered List</li>
-                        </ol>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <ol class="numbered-list">
+                        <li>This is a Numbered List</li>
+                        <li>This is a Numbered List</li>
+                        <li>This is a Numbered List</li>
+                    </ol>
+                </section>
 
-                    <!-- Color Parette -->
-                    <section id="color-parette-section">
-                        <h2>Color Parette</h2>
+                <!-- Color Parette -->
+                <section id="color-parette-section">
+                    <h2>Color Parette</h2>
 
-                        <div class="grid color-sample">
-                            <div class="black-0 grid-col-1of5_noHeight"><a href="#">Black</a></div>
-                            <div class="white-0 grid-col-1of5_noHeight"><a href="#">White</a></div>
-                            <div class="grey-0 grid-col-1of5_noHeight"><a href="#table-grey">Grey</a></div>
-                            <div class="purple-0 grid-col-1of5_noHeight"><a href="#table-purple">Purple</a></div>
-                            <div class="green-0 grid-col-1of5_noHeight"><a href="#table-green">Green</a></div>
-                        </div>
+                    <div class="grid color-sample">
+                        <div class="black-0 grid-col-1of5_noHeight"><a href="#">Black</a></div>
+                        <div class="white-0 grid-col-1of5_noHeight"><a href="#">White</a></div>
+                        <div class="grey-0 grid-col-1of5_noHeight"><a href="#table-grey">Grey</a></div>
+                        <div class="purple-0 grid-col-1of5_noHeight"><a href="#table-purple">Purple</a></div>
+                        <div class="green-0 grid-col-1of5_noHeight"><a href="#table-green">Green</a></div>
+                    </div>
 
-                        <h3>CSS selector:</h3>
-                        <p>.color-parette</p>
+                    <h3>CSS selector:</h3>
+                    <p>.color-parette</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">table</span>&gt;
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">table</span>&gt;
     &lt;<span class="tagName">tr</span>&gt;
     &lt;<span class="tagName">th</span>&gt;Grey&lt;<span class="tagName">/th</span>&gt;
     &lt;<span class="tagName">td</span>&gt;&lt;<span class="tagName">div</span>&gt;&lt;<span class="tagName">p</span>&gt;$grey&lt;<span class="tagName">/p</span>&gt;&lt;<span class="tagName">p</span>&gt;#6a737d&lt;<span class="tagName">/p</span>&gt;&lt;<span class="tagName">/div</span>&gt;&lt;<span class="tagName">/td</span>&gt;
@@ -484,530 +480,527 @@
     &lt;<span class="tagName">td</span>&gt;&lt;<span class="tagName">div</span>&gt;&lt;<span class="tagName">p</span>&gt;$grey900&lt;<span class="tagName">/p</span>&gt;&lt;<span class="tagName">p</span>&gt;#24292e&lt;<span class="tagName">/p</span>&gt;&lt;<span class="tagName">/div</span>&gt;&lt;<span class="tagName">/td</span>&gt;
     &lt;<span class="tagName">/tr</span>&gt;
 &lt;<span class="tagName">/table</span>&gt;</pre>
+                    </div>
+
+                    <h3>Rendered element:</h3>
+                    <div class="grid">
+                        <div class="grid-col-1of3-noHeight">
+
+                            <!-- Start of primary color table -->
+                            <table id="table-purple">
+                                <tr class="purple-title-color font-white">
+                                    <th>Primary color</th>
+                                </tr>
+                                <tr>
+                                    <td class="purple-title-color grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$purple</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#6200EE</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="purple-000 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                            <p>$purple000</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                            <p>#FBD5FF</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="purple-100 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                            <p>$purple100</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                            <p>#DAB2FF</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="purple-200 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                            <p>$purple200</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                            <p>#BA89FF</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="purple-300 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$purple300</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#995DFF</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="purple-400 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$purple400</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#7E39FB</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="purple-500 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$purple500</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#6200EE</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="purple-600 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$purple600</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#5400E8</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="purple-700 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$purple700</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#3F00DF</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="purple-800 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$purple800</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#2500D7</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="purple-900 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$purple900</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#0000C9</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- End of primary color table -->
                         </div>
 
-                        <h3>Rendered element:</h3>
-                        <div class="grid">
-                            <div class="grid-col-1of3-noHeight">
+                        <div class="grid-col-1of3-noHeight">
 
-                                <!-- Start of primary color table -->
-                                <table id="table-purple">
-                                    <tr class="purple-title-color font-white">
-                                        <th>Primary color</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="purple-title-color grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$purple</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#6200EE</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="purple-000 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
-                                                <p>$purple000</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
-                                                <p>#FBD5FF</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="purple-100 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
-                                                <p>$purple100</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
-                                                <p>#DAB2FF</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="purple-200 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
-                                                <p>$purple200</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
-                                                <p>#BA89FF</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="purple-300 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$purple300</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#995DFF</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="purple-400 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$purple400</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#7E39FB</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="purple-500 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$purple500</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#6200EE</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="purple-600 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$purple600</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#5400E8</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="purple-700 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$purple700</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#3F00DF</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="purple-800 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$purple800</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#2500D7</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="purple-900 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$purple900</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#0000C9</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!-- End of primary color table -->
-                            </div>
-
-                            <div class="grid-col-1of3-noHeight">
-
-                                <!-- Start of secondary color table -->
-                                <table id="table-green">
-                                    <tr class="green-title-color font-black">
-                                        <th>Secondary color</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="green-title-color grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
-                                                <p>$green</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
-                                                <p>#71EFE0</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="green-000 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
-                                                <p>$green000</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
-                                                <p>#A8FFFB</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="green-100 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
-                                                <p>$green100</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
-                                                <p>#71EFE0</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="green-200 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
-                                                <p>$green200</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
-                                                <p>#03DAC6</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="green-300 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$green300</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#00C4AB</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="green-400 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$green400</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#00B398</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="green-500 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$green500</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#00A284</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="green-600 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$green600</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#009577</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="green-700 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$green700</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#008466</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="green-800 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$green800</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#007457</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="green-900 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$green900</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#005739</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!-- End of secondary color table -->
-                            </div>
-
-                            <div class="grid-col-1of3-noHeight">
-                                <!-- Start of others table -->
-                                <table id="table-grey">
-                                    <tr class="grey-title-color font-white">
-                                        <th>Others</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-title-color grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$grey</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#6A737D</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-000 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
-                                                <p>$grey000</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
-                                                <p>#FAFBFC</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-100 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
-                                                <p>$grey100</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
-                                                <p>#F6F8FA</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-200 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
-                                                <p>$grey200</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
-                                                <p>#E1E4E8</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-300 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-black">
-                                                <p>$grey300</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-black">
-                                                <p>#D1D5DA</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-400 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$grey400</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#959DA5</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-500 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$grey500</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#6A737D</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-600 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$grey600</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#586069</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-700 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$grey700</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#444D56</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-800 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$grey800</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#2F363D</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-900 grid">
-                                            <div class="grid-col-1of2-noHeight table-data-left font-white">
-                                                <p>$grey900</p>
-                                            </div>
-                                            <div class="grid-col-1of2-noHeight table-data-right font-white">
-                                                <p>#24292E</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                </table>
-                                <!-- End of others table -->
-                            </div>
-
-
+                            <!-- Start of secondary color table -->
+                            <table id="table-green">
+                                <tr class="green-title-color font-black">
+                                    <th>Secondary color</th>
+                                </tr>
+                                <tr>
+                                    <td class="green-title-color grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                            <p>$green</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                            <p>#71EFE0</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="green-000 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                            <p>$green000</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                            <p>#A8FFFB</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="green-100 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                            <p>$green100</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                            <p>#71EFE0</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="green-200 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                            <p>$green200</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                            <p>#03DAC6</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="green-300 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$green300</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#00C4AB</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="green-400 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$green400</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#00B398</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="green-500 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$green500</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#00A284</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="green-600 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$green600</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#009577</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="green-700 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$green700</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#008466</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="green-800 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$green800</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#007457</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="green-900 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$green900</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#005739</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- End of secondary color table -->
                         </div>
 
-                    </section>
+                        <div class="grid-col-1of3-noHeight">
+                            <!-- Start of others table -->
+                            <table id="table-grey">
+                                <tr class="grey-title-color font-white">
+                                    <th>Others</th>
+                                </tr>
+                                <tr>
+                                    <td class="grey-title-color grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$grey</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#6A737D</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="grey-000 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                            <p>$grey000</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                            <p>#FAFBFC</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="grey-100 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                            <p>$grey100</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                            <p>#F6F8FA</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="grey-200 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                            <p>$grey200</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                            <p>#E1E4E8</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="grey-300 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-black">
+                                            <p>$grey300</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-black">
+                                            <p>#D1D5DA</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="grey-400 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$grey400</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#959DA5</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="grey-500 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$grey500</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#6A737D</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="grey-600 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$grey600</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#586069</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="grey-700 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$grey700</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#444D56</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="grey-800 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$grey800</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#2F363D</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="grey-900 grid">
+                                        <div class="grid-col-1of2-noHeight table-data-left font-white">
+                                            <p>$grey900</p>
+                                        </div>
+                                        <div class="grid-col-1of2-noHeight table-data-right font-white">
+                                            <p>#24292E</p>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </table>
+                            <!-- End of others table -->
+                        </div>
+
+
+                    </div>
 
                 </section>
-                <!-------------------------------- TEXT ELEMENTS SECTION END --------------------------------->
+
+            </section>
+            <!-- TEXT ELEMENTS SECTION END -->
 
 
 
-                <!------------------------------ COMBINED ELEMENTS SECTION ------------------------------->
-                <section id="combined_elements">
+            <!-- COMBINED ELEMENTS SECTION -->
+            <section id="combined_elements">
 
-                    <section id="main-nav-section">
-                        <h2>Main Navigation</h2>
+                <section id="main-nav-section">
+                    <h2>Main Navigation</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.main-nav</p>
-                        <!-- Modify the layout of sample code by <br> -->
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">nav</span> <span class="tagClass">class</span>="<span class="tagValue">main-list</span>"&gt;
+                    <h3>CSS selector:</h3>
+                    <p>.main-nav</p>
+                    <!-- Modify the layout of sample code by <br> -->
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">nav</span> <span class="tagClass">class</span>="<span class="tagValue">main-list</span>"&gt;
     &lt;<span class="tagName">a</span>&gt;<span class="tagValue">link 1</span>&lt;<span class="tagName">/a</span>&gt;
     &lt;<span class="tagName">a</span>&gt;<span class="tagValue">link 2</span>&lt;<span class="tagName">/a</span>&gt;
     &lt;<span class="tagName">a</span>&gt;<span class="tagValue">link 3</span>&lt;<span class="tagName">/a</span>&gt;
 &lt;<span class="tagName">/nav</span>&gt;</pre>
-                        </div>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <nav class="sample-main-nav">
-                            <a href="#">link 1</a>
-                            <a href="#">link 2</a>
-                            <a href="#">link 3</a>
-                        </nav>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <nav class="sample-main-nav">
+                        <a href="#">link 1</a>
+                        <a href="#">link 2</a>
+                        <a href="#">link 3</a>
+                    </nav>
+                </section>
 
-                    <!-- Side navigation section -->
-                    <section id="side-nav-section">
-                        <h2>Side Navigation</h2>
+                <!-- Side navigation section -->
+                <section id="side-nav-section">
+                    <h2>Side Navigation</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.side-nav</p>
-                        <!-- Modify the layout of sample code by <br> -->
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">nav</span> <span class="tagClass">class</span>="<span class="tagValue">side-list</span>"&gt;
+                    <h3>CSS selector:</h3>
+                    <p>.side-nav</p>
+                    <!-- Modify the layout of sample code by <br> -->
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">nav</span> <span class="tagClass">class</span>="<span class="tagValue">side-list</span>"&gt;
     &lt;<span class="tagName">a</span>&gt;<span class="tagValue">link 1</span>&lt;<span class="tagName">/a</span>&gt;
     &lt;<span class="tagName">a</span>&gt;<span class="tagValue">link 2</span>&lt;<span class="tagName">/a</span>&gt;
     &lt;<span class="tagName">a</span>&gt;<span class="tagValue">link 3</span>&lt;<span class="tagName">/a</span>&gt;
     &lt;<span class="tagName">a</span>&gt;<span class="tagValue">link 4</span>&lt;<span class="tagName">/a</span>&gt;
     &lt;<span class="tagName">a</span>&gt;<span class="tagValue">link 5</span>&lt;<span class="tagName">/a</span>&gt;
 &lt;<span class="tagName">/nav</span>&gt;</pre>
-                        </div>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <nav class="side-nav">
-                            <a href="#">link 1</a>
-                            <a href="#">link 2</a>
-                            <a href="#">link 3</a>
-                            <a href="#">link 4</a>
-                            <a href="#">link 5</a>
-                        </nav>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <nav class="side-nav">
+                        <a href="#">link 1</a>
+                        <a href="#">link 2</a>
+                        <a href="#">link 3</a>
+                        <a href="#">link 4</a>
+                        <a href="#">link 5</a>
+                    </nav>
+                </section>
 
-                    <section id="product-listing-section">
-                        <h2>Product Listing</h2>
+                <section id="product-listing-section">
+                    <h2>Product Listing</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.product-list</p>
-                        <!-- Modify the layout of sample code by <br> -->
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">ol</span>&gt;
+                    <h3>CSS selector:</h3>
+                    <p>.product-list</p>
+                    <!-- Modify the layout of sample code by <br> -->
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">ol</span>&gt;
     &lt;<span class="tagName">li</span>&gt;&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">color</span>" <span class="tagClass">value</span>="<span class="tagValue">#D6D6D6</span>" <span class="tagClass">class</span>="<span class="tagValue">product-list</span>"&gt;&lt;<span class="tagName">/li</span>&gt;
 &lt;<span class="tagName">/ol</span>&gt;</pre>
-                        </div>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <ol>
-                            <li><input type="color" value="#D6D6D6" class="product-list"><input type="color"
-                                    value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                                    class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
-                                    type="color" value="#D6D6D6" class="product-list"><input type="color"
-                                    value="#D6D6D6" class="product-list"></li>
-                            <li><input type="color" value="#D6D6D6" class="product-list"><input type="color"
-                                    value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                                    class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
-                                    type="color" value="#D6D6D6" class="product-list"><input type="color"
-                                    value="#D6D6D6" class="product-list"></li>
-                            <li><input type="color" value="#D6D6D6" class="product-list"><input type="color"
-                                    value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                                    class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
-                                    type="color" value="#D6D6D6" class="product-list"><input type="color"
-                                    value="#D6D6D6" class="product-list"></li>
-                        </ol>
-                    </section>
+                    <h3>Rendered element:</h3>
+                    <ol>
+                        <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
+                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
+                                type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
+                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
+                        <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
+                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
+                                type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
+                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
+                        <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
+                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
+                                type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
+                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
+                    </ol>
+                </section>
 
-                    <!-- Footer section -->
-                    <section id="footer-section">
-                        <h2>Footer</h2>
+                <!-- Footer section -->
+                <section id="footer-section">
+                    <h2>Footer</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.footer-side-nav</p>
+                    <h3>CSS selector:</h3>
+                    <p>.footer-side-nav</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">nav</span> <span class="tagClass">class</span>="<span class="tagValue">footer-side-nav</span>"&gt;
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">nav</span> <span class="tagClass">class</span>="<span class="tagValue">footer-side-nav</span>"&gt;
     &lt;<span class="tagName">a</span>&gt;<span class="tagValue">link 1</span>&lt;<span class="tagName">/a</span>&gt;
     &lt;<span class="tagName">a</span>&gt;<span class="tagValue">link 2</span>&lt;<span class="tagName">/a</span>&gt;
     &lt;<span class="tagName">a</span>&gt;<span class="tagValue">link 3</span>&lt;<span class="tagName">/a</span>&gt;
 &lt;<span class="tagName">/nav</span>&gt;</pre>
+                    </div>
+
+                    <h3>Rendered element:</h3>
+                    <div class="grid sample-footer">
+                        <div class="footer-grid-col-1of5"></div>
+                        <div class="footer-grid-col-1of5">
+                            <h3>CONTACT US</h3>
                         </div>
-
-                        <h3>Rendered element:</h3>
-                        <div class="grid sample-footer">
-                            <div class="footer-grid-col-1of5"></div>
-                            <div class="footer-grid-col-1of5">
-                                <h3>CONTACT US</h3>
-                            </div>
-                            <div class="footer-grid-col-1of5">
-                                <h3>SERVICES</h3>
-                            </div>
-                            <div class="footer-grid-col-1of5">
-                                <h3>ABOUT US</h3>
-                            </div>
-                            <div class="footer-grid-col-1of5"></div>
+                        <div class="footer-grid-col-1of5">
+                            <h3>SERVICES</h3>
                         </div>
-                    </section>
+                        <div class="footer-grid-col-1of5">
+                            <h3>ABOUT US</h3>
+                        </div>
+                        <div class="footer-grid-col-1of5"></div>
+                    </div>
+                </section>
 
-                    <!--  website grid structure -->
-                    <!-- did in lab3-->
-                    <section id="grid-structure-section">
-                        <h2>Grid Structure</h2>
+                <!--  website grid structure -->
+                <!-- did in lab3-->
+                <section id="grid-structure-section">
+                    <h2>Grid Structure</h2>
 
-                        <h3>CSS selector:</h3>
-                        <p>.grid</p>
+                    <h3>CSS selector:</h3>
+                    <p>.grid</p>
 
-                        <h3>Sample code:</h3>
-                        <div class="codearea">
-                            <pre>&lt;<span class="tagName">div</span> <span class="tagClass">class</span>="<span class="tagValue">grid</span>"&gt;
+                    <h3>Sample code:</h3>
+                    <div class="codearea">
+                        <pre>&lt;<span class="tagName">div</span> <span class="tagClass">class</span>="<span class="tagValue">grid</span>"&gt;
     &lt;<span class="tagName">div</span> <span class="tagClass">class</span>="<span class="tagValue">sample-grid-item-left</span>"&gt;&lt;<span class="tagName">/div</span>&gt;
     &lt;<span class="tagName">div</span> <span class="tagClass">class</span>="<span class="tagValue">sample-grid-item-right</span>"&gt;&lt;<span class="tagName">/div</span>&gt;    
 &lt;<span class="tagName">/div</span>&gt;</pre>
-                        </div>
+                    </div>
 
-                        <h3>Rendered element:</h3>
-                        <div class="grid">
-                            <div class="sample-grid-item-left"></div>
-                            <div class="sample-grid-item-right"></div>
-                        </div>
+                    <h3>Rendered element:</h3>
+                    <div class="grid">
+                        <div class="sample-grid-item-left"></div>
+                        <div class="sample-grid-item-right"></div>
+                    </div>
 
 
-                    </section>
                 </section>
-                <!------------------------------ COMBINED ELEMENTS SECTION END ------------------------------->
-            </div>
+            </section>
+            <!-- COMBINED ELEMENTS SECTION END -->
         </div>
+
     </div>
 
     <footer class="grid">
@@ -1016,17 +1009,17 @@
 
         <!-- Contact Us -->
         <section class="footer-grid-col-1of5">
-            <h3>CONTACT US</h3>
+            <h3 id="footer_top_heading">CONTACT US</h3>
             <ul id="footer_top">
                 <li>++44 345 678 903</li>
-                <li><a href="mailto:someone@example.com">customService@.Laptophub.com</a></li>
+                <li><a href="mailto:someone@example.com">customService@Laptophub.com</a></li>
                 <li>Find a store</li>
             </ul>
         </section>
 
         <!-- Services -->
         <section class="footer-grid-col-1of5">
-            <h3>SERVICES</h3>
+            <h3 id="footer_center_heading">SERVICES</h3>
             <ul id="footer_center">
                 <li>Returns</li>
                 <li>Odering & Payment</li>
@@ -1037,7 +1030,7 @@
 
         <!-- About Us -->
         <section class="footer-grid-col-1of5">
-            <h3>ABOUT US</h3>
+            <h3 id="footer_bottom_heading">ABOUT US</h3>
             <ul id="footer_bottom">
                 <li><a href="ourMission.html">Our Mission</a></li>
                 <li><a href="styleGuide.html">Style Guide</a></li>
@@ -1051,12 +1044,31 @@
 
 
     <script>
-        if($(window).width() / parseFloat($("body").css("font-size")) < 78) {
-            $("#footer_top").hide();
-            $("#footer_center").hide();
-            $("#footer_bottom").hide();
-        }
+
+        $("#footer_top_heading").click(function () {
+            if($("#footer_top").css("display") == 'none') {
+                $("#footer_top").css("display", "inline")
+            } else {
+                $("#footer_top").css("display", "none")
+            }
+        });
+
+        $("#footer_center_heading").click(function () {
+            if($("#footer_center").css("display") == 'none') {
+                $("#footer_center").css("display", "inline")
+            } else {
+                $("#footer_center").css("display", "none")
+            }
+        });
+
+        $("#footer_bottom_heading").click(function () {
+            if($("#footer_bottom").css("display") == 'none') {
+                $("#footer_bottom").css("display", "inline")
+            } else {
+                $("#footer_bottom").css("display", "none")
+            }
+        });
     </script>
-</body> 
+</body>
 
 </html>
