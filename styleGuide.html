@@ -1017,7 +1017,7 @@
         <!-- Contact Us -->
         <section class="footer-grid-col-1of5">
             <h3>CONTACT US</h3>
-            <ul>
+            <ul id="footer_top">
                 <li>++44 345 678 903</li>
                 <li><a href="mailto:someone@example.com">customService@.Laptophub.com</a></li>
                 <li>Find a store</li>
@@ -1027,7 +1027,7 @@
         <!-- Services -->
         <section class="footer-grid-col-1of5">
             <h3>SERVICES</h3>
-            <ul>
+            <ul id="footer_center">
                 <li>Returns</li>
                 <li>Odering & Payment</li>
                 <li>Shipping</li>
@@ -1038,11 +1038,8 @@
         <!-- About Us -->
         <section class="footer-grid-col-1of5">
             <h3>ABOUT US</h3>
-            <ul>
+            <ul id="footer_bottom">
                 <li><a href="ourMission.html">Our Mission</a></li>
-                <li>Work With Us</li>
-                <li>Privacy Policy</li>
-                <li>Terms & Conditions</li>
                 <li><a href="styleGuide.html">Style Guide</a></li>
                 <li><a href="sitemap/Sitemap.html">Sitemap</a></li>
                 <li><a href="citation.html">Citation</a></li>
@@ -1052,6 +1049,14 @@
         <section class="footer-grid-col-1of5"></section>
     </footer>
 
-</body>
+
+    <script>
+        // if($(window).width() / parseFloat($("body").css("font-size")) < 78) {
+        //     $("#footer_top").hide();
+        //     $("#footer_center").hide();
+        //     $("#footer_bottom").hide();
+        // }
+    </script>
+</body> 
 
 </html>
