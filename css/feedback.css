@@ -166,3 +166,48 @@
   width: 100%;
   height: 100%;
 }
+
+
+/* For the responsive page */
+@media (max-width: 50em) {
+  .map-container {
+    display: grid;
+    grid-template-rows: 30vh 55vh;
+  }
+
+  .map-container .contact-map {
+    margin: 0em 6em 4em 4em;
+  }
+}
+
+@media (max-width: 30em) {
+  .feedback-area {
+    font-size: 60%;
+  }
+
+  .contact-warn {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .contact-first-name input[type=text], .contact-last-name input[type=text] {
+    display: block;
+    width: 100%;
+  }
+
+  .contact-form {
+    margin-left: 2em;
+    margin-right: 2em;    
+  }
+
+  .map-container .contact-information {
+    margin-left: 2em;
+    margin-right: 4em;
+  }
+
+  .map-container .contact-map {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em;
+  }
+}
