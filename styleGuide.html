@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style Guide</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -313,11 +313,11 @@
                 </section>
 
             </section>
-            <!---------------------------- INTERACTIVE ELEMENTS SECTION END ------------------------------>
+            <!-- INTERACTIVE ELEMENTS SECTION END -->
 
 
 
-            <!-------------------------------- TEXT ELEMENTS SECTION --------------------------------->
+            <!-- TEXT ELEMENTS SECTION -->
             <section id="text_elements">
 
                 <section id="heading-one-section">
@@ -918,16 +918,6 @@
                     <h3>Rendered element:</h3>
                     <ol>
                         <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
-                                type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
-                        <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
-                                type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
-                        <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"><input
-                                type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
                                 class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
                     </ol>
                 </section>
@@ -999,33 +989,33 @@
         <section class="footer-grid-col-1of5"></section>
 
         <!-- Contact Us -->
-        <section class="footer-grid-col-1of5">
+        <section class="footer-grid-col-1of5" id="footer_top_section">
             <h3 id="footer_top_heading">CONTACT US</h3>
             <ul id="footer_top">
-                <li>++44 345 678 903</li>
+                <li href="#">++44 345 678 903</li>
                 <li><a href="mailto:someone@example.com">customService@Laptophub.com</a></li>
-                <li>Find a store</li>
+                <li><a href="feedback.html">Leave us feedback</a></li>
             </ul>
         </section>
 
         <!-- Services -->
-        <section class="footer-grid-col-1of5">
+        <section class="footer-grid-col-1of5" id="footer_center_section">
             <h3 id="footer_center_heading">SERVICES</h3>
             <ul id="footer_center">
-                <li>Returns</li>
-                <li>Odering & Payment</li>
-                <li>Shipping</li>
-                <li>FAQ</li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Odering & Payment</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">FAQ</a></li>
             </ul>
         </section>
 
         <!-- About Us -->
-        <section class="footer-grid-col-1of5">
+        <section class="footer-grid-col-1of5" id="footer_bottom_section">
             <h3 id="footer_bottom_heading">ABOUT US</h3>
             <ul id="footer_bottom">
                 <li><a href="ourMission.html">Our Mission</a></li>
                 <li><a href="styleGuide.html">Style Guide</a></li>
-                <li><a href="sitemap/Sitemap.html">Sitemap</a></li>
+                <li><a href="https://github.com/mallocfreeMe/IAT339_P02">Git Repo</a></li>
                 <li><a href="citation.html">Citation</a></li>
             </ul>
         </section>
@@ -1035,55 +1025,16 @@
 
 
     <script>
-
         $(document).ready(function () {
             $("#mobile_menu_button").click(function () {
                 $("#mobile_menu").show();
+                $(".main-nav").css("filter", "brightness(0.5)");
             });
 
             $("body").click(function (event) {
                 if (event.target.id != "mobile_menu_button") {
                     $("#mobile_menu").hide();
-                }
-            });
-
-            $("#footer_top_heading").click(function () {
-                if ($("#footer_top").css("display") == 'none') {
-                    $("#footer_top").css("display", "inline");
-                    $("#footer_center_heading").css("display", "none");
-                    $("#footer_bottom_heading").css("display", "none");
-                } else {
-                    $("#footer_top").css("display", "none");
-                    $("#footer_center_heading").css("display", "block");
-                    $("#footer_bottom_heading").css("display", "block");
-                }
-            });
-
-            $("#footer_center_heading").click(function () {
-                if ($("#footer_center").css("display") == 'none') {
-                    $("#footer_center").css("display", "inline");
-
-                    $("#footer_top_heading").css("display", "none");
-                    $("#footer_bottom_heading").css("display", "none");
-                } else {
-                    $("#footer_center").css("display", "none");
-
-                    $("#footer_top_heading").css("display", "block");
-                    $("#footer_bottom_heading").css("display", "block");
-                }
-            });
-
-            $("#footer_bottom_heading").click(function () {
-                if ($("#footer_bottom").css("display") == 'none') {
-                    $("#footer_bottom").css("display", "inline");
-
-                    $("#footer_top_heading").css("display", "none");
-                    $("#footer_center_heading").css("display", "none");
-                } else {
-                    $("#footer_bottom").css("display", "none");
-
-                    $("#footer_top_heading").css("display", "block");
-                    $("#footer_center_heading").css("display", "block");
+                    $(".main-nav").css("filter", "brightness(1)");
                 }
             });
         });
