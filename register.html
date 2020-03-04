@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- head of the page -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,15 +35,15 @@
             </a>
 
             <a href="shoppingCart.html">
-                <!-- <img src="img/icon/Icon - Account - Filled.png" id="signIn_icon"> -->
                 <img src="img/icon/cart.png" id="cart_icon">
                 Cart
             </a>
 
-            <!-- hamburger menu -->
+            <!-- Mobile menu icon -->
             <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
         </nav>
 
+        <!-- MObile navigation bar -->
         <nav class="mobile-main-nav" id="mobile_menu">
             <ul>
                 <li><a href="#">Shop</a></li>
@@ -53,89 +55,54 @@
 
     </header>
 
-    <script>
-
-    </script>
-
+    <!-- Start of the sign up content -->
     <div class="grid sign-up-page-area">
-        <!-- side blank area -->
-        <!-- <div class="grid-col-1of5"></div> -->
 
-        <div class="grid-col-2of5_noHeight video-area">
-            <!-- https://www.pexels.com/video/a-woman-discussing-something-on-a-laptop-3256573/ -->
-            <video id="signInVideo" loop="true" autoplay="true">
-                <source src="video/sign-in-video copy.mp4" type="video/mp4" />
-            </video>
-
-            <script>
-                $(document).ready(function () {
-                    $('#signInVideo').prop('muted', true).play()
-                });
-            </script>
-
+        <!-- Sign up image -->
+        <div class="grid-col-2of5_noHeight image-area">
+            <img src="img/sign-in.png" alt="Sign up image">
         </div>
 
         <div class="grid-col-3of5_noHeight sign-up-block">
-            <!-- <div class="grid-item-up"> -->
-                <div class="register-link grid-row-1of5">
-                    Already have an account?
-                    <button id="buttonSignIn" onclick="jumpToSignIn()">Sign in</button>
-                    <!-- <div id="signUpForm" class="sign-up-form">
-                        <div>
-                            <input type="text" name="username" placeholder="Enter your username"></div>
-                        <div>
-                            <input type="password" name="password" placeholder="Enter your password">
-                        </div>
-                        <div>
-                            <button onclick="clickSignUp()">Sign up</button>
-                        </div>
-                    </div> -->
-                </div>
-                <!-- </div> -->
-
-                <script>
-                    function jumpToSignIn() {
-                        window.location = "SignIn.html";
-                    }
-                </script>
-
-                <!-- <div class="grid-item-middle"> -->
-                <div class="grid-row-3of5">
-                    <!-- Sign In form -->
-                    <div id="signUpForm" class="sign-up">
-                        <h2>Sign up for Laptophub</h2>
-
-                        <h3>Enter your details below</h3>
-
-                        <section class="sign-up-content">
-
-                            <form class="sign-up-username">
-                                <input type="text" name="username" placeholder="Username">
-                                <input class="email-input" type="text" name="e-mail" placeholder="E-mail">
-                                <input type="password" name="password" placeholder="Password">
-                                <input type="password" name="comfirm-password" placeholder="Comform Password">
-                            </form>
-
-                            <div class="sign-up-button">
-                                <button onclick="myFunction()">Sign up</button>
-                            </div>
-
-                            <script>
-                                function myFunction() {
-                                    window.location = "signIn.html";
-                                }
-                            </script>
-                        </section>
-                    </div>
-                </div>
-                <!-- end of Sign In form -->
-                <!-- <div class="grid-item-bottom"></div> -->
-                <div class="grid-row-1of5"></div>
+            <!-- Link to sign in page -->
+            <div class="sign-in-link grid-row-1of5">
+                Already have an account?
+                <button id="buttonSignIn" onclick="jumpToSignIn()">Sign in</button>
             </div>
-        
 
-    </div>
+            <!-- The Start of flex row 3/5 -->
+            <div class="grid-row-3of5">
+                <!-- Sign In form -->
+                <div id="signUpForm" class="sign-up">
+                    <h2>Sign up for Laptophub</h2>
 
+                    <h3>Enter your details below</h3>
+
+                    <div class="sign-up-content">
+
+                        <!-- The form of the sign up -->
+                        <form class="sign-up-username">
+                            <input type="text" name="username" placeholder="Username">
+                            <input class="email-input" type="text" name="e-mail" placeholder="E-mail">
+                            <input type="password" name="password" placeholder="Password">
+                            <input type="password" name="comfirm-password" placeholder="Comform Password">
+                        </form>
+
+                        <!-- Button for sign up -->
+                        <div class="sign-up-button">
+                            <button onclick="myFunction()">Sign up</button>
+                        </div>
+                    </div>
+                </div><!-- end of Sign In form -->
+
+            </div><!-- The Start of flex row 3/5 -->
+            
+            <div class="grid-row-1of5"></div>
+        </div>
+
+    </div><!-- End of the sign up content -->
+
+    <!-- Footer -->
     <footer class="grid">
 
         <section class="footer-grid-col-1of5"></section>
@@ -177,6 +144,19 @@
 
         <section class="footer-grid-col-1of5"></section>
     </footer>
+
+    <!-- JavaScript Area -->
+    <script>
+        function jumpToSignIn() {
+            window.location = "SignIn.html";
+        }
+    </script>
+
+    <script>
+    function myFunction() {
+        window.location = "signIn.html";
+    }
+    </script>
 
 </body>
 

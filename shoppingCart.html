@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Head of the page -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,46 +12,6 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script>
-        let showItemOne = true;
-        let showItemTwo = true;
-        let showItemThree = true;
-        function hiddenItemOne() {
-            document.getElementById("item-one").style.display = 'none';
-            showItemOne = false;
-            if (showItemOne == false && showItemTwo == false && showItemThree == false) {
-                document.getElementById("empty-warning").style.display = 'block';
-                document.getElementById("total-area").style.display = 'none';
-                document.getElementById("total-price-area").style.display = 'none';
-                document.getElementById("pay-button").style.display = 'none';
-            }
-        }
-        function hiddenItemTwo() {
-            document.getElementById("item-two").style.display = 'none';
-            showItemTwo = false;
-            if (showItemOne == false && showItemTwo == false && showItemThree == false) {
-                document.getElementById("empty-warning").style.display = 'block';
-                document.getElementById("total-area").style.display = 'none';
-                document.getElementById("total-price-area").style.display = 'none';
-                document.getElementById("pay-button").style.display = 'none';
-            }
-        }
-        function hiddenItemThree() {
-            document.getElementById("item-three").style.display = 'none';
-            showItemThree = false;
-            if ((showItemOne == false) && (showItemTwo == false) && (showItemThree == false)) {
-                document.getElementById("empty-warning").style.display = 'block';
-                document.getElementById("total-area").style.display = 'none';
-                document.getElementById("total-price-area").style.display = 'none';
-                document.getElementById("pay-button").style.display = 'none';
-            }
-        }
-    </script>
-    <script>
-        function jumpToPayment() {
-            window.location = "payment.html"
-        }
-    </script> -->
 </head>
 
 <body>
@@ -73,12 +34,11 @@
             </a>
 
             <a href="shoppingCart.html">
-                <!-- <img src="img/icon/Icon - Account - Filled.png" id="signIn_icon"> -->
                 <img src="img/icon/cart.png" id="cart_icon">
                 Cart
             </a>
 
-            <!-- hamburger menu -->
+            <!-- Mobile menu icon -->
             <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
         </nav>
 
@@ -92,11 +52,13 @@
         </nav>
     </header>
 
-
+    <!-- Start of the shopping cart area -->
     <section class="shopping-cart-area">
 
+        <!-- Title -->
         <h3>Items in Your Bag</h3>
 
+        <!-- The item 1 in the shopping cart -->
         <div id="item-one" class="item-container">
             <div class="item-image">
                 <img src="img/product/product1-1.jpg" alt="product 1">
@@ -121,6 +83,7 @@
             </div>
         </div>
 
+        <!-- The item 2 in the shopping cart -->
         <div id="item-two" class="item-container">
             <div class="item-image">
                 <img src="img/product/product2-1.jpg" alt="product 2">
@@ -145,6 +108,7 @@
             </div>
         </div>
 
+        <!-- The item 3 in the shopping cart -->
         <div id="item-three" class="item-container">
             <div class="item-image">
                 <img src="img/product/product3-1.jpg" alt="product 3">
@@ -169,6 +133,7 @@
             </div>
         </div>
 
+        <!-- Part of total infomation  -->
         <div id="total-area" class="item-total">
             <div class="total-content">
                 <div class="subtotal">Subtotal</div>
@@ -183,6 +148,7 @@
             </div>
         </div>
 
+        <!-- Total price -->
         <div id="total-price-area" class="total-price">
             <div class="total-content">
                 <p>Total</p>
@@ -192,6 +158,7 @@
             </div>
         </div>
 
+        <!-- Button for the functionality pay -->
         <div id="pay-button">
             <div class="pay-button button-left">
                 <button id="guest_pay" onclick="jumpToPayment()">As a guest to pay</button>
@@ -201,6 +168,7 @@
             </div>
         </div>
 
+        <!-- When all the items are removed, the warning will appear -->
         <div id="empty-warning">
             <p>Your cart is empty!</p>
             <div>
@@ -208,7 +176,7 @@
             </div>
         </div>
 
-    </section>
+    </section> <!-- End of the shopping cart area -->
 
 
     <!-- Footer -->
@@ -255,7 +223,7 @@
 
     </footer>
 
-    <!------------------------------- Java Script -------------------------------->
+    <!-- JavaScript Area -->
     <script>
         let showItemOne = true;
         let showItemTwo = true;
@@ -296,6 +264,7 @@
             window.location = "payment.html"
         }
     </script>
+    
 </body>
 
 </html>

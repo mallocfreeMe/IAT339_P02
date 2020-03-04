@@ -11,8 +11,9 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_-2uT2tTQS2vSHFbK_Z1QnNoJeN1obOE&callback=initMap">
-    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_-2uT2tTQS2vSHFbK_Z1QnNoJeN1obOE&callback=initMap">
+        </script>
     <!-- AIzaSyD_-2uT2tTQS2vSHFbK_Z1QnNoJeN1obOE -->
     <!-- AIzaSyAHbw9Hbr0cHHUHYwAkBtIA3cddM_CuIfo -->
     <script>
@@ -71,34 +72,32 @@
 
     </header>
 
-    <script>
+    <div class="feedback-area">
+        <h3>Feedback</h3>
+        <div class="grid">
+            <div class="grid-col-3of5_noHeight form-container">
+                <div class="contact-warn">
+                    <p>PLEASE NOTE THAT LAPTOPHUB HAS A LONG-STANDING COMPANY POLICY AGAINST
+                        ACCEPTING OR REVIEWING
+                        UNSOLICITED SUBMISSIONS OF CREATIVE MATERIALS. PLEASE DO NOT SEND US YOUR SCRIPTS, STORY
+                        IDEAS
+                        OR
+                        OTHER CREATIVE MATERIALS THROUGH THIS WEBSITE. WE WILL NOT BE ABLE TO CONSIDER THEM.</p>
+                    <p class="second-line-warn">THANKS FOR YOUR UNDERSTANDING.</p>
+                </div>
 
-    </script>
-
-    <div class="grid feedback-area">
-
-        <div class="grid-col-3of5_noHeight form-container">
-            <div class="form-item-head contact-warn">
-                <h3>Feedback</h3>
-                <p>PLEASE NOTE THAT LAPTOPHUB HAS A LONG-STANDING COMPANY POLICY AGAINST ACCEPTING OR REVIEWING
-                    UNSOLICITED SUBMISSIONS OF CREATIVE MATERIALS. PLEASE DO NOT SEND US YOUR SCRIPTS, STORY IDEAS OR
-                    OTHER CREATIVE MATERIALS THROUGH THIS WEBSITE. WE WILL NOT BE ABLE TO CONSIDER THEM.</p>
-
-                <p class="warn-second-line">THANKS FOR YOUR UNDERSTANDING.</p>
-            </div>
-            <div class="form-item-body">
                 <form class="contact-form">
-
-                    <div class="contact-name grid">
-                        <div class="contact-first-name grid-col-1of2-noHeight">
-                            <label>First Name</label>
-                            <input type="text" placeholder="Jason">
+                    <div class="contact-name">
+                        <div class="grid">
+                            <div class="contact-first-name grid-col-1of2-noHeight">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Jason">
+                            </div>
+                            <div class="contact-last-name grid-col-1of2-noHeight">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Zapata">
+                            </div>
                         </div>
-                        <div class="contact-last-name grid-col-1of2-noHeight">
-                            <label>Last Name</label>
-                            <input type="text" placeholder="Zapata">
-                        </div>
-
                     </div>
 
                     <div class="contact-email">
@@ -114,34 +113,34 @@
                     <div class="contact-message">
                         <label>Message</label>
                         <textarea>
-
                         </textarea>
                     </div>
 
                     <div class="contact-submit-button">
                         <button>SUBMIT</button>
                     </div>
-
                 </form>
             </div>
-        </div>
 
-        <div class="grid-col-2of5_noHeight map-container">
+            <div class="grid-col-2of5_noHeight map-container">
 
-            <div class="contact-information map-item-head">
-                <p class="company-name">LAPTOPHUB</p>
-                <p class="road-name">345 COMPUTER ROAD</p>
-                <p class="address-info">SURREY, BC V3A 0N1</p>
-                <p class="tele-phone">(778)-123-1234</p>
-                <p class="fax-phone">(604)-987-9876</p>
+                <div class="contact-information">
+                    <p class="company-name">LAPTOPHUB</p>
+                    <p class="road-name">345 COMPUTER ROAD</p>
+                    <p class="address-info">SURREY, BC V3A 0N1</p>
+                </div>
+                <div class="contact-phone">
+                    <p class="tele-phone">(778)-123-1234</p>
+                    <p class="fax-number">(604)-987-9876</p>
+                </div>
+
+
+                <div class="contact-map">
+                    <!-- API: AIzaSyAHbw9Hbr0cHHUHYwAkBtIA3cddM_CuIfo -->
+                    <div id="google-map"></div>
+                </div>
+
             </div>
-
-
-            <div class="contact-map map-item-body">
-                <!-- API: AIzaSyAHbw9Hbr0cHHUHYwAkBtIA3cddM_CuIfo -->
-                <div id="google-map"></div>
-            </div>
-
         </div>
 
     </div>

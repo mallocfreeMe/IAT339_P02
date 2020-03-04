@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- head of the page -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,15 +35,15 @@
             </a>
 
             <a href="shoppingCart.html">
-                <!-- <img src="img/icon/Icon - Account - Filled.png" id="signIn_icon"> -->
                 <img src="img/icon/cart.png" id="cart_icon">
                 Cart
             </a>
 
-            <!-- hamburger menu -->
+            <!-- Mobile menu icon -->
             <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
         </nav>
 
+        <!-- Mobile navigation bar -->
         <nav class="mobile-main-nav" id="mobile_menu">
             <ul>
                 <li><a href="#">Shop</a></li>
@@ -53,10 +55,7 @@
 
     </header>
 
-    <script>
-
-    </script>
-
+    <!-- Start of the payment content -->
     <div class="grid set-bg-margin payment-page-area">
         <!-- side blank area -->
         <div class="grid-col-1of4_noHeight"></div>
@@ -104,6 +103,7 @@
                 </div>
             </section>
 
+            <!-- Customer information -->
             <section class="information-area">
 
                 <section class="payment">
@@ -123,46 +123,48 @@
 
                         <div class="expire-data">
                             <label>Expires on</label>
-                            <div class="expire-line">
-                                <!-- <div class="expire-left"> -->
-                                    <input class="expire-left" type="text" list="expire-month" placeholder="February">
-                                    <datalist id="expire-month">
-                                        <option value="January"></option>
-                                        <option value="February"></option>
-                                        <option value="March"></option>
-                                        <option value="April"></option>
-                                        <option value="may"></option>
-                                        <option value="June"></option>
-                                        <option value="July"></option>
-                                        <option value="August"></option>
-                                        <option value="September"></option>
-                                        <option value="October"></option>
-                                        <option value="November"></option>
-                                        <option value="December"></option>
-                                    </datalist>
-                                <!-- </div> -->
-                                <!-- <div class="expire-right"> -->
-                                    <input class="expire-right" type="text" list="expire-year" placeholder="2020">
-                                    <datalist id="expire-year">
-                                        <option value="2005"></option>
-                                        <option value="2006"></option>
-                                        <option value="2007"></option>
-                                        <option value="2008"></option>
-                                        <option value="2009"></option>
-                                        <option value="2010"></option>
-                                        <option value="2011"></option>
-                                        <option value="2012"></option>
-                                        <option value="2013"></option>
-                                        <option value="2014"></option>
-                                        <option value="2015"></option>
-                                        <option value="2016"></option>
-                                        <option value="2017"></option>
-                                        <option value="2018"></option>
-                                        <option value="2019"></option>
-                                        <option value="2020"></option>
-                                        <option value="2021"></option>
-                                        <option value="2022"></option>
-                                    </datalist>
+                            <div class="expire-line grid">
+                                <!-- expire line left side -->
+                                <input class="expire-left grid-col-1of2_noHeight" type="text" list="expire-month"
+                                    placeholder="February">
+                                <datalist id="expire-month">
+                                    <option value="January"></option>
+                                    <option value="February"></option>
+                                    <option value="March"></option>
+                                    <option value="April"></option>
+                                    <option value="may"></option>
+                                    <option value="June"></option>
+                                    <option value="July"></option>
+                                    <option value="August"></option>
+                                    <option value="September"></option>
+                                    <option value="October"></option>
+                                    <option value="November"></option>
+                                    <option value="December"></option>
+                                </datalist>
+                                
+                                <!-- expire line right side -->
+                                <input class="expire-right grid-col-1of2_noHeight" type="text" list="expire-year"
+                                    placeholder="2020">
+                                <datalist id="expire-year">
+                                    <option value="2005"></option>
+                                    <option value="2006"></option>
+                                    <option value="2007"></option>
+                                    <option value="2008"></option>
+                                    <option value="2009"></option>
+                                    <option value="2010"></option>
+                                    <option value="2011"></option>
+                                    <option value="2012"></option>
+                                    <option value="2013"></option>
+                                    <option value="2014"></option>
+                                    <option value="2015"></option>
+                                    <option value="2016"></option>
+                                    <option value="2017"></option>
+                                    <option value="2018"></option>
+                                    <option value="2019"></option>
+                                    <option value="2020"></option>
+                                    <option value="2021"></option>
+                                    <option value="2022"></option>
+                                </datalist>
                                 <!-- </div> -->
                             </div>
                         </div>
@@ -188,6 +190,8 @@
 
         <div class="grid-col-1of4_noHeight"></div>
     </div>
+    <!-- End of the payment content -->
+
     <!-- <div class="payment-content">
 
                     <section class="credit-card-area">
