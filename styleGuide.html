@@ -26,18 +26,18 @@
             <a href="deals.html">Deals</a>
 
             <a href="signIn.html">
-                <img src="img/icon/account.png" id="signIn_icon">
+                <img src="img/icon/account.png" id="signIn_icon" alt="account icon">
                 Sign In
             </a>
 
             <a href="shoppingCart.html">
                 <!-- <img src="img/icon/Icon - Account - Filled.png" id="signIn_icon"> -->
-                <img src="img/icon/cart.png" id="cart_icon">
+                <img src="img/icon/cart.png" id="cart_icon" alt="cart icon">
                 Cart
             </a>
 
             <!-- hamburger menu -->
-            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
+            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png" alt="mobile menu icon">
         </nav>
 
         <nav class="mobile-main-nav" id="mobile_menu">
@@ -48,23 +48,22 @@
                 <li class="mobile-top"><a href="shoppingCart.html">Cart</a></li>
 
                 <!-- Interactive Elements section -->
-                <h2 class="mobile-bottom-heading">Interactive Elements</h2>
+                <li class="mobile-bottom-heading">Interactive Elements</li>
                 <li class="mobile-bottom"><a href="#in-text-section">In-text link</a></li>
                 <li class="mobile-bottom"><a href="#nav-button-section">The navigation button</a></li>
                 <li class="mobile-bottom"><a href="#submit-reset-button-section">Sumbit button</a></li>
-                <li class="mobile-bottom"><a href="#submit-reset-button-section">Reset button</a></li>
                 <li class="mobile-bottom"><a href="#text-input-section">Text input field</a></li>
                 <li class="mobile-bottom"><a href="#label-section">Label</a></li>
 
                 <!--Text Elements section -->
-                <h2 class="mobile-bottom-heading">Text Elements</h2>
+                <li class="mobile-bottom-heading">Text Elements</li>
                 <li class="mobile-bottom"><a href="#heading-one-section">Heading</a></li>
                 <li class="mobile-bottom"><a href="#paragraph-section">Paragraph</a></li>
                 <li class="mobile-bottom"><a href="#bulleted-list-section">Bulleted list</a></li>
                 <li class="mobile-bottom"><a href="#number-list-section">Numbered list</a></li>
 
                 <!-- Combined Elements section -->
-                <h2 class="mobile-bottom-heading">Combined Elements</h2>
+                <li class="mobile-bottom-heading">Combined Elements</li>
                 <li class="mobile-bottom"><a href="#main-nav-section">Main Navigation</a></li>
                 <li class="mobile-bottom"><a href="#product-listing-section">Product listing</a></li>
                 <li class="mobile-bottom"><a href="#grid-structure-section">Grid structure</a></li>
@@ -83,7 +82,6 @@
                 <li><a href="#in-text-section">In-text link</a></li>
                 <li><a href="#nav-button-section">The navigation button</a></li>
                 <li><a href="#submit-reset-button-section">Sumbit button</a></li>
-                <li><a href="#submit-reset-button-section">Reset button</a></li>
                 <li><a href="#text-input-section">Text input field</a></li>
                 <li><a href="#label-section">Label</a></li>
             </ul>
@@ -111,9 +109,9 @@
             </ul>
 
             <!-- A div to divide the area between two parts of sort -->
-            <div class="dividing-area"></div>
+            <!-- <div class="dividing-area"></div> -->
 
-            <h3><a class="side-sitemap" href="#site-map-section">Site Map</a></h3>
+            <!-- <h3><a class="side-sitemap" href="#site-map-section">Site Map</a></h3> -->
         </div>
 
 
@@ -163,7 +161,7 @@
 
                 <!-- A submit and reset button for forms -->
                 <section id="submit-reset-button-section">
-                    <h2>Submit/Reset Buttons</h2>
+                    <h2>Submit Buttons</h2>
 
                     <h3>CSS selector:</h3>
                     <p>.button-submit-reset</p>
@@ -275,13 +273,13 @@
                     <h3>Sample code:</h3>
                     <div class="codearea">
                         <pre>&lt;<span class="tagName">form</span>&gt;  
-    &lt;<span class="tagName">label</span>&gt;Name on credit card</span>&lt;<span class="tagName">label</span>&gt;
+    &lt;<span class="tagName">label</span>&gt;Name on credit card&lt;<span class="tagName">label</span>&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span>" <span class="tagClass">name</span>="<span class="tagValue">credit-name</span>&gt;
-    &lt;<span class="tagName">label</span>&gt;Credit card number</span>&lt;<span class="tagName">label</span>&gt;
+    &lt;<span class="tagName">label</span>&gt;Credit card number&lt;<span class="tagName">label</span>&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span>" <span class="tagClass">name</span>="<span class="tagValue">credit-number</span>&gt;
-    &lt;<span class="tagName">label</span>&gt;Expires on</span>&lt;<span class="tagName">label</span>&gt;
+    &lt;<span class="tagName">label</span>&gt;Expires on&lt;<span class="tagName">label</span>&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span>" <span class="tagClass">name</span>="<span class="tagValue">expires-on</span>&gt;
-    &lt;<span class="tagName">label</span>&gt;CVC</span>&lt;<span class="tagName">label</span>&gt;
+    &lt;<span class="tagName">label</span>&gt;CVC&lt;<span class="tagName">label</span>&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">text</span>" <span class="tagClass">name</span>="<span class="tagValue">cvc</span>&gt;
     &lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">submit</span>" <span class="tagClass">name</span>="<span class="tagValue">pay-button</span>&gt;
 &lt;<span class="tagName">form</span>&gt;</pre>
@@ -312,7 +310,7 @@
                         </div>
                         <label>CVC</label>
                         <input type="text" name="cvc">
-                        <input type="submit" placeholder="Pay Now">
+                        <input type="submit">
                     </form>
 
 
@@ -919,34 +917,6 @@
                         <pre>&lt;<span class="tagName">ol</span>&gt;
     &lt;<span class="tagName">li</span>&gt;&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">color</span>" <span class="tagClass">value</span>="<span class="tagValue">#D6D6D6</span>" <span class="tagClass">class</span>="<span class="tagValue">product-list</span>"&gt;&lt;<span class="tagName">/li</span>&gt;
 &lt;<span class="tagName">/ol</span>&gt;</pre>
-
-                        <!-- <pre>
-&lt;div class="individual_product"&gt;
-    &lt;img src="img/product/product1-1.jpg" alt="product 1" class="product1_link"&gt;
-                                <div class="container">
-                                    <p class="product1_link">ASUS Vivobook Pro Notebook 15.6'' FHD
-                                        Intel
-                                        Core i5-8300H GTX 1650</p>
-
-                                    <div class="price_section">
-                                        <del>$1999.99</del>
-                                        <h2>#999.99</h2>
-                                        <p>Save $250.00</p>
-                                    </div>
-
-                                    <form>
-                                        <input type="checkbox" value="productOne" id="checkbox-1">
-                                        <label> Compare Product</label><br>
-                                    </form>
-
-                                    <div class="inStock_section">
-                                        <img src="img/icon/yes.png">In Stock
-                                    </div>
-
-                                    <button class="cart_button">Add to Cart</button>
-                                </div>
-                            </div>
-                        </pre> -->
                     </div>
 
                     <h3>Rendered element:</h3>
@@ -975,7 +945,7 @@
                                     </form>
 
                                     <div class="inStock_section">
-                                        <img src="img/icon/yes.png">In Stock
+                                        <img src="img/icon/yes.png" alt="in stock icon">In Stock
                                     </div>
 
                                     <button class="cart_button">Add to Cart</button>
@@ -1004,7 +974,7 @@
                                     </form>
 
                                     <div class="inStock_section">
-                                        <img src="img/icon/yes.png">In Stock
+                                        <img src="img/icon/yes.png" alt="in stock icon">In Stock
                                     </div>
 
                                     <button>Add to Cart</button>
@@ -1033,7 +1003,7 @@
                                     </form>
 
                                     <div class="inStock_section">
-                                        <img src="img/icon/no.png">Not In Stock
+                                        <img src="img/icon/no.png" alt="not in stock icon">Not In Stock
                                     </div>
 
                                     <button>Add to Cart</button>
@@ -1104,12 +1074,12 @@
             <!-- COMBINED ELEMENTS SECTION END -->
 
             <!-- Site Map -->
-            <section id="site-map-section">
+            <!-- <section id="site-map-section">
                 <h2>Site Map</h2>
                 <figure class="site-map-area">
                     <img src="img/sitemap.png" alt="Site Map">
                 </figure>
-            </section>
+            </section> -->
         </div>
 
     </div>
