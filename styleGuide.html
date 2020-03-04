@@ -96,7 +96,8 @@
                 <li><a href="#heading-one-section">Heading</a></li>
                 <li><a href="#paragraph-section">Paragraph</a></li>
                 <li><a href="#bulleted-list-section">Bulleted list</a></li>
-                <li><a href="#number-list-section">Numbered list</a></li>
+                <li><a href="#numbered-list-section">Numbered list</a></li>
+                <li><a href="#color-parette-section">Color Parette</a></li>
             </ul>
 
             <!-- A div to divide the area between two parts of sort -->
@@ -110,9 +111,9 @@
             </ul>
 
             <!-- A div to divide the area between two parts of sort -->
-            <!-- <div class="dividing-area"></div>
+            <div class="dividing-area"></div>
 
-            <h3><a href="#site-map-section">Site Map</a></h3> -->
+            <h3><a class="side-sitemap" href="#site-map-section">Site Map</a></h3>
         </div>
 
 
@@ -918,13 +919,131 @@
                         <pre>&lt;<span class="tagName">ol</span>&gt;
     &lt;<span class="tagName">li</span>&gt;&lt;<span class="tagName">input</span> <span class="tagClass">type</span>="<span class="tagValue">color</span>" <span class="tagClass">value</span>="<span class="tagValue">#D6D6D6</span>" <span class="tagClass">class</span>="<span class="tagValue">product-list</span>"&gt;&lt;<span class="tagName">/li</span>&gt;
 &lt;<span class="tagName">/ol</span>&gt;</pre>
+
+                        <!-- <pre>
+&lt;div class="individual_product"&gt;
+    &lt;img src="img/product/product1-1.jpg" alt="product 1" class="product1_link"&gt;
+                                <div class="container">
+                                    <p class="product1_link">ASUS Vivobook Pro Notebook 15.6'' FHD
+                                        Intel
+                                        Core i5-8300H GTX 1650</p>
+
+                                    <div class="price_section">
+                                        <del>$1999.99</del>
+                                        <h2>#999.99</h2>
+                                        <p>Save $250.00</p>
+                                    </div>
+
+                                    <form>
+                                        <input type="checkbox" value="productOne" id="checkbox-1">
+                                        <label> Compare Product</label><br>
+                                    </form>
+
+                                    <div class="inStock_section">
+                                        <img src="img/icon/yes.png">In Stock
+                                    </div>
+
+                                    <button class="cart_button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </pre> -->
                     </div>
 
                     <h3>Rendered element:</h3>
-                    <ol>
-                        <li><input type="color" value="#D6D6D6" class="product-list"><input type="color" value="#D6D6D6"
-                                class="product-list"><input type="color" value="#D6D6D6" class="product-list"></li>
-                    </ol>
+                    <!-- start of the sample of product listing -->
+
+                    <div class="grid">
+                        <!-- Sample product 1 -->
+                        <div class="grid-col-1of3_noHeight">
+                            <div class="individual_product">
+
+                                <img src="img/product/product1-1.jpg" alt="product 1" class="product1_link">
+                                <div class="container">
+                                    <p class="product1_link">ASUS Vivobook Pro Notebook 15.6'' FHD
+                                        Intel
+                                        Core i5-8300H GTX 1650</p>
+
+                                    <div class="price_section">
+                                        <del>$1999.99</del>
+                                        <h2>#999.99</h2>
+                                        <p>Save $250.00</p>
+                                    </div>
+
+                                    <form>
+                                        <input type="checkbox" value="productOne" id="checkbox-1">
+                                        <label> Compare Product</label><br>
+                                    </form>
+
+                                    <div class="inStock_section">
+                                        <img src="img/icon/yes.png">In Stock
+                                    </div>
+
+                                    <button class="cart_button">Add to Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Sample product 2 -->
+                        <div class="grid-col-1of3_noHeight">
+                            <div class="individual_product">
+                                <img src="img/product/product2-1.jpg" alt="product 2" class="product2_link">
+                                <div class="container">
+                                    <p class="product2_link">MSI Gaming Notebook 15.6 i5-9300H, GTX
+                                        1660Ti, 8GB DDR4</p>
+
+                                    <div class="price_section">
+                                        <del>$1999.99</del>
+                                        <h2>#999.99</h2>
+                                        <p>Save $250.00</p>
+                                    </div>
+
+                                    <form>
+                                        <input type="checkbox" value="productOne" id="checkbox-4">
+                                        <label> Compare Product</label><br>
+                                    </form>
+
+                                    <div class="inStock_section">
+                                        <img src="img/icon/yes.png">In Stock
+                                    </div>
+
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Sample product 3 -->
+                        <div class="grid-col-1of3_noHeight">
+                            <div class="individual_product">
+                                <img src="img/product/product3-1.jpg" alt="product 3" class="product3_link">
+                                <div class="container">
+                                    <p>Dell Inspiron I3567-5949BLK-PUS Notebook
+                                        15.6", 5GB DDR4</p>
+
+                                    <div class="price_section">
+                                        <del>$1999.99</del>
+                                        <h2>#999.99</h2>
+                                        <p>Save $250.00</p>
+                                    </div>
+
+                                    <form>
+                                        <input type="checkbox" value="productOne" id="checkbox-7">
+                                        <label> Compare Product</label><br>
+                                    </form>
+
+                                    <div class="inStock_section">
+                                        <img src="img/icon/no.png">Not In Stock
+                                    </div>
+
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- end of the sample of product listing -->
                 </section>
 
                 <!-- Footer section -->
@@ -985,12 +1104,12 @@
             <!-- COMBINED ELEMENTS SECTION END -->
 
             <!-- Site Map -->
-            <!-- <section id="site-map-section">
+            <section id="site-map-section">
                 <h2>Site Map</h2>
                 <figure class="site-map-area">
                     <img src="img/sitemap.png" alt="Site Map">
                 </figure>
-            </section> -->
+            </section>
         </div>
 
     </div>
