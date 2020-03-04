@@ -640,6 +640,19 @@ footer a {
   display: none;
 }
 
+/* Site map */
+.site-map-area {
+  width: 100vh;
+  height: auto;
+}
+
+.site-map-area img {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+
 /* when the size of browser becomes smaller */
 
 @media (max-width: 80em) {

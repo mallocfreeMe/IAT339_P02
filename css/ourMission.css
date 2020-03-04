@@ -2,11 +2,10 @@
 
 .main-nav {
     position: static;
-    /* margin-bottom: 3em; */
 }
 
 body {
-    background-color: rgb(245, 245, 250);
+    background-color: rgb(245, 245, 245);
     font-weight: lighter;
 }
 
@@ -33,7 +32,7 @@ h3, p {
 }
 
 
-/* ------------- Title & About area -------------- */
+/* Title & About area */
 .title-about-area {
     background-color: white;
 }
@@ -71,7 +70,7 @@ h3, p {
 
 
 
-/* ------------- Leader area -------------- */
+/* Leader area */
 .leadership-area {
     background-color: white;
     margin-top: 2em;
@@ -149,7 +148,7 @@ h3, p {
 }
 
 
-/* ------------- Team member area -------------- */
+/* Team member area */
 .team-area {
     background-color: white;
     margin-top: 2em;
@@ -217,7 +216,7 @@ h3, p {
 }
 
 
-/* ------------- Activity area -------------- */
+/* Activity area */
 .activity-area {
     background-color: white;
     margin-top: 2em;
@@ -279,18 +278,22 @@ footer h3{
 
 @media (max-width: 30em) {
     .our-mission-area {
-        font-size: 50%;
+        font-size: 70%;
     }
 
-    /* .our-mission-area {
-        margin-left: 2em;
-        margin-right: 2em;
-    } */
+    .our-mission-area {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-    /* .about-content {
+    .about-content {
         padding-left: 2em;
         padding-right: 2em;
-    } */
+    }
+
+    .activity-area {
+        margin-bottom: 0;
+    }
 
     .leadership-item .leader-1 {
         margin-left: -20px;

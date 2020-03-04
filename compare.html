@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Head of page -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +16,6 @@
 </head>
 
 <body>
-
     <header>
         <!-- nav for external navigation -->
         <nav class="main-nav">
@@ -33,12 +34,11 @@
             </a>
 
             <a href="shoppingCart.html">
-                <!-- <img src="img/icon/Icon - Account - Filled.png" id="signIn_icon"> -->
                 <img src="img/icon/cart.png" id="cart_icon">
                 Cart
             </a>
 
-            <!-- hamburger menu -->
+            <!-- Mobile menu icon -->
             <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
         </nav>
 
@@ -53,12 +53,15 @@
 
     </header>
 
+    <!-- Start of copare page content -->
     <div class="compare-area">
-
+        <!-- Link go back to the previous page -->
         <a href="index.html">Back to previous page</a>
 
+        <!-- Title of the page -->
         <h2>Compare Products</h2>
 
+        <!-- Product display grid -->
         <div class="product-container">
             <div class="compare-image product-column-1 align-center">
                 <img src="img/product/product1-1.jpg">
@@ -69,7 +72,7 @@
                 </p>
             </div>
             <div class="compare-price product-column-1">
-                <p>$129.00</p>
+                $129.00
             </div>
             <div class="compare-button product-column-1">
                 <button onclick="addToCart()">Add to Cart</button>
@@ -84,192 +87,163 @@
                 </p>
             </div>
             <div class="compare-price product-column-2">
-                <p>$999.00</p>
+                $999.00
             </div>
             <div class="compare-button product-column-2">
                 <button onclick="addToCart()">Add to Cart</button>
             </div>
         </div>
+        <!-- End of product display grid -->
 
+        <!-- Compare table display grid -->
         <div class="compare-container compare-table">
 
             <!-- ------- Compare Name ------- -->
             <div class="compare-model column-1">
-                <p>Model</p>
+                Model
             </div>
             <div class="compare-weight column-1">
-                <p>Weight</p>
+                Weight
             </div>
             <div class="compare-dimensions column-1">
-                <p>Dimensions</p>
+                Dimensions
             </div>
             <div class="compare-size column-1">
-                <p>Size</p>
+                Size
             </div>
             <div class="compare-usb column-1">
-                <p>USB</p>
+                USB
             </div>
             <div class="compare-system column-1">
-                <p>System</p>
+                System
             </div>
             <div class="compare-processor column-1">
-                <p>Processor</p>
+                Processor
             </div>
             <div class="compare-memory column-1">
-                <p>Memory</p>
+                Memory
             </div>
             <div class="compare-wireless column-1">
-                <p>Wireless</p>
+                Wireless
             </div>
             <div class="compare-bluetooth column-1">
-                <p>Bluetooth</p>
+                Bluetooth
             </div>
             <div class="compare-audio column-1">
-                <p>Audio</p>
+                Audio
             </div>
             <div class="compare-battery column-1">
-                <p>Battery</p>
+                Battery
             </div>
             <div class="compare-color column-1">
-                <p>Color</p>
+                Color
             </div>
             <div class="compare-storage column-1">
-                <p>Storage</p>
+                Storage
             </div>
             <div class="compare-support column-1">
-                <p>Card Support</p>
+                Card Support
             </div>
 
             <!-- ------- item 1 ------- -->
-            <!-- <div class="compare-image column-2 align-center">
-                <img src="img/product/product1-1.jpg">
-            </div>
-            <div class="compare-subtitle column-2">
-                <p>iCAN MID1016-MK Tablet | 10.1" (800x1280) IPS Panel, MT8167B ARM Cortex-A35 1.3Ghz, 2GB RAM, 64GB ROM
-                    | IMG PowerVR GE8300, 0.3MP FF, 2.0MP FF, BT4.1, Android 9.0
-                </p>
-            </div>
-            <div class="compare-price column-2">
-                <p>$129.00</p>
-            </div>
-            <div class="compare-button column-2">
-                <button>ADD TO CART</button>
-            </div> -->
             <div class="compare-model column-2">
-                <p>MID1016-MK</p>
+                MID1016-MK
             </div>
             <div class="compare-weight column-2">
-                <p>0.48KG</p>
+                0.48KG
             </div>
             <div class="compare-dimensions column-2">
-                <p>294*182*10.8mm</p>
+                294*182*10.8mm
             </div>
             <div class="compare-size column-2">
-                <p>10.1"</p>
+                10.1"
             </div>
             <div class="compare-usb column-2">
-                <p>USB(5V/2A) Micro USB</p>
+                USB(5V/2A) Micro USB
             </div>
             <div class="compare-system column-2">
-                <p>Android 9.0</p>
+                Android 9.0
             </div>
             <div class="compare-processor column-2">
-                <p>MT8167B ARM Cortex-A35 @ 1.3GHz</p>
+                MT8167B ARM Cortex-A35 @ 1.3GHz
             </div>
             <div class="compare-memory column-2">
-                <p>2GB</p>
+                2GB
             </div>
             <div class="compare-wireless column-2">
-                <p>
-                    wifi b/g/n</p>
+                wifi b/g/n
             </div>
             <div class="compare-bluetooth column-2">
-                <p>Yes</p>
+                Yes
             </div>
             <div class="compare-audio column-2">
-                <p>3.5mm standard headphone jack(CTIA)</p>
+                3.5mm standard headphone jack(CTIA)
             </div>
             <div class="compare-battery column-2">
-                <p>Lithium-ion polymer battery</p>
+                Lithium-ion polymer battery
             </div>
             <div class="compare-color column-2">
-                <p>Black</p>
+                Black
             </div>
             <div class="compare-storage column-2">
-                <p>64GB</p>
+                64GB
             </div>
             <div class="compare-support column-2">
-                <p>Up to 128G</p>
+                Up to 128G
             </div>
 
             <!-- ------- item 2 ------- -->
-            <!-- <div class="compare-image-2 align-center column-3">
-                <img src="img/product/product2-1.jpg">
-            </div>
-            <div class="compare-subtitle column-3">
-                <p>ASUS Vivobook Pro Notebook | 15.6'' FHD Intel Core i5-8300H | GTX 1650, 8GB DDR4, 512GB SSD | Windows
-                    10, K571GT-DH51-CA
-                </p>
-            </div>
-            <div class="compare-price column-3">
-                <p>$999.00</p>
-            </div>
-            <div class="compare-button column-3">
-                <button>ADD TO CART</button>
-            </div> -->
             <div class="compare-model column-3">
-                <p>K571GT-DH51-CA</p>
+                K571GT-DH51-CA
             </div>
             <div class="compare-weight column-3">
-                <p>N/A</p>
+                N/A
             </div>
             <div class="compare-dimensions column-3">
-                <p>N/A</p>
+                N/A
             </div>
             <div class="compare-size column-3">
-                <p>N/A</p>
+                N/A
             </div>
             <div class="compare-usb column-3">
-                <p>N/A</p>
+                N/A
             </div>
             <div class="compare-system column-3">
-                <p>Windows 10 Home</p>
+                Windows 10 Home
             </div>
             <div class="compare-processor column-3">
-                <p>N/A</p>
+                N/A
             </div>
             <div class="compare-memory column-3">
-                <p>N/A</p>
+                N/A
             </div>
             <div class="compare-wireless column-3">
-                <p>N/A</p>
+                N/A
             </div>
             <div class="compare-bluetooth column-3">
-                <p>N/A</p>
+                N/A
             </div>
             <div class="compare-audio column-3">
-                <p>N/A</p>
+                N/A
             </div>
             <div class="compare-battery column-3">
-                <p>42WHrs, 3S1P, 3-cell Li-ion</p>
+                42WHrs, 3S1P, 3-cell Li-ion
             </div>
             <div class="compare-color column-3">
-                <p>Star Black</p>
+                Star Black
             </div>
             <div class="compare-storage column-3">
-                <p>N/A</p>
+                N/A
             </div>
             <div class="compare-support column-3">
-                <p>N/A</p>
+                N/A
             </div>
         </div>
+        <!-- End of compare table display grid -->
 
-        <div>
+    </div><!-- End of copare page content -->
 
-        </div>
-
-    </div>
-
+    <!-- Footer -->
     <footer class="grid">
 
         <section class="footer-grid-col-1of5"></section>
@@ -309,6 +283,7 @@
         <section class="footer-grid-col-1of5"></section>
     </footer>
 
+    <!-- JavaScript Area -->
     <script>
         // add to cart function, shows alert message
         function addToCart() {
@@ -316,6 +291,7 @@
         }
     </script>
 
+    <!--  -->
     <script>
         $(document).ready(function () {
             $("#mobile_menu_button").click(function () {

@@ -58,7 +58,8 @@
 
         <!-- Sign up image -->
         <div class="grid-col-2of5_noHeight image-area">
-            <img src="img/sign-in.png" alt="Sign up image">
+            <!-- https://undraw.co/search?fbclid=IwAR1DTFePGOgrrh0gSvg3VYmECRrLp9_XSS8JXWkcitfxP2M3h7TEVwxgDBo -->
+            <img src="img/sign-up-modified.png" alt="Sign up image">
         </div>
 
         <div class="grid-col-3of5_noHeight sign-up-block">
@@ -70,16 +71,11 @@
 
             <!-- The Start of flex row 3/5 -->
             <div class="grid-row-3of5">
-                <!-- Sign In form -->
+                <!-- Sign Up form -->
                 <div id="signUpForm" class="sign-up">
                     <h2>Sign up for Laptophub</h2>
 
                     <h3>Enter your details below</h3>
-            <script>
-                // $(document).ready(function () {
-                //     $('#signInVideo').prop('muted', true).play()
-                // });
-            </script>
 
                     <div class="sign-up-content">
 
@@ -93,70 +89,12 @@
 
                         <!-- Button for sign up -->
                         <div class="sign-up-button">
-                            <button onclick="myFunction()">Sign up</button>
+                            <button onclick="jumpToSignIn()">Sign up</button>
                         </div>
                     </div>
-                </div><!-- end of Sign In form -->
-        <div class="grid-col-3of5_noHeight sign-up-block">
-            <!-- <div class="grid-item-up"> -->
-            <div class="register-link grid-row-1of5">
-                Already have an account?
-                <button id="buttonSignIn" onclick="jumpToSignIn()">Sign in</button>
-                <!-- <div id="signUpForm" class="sign-up-form">
-                        <div>
-                            <input type="text" name="username" placeholder="Enter your username"></div>
-                        <div>
-                            <input type="password" name="password" placeholder="Enter your password">
-                        </div>
-                        <div>
-                            <button onclick="clickSignUp()">Sign up</button>
-                        </div>
-                    </div> -->
-            </div>
-            <!-- </div> -->
+                </div><!-- end of Sign Up form -->
 
-            <script>
-                function jumpToSignIn() {
-                    window.location = "signIn.html";
-                }
-            </script>
-
-            <!-- <div class="grid-item-middle"> -->
-            <div class="grid-row-3of5">
-                <!-- Sign In form -->
-                <div id="signUpForm" class="sign-up">
-                    <h2>Sign up for Laptophub</h2>
-
-                    <h3>Enter your details below</h3>
-
-                    <section class="sign-up-content">
-
-                        <form class="sign-up-username">
-                            <input type="text" name="username" placeholder="Username">
-                            <input class="email-input" type="text" name="e-mail" placeholder="E-mail">
-                            <input type="password" name="password" placeholder="Password">
-                            <input type="password" name="comfirm-password" placeholder="Comform Password">
-                        </form>
-
-                        <div class="sign-up-button">
-                            <button onclick="myFunction()">Sign up</button>
-                        </div>
-
-                        <script>
-                            function myFunction() {
-                                window.location = "signIn.html";
-                            }
-                        </script>
-                    </section>
-                </div>
-            </div>
-            <!-- end of Sign In form -->
-            <!-- <div class="grid-item-bottom"></div> -->
-            <div class="grid-row-1of5"></div>
-        </div>
-
-
-            </div><!-- The Start of flex row 3/5 -->
+            </div><!-- The end of flex row 3/5 -->
             
             <div class="grid-row-1of5"></div>
         </div>
@@ -204,16 +142,12 @@
     </footer>
 
     <!-- JavaScript Area -->
+
+    <!-- Button link to sign in page -->
     <script>
         function jumpToSignIn() {
-            window.location = "SignIn.html";
+            window.location = "signIn.html";
         }
-    </script>
-
-    <script>
-    function myFunction() {
-        window.location = "signIn.html";
-    }
     </script>
 
     <script>

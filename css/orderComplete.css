@@ -1,3 +1,4 @@
+/* Styling for the orderComplete page */
 .main-nav {
   position: static;
   margin-bottom: 3em;
@@ -20,8 +21,10 @@
   color: black;
 }
 
+/* When mouse move to a tag, the color of a tag changes and it has underline */
 .order-content a:hover {
-  border-bottom: thin solid black;
+  border-bottom: thin solid #00C4AB;
+  color: #00C4AB;
 }
 
 

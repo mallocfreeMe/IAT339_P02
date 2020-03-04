@@ -2,7 +2,6 @@
 
 .main-nav {
     position: static;
-    /* margin-bottom: 3em; */
 }
 
 body {
@@ -27,8 +26,6 @@ p {
     margin-top: 2em;
     margin-bottom: 4em;
     background-color: white;
-    /* padding-left: 2em;
-    padding-right: 2em; */
 }
 
 .compare-area a {
@@ -44,10 +41,9 @@ p {
 }
 
 
-/* ------------------- compare table ------------------- */
+/* compare table */
 .compare-container {
     display: grid;
-    /* grid-template-rows: 20em 6em 6em repeat(16, 3em); */
     grid-template-rows: repeat(15, 3em);
     grid-template-columns: 2fr 5fr 5fr;
     align-items: center;
@@ -55,12 +51,12 @@ p {
 
 .product-container {
     display: grid;
-    grid-template-rows: 20em 6em 6em 6em;
+    grid-template-rows: 20em 9em 6em 6em;
     grid-template-columns: 1fr 1fr;
 }
 
 
-/* -------- Area for the column -------- */
+/* Area for the grid column */
 .column-1 {
     grid-column: 1 / span 1;
 }
@@ -82,7 +78,7 @@ p {
 }
 
 
-/* -------- Area for the row -------- */
+/* Area for the grid row */
 .compare-image {
     grid-row: 1 / span 1;
     width: 100%;
@@ -205,9 +201,8 @@ p {
     grid-row: 15 / span 1;
 }
 
-.compare-table p {
-    padding-top: 1em;
-    padding-bottom: 1em;
+.compare-table .column-1, .compare-table .column-2, .compare-table .column-3 {
+    padding: 1em 2em;
 }
 
 .compare-table div {
