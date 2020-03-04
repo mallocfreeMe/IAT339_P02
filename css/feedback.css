@@ -117,7 +117,7 @@
   padding-left: 0.5em;
   margin-bottom: 2em;
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   border: thin solid #959DA5;
   background-color: #F6F8FA;
 }
@@ -180,7 +180,7 @@ footer {
 
 
 /* For the responsive page */
-@media (max-width: 76em) {
+@media (max-width: 85em) {
   .feedback-area {
     font-size: 70%;
   }
@@ -190,7 +190,7 @@ footer {
   }
 }
 
-@media (max-width: 55em) {
+@media (max-width: 60em) {
   .feedback-area {
     font-size: 50%;
   }
@@ -239,6 +239,10 @@ footer {
     grid-template-rows: 10em 10em 35em;
     padding-left: 1em;
     padding-right: 1em;
+  }
+
+  .contact-message textarea {
+    height: 10vh;
   }
 
   .map-container .contact-map {
