@@ -6,11 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignIn</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/signIn.css" rel="stylesheet">
-    <link href="css/grids.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
@@ -20,7 +19,7 @@
         <!-- nav for external navigation -->
         <nav class="main-nav">
 
-            <a href="index.html" id="website_icon"><img src="img/icon/laptop.png" alt="icon"></a>
+            <a id="website_icon" href="index.html"><img src="img/icon/laptop.png" alt="icon"></a>
 
             <div class="search-bar">
                 <input type="text" placeholder="Search laptops here...">
@@ -45,16 +44,33 @@
         <!-- mobile navigation bar -->
         <nav class="mobile-main-nav" id="mobile_menu">
             <ul>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#">Cart</a></li>
+                <li class="mobile-top"><a href="shop.html">Shop</a></li>
+                <li class="mobile-top"><a href="deals.html">Deals</a></li>
+                <li class="mobile-top"><a href="signIn.html">Sign In</a></li>
+                <li class="mobile-top"><a href="shoppingCart.html">Cart</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- The start of sign in page content -->
     <div class="grid sign-in-page-area">
+<<<<<<< HEAD
+=======
+        <!-- side blank area -->
+        <!-- <div class="grid-col-1of5"></div> -->
+
+        <div class="grid-col-2of5_noHeight video-area">
+            <!-- https://www.pexels.com/video/a-woman-discussing-something-on-a-laptop-3256573/ -->
+            <video id="signInVideo" loop="true" autoplay="true">
+                <source src="video/sign-in-video copy.mp4" type="video/mp4" />
+            </video>
+
+            <script>
+                // $(document).ready(function () {
+                //     $('#signInVideo').prop('muted', true).play()
+                // });
+            </script>
+>>>>>>> master
 
         <!-- Sign in image - left side of the page -->
         <div class="grid-col-2of5_noHeight image-area">
@@ -98,36 +114,33 @@
         <section class="footer-grid-col-1of5"></section>
 
         <!-- Contact Us -->
-        <section class="footer-grid-col-1of5">
-            <h3>CONTACT US</h3>
-            <ul>
-                <li>++44 345 678 903</li>
-                <li><a href="mailto:someone@example.com">customService@.Laptophub.com</a></li>
-                <li>Find a store</li>
+        <section class="footer-grid-col-1of5" id="footer_top_section">
+            <h3 id="footer_top_heading">CONTACT US</h3>
+            <ul id="footer_top">
+                <li href="#">++44 345 678 903</li>
+                <li><a href="mailto:someone@example.com">customService@Laptophub.com</a></li>
+                <li><a href="feedback.html">Leave us feedback</a></li>
             </ul>
         </section>
 
         <!-- Services -->
-        <section class="footer-grid-col-1of5">
-            <h3>SERVICES</h3>
-            <ul>
-                <li>Returns</li>
-                <li>Odering & Payment</li>
-                <li>Shipping</li>
-                <li>FAQ</li>
+        <section class="footer-grid-col-1of5" id="footer_center_section">
+            <h3 id="footer_center_heading">SERVICES</h3>
+            <ul id="footer_center">
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Odering & Payment</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">FAQ</a></li>
             </ul>
         </section>
 
         <!-- About Us -->
-        <section class="footer-grid-col-1of5">
-            <h3>ABOUT US</h3>
-            <ul>
+        <section class="footer-grid-col-1of5" id="footer_bottom_section">
+            <h3 id="footer_bottom_heading">ABOUT US</h3>
+            <ul id="footer_bottom">
                 <li><a href="ourMission.html">Our Mission</a></li>
-                <li>Work With Us</li>
-                <li>Privacy Policy</li>
-                <li>Terms & Conditions</li>
                 <li><a href="styleGuide.html">Style Guide</a></li>
-                <li><a href="sitemap/Sitemap.html">Sitemap</a></li>
+                <li><a href="https://github.com/mallocfreeMe/IAT339_P02">Git Repo</a></li>
                 <li><a href="citation.html">Citation</a></li>
             </ul>
         </section>
@@ -135,6 +148,7 @@
         <section class="footer-grid-col-1of5"></section>
     </footer>
 
+<<<<<<< HEAD
     <!-- JavaScript Area -->
     <script>
         function clickSignUp() {
@@ -147,6 +161,23 @@
         }
     </script>
     
+=======
+    <script>
+        $(document).ready(function () {
+            $("#mobile_menu_button").click(function () {
+                $("#mobile_menu").show();
+                $(".main-nav").css("filter", "brightness(0.5)");
+            });
+
+            $("body").click(function (event) {
+                if (event.target.id != "mobile_menu_button") {
+                    $("#mobile_menu").hide();
+                    $(".main-nav").css("filter", "brightness(1)");
+                }
+            });
+        });
+    </script>
+>>>>>>> master
 </body>
 
 </html>

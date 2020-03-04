@@ -4,56 +4,149 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Citation Page</title>
+    <title>Style Guide</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <!-- nav for external navigation -->
-    <nav class="main-nav">
+    <header>
+        <!-- nav for external navigation -->
+        <nav class="main-nav">
 
-        <a href="index.html" id="website_icon"><img src="img/icon/laptop.png" alt="icon"></a>
+            <a id="website_icon" href="index.html"><img src="img/icon/laptop.png" alt="icon"></a>
 
-        <div class="search-bar">
-            <input type="text" placeholder="Search laptops here...">
+            <div class="search-bar">
+                <input type="text" placeholder="Search laptops here...">
+            </div>
+            <a href="shop.html">Shop</a>
+            <a href="deals.html">Deals</a>
+
+            <a href="signIn.html">
+                <img src="img/icon/account.png" id="signIn_icon">
+                Sign In
+            </a>
+
+            <a href="shoppingCart.html">
+                <!-- <img src="img/icon/Icon - Account - Filled.png" id="signIn_icon"> -->
+                <img src="img/icon/cart.png" id="cart_icon">
+                Cart
+            </a>
+
+            <!-- hamburger menu -->
+            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
+        </nav>
+
+        <nav class="mobile-main-nav" id="mobile_menu">
+            <ul>
+                <li class="mobile-top"><a href="shop.html">Shop</a></li>
+                <li class="mobile-top"><a href="deals.html">Deals</a></li>
+                <li class="mobile-top"><a href="signIn.html">Sign In</a></li>
+                <li class="mobile-top"><a href="shoppingCart.html">Cart</a></li>
+
+                <!-- Interactive Elements section -->
+                <h2 class="mobile-bottom-heading">Interactive Elements</h2>
+                <li class="mobile-bottom"><a href="#in-text-section">In-text link</a></li>
+                <li class="mobile-bottom"><a href="#nav-button-section">The navigation button</a></li>
+                <li class="mobile-bottom"><a href="#submit-reset-button-section">Sumbit button</a></li>
+                <li class="mobile-bottom"><a href="#submit-reset-button-section">Reset button</a></li>
+                <li class="mobile-bottom"><a href="#text-input-section">Text input field</a></li>
+                <li class="mobile-bottom"><a href="#label-section">Label</a></li>
+
+                <!--Text Elements section -->
+                <h2 class="mobile-bottom-heading">Text Elements</h2>
+                <li class="mobile-bottom"><a href="#heading-one-section">Heading</a></li>
+                <li class="mobile-bottom"><a href="#paragraph-section">Paragraph</a></li>
+                <li class="mobile-bottom"><a href="#bulleted-list-section">Bulleted list</a></li>
+                <li class="mobile-bottom"><a href="#number-list-section">Numbered list</a></li>
+
+                <!-- Combined Elements section -->
+                <h2 class="mobile-bottom-heading">Combined Elements</h2>
+                <li class="mobile-bottom"><a href="#main-nav-section">Main Navigation</a></li>
+                <li class="mobile-bottom"><a href="#product-listing-section">Product listing</a></li>
+                <li class="mobile-bottom"><a href="#grid-structure-section">Grid structure</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="gird">
+        <div class="gridc-col-1of3"></div>
+        <div class="grid-col-1of3">
+            <h1>Citations</h1>
+            <ul>
+                <li>https://github.com/mallocfreeMe/IAT339_P02</li>
+                <li>https://github.com/mallocfreeMe/IAT339_P02</li>
+                <li>https://github.com/mallocfreeMe/IAT339_P02</li>
+                <li>https://github.com/mallocfreeMe/IAT339_P02</li>
+                <li>https://github.com/mallocfreeMe/IAT339_P02</li>
+                <li>https://github.com/mallocfreeMe/IAT339_P02</li>
+                <li>https://github.com/mallocfreeMe/IAT339_P02</li>
+                <li>https://github.com/mallocfreeMe/IAT339_P02</li>
+            </ul>
         </div>
-        <a href="shop.html">Shop</a>
-        <a href="deals.html">Deals</a>
+        <div class="grid-col-1of3"></div>
+    </section>
 
-        <a href="signIn.html">
-            <img src="img/icon/account.png" id="signIn_icon">
-            Sign In
-        </a>
+    <!-- Footer -->
+    <footer class="grid">
 
-        <a href="shoppingCart.html">
-            <!-- <img src="img/icon/Icon - Account - Filled.png" id="signIn_icon"> -->
-            <img src="img/icon/cart.png" id="cart_icon">
-            Cart
-        </a>
+        <section class="footer-grid-col-1of5"></section>
+        <!-- Contact Us -->
+        <section class="footer-grid-col-1of5" id="footer_top_section">
+            <h3 id="footer_top_heading">CONTACT US</h3>
+            <ul id="footer_top">
+                <li href="#">++44 345 678 903</li>
+                <li><a href="mailto:someone@example.com">customService@Laptophub.com</a></li>
+                <li><a href="feedback.html">Leave us feedback</a></li>
+            </ul>
+        </section>
 
-        <!-- hamburger menu -->
-        <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
-    </nav>
+        <!-- Services -->
+        <section class="footer-grid-col-1of5" id="footer_center_section">
+            <h3 id="footer_center_heading">SERVICES</h3>
+            <ul id="footer_center">
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Odering & Payment</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </section>
 
-    <nav class="mobile-main-nav" id="mobile_menu">
-        <ul>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Deals</a></li>
-            <li><a href="#">Sign In</a></li>
-            <li><a href="#">Cart</a></li>
-        </ul>
-    </nav>
+        <!-- About Us -->
+        <section class="footer-grid-col-1of5" id="footer_bottom_section">
+            <h3 id="footer_bottom_heading">ABOUT US</h3>
+            <ul id="footer_bottom">
+                <li><a href="ourMission.html">Our Mission</a></li>
+                <li><a href="styleGuide.html">Style Guide</a></li>
+                <li><a href="https://github.com/mallocfreeMe/IAT339_P02">Git Repo</a></li>
+                <li><a href="citation.html">Citation</a></li>
+            </ul>
+        </section>
 
-    <h1>Citation</h1>
+        <section class="footer-grid-col-1of5"></section>
+    </footer>
 
-    <ul>
-        <li> Free UI design kits, icons, and plugins | Adobe XD resources. (2020). Retrieved 29 January 2020, from
-            <a
-                href="https://www.adobe.com/ca/products/xd/resources.html">https://www.adobe.com/ca/products/xd/resources.html</a>
-        </li>
-        <li>Material Design. (2020). Retrieved 29 January 2020, from <a
-                href="https://material.io/design/">https://material.io/design/</a></li>
-    </ul>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#mobile_menu_button").click(function () {
+                $("#mobile_menu").show();
+                $(".main-nav").css("filter", "brightness(0.5)");
+            });
+
+            $("body").click(function (event) {
+                if (event.target.id != "mobile_menu_button") {
+                    $("#mobile_menu").hide();
+                    $(".main-nav").css("filter", "brightness(1)");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

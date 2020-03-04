@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <link href="css/grids.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
@@ -18,7 +18,7 @@
         <!-- nav for external navigation -->
         <nav class="main-nav">
 
-            <a href="index.html" id="website_icon"><img src="img/icon/laptop.png" alt="icon"></a>
+            <a id="website_icon" href="index.html"><img src="img/icon/laptop.png" alt="icon"></a>
 
             <div class="search-bar">
                 <input type="text" placeholder="Search laptops here...">
@@ -41,13 +41,12 @@
             <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
         </nav>
 
-        <!-- mobile nav main -->
         <nav class="mobile-main-nav" id="mobile_menu">
             <ul>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="deals.html">Deals</a></li>
-                <li><a href="signIn.html">Sign In</a></li>
-                <li><a href="shoppingCart.html">Cart</a></li>
+                <li class="mobile-top"><a href="shop.html">Shop</a></li>
+                <li class="mobile-top"><a href="deals.html">Deals</a></li>
+                <li class="mobile-top"><a href="signIn.html">Sign In</a></li>
+                <li class="mobile-top"><a href="shoppingCart.html">Cart</a></li>
             </ul>
         </nav>
 
@@ -123,7 +122,8 @@ Ready for you best work ever.</p></pre>
                 <!-- Image link to the product page-->
                 <img src="img/product/product1-1.jpg" alt="product 1" onclick="goToProduct()" class="product1_link">
                 <div class="container">
-                    <p onclick="goToProduct()" class="product1_link">ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+                    <p onclick="goToProduct()" class="product1_link">ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core
+                        i5-8300H GTX 1650</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -156,7 +156,8 @@ Ready for you best work ever.</p></pre>
                 <img src="img/product/product2-1.jpg" alt="product 2" onclick="goToProduct()" class="product2_link">
 
                 <div class="container">
-                    <p onclick="goToProduct()" class="product2_link">MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti, 8GB DDR4</p>
+                    <p onclick="goToProduct()" class="product2_link">MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti,
+                        8GB DDR4</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -189,7 +190,8 @@ Ready for you best work ever.</p></pre>
                 <img src="img/product/product3-1.jpg" alt="product 3" onclick="goToProduct()" class="product3_link">
 
                 <div class="container">
-                    <p onclick="goToProduct()" class="product3_link">Dell Inspiron I3567-5949BLK-PUS Notebook 15.6", 5GB DDR4</p>
+                    <p onclick="goToProduct()" class="product3_link">Dell Inspiron I3567-5949BLK-PUS Notebook 15.6", 5GB
+                        DDR4</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -229,7 +231,8 @@ Ready for you best work ever.</p></pre>
 
                 <img src="img/product/product1-1.jpg" alt="product 1" onclick="goToProduct()" class="product1_link">
                 <div class="container">
-                    <p onclick="goToProduct()" class="product1_link">ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core i5-8300H GTX 1650</p>
+                    <p onclick="goToProduct()" class="product1_link">ASUS Vivobook Pro Notebook 15.6'' FHD Intel Core
+                        i5-8300H GTX 1650</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -261,7 +264,8 @@ Ready for you best work ever.</p></pre>
 
                 <img src="img/product/product2-1.jpg" alt="product 2" onclick="goToProduct()" class="product2_link">
                 <div class="container">
-                    <p onclick="goToProduct()" class="product2_link">MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti, 8GB DDR4</p>
+                    <p onclick="goToProduct()" class="product2_link">MSI Gaming Notebook 15.6'' i5-9300H, GTX 1660Ti,
+                        8GB DDR4</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -293,7 +297,8 @@ Ready for you best work ever.</p></pre>
 
                 <img src="img/product/product3-1.jpg" alt="product 3" onclick="goToProduct()" class="product3_link">
                 <div class="container">
-                    <p onclick="goToProduct()" class="product3_link">Dell Inspiron I3567-5949BLK-PUS Notebook 15.6", 5GB DDR4</p>
+                    <p onclick="goToProduct()" class="product3_link">Dell Inspiron I3567-5949BLK-PUS Notebook 15.6", 5GB
+                        DDR4</p>
 
                     <div class="price_section">
                         <del>$1999.99</del>
@@ -319,45 +324,43 @@ Ready for you best work ever.</p></pre>
 
     </div>
 
-    <!-- Footer -->
     <footer class="grid">
 
         <section class="footer-grid-col-1of5"></section>
 
         <!-- Contact Us -->
-        <section class="footer-grid-col-1of5">
-            <h3>CONTACT US</h3>
-            <ul>
-                <li>++44 345 678 903</li>
-                <li><a href="mailto:someone@example.com">customService@.Laptophub.com</a></li>
-                <li><a href="feedback.html">Leave a feedback</a></li>
+        <section class="footer-grid-col-1of5" id="footer_top_section">
+            <h3 id="footer_top_heading">CONTACT US</h3>
+            <ul id="footer_top">
+                <li href="#">++44 345 678 903</li>
+                <li><a href="mailto:someone@example.com">customService@Laptophub.com</a></li>
+                <li><a href="feedback.html">Leave us feedback</a></li>
             </ul>
         </section>
 
         <!-- Services -->
-        <section class="footer-grid-col-1of5">
-            <h3>SERVICES</h3>
-            <ul>
-                <li>Returns</li>
-                <li>Odering & Payment</li>
-                <li>Shipping</li>
-                <li>FAQ</li>
+        <section class="footer-grid-col-1of5" id="footer_center_section">
+            <h3 id="footer_center_heading">SERVICES</h3>
+            <ul id="footer_center">
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Odering & Payment</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">FAQ</a></li>
             </ul>
         </section>
 
         <!-- About Us -->
-        <section class="footer-grid-col-1of5">
-            <h3>ABOUT US</h3>
-            <ul>
+        <section class="footer-grid-col-1of5" id="footer_bottom_section">
+            <h3 id="footer_bottom_heading">ABOUT US</h3>
+            <ul id="footer_bottom">
                 <li><a href="ourMission.html">Our Mission</a></li>
                 <li><a href="styleGuide.html">Style Guide</a></li>
-                <li><a href="sitemap/Sitemap.html">Sitemap</a></li>
+                <li><a href="https://github.com/mallocfreeMe/IAT339_P02">Git Repo</a></li>
                 <li><a href="citation.html">Citation</a></li>
             </ul>
         </section>
 
         <section class="footer-grid-col-1of5"></section>
-
     </footer>
 
 
@@ -414,11 +417,13 @@ Ready for you best work ever.</p></pre>
 
             $("#mobile_menu_button").click(function () {
                 $("#mobile_menu").show();
+                $(".main-nav").css("filter", "brightness(0.5)");
             });
 
             $("body").click(function (event) {
                 if (event.target.id != "mobile_menu_button") {
                     $("#mobile_menu").hide();
+                    $(".main-nav").css("filter", "brightness(1)");
                 }
             });
 
