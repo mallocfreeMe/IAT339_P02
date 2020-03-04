@@ -431,19 +431,13 @@ Ready for you best work ever.</p></pre>
                 if (count > 1) {
                     count--;
                     let image_url = "img/event/event" + count + ".jpg";
-                    if($(window).width() / parseFloat($("body").css("font-size")) <  37.25) {
-                        $(".slideShow").css("background-image", "url(" +  mobile_backgroundImage_one + ")");
-                    } else {
-                        $(".slideShow").css("background-image", "url(" + image_url + ")");
-                    }
+                    $(".slideShow").css("background-image", "url(" + image_url + ")");
+
                 } else {
                     count = 3;
                     let image_url = "img/event/event" + count + ".jpg";
-                    if($(window).width() / parseFloat($("body").css("font-size")) <  37.25) {
-                        $(".slideShow").css("background-image", "url(" +  mobile_backgroundImage_three + ")");
-                    } else {
-                        $(".slideShow").css("background-image", "url(" + image_url + ")");
-                    }
+                    $(".slideShow").css("background-image", "url(" + image_url + ")");
+
                 }
             });
 
@@ -452,7 +446,7 @@ Ready for you best work ever.</p></pre>
                 if (count < 3) {
                     count++;
                     let image_url = "img/event/event" + count + ".jpg";
-                    if($(window).width() / parseFloat($("body").css("font-size")) <  37.25) {
+                    if ($(window).width() / parseFloat($("body").css("font-size")) < 37.25) {
                         $(".slideShow").css("background-image", "url(" + "linear-gradient(#03DAC6, white)" + ")");
                     } else {
                         $(".slideShow").css("background-image", "url(" + image_url + ")");

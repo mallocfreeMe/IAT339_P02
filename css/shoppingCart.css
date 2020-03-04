@@ -10,6 +10,7 @@ body {
 }
 
 /* styling product item */
+
 .shopping-cart-area {
     margin-left: 10em;
     margin-right: 10em;
@@ -29,11 +30,17 @@ body {
 }
 
 /* Grid for the layout of item information */
+
 /* Start of items area */
+
 .item-container {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 2fr 4fr 1fr 1fr 1fr;
+}
+
+#title_for_cart{
+    display: inline-block;
 }
 
 .item-image {
@@ -96,7 +103,7 @@ body {
     border-bottom: thin solid #E1E4E8;
 }
 
-.item-amount input[type=number]{
+.item-amount input[type=number] {
     width: 50%;
     margin-top: 1em;
     padding-top: 0.25em;
@@ -106,7 +113,7 @@ body {
     text-align: center;
 }
 
-.item-amount input[type=number]::-webkit-inner-spin-button,.item-amount input[type=number]::-webkit-outer-spin-button {
+.item-amount input[type=number]::-webkit-inner-spin-button, .item-amount input[type=number]::-webkit-outer-spin-button {
     opacity: 1;
 }
 
@@ -118,9 +125,9 @@ body {
 }
 
 .item-price p {
-        font-size: 1.2em;
-        padding-top: 1em;
-        font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 1em;
+    font-weight: bold;
 }
 
 .item-detail {
@@ -149,9 +156,11 @@ body {
     border-style: hidden;
     cursor: pointer;
 }
+
 /* End of items area */
 
 /* The total information area */
+
 .item-total {
     text-align: right;
     margin-top: 4em;
@@ -182,12 +191,13 @@ body {
     border: none;
 }
 
-.total-price .total-content p, .total-price .total-number p{
+.total-price .total-content p, .total-price .total-number p {
     font-size: 1.2em;
     font-weight: bold;
 }
 
 /* The button jump to payment page */
+
 #pay-button {
     text-align: right;
 }
@@ -217,6 +227,7 @@ body {
 }
 
 /* Empty Warning */
+
 #empty-warning {
     display: none;
     height: 50vh;
@@ -234,8 +245,12 @@ body {
     border-bottom: thin solid #03DAC6;
 }
 
+.mobile-main-nav {
+    z-index: 3;
+}
 
 /* For the responsive page */
+
 @media (max-width: 70em) {
     .shopping-cart-area {
         font-size: 70%;
@@ -248,11 +263,9 @@ body {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: 1fr;
     }
-
     .item-name {
         border-bottom: none;
     }
-
     .item-price-origin {
         grid-row: 3 / 4;
         grid-column: 2 / 3;
@@ -260,7 +273,6 @@ body {
         margin-left: 1.2em;
         border: none;
     }
-
     .item-amount {
         grid-row: 3 / 4;
         grid-column: 2 / 3;
@@ -268,11 +280,9 @@ body {
         text-align: right;
         font-size: 80%;
     }
-
     .item-amount input[type=number] {
         width: 20%;
     }
-
     .item-price {
         grid-row: 4 / 5;
         grid-column: 2 / 3;
@@ -281,7 +291,6 @@ body {
         font-size: 80%;
         margin-left: 1em;
     }
-
     .item-remove {
         grid-row: 5 / 6;
         grid-column: 2 / 3;
@@ -297,7 +306,6 @@ body {
         margin-left: 1em;
         margin-right: 1em;
     }
-
     .item-container {
         display: grid;
         grid-template-rows: repeat(10, 1fr);
@@ -309,13 +317,11 @@ body {
         margin-left: 1em;
         border-bottom: none;
     }
-
     .item-detail {
         grid-row: 6 / 7;
         grid-column: 1 / 2;
         margin-left: 1em;
     }
-
     .item-price-origin {
         grid-row: 7 / 8;
         grid-column: 1 / 2;
@@ -323,7 +329,6 @@ body {
         margin-left: 1.2em;
         border: none;
     }
-
     .item-amount {
         grid-row: 7 / 8;
         grid-column: 1 / 2;
@@ -331,12 +336,10 @@ body {
         text-align: right;
         font-size: 80%;
     }
-
     .item-amount input[type=number] {
         width: 20%;
         font-size: larger;
     }
-
     .item-price {
         grid-row: 8 / 9;
         grid-column: 1 / 2;
@@ -345,7 +348,6 @@ body {
         font-size: 80%;
         margin-left: 1em;
     }
-
     .item-remove {
         grid-row: 9 / 10;
         grid-column: 1 / 2;
@@ -354,13 +356,10 @@ body {
         font-size: 80%;
         border-bottom: thin solid #E1E4E8;
     }
-
     #empty-warning p {
         font-size: 90%;
     }
-    
     #empty-warning a {
         font-size: 90%;
     }
 }
-

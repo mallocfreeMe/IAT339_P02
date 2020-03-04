@@ -1,5 +1,5 @@
 .main-nav {
-    position: absolute;
+    position: static;
 }
 
 body {
@@ -289,8 +289,7 @@ footer {
     }
 
     .slideShow {
-        color:black;
-        background-image: linear-gradient(#03DAC6, white);
+        display: none;
     }
 
     #event1_heading h1 {

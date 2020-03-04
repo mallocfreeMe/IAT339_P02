@@ -336,6 +336,7 @@ footer {
         flex: 1 1 100%;
     }
     .product_container {
+        height: 50%;
         margin-top: 10%;
         margin-left: 10%;
         margin-right: 10%;
@@ -343,26 +344,55 @@ footer {
     .grid-col-1of2_noHeight {
         flex: 1 1 100%;
     }
+    #productImage{
+        padding:0 ;
+        height: 50vh;
+    }
     #productImage_one {
         left: 10%;
-        bottom: 10%;
+        bottom: 0%;
     }
     #productImage_two {
         left: 30%;
-        bottom: 10%;
+        bottom: 0%;
     }
     #productImage_three {
         left: 50%;
-        bottom: 10%;
+        bottom: 00%;
     }
-    #tech_spec_heading{
+    #tech_spec_heading {
         font-size: 1em;
     }
-    #reviews_grades{
-        display: block;
-        padding-left:0;
+    #product_price {
+        display: none;
     }
-    #write_comment_heading2 input{
+    #product_one_button, #product_two_button, #product_three_button {
+        display: none;
+    }
+    #product_one_content, #product_two_content, #product_three_content {
+        display: none;
+    }
+    #add_button, #review_button {
+        font-size: 1em;
+    }
+    #deals_price {
+        color: #6200EE;
+        font-size: 1em;
+    }
+    #product_qty {
+        font-size: 1em;
+    }
+    .bottom_part {
+        margin-top: 4em;
+    }
+    #comment_heading {
+        font-size: 1.5em;
+    }
+    #reviews_grades {
+        display: block;
+        padding-left: 0;
+    }
+    #write_comment_heading2 input {
         width: 100%;
     }
     #write_comment_heading3 textarea {
