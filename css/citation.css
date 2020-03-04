@@ -1,0 +1,24 @@
+/* Styling for sign-in content */
+
+.main-nav {
+  position: static;
+}
+
+body {
+  background-color: #F8F8FF;
+}
+
+.citation-area {
+  margin: 3em 10em;
+  background-color: white;
+  padding: 2em 4em 4em 4em;
+}
+
+.citation-area ul li {
+  padding-bottom: 1em;
+}
+
+.boldline {
+  font-weight: bold;
+  padding-top: 1em;
+}

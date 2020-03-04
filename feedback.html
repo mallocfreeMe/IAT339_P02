@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Head of the page -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +16,8 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_-2uT2tTQS2vSHFbK_Z1QnNoJeN1obOE&callback=initMap">
         </script>
-    <!-- AIzaSyD_-2uT2tTQS2vSHFbK_Z1QnNoJeN1obOE -->
-    <!-- AIzaSyAHbw9Hbr0cHHUHYwAkBtIA3cddM_CuIfo -->
     <script>
         // Map tutorial from https://developers.google.com/maps/documentation/javascript/adding-a-google-map
-
         // Initialize and add the map
         function initMap() {
             // The location of Laptophub
@@ -52,12 +51,11 @@
             </a>
 
             <a href="shoppingCart.html">
-                <!-- <img src="img/icon/Icon - Account - Filled.png" id="signIn_icon"> -->
                 <img src="img/icon/cart.png" id="cart_icon">
                 Cart
             </a>
 
-            <!-- hamburger menu -->
+            <!-- Mobile menu icon -->
             <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
         </nav>
 
@@ -72,10 +70,16 @@
 
     </header>
 
+    <!-- Start of feedback page content -->
     <div class="feedback-area">
+
         <h3>Feedback</h3>
+
+        <!-- Start of flex grid -->
         <div class="grid">
+            <!-- The left side content -->
             <div class="grid-col-3of5_noHeight form-container">
+                <!-- Warning paragraph -->
                 <div class="contact-warn">
                     <p>PLEASE NOTE THAT LAPTOPHUB HAS A LONG-STANDING COMPANY POLICY AGAINST
                         ACCEPTING OR REVIEWING
@@ -86,6 +90,7 @@
                     <p class="second-line-warn">THANKS FOR YOUR UNDERSTANDING.</p>
                 </div>
 
+                <!-- Feedback form -->
                 <form class="contact-form">
                     <div class="contact-name">
                         <div class="grid">
@@ -122,6 +127,7 @@
                 </form>
             </div>
 
+            <!-- The right side content -->
             <div class="grid-col-2of5_noHeight map-container">
 
                 <div class="contact-information">
@@ -141,10 +147,12 @@
                 </div>
 
             </div>
-        </div>
+        </div><!-- End of flex grid -->
 
-    </div>
+    </div><!-- End of feedback page content -->
 
+
+    <!-- Footer -->
     <footer class="grid">
 
         <section class="footer-grid-col-1of5"></section>
@@ -184,6 +192,8 @@
         <section class="footer-grid-col-1of5"></section>
     </footer>
 
+    <!-- JavaScript Area -->
+    <!--  -->
     <script>
         $(document).ready(function () {
             $("#mobile_menu_button").click(function () {

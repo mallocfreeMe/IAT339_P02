@@ -75,7 +75,6 @@ body {
     font-size: 1.2em;
     font-weight: bold;
     padding-top: 1em;
-    /* padding-left: 1em; */
 }
 
 .item-price-origin {
@@ -148,6 +147,7 @@ body {
     color: #6200EE;
     background-color: white;
     border-style: hidden;
+    cursor: pointer;
 }
 /* End of items area */
 
@@ -187,6 +187,7 @@ body {
     font-weight: bold;
 }
 
+/* The button jump to payment page */
 #pay-button {
     text-align: right;
 }

@@ -1,6 +1,4 @@
 body {
-  /* background-image: url(../img/payment-wallpaper.jpeg);
-  background-size: contain; */
   background-color: #F8F8FF;
 }
 
@@ -21,12 +19,10 @@ body {
   padding-top: 1em;
 }
 
-/* --------- Receipt Information Area --------- */
-
+/* Receipt Information Area */
 .receipt-area {
   text-align: left;
   background-color: white;
-  /* border-bottom: thin solid #E1E4E8; */
 }
 
 .receipt-detail-left {
@@ -59,12 +55,7 @@ body {
   font-weight: bold;
 }
 
-/* ------------------ Payment Area -------------------- */
-
-/* .payment{
-  text-align: center;
-} */
-
+/* Payment Area */
 .payment h3 {
   font-weight: lighter;
   font-size: 1.3em;
@@ -154,9 +145,13 @@ body {
   /* float: right; */
 }
 
-/* .expire-left input::-webkit-calendar-picker-indicator,.expire-right input[type=text]::-webkit-calendar-picker-indicator {
-  opacity: 1;
-} */
+.grid-col-45of100_noHeight {
+  flex: 1 1 45%;
+}
+
+.grid-col-1of10_noHeight {
+  flex: 1 1 10%;
+}
 
 .cvc-area {
   margin-left: 3em;
@@ -181,7 +176,7 @@ body {
   display: block;
 }
 
-/* ------------- Pay Button ------------- */
+/* Pay Button */
 
 .pay-button {
   margin: 2em 3em;
@@ -231,9 +226,9 @@ footer {
   }
 }
 
-@media (max-width: 63em) {
+@media (max-width: 68em) {
   .payment-page-area {
-    font-size: 60%;
+    font-size: 80%;
   }
 
   .payment-page-area .grid-col-1of2_noHeight {
@@ -248,14 +243,14 @@ footer {
     flex: 1 1 50%;
   }
 
-  .expire-line .grid-col-1of2_noHeight {
+  /* .expire-line .grid-col-1of2_noHeight {
     flex: 1 1 50%;
-  }
+  } */
 }
 
-@media (max-width: 47em) {
+@media (max-width: 58em) {
   .payment-page-area {
-    font-size: 60%;
+    font-size: 80%;
   }
 
   .payment-page-area .grid-col-1of2_noHeight {
@@ -270,8 +265,35 @@ footer {
     flex: 1 1 50%;
   }
 
-  .expire-line .grid-col-1of2_noHeight {
+  .set-bg-margin {
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+}
+
+@media (max-width: 45em) {
+  .payment-page-area {
+    font-size: 70%;
+  }
+
+  .payment-page-area .grid-col-1of2_noHeight {
+    flex: 1 1 90%;
+  }
+
+  .payment-page-area .grid-col-1of4_noHeight {
+    flex: 1 1 5%;
+  }
+
+  .receipt-detail .grid-col-1of2_noHeight {
     flex: 1 1 50%;
+  }
+
+  .expire-line .grid-col-45of100_noHeight {
+    flex: 1 1 100%;
+  }
+
+  .expire-line .grid-col-1of10_noHeight {
+    flex: 1 1 0%;
   }
 
   .set-bg-margin {
@@ -282,23 +304,40 @@ footer {
 
 @media (max-width: 30em) {
   .payment-page-area .grid-col-1of2_noHeight {
-    flex: 1 1 90%;
+    flex: 1 1 100%;
   }
 
   .payment-page-area .grid-col-1of4_noHeight {
-    flex: 1 1 5%;
+    flex: 1 1 0%;
   }
 
   .receipt-detail .grid-col-1of2_noHeight {
     flex: 1 1 50%;
   }
 
-  .expire-line .grid-col-1of2_noHeight {
-    flex: 1 1 50%;
+  .expire-line .grid-col-45of100_noHeight {
+    flex: 1 1 100%;
+  }
+
+  .expire-line .grid-col-1of10_noHeight {
+    flex: 1 1 0%;
   }
 
   .set-bg-margin {
     margin-left: 0;
     margin-right: 0;
   }
+
+  .main-nav {
+    margin-bottom: 0;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  .payment-page-area {
+    font-size: 70%
+  }
+  
 }

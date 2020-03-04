@@ -154,7 +154,6 @@
 
 .map-container .contact-map {
   grid-row: 3 / span 1;
-  /* margin: 3em 6em 2em 4em; */
   border: thin solid black;
   margin-bottom: 1em;
 }
@@ -201,11 +200,15 @@ footer {
   }
 
   .form-container {
+    display: grid;
+    grid-template-rows: 20em 45em;
     padding-left: 2em;
     padding-right: 2em;
   }
 
   .map-container {
+    display: grid;
+    grid-template-rows: 10em 10em 35em;
     padding-left: 2em;
     padding-right: 2em;
   }
