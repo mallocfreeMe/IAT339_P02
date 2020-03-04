@@ -17,6 +17,8 @@ body {
 
 .payment-block {
   background-color: white;
+  padding-bottom: 3em;
+  padding-top: 1em;
 }
 
 /* --------- Receipt Information Area --------- */
@@ -139,7 +141,6 @@ body {
   padding-bottom: 0.5em;
   padding-left: 1em;
   margin-bottom: 1em;
-  width: 49%;
 }
 
 .expire-right {
@@ -150,7 +151,6 @@ body {
   padding-bottom: 0.5em;
   padding-left: 1em;
   margin-bottom: 1em;
-  width: 49%;
   /* float: right; */
 }
 
@@ -204,47 +204,101 @@ button:hover {
 }
 
 footer {
-  margin-top: 4em;
+  margin-top: 3em;
 }
 
 
 /* For the responsive page */
 @media (max-width: 80em) {
-  body {
+  .payment-page-area {
     font-size: 80%;
   }
 
-  .set-bg-margin {
-    margin-left: 10%;
-    margin-right: 10%;
+  .payment-page-area .grid-col-1of2_noHeight {
+    flex: 1 1 60%;
+  }
+
+  .payment-page-area .grid-col-1of4_noHeight {
+    flex: 1 1 20%;
+  }
+
+  .receipt-detail .grid-col-1of2_noHeight {
+    flex: 1 1 50%;
+  }
+
+  .expire-line .grid-col-1of2_noHeight {
+    flex: 1 1 50%;
   }
 }
 
-@media (max-width: 50em) {
+@media (max-width: 63em) {
   .payment-page-area {
     font-size: 60%;
+  }
+
+  .payment-page-area .grid-col-1of2_noHeight {
+    flex: 1 1 70%;
+  }
+
+  .payment-page-area .grid-col-1of4_noHeight {
+    flex: 1 1 15%;
+  }
+
+  .receipt-detail .grid-col-1of2_noHeight {
+    flex: 1 1 50%;
+  }
+
+  .expire-line .grid-col-1of2_noHeight {
+    flex: 1 1 50%;
+  }
+}
+
+@media (max-width: 47em) {
+  .payment-page-area {
+    font-size: 60%;
+  }
+
+  .payment-page-area .grid-col-1of2_noHeight {
+    flex: 1 1 90%;
+  }
+
+  .payment-page-area .grid-col-1of4_noHeight {
+    flex: 1 1 5%;
+  }
+
+  .receipt-detail .grid-col-1of2_noHeight {
+    flex: 1 1 50%;
+  }
+
+  .expire-line .grid-col-1of2_noHeight {
+    flex: 1 1 50%;
+  }
+
+  .set-bg-margin {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+}
+
+@media (max-width: 30em) {
+  .payment-page-area .grid-col-1of2_noHeight {
+    flex: 1 1 90%;
+  }
+
+  .payment-page-area .grid-col-1of4_noHeight {
+    flex: 1 1 5%;
+  }
+
+  .receipt-detail .grid-col-1of2_noHeight {
+    flex: 1 1 50%;
+  }
+
+  .expire-line .grid-col-1of2_noHeight {
+    flex: 1 1 50%;
   }
 
   .set-bg-margin {
     margin-left: 0;
     margin-right: 0;
-  }
-}
-
-@media (max-width: 50em) {
-  .payment-page-area {
-    font-size: 60%;
-  }
-
-  .set-bg-margin {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .card-line input[type=text] {
-    background-image: none;
-  }
-  .expire-left, .expire-right {
-    width: 48%;
   }
 }

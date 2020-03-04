@@ -38,6 +38,7 @@ body {
   border: thin solid #959da5;
   /* border-radius: 0.25em; */
   font-size: 0.9em;
+  padding-left: 1em;
 }
 
 .sign-up-content input[type=password] {
@@ -48,6 +49,7 @@ body {
   border: thin solid #959da5;
   /* border-radius: 0.25em; */
   font-size: 0.9em;
+  padding-left: 1em;
 }
 
 .email-input {
@@ -58,6 +60,7 @@ body {
   border: thin solid #959da5;
   /* border-radius: 0.25em; */
   font-size: 0.9em;
+  padding-left: 1em;
 }
 
 .sign-up-content .sign-up-button {
@@ -73,21 +76,22 @@ body {
   font-weight: lighter;
 }
 
+/* Sign in link line */
 .sign-up-content button:hover {
   filter: brightness(1.4);
 }
 
 .sign-up-content input::placeholder {
   color: #959da5;
-  padding-left: 1em;
+  padding-left: 0;
 }
 
-.register-link {
+.sign-in-link {
   text-align: right;
   padding-right: 1em;
 }
 
-.register-link button {
+.sign-in-link button {
   margin-top: 1em;
   padding: 0.25em 0.5em;
   border: thin solid #959da5;
@@ -95,46 +99,31 @@ body {
   color: #007457;
 }
 
-.video-area {
+.image-area {
   height: 100vh;
 }
 
-video {
+.image-area img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* --------- The line below for sign up part ---------- */
-
-.sign-up-form {
-  margin-top: 1em;
-  display: none;
-}
-
-.sign-up-form input[type=text], .sign-up-form input[type=password] {
-  text-align: left;
-  width: 30%;
-  padding: 0.5em 0 0.5em 1em;
-  margin-top: 1em;
-  border: thin solid #959da5;
-  border-radius: 0.5em;
-}
-
+/* For button cursor */
 button {
   cursor: pointer;
 }
 
 /* For the responsive page */
 @media (max-width: 60em) {
-  .video-area {
+  .image-area {
     display: none;
   }
 
   .sign-up {
     width: 100%;
     height: 100%;
-    margin: 15em 0;
+    margin: 4em 0;
     position: static;
   }
 }

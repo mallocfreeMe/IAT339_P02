@@ -8,6 +8,7 @@ body {
   background-color: #F8F8FF;
 }
 
+/* Sign in form */
 .sign-in {
   color: #2f363d;
   width: 60%;
@@ -36,8 +37,8 @@ body {
   height: 4em;
   margin-bottom: 1em;
   border: thin solid #959da5;
-  /* border-radius: 0.25em; */
   font-size: 0.9em;
+  padding-left: 1em;
 }
 
 .sign-in-content input[type=password] {
@@ -46,8 +47,8 @@ body {
   margin-top: 1em;
   margin-bottom: 1em;
   border: thin solid #959da5;
-  /* border-radius: 0.25em; */
   font-size: 0.9em;
+  padding-left: 1em;
 }
 
 .sign-in-content .sign-in-button {
@@ -71,9 +72,10 @@ body {
 
 .sign-in-content input::placeholder {
   color: #959da5;
-  padding-left: 1em;
+  padding-left: 0;
 }
 
+/* Register link line */
 .register-link {
   text-align: right;
   padding-right: 1em;
@@ -87,32 +89,17 @@ body {
   color: #007457;
 }
 
-.video-area {
+.image-area {
   height: 100vh;
 }
 
-video {
+.image-area img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* --------- The line below for sign up part ---------- */
-
-.sign-up-form {
-  margin-top: 1em;
-  display: none;
-}
-
-.sign-up-form input[type=text], .sign-up-form input[type=password] {
-  text-align: left;
-  width: 30%;
-  padding: 0.5em 0 0.5em 1em;
-  margin-top: 1em;
-  border: thin solid #959da5;
-  border-radius: 0.5em;
-}
-
+/* For the button cursor */
 button {
   cursor: pointer;
 }
@@ -120,14 +107,14 @@ button {
 
 /* For the responsive page */
 @media (max-width: 60em) {
-  .video-area {
+  .image-area {
     display: none;
   }
 
   .sign-in {
     width: 100%;
     height: 100%;
-    margin: 15em 0;
+    margin: 7em 0;
     position: static;
   }
 }
