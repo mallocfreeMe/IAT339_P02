@@ -45,7 +45,7 @@ body {
 
 .item-image {
     grid-row: 1 / span 4;
-    grid-template-columns: 1 / 2;
+    grid-column: 1 / span 1;
     width: 15em;
     height: 15em;
 }
