@@ -18,6 +18,9 @@
 
 .order-content a {
   color: black;
+}
+
+.order-content a:hover {
   border-bottom: thin solid black;
 }
 
