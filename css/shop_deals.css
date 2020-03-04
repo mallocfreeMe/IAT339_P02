@@ -126,3 +126,24 @@ body {
     right: 2%;
     color: white;
 }
+
+@media (max-width: 37.25em) {
+    .grid-col-1of5_noHeight {
+        flex: 1 1 100%;
+    }
+    .individual_product {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;;
+    }
+    #event_heading {
+        font-size: 2em;
+    }
+    .shop_deals_intro {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .slideShow_image {
+        display: none;
+    }
+}
