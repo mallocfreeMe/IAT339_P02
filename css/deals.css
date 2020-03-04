@@ -15,12 +15,12 @@
 }
 
 .event_content a {
-    color:#6200EE;
+    color: #6200EE;
 }
 
 .event_content a:hover {
     text-decoration: underline;
-   }
+}
 
 .event_content h2 {
     margin-bottom: 1em;
@@ -34,4 +34,38 @@
 #event_introduction {
     padding-left: 0em;
     margin-bottom: 2em;
+}
+
+@media (max-width: 37.25em) {
+    .grid-col-1of5_noHeight {
+        flex: 1 1 100%;
+    }
+    .grid-col-1of2_noHeight {
+        flex: 1 1 100%;
+    }
+    .main-nav {
+        margin-bottom: 0em;
+    }
+    h1 {
+        margin-left: 10%;
+    }
+    #event_introduction {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    h2 {
+        margin-top: 10%;
+        padding-left: 10%;
+    }
+    .event_content img {
+        padding-right: 10%;
+        padding-left: 10%;
+        margin-bottom: 5%;
+    }
+    .event_content p {
+        padding-left: 10%;
+    }
+    footer {
+        margin-top: 10%;
+    }
 }

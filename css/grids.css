@@ -19,6 +19,10 @@
   height: 100vh;
 }
 
+.grid-col-1of3_noHeight {
+  flex: 1 1 33.33%;
+}
+
 .grid-col-1of5 {
   flex: 1 1 20%;
   height: 100vh;
@@ -39,6 +43,11 @@
 
 .grid-col-3of5_noHeight {
   flex: 1 1 60%;
+}
+
+.grid-col-1of2_noHeight {
+  flex: 1 1 50%;
+  height: 100%;
 }
 
 .grid-col-1of2_noHeight {

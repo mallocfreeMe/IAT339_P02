@@ -172,3 +172,14 @@ button:hover {
     right: 2%;
     color: white;
 }
+
+@media (max-width: 37.25em) {
+    .grid-col-1of6_noHeight {
+        flex: 1 1 100%;
+    }
+    .individual_product {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;;
+    }
+}

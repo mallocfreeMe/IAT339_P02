@@ -45,6 +45,7 @@ button {
 #event1_button {
     top: 65%;
     left: 8%;
+    z-index: 2;
 }
 
 /* styling for event2 */
@@ -72,6 +73,7 @@ button {
 #event2_button {
     top: 65%;
     left: 8%;
+    z-index: 2;
 }
 
 /* styling for event3 */
@@ -97,6 +99,7 @@ button {
 #event3_button {
     top: 60%;
     left: 55%;
+    z-index: 2;
 }
 
 .slideShow button {
@@ -118,6 +121,7 @@ button {
     position: absolute;
     width: 3em;
     height: 3em;
+    z-index: 2;
 }
 
 #previous_button:hover {
@@ -131,6 +135,7 @@ button {
     position: absolute;
     width: 3em;
     height: 3em;
+    z-index: 2;
 }
 
 #next_button:hover {
@@ -266,10 +271,33 @@ footer {
     margin-top: 2em;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 767px) {
-    /* Put your CSS here for 200px to 767px width devices (cover all mobile portrait width */
-}
+@media (max-width: 37.25em) {
+    #home_title {
+        font-size: 2em;
+    }
+    .grid-col-1of5_noHeight {
+        flex: 1 1 100%;
+    }
+    .individual_product {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;;
+    }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Put your CSS here for 768px to 1024px width devices(covers all iPad portrait width */
+    pre {
+        white-space: normal;
+    }
+
+    .slideShow {
+        color:black;
+        background-image: linear-gradient(#03DAC6, white);
+    }
+
+    #event1_heading h1 {
+        font-size: 1em;
+    }
+
+    #event1_content p {
+        font-size: 0.5em; 
+    }
 }

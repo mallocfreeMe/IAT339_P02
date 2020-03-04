@@ -18,7 +18,9 @@ html {
 /* styling left side of the container */
 
 .product_container {
+    height: 70%;
     margin-top: 10em;
+    margin-bottom: 4em;
 }
 
 .individual_product {
@@ -85,16 +87,15 @@ html {
 /* styling right side of the container */
 
 .tech_spec {
-    position: relative;
     background-color: #E6E6E6;
     padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 5%;
 }
 
 #tech_spec_heading {
     font-family: sans-serif;
-    position: absolute;
-    top: 10%;
-    left: 10%;
+    margin-bottom: 1em;
 }
 
 .tech_spec button, .tech_spec a {
@@ -116,107 +117,85 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 #product_price {
-    position: absolute;
-    top: 25%;
-    left: 10%;
     width: 1em;
     height: 1em;
 }
 
 #deals_price {
     color: #6200EE;
-    position: absolute;
-    top: 28%;
-    left: 10%;
     width: 1em;
     height: 1em;
 }
 
 #qty_label {
-    position: absolute;
-    top: 35%;
-    left: 10%;
+    margin-top: 1em;
 }
 
 #product_qty {
+    margin-top: 1em;
     text-align: center;
     font-size: 1.5em;
-    position: absolute;
-    top: 34%;
-    left: 16%;
 }
 
 .inStock_section label {
-    position: absolute;
-    top: 40%;
-    left: 15%;
+    margin-top: 1em;
 }
 
 .inStock_section img {
     /* styling the in stock icon */
-    position: absolute;
-    top: 40%;
-    left: 10%;
+    margin-top: 1em;
     width: 1em;
     height: 1em;
 }
 
 #product_one_button {
-    position: absolute;
+    margin-top: 1em;
     font-family: sans-serif;
-    top: 45%;
-    left: 10%;
 }
 
 #product_two_button {
-    position: absolute;
+    margin-top: 1em;
     font-family: sans-serif;
-    top: 45%;
-    left: 30%;
 }
 
 #product_three_button {
-    position: absolute;
+    margin-top: 1em;
     font-family: sans-serif;
-    top: 45%;
-    left: 55%;
 }
 
 #product_one_content {
-    position: absolute;
-    top: 55%;
-    left: 10%;
+    margin-top: 1em;
     padding-right: 1em;
 }
 
 #product_two_content {
+    margin-top: 1em;
+    margin-left: 1.5em;
     display: none;
-    position: absolute;
-    top: 55%;
-    left: 13%;
 }
 
 #product_three_content {
+    margin-top: 1em;
+    margin-left: 1.5em;
     display: none;
-    position: absolute;
-    top: 55%;
-    left: 13%;
 }
 
 #add_button, #review_button {
-    position: absolute;
     font-family: sans-serif;
 }
 
 #add_button {
-    bottom: 5%;
-    left: 10%;
+    text-align: center;
+    display: block;
+    margin-top: 1em;
 }
 
 #review_button {
+    text-align: center;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
     background-color: #03DAC6;
-    bottom: 5%;
-    left: 35%;
 }
 
 /* styling comment section */
@@ -268,7 +247,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .comment_name {
     position: absolute;
     display: inline;
-    left: 12%;
+    left: 15%;
     top: 30%;
 }
 
@@ -347,5 +326,61 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 /* styling footer */
 
 footer {
-    margin-top: 10em;
+    margin-top: 12em;
+}
+
+@media (max-width: 76.875em) {
+    .grid-col-1of3_noHeight {
+        margin-left: 10%;
+        margin-right: 10%;
+        flex: 1 1 100%;
+    }
+    .product_container {
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .grid-col-1of2_noHeight {
+        flex: 1 1 100%;
+    }
+    #productImage_one {
+        left: 10%;
+        bottom: 10%;
+    }
+    #productImage_two {
+        left: 30%;
+        bottom: 10%;
+    }
+    #productImage_three {
+        left: 50%;
+        bottom: 10%;
+    }
+    #tech_spec_heading{
+        font-size: 1em;
+    }
+    #reviews_grades{
+        display: block;
+        padding-left:0;
+    }
+    #write_comment_heading2 input{
+        width: 100%;
+    }
+    #write_comment_heading3 textarea {
+        width: 100%;
+    }
+    .grid-col-1of5_noHeight {
+        flex: 1 1 100%;
+    }
+    .grid-col-3of5_noHeight {
+        flex: 1 1 100%;
+    }
+    #comment_area {
+        margin-bottom: 10em;
+    }
+    .comment_name {
+        left: 30%;
+    }
+    footer {
+        margin-top: 5em;
+    }
 }
