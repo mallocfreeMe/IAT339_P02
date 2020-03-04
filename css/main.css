@@ -884,7 +884,6 @@ footer a {
     white-space: normal;
   }
   #table-purple, #table-grey, #table-green {
-    margin-left: 5%;
     padding-bottom: 10%;
   }
   .styleGuide h1 {
@@ -893,5 +892,13 @@ footer a {
   }
   .grid-col-1of2_noHeight {
     flex: 1 1 100%;
+  }
+  .grid-col-1of3_noHeight {
+    flex: 1 1 100%;
+  }
+  .individual_product {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
