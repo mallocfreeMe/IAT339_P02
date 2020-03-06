@@ -14,7 +14,6 @@
 }
 
 .form-container {
-  /* height: 100%; */
   display: grid;
   grid-template-rows: 15em 40em;
   padding-left: 6em;
@@ -139,7 +138,7 @@
 /* Styling for grid display in map part */
 .map-container {
   display: grid;
-  grid-template-rows: 10em 5em 30em;
+  grid-template-rows: 10em 5em 40em;
   padding-left: 6em;
   padding-right: 6em;
 }
@@ -185,8 +184,13 @@ footer {
     font-size: 70%;
   }
 
+  .map-container {
+    display: grid;
+    grid-template-rows: 10em 5em 40em;
+  }
+
   .map-container .contact-map {
-    margin-bottom: -2.2em;
+    margin-bottom: 2em;
   }
 }
 
@@ -196,7 +200,7 @@ footer {
   }
 
   .map-container .contact-map {
-    margin-bottom: -8em;
+    margin-bottom: 0;
   }
 
   .form-container {
@@ -208,7 +212,7 @@ footer {
 
   .map-container {
     display: grid;
-    grid-template-rows: 10em 10em 35em;
+    grid-template-rows: 10em 10em 45em;
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -236,7 +240,7 @@ footer {
 
   .map-container {
     display: grid;
-    grid-template-rows: 10em 10em 35em;
+    grid-template-rows: 10em 10em 45em;
     padding-left: 1em;
     padding-right: 1em;
   }
@@ -246,7 +250,7 @@ footer {
   }
 
   .map-container .contact-map {
-    margin-bottom: -9.4em;
+    margin-bottom: 1.5em;
   }
 
   .contact-name .grid .grid-col-1of2-noHeight {
@@ -257,6 +261,6 @@ footer {
 
 @media (max-width: 30em) {
   .map-container .contact-map {
-    margin-bottom: -7em;
+    margin-bottom: 10.5em;
   }
 }

@@ -32,6 +32,12 @@ p {
     padding-left: 4.5em;
     padding-top: 5em;
     padding-bottom: 5em;
+    color: #007457;
+    cursor: pointer;
+}
+
+.compare-area a:hover {
+    color: #00B398;
 }
 
 .compare-area h2 {
