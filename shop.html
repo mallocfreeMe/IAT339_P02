@@ -27,18 +27,18 @@
             <a href="deals.html">Deals</a>
 
             <a href="signIn.html">
-                <img src="img/icon/account.png" id="signIn_icon">
+                <img src="img/icon/account.png" id="signIn_icon" alt="sign in icon">
                 Sign In
             </a>
 
             <a href="shoppingCart.html">
                 <!-- <img src="img/icon/Icon - Account - Filled.png" id="signIn_icon"> -->
-                <img src="img/icon/cart.png" id="cart_icon">
+                <img src="img/icon/cart.png" id="cart_icon" alt="shopping cart icon">
                 Cart
             </a>
 
             <!-- hamburger menu -->
-            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png">
+            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png" alt="mobile menu icon">
         </nav>
 
         <nav class="mobile-main-nav" id="mobile_menu">
@@ -59,128 +59,131 @@
 
             <div class="grid-col-1of6_noHeight side_filter">
 
-                <!-- Category -->
-                <section class="side_filter_category">
+                <!-- start of Category div -->
+                <div class="side_filter_category">
                     <button id="showCategoryButton" class="showFilterButton">Shop By Category</button>
 
                     <ul id="categoryList">
-                        <li>Business Notebooks</li>
-                        <li>Consumer Notebooks</li>
-                        <li>Gaming Notebooks</li>
+                        <li><a href="#">Business Notebooks</a></li>
+                        <li><a href="#">Consumer Notebooks</a></li>
+                        <li><a href="#">Gaming Notebooks</a></li>
                     </ul>
 
-                </section>
+                </div>
+                <!-- end of Category div -->
 
-                <!-- Manufactruees -->
-                <section class="side_filter_factory">
+                <!-- start of Manufactruees div -->
+                <div class="side_filter_factory">
                     <button id="showFactoryButton" class="showFilterButton">Manufactures</button>
 
                     <form id="factoryList">
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle1"> ACER</label>
+                            <input type="checkbox" id="factoryList-checkbox1">
+                            <label for="factoryList-checkbox1"> ACER</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle2"> APPLE</label>
+                            <input type="checkbox" id="factoryList-checkbox2">
+                            <label for="factoryList-checkbox2"> APPLE</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">DELL</label>
+                            <input type="checkbox" id="factoryList-checkbox3">
+                            <label for="factoryList-checkbox3">DELL</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">FUJITSU</label>
+                            <input type="checkbox" id="factoryList-checkbox4">
+                            <label for="factoryList-checkbox4">FUJITSU</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">GIGABYTE</label>
+                            <input type="checkbox" id="factoryList-checkbox5">
+                            <label for="factoryList-checkbox5">GIGABYTE</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">HP</label>
+                            <input type="checkbox" id="factoryList-checkbox6">
+                            <label for="factoryList-checkbox6">HP</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">HUWAI</label>
+                            <input type="checkbox" id="factoryList-checkbox7">
+                            <label for="factoryList-checkbox7">HUWAI</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">LENOVO</label>
+                            <input type="checkbox" id="factoryList-checkbox8">
+                            <label for="factoryList-checkbox8">LENOVO</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">LG</label>
+                            <input type="checkbox" id="factoryList-checkbox9">
+                            <label for="factoryList-checkbox9">LG</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">MICROSOFT</label>
+                            <input type="checkbox" id="factoryList-checkbox10">
+                            <label for="factoryList-checkbox10">MICROSOFT</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">MSI</label>
+                            <input type="checkbox" id="factoryList-checkbox11">
+                            <label for="factoryList-checkbox11">MSI</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">RAZOR</label>
+                            <input type="checkbox" id="factoryList-checkbox12">
+                            <label for="factoryList-checkbox12">RAZOR</label>
                         </div>
 
                         <button class="viewAllButton">View All</button>
                     </form>
-                </section>
+                </div>
+                <!-- end of manufactures div -->
 
-                <!-- Price -->
-                <section class="side_filter_price">
+                <!-- start of Price  div -->
+                <div class="side_filter_price">
                     <button class="showFilterButton" id="showPriceButton">Price Range</button>
 
                     <form id="priceList">
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle1"> $75.00 - $99.99 (4)</label>
+                            <input type="checkbox" id="priceList-checkbox1">
+                            <label for="priceList-checkbox1"> $0 - $199 (4)</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle2"> $100.00 - $149.99 (3)</label>
+                            <input type="checkbox" id="priceList-checkbox2">
+                            <label for="priceList-checkbox2"> $200 - $299 (3)</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">$150.00 - $199.99 (9)</label>
+                            <input type="checkbox" id="priceList-checkbox3">
+                            <label for="priceList-checkbox3">$300 - $399 (9)</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">$150.00 - $199.99 (9)</label>
+                            <input type="checkbox" id="priceList-checkbox4"> 
+                            <label for="priceList-checkbox4">$400 - $599 (9)</label>
                         </div>
 
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">$150.00 - $199.99 (9)</label>
+                            <input type="checkbox" id="priceList-checkbox5">
+                            <label for="priceList-checkbox5">$600 - $799 (9)</label>
                         </div>
 
                         <div>
-                            <input type="checkbox">
-                            <label for="vehicle3">$150.00 - $199.99 (9)</label>
+                            <input type="checkbox" id="priceList-checkbox6">
+                            <label for="priceList-checkbox6">$150.00 - $199.99 (9)</label>
                         </div>
 
                         <button class="viewAllButton">View All</button>
                     </form>
 
-                </section>
+                </div>
+                <!-- end of price range div -->
 
             </div>
 
@@ -199,18 +202,18 @@
                                 Core i5-8300H GTX 1650</p>
 
                             <div class="price_section">
-                                <del>$1999.99</del>
-                                <h2>#999.99</h2>
-                                <p>Save $250.00</p>
+                                <del>$2999.99</del>
+                                <h2>$2000.99</h2>
+                                <p class="save_amount">Save $999</p>
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne" id="checkbox-1">
-                                <label> Compare Product</label><br>
+                                <input type="checkbox" value="productOne" id="compare-checkbox1">
+                                <label for="compare-checkbox1"> Compare Product</label><br>
                             </form>
 
                             <div class="inStock_section">
-                                <img src="img/icon/yes.png">In Stock
+                                <img src="img/icon/yes.png" alt="in stock icon">In Stock
                             </div>
 
                             <button class="cart_button" onclick="goToCart()">Add to Cart</button>
@@ -231,18 +234,18 @@
                                 Core i5-8300H GTX 1650</p>
 
                             <div class="price_section">
-                                <del>$1999.99</del>
-                                <h2>#999.99</h2>
-                                <p>Save $250.00</p>
+                                <del>$2999.99</del>
+                                <h2>$2000.99</h2>
+                                <p class="save_amount">Save $999</p>
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne" id="checkbox-2">
-                                <label> Compare Product</label><br>
+                                <input type="checkbox" value="productOne" id="compare-checkbox2">
+                                <label for="compare-checkbox2"> Compare Product</label><br>
                             </form>
 
                             <div class="inStock_section">
-                                <img src="img/icon/yes.png">In Stock
+                                <img src="img/icon/yes.png" alt="in stock icon">In Stock
                             </div>
 
                             <button onclick="goToCart()">Add to Cart</button>
@@ -262,18 +265,18 @@
                                 Core i5-8300H GTX 1650</p>
 
                             <div class="price_section">
-                                <del>$1999.99</del>
-                                <h2>#999.99</h2>
-                                <p>Save $250.00</p>
+                                <del>$2999.99</del>
+                                <h2>$2000.99</h2>
+                                <p class="save_amount">Save $999</p>
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne" id="checkbox-3">
-                                <label> Compare Product</label><br>
+                                <input type="checkbox" value="productOne" id="compare-checkbox3">
+                                <label for="compare-checkbox3"> Compare Product</label><br>
                             </form>
 
                             <div class="inStock_section">
-                                <img src="img/icon/yes.png">In Stock
+                                <img src="img/icon/yes.png" alt="in stock icon">In Stock
                             </div>
 
                             <button onclick="goToCart()">Add to Cart</button>
@@ -295,18 +298,18 @@
                                 1660Ti, 8GB DDR4</p>
 
                             <div class="price_section">
-                                <del>$1999.99</del>
-                                <h2>#999.99</h2>
-                                <p>Save $250.00</p>
+                                <del>$3999.99</del>
+                                <h2>$3000.99</h2>
+                                <p class="save_amount">Save $1000</p>
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne" id="checkbox-4">
-                                <label> Compare Product</label><br>
+                                <input type="checkbox" value="productOne" id="compare-checkbox4">
+                                <label for="compare-checkbox4"> Compare Product</label><br>
                             </form>
 
                             <div class="inStock_section">
-                                <img src="img/icon/yes.png">In Stock
+                                <img src="img/icon/yes.png" alt="in stock icon">In Stock
                             </div>
 
                             <button onclick="goToCart()">Add to Cart</button>
@@ -325,18 +328,18 @@
                                 1660Ti, 8GB DDR4</p>
 
                             <div class="price_section">
-                                <del>$1999.99</del>
-                                <h2>#999.99</h2>
-                                <p>Save $250.00</p>
+                                <del>$3999.99</del>
+                                <h2>$3000.99</h2>
+                                <p class="save_amount">Save $1000</p>
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne" id="checkbox-5">
-                                <label> Compare Product</label><br>
+                                <input type="checkbox" value="productOne" id="compare-checkbox5">
+                                <label for="compare-checkbox5"> Compare Product</label><br>
                             </form>
 
                             <div class="inStock_section">
-                                <img src="img/icon/yes.png">In Stock
+                                <img src="img/icon/yes.png" alt="in stock icon">In Stock
                             </div>
 
                             <button onclick="goToCart()">Add to Cart</button>
@@ -355,18 +358,18 @@
                                 1660Ti, 8GB DDR4</p>
 
                             <div class="price_section">
-                                <del>$1999.99</del>
-                                <h2>#999.99</h2>
-                                <p>Save $250.00</p>
+                                <del>$3999.99</del>
+                                <h2>$3000.99</h2>
+                                <p class="save_amount">Save $1000</p>
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne" id="checkbox-6">
-                                <label> Compare Product</label><br>
+                                <input type="checkbox" value="productOne" id="compare-checkbox6">
+                                <label for="compare-checkbox6"> Compare Product</label><br>
                             </form>
 
                             <div class="inStock_section">
-                                <img src="img/icon/yes.png">In Stock
+                                <img src="img/icon/yes.png" alt="in stock icon">In Stock
                             </div>
 
                             <button onclick="goToCart()">Add to Cart</button>
@@ -389,18 +392,18 @@
                                 15.6", 5GB DDR4</p>
 
                             <div class="price_section">
-                                <del>$1999.99</del>
-                                <h2>#999.99</h2>
-                                <p>Save $250.00</p>
+                                <del>$4500</del>
+                                <h2>$4000</h2>
+                                <p class="save_amount">Save $500</p>
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne" id="checkbox-7">
-                                <label> Compare Product</label><br>
+                                <input type="checkbox" value="productOne" id="compare-checkbox7">
+                                <label for="compare-checkbox7"> Compare Product</label><br>
                             </form>
 
                             <div class="inStock_section">
-                                <img src="img/icon/no.png">Not In Stock
+                                <img src="img/icon/no.png" alt="not in stock icon">Not In Stock
                             </div>
 
                             <button onclick="goToCart()">Add to Cart</button>
@@ -419,18 +422,18 @@
                                 15.6", 5GB DDR4</p>
 
                             <div class="price_section">
-                                <del>$1999.99</del>
-                                <h2>#999.99</h2>
-                                <p>Save $250.00</p>
+                                <del>$4500</del>
+                                <h2>$4000</h2>
+                                <p class="save_amount">Save $500</p>
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne" id="checkbox-8">
-                                <label> Compare Product</label><br>
+                                <input type="checkbox" value="productOne" id="compare-checkbox8">
+                                <label for="compare-checkbox8"> Compare Product</label><br>
                             </form>
 
                             <div class="inStock_section">
-                                <img src="img/icon/no.png">Not In Stock
+                                <img src="img/icon/no.png" alt="not in stock icon">Not In Stock
                             </div>
 
                             <button onclick="goToCart()">Add to Cart</button>
@@ -449,18 +452,18 @@
                                 15.6, 5GB DDR4"</p>
 
                             <div class="price_section">
-                                <del>$1999.99</del>
-                                <h2>#999.99</h2>
-                                <p>Save $250.00</p>
+                                <del>$4500</del>
+                                <h2>$4000</h2>
+                                <p class="save_amount">Save $500</p>
                             </div>
 
                             <form>
-                                <input type="checkbox" value="productOne" id="checkbox-9">
-                                <label> Compare Product</label><br>
+                                <input type="checkbox" value="productOne" id="compare-checkbox9">
+                                <label for="compare-checkbox9"> Compare Product</label><br>
                             </form>
 
                             <div class="inStock_section">
-                                <img src="img/icon/no.png">Not In Stock
+                                <img src="img/icon/no.png" alt="not in stock icon">Not In Stock
                             </div>
 
                             <button onclick="goToCart()">Add to Cart</button>
@@ -477,7 +480,7 @@
 
     <footer class="grid">
 
-        <section class="footer-grid-col-1of5"></section>
+        <div class="footer-grid-col-1of5"></div>
 
         <!-- Contact Us -->
         <section class="footer-grid-col-1of5" id="footer_top_section">
@@ -511,7 +514,7 @@
             </ul>
         </section>
 
-        <section class="footer-grid-col-1of5"></section>
+        <div class="footer-grid-col-1of5"></div>
     </footer>
 
     <script>

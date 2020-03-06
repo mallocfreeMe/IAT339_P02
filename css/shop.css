@@ -21,6 +21,16 @@ button:hover {
     filter: brightness(1.4);
 }
 
+/* styling for all checkboxs and their labels */
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
 /* styling for side filter  */
 
 .side_filter {
@@ -28,10 +38,19 @@ button:hover {
     padding-left: 1em;
 }
 
-.side_filter section {
+.side_filter div {
     margin: 0;
     background-color: #E6E6E6;
     margin-bottom: 2em;
+}
+
+.side_filter #categoryList a {
+    display: block;
+    color: black;
+}
+
+.side_filter #categoryList a:hover {
+    text-decoration: underline;
 }
 
 #priceList, #factoryList {
@@ -112,6 +131,13 @@ button:hover {
     text-decoration: underline;
 }
 
+.container .save_amount {
+    cursor: default;
+}
+.container .save_amount:hover {
+    text-decoration: none;
+}
+
 .container img {
     display: inline-block;
     margin-right: 0.5em;
@@ -180,6 +206,7 @@ button:hover {
     .individual_product {
         width: 80%;
         margin-left: 10%;
-        margin-right: 10%;;
+        margin-right: 10%;
+        ;
     }
 }
