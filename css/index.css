@@ -10,6 +10,16 @@ button {
     cursor: pointer;
 }
 
+/* styling for all checkboxs and their labels */
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
 /* styling slide images */
 
 .slideShow {
@@ -184,6 +194,10 @@ button {
     height: 100%;
 }
 
+.container .stock_image {
+    cursor: default;
+}
+
 .container {
     padding-top: 2em;
     padding-bottom: 1em;
@@ -198,6 +212,14 @@ button {
 
 .container p:hover {
     text-decoration: underline;
+}
+
+.container .save_amount {
+    cursor: default;
+}
+
+.container .save_amount:hover {
+    text-decoration: none;
 }
 
 .container img {
