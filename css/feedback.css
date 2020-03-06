@@ -4,8 +4,8 @@
   position: static;
 }
 
-
 /* Styling for grid display in form part */
+
 .feedback-area h3 {
   font-size: 1.5em;
   margin-bottom: 1em;
@@ -35,6 +35,7 @@
 }
 
 /* ---------------- Form body ---------------- */
+
 .contact-form {
   grid-row: 2 / 3;
 }
@@ -43,9 +44,9 @@
   grid-row: 8 / span 1;
 }
 
-/* .contact-form {
-  margin-top: 2em;
-} */
+.contact-submit-button:hover {
+  filter: brightness(1.4);
+}
 
 .contact-form .grid {
   justify-content: space-between;
@@ -58,6 +59,7 @@
 }
 
 .contact-first-name input[type=text], .contact-last-name input[type=text] {
+  outline: none;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 0.5em;
@@ -66,6 +68,10 @@
   margin-top: 0.5em;
   border: thin solid #959DA5;
   background-color: #F6F8FA;
+}
+
+.contact-first-name input[type=text]:hover, .contact-last-name input[type=text]:hover {
+  outline: none;
 }
 
 .contact-email label {
@@ -83,6 +89,11 @@
   width: 100%;
   border: thin solid #959DA5;
   background-color: #F6F8FA;
+  outline: none;
+}
+
+.contact-email input[type=email]:hover {
+  outline: none;
 }
 
 .contact-subject label {
@@ -90,10 +101,10 @@
   font-size: 1.2em;
   color: #444D56;
   margin-bottom: 0.5em;
-
 }
 
 .contact-subject input[type=text] {
+  outline: none;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 0.5em;
@@ -101,6 +112,10 @@
   width: 100%;
   border: thin solid #959DA5;
   background-color: #F6F8FA;
+}
+
+.contact-subject input[type=text]:hover {
+  outline: none;
 }
 
 .contact-message label {
@@ -111,6 +126,7 @@
 }
 
 .contact-message textarea {
+  outline: none;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 0.5em;
@@ -121,11 +137,15 @@
   background-color: #F6F8FA;
 }
 
+.contact-message textarea:hover {
+  outline: none;
+}
+
 .contact-submit-button {
   margin-bottom: 4em;
 }
 
-.contact-submit-button button{
+.contact-submit-button button {
   padding-top: 1em;
   padding-bottom: 1em;
   width: 30%;
@@ -134,8 +154,8 @@
   cursor: pointer;
 }
 
-
 /* Styling for grid display in map part */
+
 .map-container {
   display: grid;
   grid-template-rows: 10em 5em 40em;
@@ -177,18 +197,16 @@ footer {
   margin-top: 4em;
 }
 
-
 /* For the responsive page */
+
 @media (max-width: 85em) {
   .feedback-area {
     font-size: 70%;
   }
-
   .map-container {
     display: grid;
     grid-template-rows: 10em 5em 40em;
   }
-
   .map-container .contact-map {
     margin-bottom: 2em;
   }
@@ -198,25 +216,21 @@ footer {
   .feedback-area {
     font-size: 50%;
   }
-
   .map-container .contact-map {
     margin-bottom: 0;
   }
-
   .form-container {
     display: grid;
     grid-template-rows: 20em 45em;
     padding-left: 2em;
     padding-right: 2em;
   }
-
   .map-container {
     display: grid;
     grid-template-rows: 10em 10em 45em;
     padding-left: 2em;
     padding-right: 2em;
   }
-
   .feedback-area h3 {
     padding-left: 1.3em;
   }
@@ -226,37 +240,30 @@ footer {
   .feedback-area h3 {
     padding-left: 0.6em;
   }
-
   .contact-information p, .contact-phone p {
     font-size: 70%;
   }
-
   .form-container {
     display: grid;
     grid-template-rows: 20em 45em;
     padding-left: 1em;
     padding-right: 1em;
   }
-
   .map-container {
     display: grid;
     grid-template-rows: 10em 10em 45em;
     padding-left: 1em;
     padding-right: 1em;
   }
-
   .contact-message textarea {
     height: 10vh;
   }
-
   .map-container .contact-map {
     margin-bottom: 1.5em;
   }
-
   .contact-name .grid .grid-col-1of2-noHeight {
     flex: 1 1 100%;
   }
-
 }
 
 @media (max-width: 30em) {
