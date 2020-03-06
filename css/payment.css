@@ -204,11 +204,7 @@ footer {
 
 
 /* For the responsive page */
-@media (max-width: 80em) {
-  .payment-page-area {
-    font-size: 80%;
-  }
-
+@media (max-width: 124em) {
   .payment-page-area .grid-col-1of2_noHeight {
     flex: 1 1 60%;
   }
@@ -226,11 +222,7 @@ footer {
   }
 }
 
-@media (max-width: 68em) {
-  .payment-page-area {
-    font-size: 80%;
-  }
-
+@media (max-width: 102em) {
   .payment-page-area .grid-col-1of2_noHeight {
     flex: 1 1 70%;
   }
@@ -243,12 +235,36 @@ footer {
     flex: 1 1 50%;
   }
 
-  /* .expire-line .grid-col-1of2_noHeight {
+  .expire-line .grid-col-1of2_noHeight {
     flex: 1 1 50%;
-  } */
+  }
 }
 
-@media (max-width: 58em) {
+@media (max-width: 87em) {
+  .payment-page-area .grid-col-1of2_noHeight {
+    flex: 1 1 80%;
+  }
+
+  .payment-page-area .grid-col-1of4_noHeight {
+    flex: 1 1 10%;
+  }
+
+  .receipt-detail .grid-col-1of2_noHeight {
+    flex: 1 1 50%;
+  }
+
+  .expire-line .grid-col-1of2_noHeight {
+    flex: 1 1 50%;
+  }
+}
+
+@media (max-width: 75em) {
+  .payment-page-area {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 59em) {
   .payment-page-area {
     font-size: 80%;
   }
@@ -268,6 +284,37 @@ footer {
   .set-bg-margin {
     margin-left: 10em;
     margin-right: 10em;
+  }
+}
+
+@media (max-width: 48em) {
+  .payment-page-area {
+    font-size: 70%;
+  }
+
+  .payment-page-area .grid-col-1of2_noHeight {
+    flex: 1 1 90%;
+  }
+
+  .payment-page-area .grid-col-1of4_noHeight {
+    flex: 1 1 5%;
+  }
+
+  .receipt-detail .grid-col-1of2_noHeight {
+    flex: 1 1 50%;
+  }
+
+  .expire-line .grid-col-45of100_noHeight {
+    flex: 1 1 100%;
+  }
+
+  .expire-line .grid-col-1of10_noHeight {
+    flex: 1 1 0%;
+  }
+
+  .set-bg-margin {
+    margin-left: 5em;
+    margin-right: 5em;
   }
 }
 
