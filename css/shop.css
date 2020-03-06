@@ -138,6 +138,10 @@ label {
     text-decoration: none;
 }
 
+.container .stock_image {
+    cursor: default;
+}
+
 .container img {
     display: inline-block;
     margin-right: 0.5em;

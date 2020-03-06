@@ -8,9 +8,19 @@ body {
     background-color: #F8F8FF;
 }
 
+/* styling for all checkboxs and their labels */
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
 .slideShow_image {
     width: 100%;
-    height:0;
+    height: 0;
     text-align: center;
     padding-top: 20em;
     padding-bottom: 20em;
@@ -47,6 +57,10 @@ body {
     cursor: pointer;
 }
 
+.container .stock_image {
+    cursor: default;
+}
+
 .container {
     padding-top: 2em;
     padding-bottom: 1em;
@@ -58,8 +72,17 @@ body {
     margin-bottom: 1em;
     cursor: pointer;
 }
+
 .container p:hover {
     text-decoration: underline;
+}
+
+.container .save_amount {
+    cursor: default;
+}
+
+.container .save_amount:hover {
+    text-decoration: none;
 }
 
 .container img {
@@ -88,6 +111,7 @@ body {
     background-color: #6200EE;
     color: white;
     padding: 1em;
+    cursor: pointer;
 }
 
 .container button:hover {
@@ -134,7 +158,8 @@ body {
     .individual_product {
         width: 80%;
         margin-left: 10%;
-        margin-right: 10%;;
+        margin-right: 10%;
+        ;
     }
     #event_heading {
         font-size: 2em;
