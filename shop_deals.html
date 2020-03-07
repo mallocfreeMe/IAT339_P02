@@ -52,9 +52,6 @@
         </nav>
     </header>
 
-    <!-- Top deals iamge -->
-    <div class="slideShow_image"></div>
-
     <div class="grid">
         <div class="grid-col-1of5_noHeight"></div>
 
@@ -81,15 +78,12 @@
         let eventNumber = localStorage.getItem("eventNumber");
 
         if (eventNumber == "first") {
-            $(".slideShow_image").css("background-image", "url(" + "img/event/event1-2.jpg" + ")");
             $("#event_heading").html(h1);
             $(".shop_deals_intro").html(p1);
         } else if (eventNumber == "second") {
-            $(".slideShow_image").css("background-image", "url(" + "img/event/event2-2.jpg" + ")");
             $("#event_heading").html(h2);
             $(".shop_deals_intro").html(p2);
         } else if (eventNumber == "third") {
-            $(".slideShow_image").css("background-image", "url(" + "img/event/event3-2.jpg" + ")");
             $("#event_heading").html(h3);
             $(".shop_deals_intro").html(p3);
         }
@@ -353,6 +347,10 @@
     </footer>
 
     <script>
+        // add to cart function, shows alert message
+        function goToCart() {
+            alert("The product successfully added to your shopping cart");
+        }
 
         // go to product page, save local varible productNumber in order to pass between pages
         function goToProduct() {
