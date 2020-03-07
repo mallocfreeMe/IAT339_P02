@@ -37,10 +37,11 @@
             </a>
 
             <!-- hamburger menu -->
-            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png" alt="mobile menu icon">
+            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png" alt="mobile menu icon"
+                aria-expanded="false" aria-controls="mobile_menu">
         </nav>
 
-        <nav class="mobile-main-nav" id="mobile_menu">
+        <nav class="mobile-main-nav" id="mobile_menu" role="region" aria-labelledby="mobile_menu_button">
             <ul>
                 <li class="mobile-top"><a href="shop.html">Shop</a></li>
                 <li class="mobile-top"><a href="deals.html">Deals</a></li>
@@ -1055,14 +1056,6 @@
                 </section>
             </div>
             <!-- COMBINED ELEMENTS SECTION END -->
-
-            <!-- Site Map -->
-            <!-- <section id="site-map-section">
-                <h2>Site Map</h2>
-                <figure class="site-map-area">
-                    <img src="img/sitemap.png" alt="Site Map">
-                </figure>
-            </section> -->
         </div>
         <!-- end of styleguide content -->
     </div>
@@ -1110,16 +1103,21 @@
 
 
     <script>
+        // click mobile menu icon to show the mobile nav
+        // click anywhere except mobile nav itself, close the mobile nav
+        // change aria roles for mobile menu icon
         $(document).ready(function () {
             $("#mobile_menu_button").click(function () {
                 $("#mobile_menu").show();
                 $(".main-nav").css("filter", "brightness(0.5)");
+                $("#mobile_menu").attr('aria-expanded', 'true');
             });
 
             $("body").click(function (event) {
                 if (event.target.id != "mobile_menu_button") {
                     $("#mobile_menu").hide();
                     $(".main-nav").css("filter", "brightness(1)");
+                    $("#mobile_menu").attr('aria-expanded', 'false');
                 }
             });
         });

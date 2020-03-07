@@ -38,10 +38,11 @@
             </a>
 
             <!-- hamburger menu -->
-            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png" alt="mobile menu icon">
+            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png" alt="mobile menu icon"
+                aria-expanded="false" aria-controls="mobile_menu">
         </nav>
 
-        <nav class="mobile-main-nav" id="mobile_menu">
+        <nav class="mobile-main-nav" id="mobile_menu" role="region" aria-labelledby="mobile_menu_button">
             <ul>
                 <li class="mobile-top"><a href="shop.html">Shop</a></li>
                 <li class="mobile-top"><a href="deals.html">Deals</a></li>
@@ -61,9 +62,10 @@
 
                 <!-- start of Category div -->
                 <div class="side_filter_category">
-                    <button id="showCategoryButton" class="showFilterButton">Shop By Category</button>
+                    <button id="showCategoryButton" class="showFilterButton" aria-expanded="true"
+                        aria-controls="categoryList">Shop By Category</button>
 
-                    <ul id="categoryList">
+                    <ul id="categoryList" role="region" aria-labelledby="showCategoryButton">
                         <li><a href="#">Business Notebooks</a></li>
                         <li><a href="#">Consumer Notebooks</a></li>
                         <li><a href="#">Gaming Notebooks</a></li>
@@ -74,9 +76,10 @@
 
                 <!-- start of Manufactruees div -->
                 <div class="side_filter_factory">
-                    <button id="showFactoryButton" class="showFilterButton">Manufactures</button>
+                    <button id="showFactoryButton" class="showFilterButton" aria-expanded="true"
+                        aria-controls="factoryList">Manufactures</button>
 
-                    <form id="factoryList">
+                    <form id="factoryList" role="region" aria-labelledby="showFilterButton">
 
                         <div>
                             <input type="checkbox" id="factoryList-checkbox1">
@@ -145,9 +148,10 @@
 
                 <!-- start of Price  div -->
                 <div class="side_filter_price">
-                    <button class="showFilterButton" id="showPriceButton">Price Range</button>
+                    <button class="showFilterButton" id="showPriceButton" aria-expanded="true"
+                        aria-controls="priceList">Price Range</button>
 
-                    <form id="priceList">
+                    <form id="priceList" role="region" aria-labelledby="showPriceButton">
                         <div>
                             <input type="checkbox" id="priceList-checkbox1">
                             <label for="priceList-checkbox1"> $0 - $199 (4)</label>
@@ -164,7 +168,7 @@
                         </div>
 
                         <div>
-                            <input type="checkbox" id="priceList-checkbox4"> 
+                            <input type="checkbox" id="priceList-checkbox4">
                             <label for="priceList-checkbox4">$400 - $599 (9)</label>
                         </div>
 
@@ -519,6 +523,8 @@
     </footer>
 
     <script>
+        // function controls slide up and slide down of category filter
+        // add arial roles to it
         let count = 0;
         let upIcon = "img/icon/up.png";
         let downIcon = "img/icon/down.png";
@@ -526,49 +532,66 @@
             $("#showCategoryButton").click(function () {
                 count += 1;
                 if (count % 2) {
+                    // hide
                     $("#categoryList").slideUp();
                     $("#showCategoryButton").css("background-image", "url(" + downIcon + ")");
+                    $("#showCategoryButton").attr("aria-expanded", "false");
                 } else {
+                    // show
                     $("#categoryList").slideDown();
                     $("#showCategoryButton").css("background-image", "url(" + upIcon + ")");
+                    $("#showCategoryButton").attr("aria-expanded", "true");
                 }
             });
         });
     </script>
 
     <script>
+        // function controls slide up and slide down of factory filter
+        // add arial roles to it
         let count2 = 0;
         $(document).ready(function () {
             $("#showFactoryButton").click(function () {
                 count2 += 1;
                 if (count2 % 2) {
+                    // hide
                     $("#factoryList").slideUp();
                     $("#showFactoryButton").css("background-image", "url(" + downIcon + ")");
+                    $("#showFactoryButton").attr("aria-expanded", "false");
                 } else {
+                    // show
                     $("#factoryList").slideDown();
                     $("#showFactoryButton").css("background-image", "url(" + upIcon + ")");
+                    $("#showFactoryButton").attr("aria-expanded", "true");
                 }
             });
         });
     </script>
 
     <script>
+        // function controls slide up and slide down of price filter
+        // add arial roles to it
         let count3 = 0;
         $(document).ready(function () {
             $("#showPriceButton").click(function () {
                 count3 += 1;
                 if (count3 % 2) {
+                    // hide
                     $("#priceList").slideUp();
                     $("#showPriceButton").css("background-image", "url(" + downIcon + ")");
+                    $("#showPriceButton").attr("aria-expanded", "false");
                 } else {
+                    // show
                     $("#priceList").slideDown();
                     $("#showPriceButton").css("background-image", "url(" + upIcon + ")");
+                    $("#showPriceButton").attr("aria-expanded", "true");
                 }
             });
         });
     </script>
 
     <script>
+        // show alert box
         function goToCart() {
             alert("The product successfully added to your shopping cart");
         }
@@ -591,6 +614,9 @@
     </script>
 
     <script>
+        // click two checkbox
+        // open compare function
+        // reset two checkbox
         $(document).ready(function () {
             let isCheckboxClicked1 = false;
             let isCheckboxClicked2 = false;
@@ -830,12 +856,14 @@
             $("#mobile_menu_button").click(function () {
                 $("#mobile_menu").show();
                 $(".main-nav").css("filter", "brightness(0.5)");
+                $("#mobile_menu").attr('aria-expanded', 'true');
             });
 
             $("body").click(function (event) {
                 if (event.target.id != "mobile_menu_button") {
                     $("#mobile_menu").hide();
                     $(".main-nav").css("filter", "brightness(1)");
+                    $("#mobile_menu").attr('aria-expanded', 'false');
                 }
             });
         });

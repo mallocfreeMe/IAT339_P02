@@ -38,10 +38,11 @@
             </a>
 
             <!-- hamburger menu -->
-            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png" alt="mobile menu icon">
+            <img class="mobile-menu-icon" id="mobile_menu_button" src="img/icon/menu.png" alt="mobile menu icon"
+                aria-expanded="false" aria-controls="mobile_menu">
         </nav>
 
-        <nav class="mobile-main-nav" id="mobile_menu">
+        <nav class="mobile-main-nav" id="mobile_menu" role="region" aria-labelledby="mobile_menu_button">
             <ul>
                 <li class="mobile-top"><a href="shop.html">Shop</a></li>
                 <li class="mobile-top"><a href="deals.html">Deals</a></li>
@@ -387,12 +388,14 @@
             $("#mobile_menu_button").click(function () {
                 $("#mobile_menu").show();
                 $(".main-nav").css("filter", "brightness(0.5)");
+                $("#mobile_menu").attr('aria-expanded', 'true');
             });
 
             $("body").click(function (event) {
                 if (event.target.id != "mobile_menu_button") {
                     $("#mobile_menu").hide();
                     $(".main-nav").css("filter", "brightness(1)");
+                    $("#mobile_menu").attr('aria-expanded', 'false');
                 }
             });
 
@@ -476,6 +479,9 @@
     </script>
 
     <script>
+        // click two checkbox
+        // open compare function
+        // reset two checkbox
         $(document).ready(function () {
             let isCheckboxClicked1 = false;
             let isCheckboxClicked2 = false;
