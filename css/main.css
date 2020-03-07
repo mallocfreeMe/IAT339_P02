@@ -58,7 +58,7 @@ section .tagValue {
 /* Styling for styleGuide content */
 
 .styleGuide {
-  padding: 1em 6em;
+  padding: 1em;
   color: #2f363d;
 }
 
@@ -754,7 +754,7 @@ footer a {
 
 /* when the size of browser becomes smaller */
 
-@media (max-width: 80em) {
+@media (max-width: 85em) {
   .mobile-menu-icon {
     display: none;
   }
@@ -762,16 +762,13 @@ footer a {
     display: none;
   }
   .grid-col-1of5 {
-    flex: 1 1 15%;
+    flex: 1 1 10%;
   }
   .grid-col-4of5 {
-    flex: 1 1 85%;
+    flex: 1 1 90%;
   }
   .styleGuide {
     padding: 1em;
-  }
-  #footer_top, #footer_center, #footer_bottom {
-    display: block;
   }
 }
 
