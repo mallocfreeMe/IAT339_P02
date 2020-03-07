@@ -24,92 +24,37 @@ label {
 
 .slideShow {
     position: relative;
-    background-image: url(../img/event/event1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     color: black;
-    height: 100vh;
+}
+
+#event_image {
+    width: 100%;
 }
 
 /* styling for event1 */
 
-#event1_heading {
-    font-size: 2em;
-    font-weight: bold;
-    position: absolute;
-    font-family: sans-serif;
-    top: 15%;
-    left: 8%;
-}
-
-#event1_content {
-    font-family: sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 8%;
-}
-
 #event1_button {
     top: 65%;
-    left: 8%;
+    left: 5%;
     z-index: 2;
 }
 
 /* styling for event2 */
 
-#event2_heading {
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    position: absolute;
-    font-family: sans-serif;
-    top: 15%;
-    left: 8%;
-}
-
-#event2_content {
-    color: white;
-    font-family: sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    position: absolute;
-    top: 42%;
-    left: 8%;
-}
-
 #event2_button {
     top: 65%;
-    left: 8%;
+    left: 9%;
     z-index: 2;
+    display: none;
 }
 
 /* styling for event3 */
 
-#event3_heading {
-    font-size: 2em;
-    font-weight: bold;
-    position: absolute;
-    font-family: sans-serif;
-    top: 20%;
-    left: 55%;
-}
-
-#event3_content {
-    font-family: sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    position: absolute;
-    top: 48%;
-    left: 55%;
-}
-
 #event3_button {
     top: 60%;
-    left: 55%;
+    left: 54%;
     z-index: 2;
+    display: none;
 }
 
 .slideShow button {
@@ -154,11 +99,12 @@ label {
 
 .dot_group {
     position: absolute;
-    bottom: 1em;
-    left: 45%;
+    bottom: 10%;
+    left: 40%;
 }
 
 .dot {
+    z-index: 99;
     cursor: pointer;
     height: 1em;
     width: 1em;
@@ -304,10 +250,12 @@ footer {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
-        ;
     }
-    .slideShow {
+    #previous_button, #next_button {
         display: none;
+    }
+    #event1_button, #event2_button, #event13button {
+        font-size: 0.5em;
     }
     #event1_heading h1 {
         font-size: 1em;

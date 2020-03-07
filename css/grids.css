@@ -59,14 +59,17 @@
 }
 
 /* Grid col 15 of 100 for about us page */
+
 .grid-col-15of100_noHeight {
   flex: 1 1 15%;
 }
+
 .grid-col-7of10_noHeight {
   flex: 1 1 70%;
 }
 
 /* Grid col 3 of 5 for sign-in page */
+
 .grid-col-2of5 {
   flex: 1 1 40%;
   height: 100%;
@@ -82,10 +85,6 @@
   height: 100%;
   /* Delete the scroll bar to make the UI clear */
   /* overflow: scroll; */
-}
-
-.grid-col-1of3_noHeight {
-  flex: 1 1 33.33%;
 }
 
 .grid-col-2of3_noHeight {
@@ -107,8 +106,8 @@
   height: 100%;
 }
 
-
 /* vertical grid  */
+
 .grid-row-1of3 {
   flex: 1 1 33.33%;
   flex-direction: column;

@@ -53,52 +53,24 @@
     </header>
 
     <!-- Slideshow container -->
-    <div class="slideShow">
-        <img src="img/icon/previous_icon.png" id="previous_button" alt="previous button icon">
-        <img src="img/icon/next_icon.png" id="next_button" alt="next button icon">
-
-        <!-- event 1 content-->
-        <div id="event1">
-            <pre id="event1_heading">Live life on the go
-with our awesome
-laptop deals.</pre>
-
-            <pre id="event1_content">Whether you design, game, or work, we have
-the right laptop for you. Explore our great offers on
-laptops, MacBooks and Chromebooks.</pre>
+    <div class="grid">
+        <div class="grid-col-1of5_noHeight"></div>
+        <div class="grid-col-3of5_noHeight slideShow">
+            <img src="img/event/event1.jpg" alt="event image" id="event_image">
+            <img src="img/icon/previous_icon.png" id="previous_button" alt="previous button icon">
+            <img src="img/icon/next_icon.png" id="next_button" alt="next button icon">
 
             <button id="event1_button" onclick="goToShopDeals()">Shop Deals</button>
-        </div>
-
-        <!-- event 2 content-->
-        <div id="event2">
-            <pre id="event2_heading">GET UP TO
-$300 OFF</pre>
-
-            <pre id="event2_content">For a limited time, we are offering incredible deals on alienware.
-Puls, 6 months financing on purchases $299+
-with Laptophub Account. 
-Limited-time offer for
-qualified cutomers.</pre>
             <button id="event2_button" onclick="goToShopDeals()">Shop Deals</button>
-        </div>
-
-        <!-- event 3 content-->
-        <div id="event3">
-            <pre id="event3_heading">Calling all pros
-For special deals</pre>
-
-            <pre id="event3_content">Our most powerful pro lineup ever - Macbook Pro. 
-Ready for you best work ever.</pre>
-
             <button id="event3_button" onclick="goToShopDeals()">Shop Deals</button>
-        </div>
 
-        <div class="dot_group">
-            <span class="dot" id="dot_one"></span>
-            <span class="dot" id="dot_two"></span>
-            <span class="dot" id="dot_three"></span>
+            <div class="dot_group">
+                <span class="dot" id="dot_one"></span>
+                <span class="dot" id="dot_two"></span>
+                <span class="dot" id="dot_three"></span>
+            </div>
         </div>
+        <div class="grid-col-1of5_noHeight"></div>
     </div>
 
     <!-- Home h1 -->
@@ -374,7 +346,7 @@ Ready for you best work ever.</pre>
         // learned how to save varibles to local storage from 
         // https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
         function goToShopDeals() {
-            let eventNumber = $(".slideShow").css("background-image");
+            let eventNumber = $("#event_image").attr("src");
 
             if (eventNumber.includes("event1")) {
                 eventNumber = "first";
@@ -405,10 +377,6 @@ Ready for you best work ever.</pre>
 
         let count = 1;
 
-        $("#event1").css("display", "block");
-        $("#event2").css("display", "none");
-        $("#event3").css("display", "none");
-
         $("#dot_one").css("background-color", "#6200EE");
         $("#dot_two").css("background-color", "white");
         $("#dot_three").css("background-color", "white");
@@ -431,12 +399,12 @@ Ready for you best work ever.</pre>
                 if (count > 1) {
                     count--;
                     let image_url = "img/event/event" + count + ".jpg";
-                    $(".slideShow").css("background-image", "url(" + image_url + ")");
+                    $("#event_image").attr("src", image_url);
 
                 } else {
                     count = 3;
                     let image_url = "img/event/event" + count + ".jpg";
-                    $(".slideShow").css("background-image", "url(" + image_url + ")");
+                    $("#event_image").attr("src", image_url);
 
                 }
             });
@@ -446,60 +414,56 @@ Ready for you best work ever.</pre>
                 if (count < 3) {
                     count++;
                     let image_url = "img/event/event" + count + ".jpg";
-                    if ($(window).width() / parseFloat($("body").css("font-size")) < 37.25) {
-                        $(".slideShow").css("background-image", "url(" + "linear-gradient(#03DAC6, white)" + ")");
-                    } else {
-                        $(".slideShow").css("background-image", "url(" + image_url + ")");
-                    }
+                    $("#event_image").attr("src", image_url);
                 } else {
                     count = 1;
                     let image_url = "img/event/event" + count + ".jpg";
-                    $(".slideShow").css("background-image", "url(" + image_url + ")");
+                    $("#event_image").attr("src", image_url);
                 }
             });
 
             $("#dot_one").click(function () {
                 count = 1;
                 let image_url = "img/event/event" + count + ".jpg";
-                $(".slideShow").css("background-image", "url(" + image_url + ")");
+                $("#event_image").attr("src", image_url);
             });
 
 
             $("#dot_two").click(function () {
                 count = 2;
                 let image_url = "img/event/event" + count + ".jpg";
-                $(".slideShow").css("background-image", "url(" + image_url + ")");
+                $("#event_image").attr("src", image_url);
             });
 
 
             $("#dot_three").click(function () {
                 count = 3;
                 let image_url = "img/event/event" + count + ".jpg";
-                $(".slideShow").css("background-image", "url(" + image_url + ")");
+                $("#event_image").attr("src", image_url);
             });
 
             $("#previous_button,#next_button,#dot_one, #dot_two, #dot_three").on("click", function () {
 
                 if (count == 1) {
-                    $("#event1").css("display", "block");
-                    $("#event2").css("display", "none");
-                    $("#event3").css("display", "none");
+                    $("#event1_button").css("display", "block");
+                    $("#event2_button").css("display", "none");
+                    $("#event3_button").css("display", "none");
 
                     $("#dot_one").css("background-color", "#6200EE");
                     $("#dot_two").css("background-color", "white");
                     $("#dot_three").css("background-color", "white");
                 } else if (count == 2) {
-                    $("#event1").css("display", "none");
-                    $("#event2").css("display", "block");
-                    $("#event3").css("display", "none");
+                    $("#event1_button").css("display", "none");
+                    $("#event2_button").css("display", "block");
+                    $("#event3_button").css("display", "none");
 
                     $("#dot_one").css("background-color", "white");
                     $("#dot_two").css("background-color", "#6200EE");
                     $("#dot_three").css("background-color", "white");
                 } else if (count == 3) {
-                    $("#event1").css("display", "none");
-                    $("#event2").css("display", "none");
-                    $("#event3").css("display", "block");
+                    $("#event1_button").css("display", "none");
+                    $("#event2_button").css("display", "none");
+                    $("#event3_button").css("display", "block");
 
                     $("#dot_one").css("background-color", "white");
                     $("#dot_two").css("background-color", "white");
