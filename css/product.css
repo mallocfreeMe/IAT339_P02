@@ -18,7 +18,7 @@ html {
 /* styling left side of the container */
 
 .product_container {
-    height: 80%;
+    /* height: 80%; */
     margin-top: 10em;
     margin-bottom: 4em;
 }
@@ -26,7 +26,13 @@ html {
 .individual_product {
     /* styling the image container position to releative */
     position: relative;
-    background-color: white;
+    background-color: transparent;
+    width: 100%;
+}
+
+.individual_product img {
+    width: 100%;
+    height: auto;
 }
 
 .triangle-topRight {
@@ -46,13 +52,6 @@ html {
     font-size: 1em;
     right: 0.8em;
     top: 1em
-}
-
-#productImage {
-    /* styling the current product image */
-    width: 100%;
-    height: 70vh;
-    padding-bottom: 5em;
 }
 
 #productImage_one, #productImage_two, #productImage_three {
@@ -88,9 +87,8 @@ html {
 
 .tech_spec {
     background-color: #E6E6E6;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 5%;
+    padding: 2em;
+    width: 100%;
 }
 
 #tech_spec_heading {
@@ -323,6 +321,10 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     filter: brightness(1.4);
 }
 
+.comment_area {
+    margin-top: 10em;
+}
+
 /* styling footer */
 
 footer {
@@ -331,22 +333,22 @@ footer {
 
 @media (max-width: 76.875em) {
     .grid-col-1of3_noHeight {
-        margin-left: 10%;
-        margin-right: 10%;
+        /* margin-left: 10%;
+        margin-right: 10%; */
         flex: 1 1 100%;
     }
     .product_container {
-        height: 50%;
+        /* height: 50%; */
         margin-top: 10%;
         margin-left: 10%;
         margin-right: 10%;
     }
-    .grid-col-1of2_noHeight {
-        flex: 1 1 100%;
+    .individual_product {
+        margin: 0;
     }
-    #productImage{
-        padding:0 ;
-        height: 50vh;
+    #productImage {
+        padding: 0;
+        /* height: 50vh; */
     }
     #productImage_one {
         left: 10%;
@@ -362,15 +364,6 @@ footer {
     }
     #tech_spec_heading {
         font-size: 1em;
-    }
-    #product_price {
-        display: none;
-    }
-    #product_one_button, #product_two_button, #product_three_button {
-        display: none;
-    }
-    #product_one_content, #product_two_content, #product_three_content {
-        display: none;
     }
     #add_button, #review_button {
         font-size: 1em;
@@ -398,19 +391,13 @@ footer {
     #write_comment_heading3 textarea {
         width: 100%;
     }
-    .grid-col-1of5_noHeight {
-        flex: 1 1 100%;
-    }
-    .grid-col-3of5_noHeight {
-        flex: 1 1 100%;
-    }
-    #comment_area {
-        margin-bottom: 10em;
+    .comment_area {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .comment_name {
         left: 30%;
-    }
-    footer {
-        margin-top: 5em;
     }
 }
